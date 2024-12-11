@@ -28,7 +28,7 @@
         <div class="flex items-center gap-12">
           <nav class="flex">
             <ul class="flex gap-[35px] text-[18px] tracking-[0.5px]">
-              <li><a href="" class="text-[#E0B827]">Home add</a></li>
+              <li><a href="" class="text-[#E0B827]">Home</a></li>
               <li><a href="">Become a Driver</a></li>
               <li><a href="">Support</a></li>
             </ul>
@@ -59,20 +59,63 @@
         </div>
       </div>
     </header>
+
     <main class="container mx-auto">
-      <section>
-        <div>
-          <div>
-            <div>
-              <img src="images/ce0d16e7f7454de374d4299a6430ad61.png" alt="" />
-            </div>
-            <div>
-              <img
-                src="images/76ac82b9ecc09cd2d0034f2edd816be5.png"
-                alt=""
-                class=""
-              />
-            </div>
+      <section
+        class="relative bg-cover bg-center h-[700px]"
+        style="
+          background-image: url('images/76ac82b9ecc09cd2d0034f2edd816be5.png');
+        "
+      >
+        <!-- Overlay -->
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-[#00000066] to-[#ffffff00]"
+        ></div>
+
+        <!-- Content -->
+        <div class="relative h-full flex items-center justify-center px-6">
+          <div class="text-white max-w-lg">
+            <!-- Heading -->
+            <h1 class="text-4xl font-bold leading-tight">
+              Welcome to 3T <br />
+              <span class="text-yellow-400">Book Your Ride</span>
+            </h1>
+
+            <!-- Form -->
+            <form class="mt-6 bg-white p-6 rounded-lg shadow-lg space-y-4">
+              <!-- Pickup and Dropoff -->
+              <div class="flex gap-4">
+                <select class="flex-1 px-4 py-2 border rounded-md">
+                  <option>Pickup now</option>
+                  <option>Schedule later</option>
+                </select>
+                <select class="flex-1 px-4 py-2 border rounded-md">
+                  <option>For me</option>
+                  <option>For someone else</option>
+                </select>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Pickup Location"
+                  class="w-full px-4 py-2 border rounded-md"
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Dropoff Location"
+                  class="w-full px-4 py-2 border rounded-md"
+                />
+              </div>
+              <!-- Button -->
+              <button
+                type="submit"
+                class="w-full bg-yellow-400 text-white py-2 rounded-md font-bold hover:bg-yellow-500"
+              >
+                See Prices
+              </button>
+            </form>
           </div>
         </div>
       </section>
