@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <header class="mt-10">
+    <header class="my-6">
       <div class="flex container mx-auto justify-between items-center">
         <div>
           <div class="">
@@ -63,23 +63,120 @@
 
     <main class="container mx-auto">
       <section>
-        <div>
+        <div class="relative">
           <div>
-            <div>
-              <img
-                src=""
-                alt=""
-                class="bg-[url('images/heroimage/WhatsApp Image 2024-12-12 at 11.22.32_9261e812.jpg')] h-[500px]"
-              />
+            <div
+              class="bg-[url('images/heroimage/hero.jpg')] h-[600px] bg-no-repeat bg-cover bg-center rounded-2xl"
+            ></div>
+            <div class="absolute top-24 left-28">
+              <div class="leading-[4rem]">
+                <h2 class="text-[2.5rem] text-[#FFFFFF] font-[400]">
+                  Welcome to 3T
+                </h2>
+                <h1 class="text-[4rem] text-[#FFFFFF] font-[700]">
+                  Book Your Ride
+                </h1>
+              </div>
+
+              <div class="flex mt-9">
+                <div class="flex space-x-4">
+                  <!-- Pickup Now -->
+                  <div
+                    class="flex items-center bg-[#ffffff] px-5 py-3 gap-1 rounded-full shadow cursor-pointer"
+                  >
+                    <img
+                      src="images/svg/Vector.svg"
+                      alt="Pickup Icon"
+                      class="h-[14px] w-[14px]"
+                    />
+                    <select
+                      class="bg-transparent outline-none text-[12px] text-gray-500 font-[400]"
+                    >
+                      <option value="" disabled selected>Pickup now</option>
+                      <option value="option1">Option 1</option>
+                      <option value="option2">Option 2</option>
+                      <option value="option3">Option 3</option>
+                    </select>
+                  </div>
+
+                  <!-- For Me -->
+                  <div
+                    class="flex items-center bg-[#ffffff] px-4 py-2 gap-1 rounded-full shadow cursor-pointer"
+                  >
+                    <img
+                      src="images/svg/Group.svg"
+                      alt="For Me Icon"
+                      class="h-[14px] w-[14px]"
+                    />
+
+                    <select
+                      class="bg-transparent outline-none text-[12px] text-gray-500 font-[400]"
+                    >
+                      <option value="" disabled selected>For me</option>
+                      <option value="option1">Option 1</option>
+                      <option value="option2">Option 2</option>
+                      <option value="option3">Option 3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="mt-4 bg-white p-4 flex gap-4 items-center rounded-[12px] max-w-[320px]"
+              >
+                <div class="flex flex-col items-center gap-2">
+                  <div class="h-[7px] w-[7px] bg-[#F7D506] rounded-full"></div>
+                  <div><img src="images/droplogo/Vector 65.png" alt="" /></div>
+                  <div>
+                    <img src="images/droplogo/Group 20004.png" alt="" />
+                  </div>
+                </div>
+                <div class="flex flex-col items-center gap-3">
+                  <div
+                    class="bg-white flex justify-between items-center gap-10"
+                  >
+                    <div class="flex items-center gap-4">
+                      <input
+                        type="text"
+                        placeholder="Pickup Location"
+                        class="text-[1rem] border-none focus:outline-none font-[400] text-[#1D2630]"
+                      />
+                    </div>
+                    <div class="">
+                      <img src="images/svg/GPS.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="bg-[#EBE4A6] h-[1px] w-full"></div>
+                  <div
+                    class="bg-white flex justify-between items-center gap-10"
+                  >
+                    <div class="flex items-center gap-4">
+                      <input
+                        type="text"
+                        placeholder="Pickup Location"
+                        class="text-[1rem] border-none focus:outline-none font-[400] text-[#1D2630]"
+                      />
+                    </div>
+                    <div class="">
+                      <img src="images/droplogo/Add.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-7">
+                <button class="py-[10px] px-6 bg-[#F7D506] rounded-[10px]">
+                  See Prices
+                </button>
+              </div>
             </div>
-            <div></div>
           </div>
         </div>
       </section>
+
       <!-- Available Services In -->
       <section>
         <div>
-          <div class="flex flex-col pb-8 pt-16 items-center justify-center">
+          <div class="flex flex-col pb-8 pt-16 items-center">
             <h1 class="text-[40px] text-[#1D2630] font-[700]">
               Available Services In
             </h1>
@@ -88,12 +185,12 @@
               quis id placerat.
             </p>
           </div>
-          <div class="flex justify-center gap-8 pt-4 pb-8">
+          <div class="flex gap-12 pt-4 pb-8">
             <div
-              class="bg-[#F5F6F7] h-[335px] w-[270px] flex flex-col px-6 justify-center"
+              class="bg-[#F5F6F7] h-[400px] w-[390px] flex flex-col px-6 justify-center rounded-2xl hover:shadow-2xl transition-all duration-[0.3s]"
             >
               <img
-                class="h-[124.81px] w-[210px]"
+                class="h-[135px] w-[240px]"
                 src="images/services-image/image 31.png"
                 alt="car1"
               />
@@ -110,10 +207,10 @@
               </p>
             </div>
             <div
-              class="bg-[#F5F6F7] h-[335px] w-[270px] flex flex-col px-6 justify-center"
+              class="bg-[#F5F6F7] h-[400px] w-[390px] flex flex-col px-6 justify-center rounded-2xl hover:shadow-2xl transition-all duration-[0.3s]"
             >
               <img
-                class="h-[124.81px] w-[210px]"
+                class="h-[135px] w-[240px]"
                 src="images/services-image/image 31 (1).png"
                 alt="car2"
               />
@@ -128,10 +225,10 @@
               </p>
             </div>
             <div
-              class="bg-[#F5F6F7] h-[335px] w-[270px] flex flex-col px-6 justify-center"
+              class="bg-[#F5F6F7] h-[400px] w-[390px] flex flex-col px-6 justify-center rounded-2xl hover:shadow-2xl transition-all duration-[0.3s]"
             >
               <img
-                class="h-[124.81px] w-[210px]"
+                class="h-[135px] w-[240px]"
                 src="images/services-image/image 31 (2).png"
                 alt="car3"
               />
@@ -148,10 +245,10 @@
               </p>
             </div>
             <div
-              class="bg-[#F5F6F7] h-[335px] w-[270px] flex flex-col px-6 justify-center"
+              class="bg-[#F5F6F7] h-[400px] w-[390px] flex flex-col px-6 justify-center rounded-2xl hover:shadow-2xl transition-all duration-[0.3s]"
             >
               <img
-                class="h-[124.81px] w-[210px]"
+                class="h-[135px] w-[240px]"
                 src="images/services-image/image 31 (3).png"
                 alt="car4"
               />
@@ -171,16 +268,20 @@
         </div>
 
         <!-- arrow button -->
-        <div class="flex items-center justify-center gap-4 py-8">
-          <div
-            class="h-[40px] w-[40px] bg-[#EBE4A6] text-white flex items-center justify-center rounded-full shadow-lg cursor-pointer"
-          >
-            <button class="text-black h-[24px] font-[900]">←</button>
+        <div class="flex items-center justify-center gap-6 py-8">
+          <div class="">
+            <button
+              class="w-[40px] bg-[#EBE4A6] flex items-center justify-center rounded-full shadow-lg cursor-pointer text-black h-[40px] font-[900] transition-all duration-[0.2s] active:translate-x-[-10px]"
+            >
+              ←
+            </button>
           </div>
-          <div
-            class="h-[40px] w-[40px] bg-[#EBE4A6] text-white flex items-center justify-center rounded-full shadow-lg cursor-pointer"
-          >
-            <button class="text-black h-[24px] font-[900]">→</button>
+          <div>
+            <button
+              class="w-[40px] bg-[#EBE4A6] flex items-center justify-center rounded-full shadow-lg cursor-pointer text-black h-[40px] font-[900] transition-all duration-[0.2s] active:translate-x-[10px]"
+            >
+              →
+            </button>
           </div>
         </div>
       </section>
@@ -188,10 +289,10 @@
       <!-- Experience 3T Rides -->
       <section class="py-12">
         <div
-          class="flex flex-col md:flex-row items-center justify-center container mx-auto px-6 space-y-8 md:space-y-0 md:space-x-12"
+          class="flex flex-col md:flex-row justify-between container mx-auto"
         >
           <!-- Text Content -->
-          <div class="text-center md:text-left max-w-lg">
+          <div class="max-w-[620px]">
             <h1 class="text-[40px] font-bold text-[#1D2630] mb-4">
               Experience 3T Rides
             </h1>
@@ -204,7 +305,9 @@
               velit vestibulum eu. Sagittis ullamcorper nibh et lobortis. Hac
               quam penatibus pulvinar adipiscing faucibus.
             </p>
-            <button class="bg-[#1D2630] text-white py-2 px-6 rounded-[10px]">
+            <button
+              class="bg-[#1D2630] text-white py-2 px-6 rounded-[10px] transition-all duration-[0.3s] hover:bg-yellow-500 hover:text-black"
+            >
               Read More
             </button>
           </div>
@@ -212,9 +315,9 @@
           <!-- Image Content -->
           <div>
             <img
-              src="images/Mask group.png"
+              src="images/exprience/Group 2609465 (1).png"
               alt="Mask group"
-              class="rounded-lg shadow-lg max-w-full"
+              class="rounded-lg shadow-lg h-[340px] w-[630px]"
             />
           </div>
         </div>
@@ -225,8 +328,8 @@
       <!-- Ride-svg -->
 
       <section class="py-10">
-        <div class="max-w-6xl mx-auto px-4">
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
             <div class="flex flex-col items-center rounded-lg">
               <div
                 class="w-20 h-20 flex items-center justify-center border-black border-[1px] p-2 rounded-full mb-4"
@@ -268,7 +371,7 @@
                   class="w-[50px] h-[50px]"
                 />
               </div>
-              <h1 class="text-[25px] font-semibold mb-2">Rides On Demand</h1>
+              <h1 class="text-[25px] font-semibold mb-2">Fast Pickups</h1>
               <p class="text-center text-[18px] text-[#373F46]">
                 Request a ride at any time and on any day of the year.
               </p>
@@ -279,7 +382,7 @@
 
       <section class="py-12">
         <div
-          class="flex flex-wrap items-center justify-between gap-8 md:gap-4 max-w-[1200px] mx-auto px-4"
+          class="flex flex-wrap items-center justify-between gap-8 md:gap-4 max-w-[1500px] mx-auto px-10"
         >
           <!-- Text Content -->
           <div class="text-center md:text-left max-w-lg">
@@ -299,17 +402,19 @@
               velit vestibulum eu. Sagittis ullamcorper nibh et lobortis. Hac
               quam penatibus pulvinar adipiscing faucibus.
             </p>
-            <button class="bg-[#1D2630] text-white py-2 px-6 rounded-[10px]">
+            <button
+              class="bg-[#1D2630] text-white py-2 px-6 rounded-[10px] transition-all duration-[0.3s] hover:bg-yellow-500 hover:text-black"
+            >
               Join Us Now
             </button>
           </div>
 
           <!-- Image Content -->
-          <div class="w-full md:w-[50%]">
+          <div class="">
             <img
               src="images/Driver-images/driver-image.jpg"
               alt="driver-image"
-              class="rounded-lg shadow-lg max-w-full h-auto"
+              class="rounded-lg shadow-lg w-[600px]"
             />
           </div>
         </div>
@@ -317,7 +422,7 @@
 
       <!-- Our Team Mates -->
       <section class="py-12">
-        <div class="max-w-7xl mx-auto px-4">
+        <div class="mx-auto px-4">
           <div class="py-12">
             <h1
               class="text-[32px] sm:text-[36px] lg:text-[40px] font-[700] text-center text-[#1D2630]"
@@ -387,19 +492,33 @@
               </div>
             </div>
           </div>
-          <div class="flex justify-center py-8">
-            <img
-              class="h-[50px] w-[87px]"
-              src="images/arrow-logo/Group 20774.svg"
-              alt=""
-            />
+          <div class="flex justify-center items-center py-8 relative">
+            <div class="bg-[#F5F6F7] h-[50px] w-[50px] rounded-full"></div>
+            <div class="absolute flex items-center gap-3">
+              <button>
+                <img
+                  src="images/svg/ArrowPrev.svg"
+                  alt="arrow-prev"
+                  class="w-[47px] transition-all duration-[0.2s] active:translate-x-[-10px]"
+                />
+              </button>
+              <button>
+                <img
+                  src="images/svg/ArrowNext.svg"
+                  alt="arrow-next"
+                  class="w-[47px] transition-all duration-[0.2s] active:translate-x-[10px]"
+                />
+              </button>
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="bg-[#F5F6F7] py-8 container mx-auto">
-      <div class="">
-        <div class="flex flex-wrap items-center justify-between gap-4 mx-auto">
+    <footer class="bg-[#F5F6F7] py-8">
+      <div class="container mx-auto">
+        <div
+          class="flex flex-wrap items-center justify-between gap-4 max-w-[1200px] mx-auto"
+        >
           <div>
             <h2 class="text-[#1D2630] text-[35px] font-bold">
               Subscribe Newsletter
@@ -414,9 +533,11 @@
             <input
               type="text"
               placeholder="Enter Your email address"
-              class="px-2 py-2 rounded-md focus:outline focus:outline-2 focus:outline-none flex-1"
+              class="px-2 py-2 rounded-md focus:outline-none flex-1"
             />
-            <button class="bg-[#1D2630] text-white px-4 py-2 rounded-md">
+            <button
+              class="bg-[#1D2630] text-white px-4 py-2 rounded-md transition-all duration-[0.3s] hover:bg-yellow-500 hover:text-black"
+            >
               Join Us Now
             </button>
           </div>
@@ -424,7 +545,7 @@
         <div class="my-8">
           <hr class="border-gray-300" />
         </div>
-        <div class="flex justify-between gap-8 mx-auto items-start">
+        <div class="flex justify-around gap-8 mx-auto items-start">
           <div class="flex flex-col gap-3">
             <h3 class="font-bold text-[22px] text-[#373F46]">Company</h3>
             <ul class="space-y-2">
@@ -449,31 +570,39 @@
             <h3 class="font-bold text-[#373F46] text-[22px]">
               Download User App
             </h3>
-            <img
-              class="h-[60px] w-[167px] mb-2"
-              src="images/google.webp"
-              alt="Download from Google Play Store for Android"
-            />
-            <img
-              class="h-[60px] w-[167px]"
-              src="images/appstore.png"
-              alt="Download from Apple App Store for iOS"
-            />
+            <a href="">
+              <img
+                class="h-[60px] w-[167px] mb-2"
+                src="images/footer-images/googleplay.svg"
+                alt="Download from Google Play Store for Android"
+              />
+            </a>
+            <a href="">
+              <img
+                class="h-[60px] w-[167px]"
+                src="images/footer-images/applestore.svg"
+                alt="Download from Apple App Store for iOS"
+              />
+            </a>
           </div>
           <div class="flex flex-col gap-3">
             <h3 class="font-bold text-[#373F46] text-[22px]">
               Download Driver App
             </h3>
-            <img
-              class="h-[60px] w-[167px] mb-2"
-              src="images/google.webp"
-              alt="Download from Google Play Store for Android"
-            />
-            <img
-              class="h-[60px] w-[167px]"
-              src="images/appstore.png"
-              alt="Download from Apple App Store for iOS"
-            />
+            <a href="">
+              <img
+                class="h-[60px] w-[167px] mb-2"
+                src="images/footer-images/googleplay.svg"
+                alt="Download from Google Play Store for Android"
+              />
+            </a>
+            <a href="">
+              <img
+                class="h-[60px] w-[167px]"
+                src="images/footer-images/applestore.svg"
+                alt="Download from Apple App Store for iOS"
+              />
+            </a>
           </div>
         </div>
       </div>
@@ -507,7 +636,7 @@
 
       <!-- footer last line -->
       <div
-        class="flex justify-between mx-auto items-center gap-16 px-[120px] py-6 bg-gray-100"
+        class="flex justify-between container mx-auto items-center gap-16 px-[120px] py-6 bg-gray-100"
       >
         <div class="flex gap-12 items-center">
           <p class="text-[18px]">
