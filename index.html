@@ -1,666 +1,508 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <header class="my-6">
-      <div class="flex container mx-auto justify-between items-center">
-        <div>
-          <div class="">
-            <img
-              src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
-              alt="nav-logo"
-              class="h-[60px] w-[59px]"
-            />
-          </div>
-        </div>
-        <div class="flex items-center gap-12">
-          <nav class="flex">
-            <ul class="flex gap-[35px] text-[18px] tracking-[0.5px]">
-              <li><a href="" class="text-[#E0B827]">Home</a></li>
-              <li><a href="">Become a Driver</a></li>
-              <li><a href="">Support</a></li>
-            </ul>
-          </nav>
-          <div class="flex gap-2 items-center">
-            <div class="h-[24px] w-[24px] rounded-full overflow-hidden">
-              <img
-                src="images/istockphoto-880562092-612x612.jpg"
-                alt="language-logo"
-                class="h-full w-full object-cover"
-              />
-            </div>
-            <div>
-              <h3 class="text-[22px]">Language</h3>
-            </div>
-            <div>
-              <select name="" id="">
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-              </select>
-            </div>
-          </div>
-          <div class="bg-gray-700 text-white px-6 py-2.5 rounded-xl">
-            <button>Login / Register</button>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="my-6">
+    <div class="flex container mx-auto justify-between items-center">
+      <div>
+        <div class="">
+          <img src="./navlogo/f325c70135c915c11129c42ec119f33c.png" alt="nav-logo" class="h-[60px] w-[59px]" />
         </div>
       </div>
-    </header>
-
-    <main class="container mx-auto">
-      <section>
-        <div class="relative">
+      <div class="flex items-center gap-12">
+        <nav class="flex">
+          <ul class="flex gap-[35px] text-[18px] tracking-[0.5px]">
+            <li><a href="" class="text-[#E0B827]">Home</a></li>
+            <li><a href="">Become a Driver</a></li>
+            <li><a href="">Support</a></li>
+          </ul>
+        </nav>
+        <div class="flex gap-2 items-center">
+          <div class="h-[24px] w-[24px] rounded-full overflow-hidden">
+            <img src="images/istockphoto-880562092-612x612.jpg" alt="language-logo"
+              class="h-full w-full object-cover" />
+          </div>
           <div>
-            <div
-              class="bg-[url('images/heroimage/hero.jpg')] h-[600px] bg-no-repeat bg-cover bg-center rounded-2xl"
-            ></div>
-            <div class="absolute top-24 left-28">
-              <div class="leading-[4rem]">
-                <h2 class="text-[2.5rem] text-[#FFFFFF] font-[400]">
-                  Welcome to 3T
-                </h2>
-                <h1 class="text-[4rem] text-[#FFFFFF] font-[700]">
-                  Book Your Ride
-                </h1>
-              </div>
-
-              <div class="flex mt-9">
-                <div class="flex space-x-4">
-                  <!-- Pickup Now -->
-                  <div
-                    class="flex items-center bg-[#ffffff] px-5 py-3 gap-1 rounded-full shadow cursor-pointer"
-                  >
-                    <img
-                      src="images/svg/Vector.svg"
-                      alt="Pickup Icon"
-                      class="h-[14px] w-[14px]"
-                    />
-                    <select
-                      class="bg-transparent outline-none text-[12px] text-gray-500 font-[400]"
-                    >
-                      <option value="" disabled selected>Pickup now</option>
-                      <option value="option1">Option 1</option>
-                      <option value="option2">Option 2</option>
-                      <option value="option3">Option 3</option>
-                    </select>
-                  </div>
-
-                  <!-- For Me -->
-                  <div
-                    class="flex items-center bg-[#ffffff] px-4 py-2 gap-1 rounded-full shadow cursor-pointer"
-                  >
-                    <img
-                      src="images/svg/Group.svg"
-                      alt="For Me Icon"
-                      class="h-[14px] w-[14px]"
-                    />
-
-                    <select
-                      class="bg-transparent outline-none text-[12px] text-gray-500 font-[400]"
-                    >
-                      <option value="" disabled selected>For me</option>
-                      <option value="option1">Option 1</option>
-                      <option value="option2">Option 2</option>
-                      <option value="option3">Option 3</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="mt-4 bg-white p-4 flex gap-4 items-center rounded-[12px] max-w-[320px]"
-              >
-                <div class="flex flex-col items-center gap-2">
-                  <div class="h-[7px] w-[7px] bg-[#F7D506] rounded-full"></div>
-                  <div><img src="images/droplogo/Vector 65.png" alt="" /></div>
-                  <div>
-                    <img src="images/droplogo/Group 20004.png" alt="" />
-                  </div>
-                </div>
-                <div class="flex flex-col items-center gap-3">
-                  <div
-                    class="bg-white flex justify-between items-center gap-10"
-                  >
-                    <div class="flex items-center gap-4">
-                      <input
-                        type="text"
-                        placeholder="Pickup Location"
-                        class="text-[1rem] border-none focus:outline-none font-[400] text-[#1D2630]"
-                      />
-                    </div>
-                    <div class="">
-                      <img src="images/svg/GPS.svg" alt="" />
-                    </div>
-                  </div>
-                  <div class="bg-[#EBE4A6] h-[1px] w-full"></div>
-                  <div
-                    class="bg-white flex justify-between items-center gap-10"
-                  >
-                    <div class="flex items-center gap-4">
-                      <input
-                        type="text"
-                        placeholder="Pickup Location"
-                        class="text-[1rem] border-none focus:outline-none font-[400] text-[#1D2630]"
-                      />
-                    </div>
-                    <div class="">
-                      <img src="images/droplogo/Add.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="mt-7">
-                <button class="py-[10px] px-6 bg-[#F7D506] rounded-[10px]">
-                  See Prices
-                </button>
-              </div>
-            </div>
+            <h3 class="text-[22px]">Language</h3>
+          </div>
+          <div>
+            <select name="" id="">
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
           </div>
         </div>
-      </section>
+        <div class="bg-gray-700 text-white px-6 py-2.5 rounded-xl">
+          <button>Login / Register</button>
+        </div>
+      </div>
+    </div>
+  </header>
 
-      <!-- Available Services In -->
-      <section>
+  <main class="container mx-auto">
+    <section>
+      <div class="relative">
         <div>
-          <div class="flex flex-col pb-8 pt-16 items-center">
-            <h1 class="text-[40px] text-[#1D2630] font-[700]">
-              Available Services In
-            </h1>
-            <p class="text-[18px] text-[#1D2630] font-[400]">
-              Lorem ipsum dolor sit amet consectetur. Venenatis erat eleifend
-              quis id placerat.
-            </p>
+          <div class="bg-[url('images/heroimage/hero.jpg')] h-[600px] bg-no-repeat bg-cover bg-center rounded-2xl">
           </div>
-          <div class="flex gap-12 pt-4 pb-8">
-            <div
-              class="bg-[#F5F6F7] h-[400px] w-[390px] flex flex-col px-6 justify-center rounded-2xl hover:shadow-2xl transition-all duration-[0.3s]"
-            >
-              <img
-                class="h-[135px] w-[240px]"
-                src="images/services-image/image 31.png"
-                alt="car1"
-              />
-              <h4 class="text-[22px] pt-6 font-[700] text-[#1D2630]">
-                Ultra Prime
-              </h4>
-              <p class="text-[14px] text-[#373F46]">
-                Standardbiler, hverdagsreiser
-              </p>
-              <p class="text-[14px] text-[#555B60]">
-                54 kr grunnlag <br />
-                15.75 kr km + 5.4 kr min <br />
-                100 kr minimum
-              </p>
+          <div class="absolute top-24 left-28">
+            <div class="leading-[4rem]">
+              <h2 class="text-[2.5rem] text-[#FFFFFF] font-[400]">
+                Welcome to 3T
+              </h2>
+              <h1 class="text-[4rem] text-[#FFFFFF] font-[700]">
+                Book Your Ride
+              </h1>
             </div>
-            <div
-              class="bg-[#F5F6F7] h-[400px] w-[390px] flex flex-col px-6 justify-center rounded-2xl hover:shadow-2xl transition-all duration-[0.3s]"
-            >
-              <img
-                class="h-[135px] w-[240px]"
-                src="images/services-image/image 31 (1).png"
-                alt="car2"
-              />
-              <h4 class="text-[22px] pt-6 font-[700] text-[#1D2630]">Prime</h4>
-              <p class="text-[14px] text-[#373F46]">
-                Standardbiler, hverdagsreiser
-              </p>
-              <p class="text-[14px] text-[#555B60]">
-                54 kr grunnlag <br />
-                15.75 kr km + 5.4 kr min <br />
-                100 kr minimum
-              </p>
-            </div>
-            <div
-              class="bg-[#F5F6F7] h-[400px] w-[390px] flex flex-col px-6 justify-center rounded-2xl hover:shadow-2xl transition-all duration-[0.3s]"
-            >
-              <img
-                class="h-[135px] w-[240px]"
-                src="images/services-image/image 31 (2).png"
-                alt="car3"
-              />
-              <h4 class="text-[22px] pt-6 font-[700] text-[#1D2630]">
-                Standard
-              </h4>
-              <p class="text-[14px] text-[#373F46]">
-                Standardbiler, hverdagsreiser
-              </p>
-              <p class="text-[14px] text-[#555B60]">
-                54 kr grunnlag <br />
-                15.75 kr km + 5.4 kr min <br />
-                100 kr minimum
-              </p>
-            </div>
-            <div
-              class="bg-[#F5F6F7] h-[400px] w-[390px] flex flex-col px-6 justify-center rounded-2xl hover:shadow-2xl transition-all duration-[0.3s]"
-            >
-              <img
-                class="h-[135px] w-[240px]"
-                src="images/services-image/image 31 (3).png"
-                alt="car4"
-              />
-              <h4 class="text-[22px] pt-6 font-[700] text-[#1D2630]">
-                Comfort
-              </h4>
-              <p class="text-[14px] text-[#373F46]">
-                Standardbiler, hverdagsreiser
-              </p>
-              <p class="text-[14px] text-[#555B60]">
-                54 kr grunnlag <br />
-                15.75 kr km + 5.4 kr min <br />
-                100 kr minimum
-              </p>
-            </div>
-          </div>
-        </div>
 
-        <!-- arrow button -->
-        <div class="flex items-center justify-center gap-6 py-8">
-          <div class="">
-            <button
-              class="w-[40px] bg-[#EBE4A6] flex items-center justify-center rounded-full shadow-lg cursor-pointer text-black h-[40px] font-[900] transition-all duration-[0.2s] active:translate-x-[-10px]"
-            >
-              ←
-            </button>
-          </div>
-          <div>
-            <button
-              class="w-[40px] bg-[#EBE4A6] flex items-center justify-center rounded-full shadow-lg cursor-pointer text-black h-[40px] font-[900] transition-all duration-[0.2s] active:translate-x-[10px]"
-            >
-              →
-            </button>
-          </div>
-        </div>
-      </section>
+            <div class="flex mt-9">
+              <div class="flex space-x-4">
+                <!-- Pickup Now -->
+                <div class="flex items-center bg-[#ffffff] px-5 py-3 gap-1 rounded-full shadow cursor-pointer">
+                  <img src="images/svg/Vector.svg" alt="Pickup Icon" class="h-[14px] w-[14px]" />
+                  <select class="bg-transparent outline-none text-[12px] text-gray-500 font-[400]">
+                    <option value="" disabled selected>Pickup now</option>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                  </select>
+                </div>
 
-      <!-- Experience 3T Rides -->
-      <section class="py-12">
-        <div
-          class="flex flex-col md:flex-row justify-between container mx-auto"
-        >
-          <!-- Text Content -->
-          <div class="max-w-[620px]">
-            <h1 class="text-[40px] font-bold text-[#1D2630] mb-4">
-              Experience 3T Rides
-            </h1>
-            <p class="text-[#373F46] text-[18px] leading-relaxed mb-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
-              neque, vel, scelerisque non nec et egestas. Integer tincidunt
-              turpis ac nam integer etiam non cursus. Morbi mauris tellus dui
-              donec malesuada tortor egestas ultricies. Elit ultricies elit
-              faucibus cras vel nisl sagittis, lorem enim. Fermentum, mauris
-              velit vestibulum eu. Sagittis ullamcorper nibh et lobortis. Hac
-              quam penatibus pulvinar adipiscing faucibus.
-            </p>
-            <button
-              class="bg-[#1D2630] text-white py-2 px-6 rounded-[10px] transition-all duration-[0.3s] hover:bg-yellow-500 hover:text-black"
-            >
-              Read More
-            </button>
-          </div>
+                <!-- For Me -->
+                <div class="flex items-center bg-[#ffffff] px-4 py-2 gap-1 rounded-full shadow cursor-pointer">
+                  <img src="images/svg/Group.svg" alt="For Me Icon" class="h-[14px] w-[14px]" />
 
-          <!-- Image Content -->
-          <div>
-            <img
-              src="images/exprience/Group 2609465 (1).png"
-              alt="Mask group"
-              class="rounded-lg shadow-lg h-[340px] w-[630px]"
-            />
-          </div>
-        </div>
-      </section>
-
-      <!-- Become a 3T Driver -->
-
-      <!-- Ride-svg -->
-
-      <section class="py-10">
-        <div class="mx-auto">
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
-            <div class="flex flex-col items-center rounded-lg">
-              <div
-                class="w-20 h-20 flex items-center justify-center border-black border-[1px] p-2 rounded-full mb-4"
-              >
-                <img
-                  src="images/ride-svg/Solid.svg"
-                  alt="solid"
-                  class="w-[50px] h-[50px]"
-                />
-              </div>
-              <h1 class="text-[25px] font-semibold mb-2">Rides On Demand</h1>
-              <p class="text-center text-[18px] text-[#373F46]">
-                Request a ride at any time and on any day of the year.
-              </p>
-            </div>
-            <div class="flex flex-col items-center rounded-lg">
-              <div
-                class="w-20 h-20 flex items-center justify-center border-black border-[1px] p-2 rounded-full mb-4"
-              >
-                <img
-                  src="images/ride-svg/Group.svg"
-                  alt="group"
-                  class="w-[50px] h-[50px]"
-                />
-              </div>
-              <h1 class="text-[25px] font-semibold mb-2">Always Low Price</h1>
-              <p class="text-center text-[18px] text-[#373F46]">
-                <span> Compare prices on every kind of ride, from</span>
-                <span>daily commutes to special evenings out.</span>
-              </p>
-            </div>
-            <div class="flex flex-col items-center rounded-lg">
-              <div
-                class="w-20 h-20 flex items-center justify-center border-black border-[1px] p-2 rounded-full mb-4"
-              >
-                <img
-                  src="images/ride-svg/app 1.svg"
-                  alt="app"
-                  class="w-[50px] h-[50px]"
-                />
-              </div>
-              <h1 class="text-[25px] font-semibold mb-2">Fast Pickups</h1>
-              <p class="text-center text-[18px] text-[#373F46]">
-                Request a ride at any time and on any day of the year.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="py-12">
-        <div
-          class="flex flex-wrap items-center justify-between gap-8 md:gap-4 max-w-[1500px] mx-auto px-10"
-        >
-          <!-- Text Content -->
-          <div class="text-center md:text-left max-w-lg">
-            <h1
-              class="text-[32px] md:text-[36px] lg:text-[40px] font-bold text-[#1D2630] mb-4"
-            >
-              Become a 3T Driver
-            </h1>
-            <p
-              class="text-[#373F46] text-[16px] md:text-[18px] leading-relaxed mb-6"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
-              neque, vel, scelerisque non nec et egestas. Integer tincidunt
-              turpis ac nam integer etiam non cursus. Morbi mauris tellus dui
-              donec malesuada tortor egestas ultricies. Elit ultricies elit
-              faucibus cras vel nisl sagittis, lorem enim. Fermentum, mauris
-              velit vestibulum eu. Sagittis ullamcorper nibh et lobortis. Hac
-              quam penatibus pulvinar adipiscing faucibus.
-            </p>
-            <button
-              class="bg-[#1D2630] text-white py-2 px-6 rounded-[10px] transition-all duration-[0.3s] hover:bg-yellow-500 hover:text-black"
-            >
-              Join Us Now
-            </button>
-          </div>
-
-          <!-- Image Content -->
-          <div class="">
-            <img
-              src="images/Driver-images/driver-image.jpg"
-              alt="driver-image"
-              class="rounded-lg shadow-lg w-[600px]"
-            />
-          </div>
-        </div>
-      </section>
-
-      <!-- Our Team Mates -->
-      <section class="py-12">
-        <div class="mx-auto px-4">
-          <div class="py-12">
-            <h1
-              class="text-[32px] sm:text-[36px] lg:text-[40px] font-[700] text-center text-[#1D2630]"
-            >
-              Our Team Mates
-            </h1>
-            <p
-              class="text-[16px] sm:text-[18px] font-[400] text-center text-[#1D2630] mt-2"
-            >
-              Lorem ipsum dolor sit amet consectetur. Venenatis erat eleifend
-              quis id placerat.
-            </p>
-          </div>
-          <div
-            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
-          >
-            <div class="bg-[#F5F6F7] rounded-[10px]">
-              <img
-                class="h-[250px] sm:h-[270px] w-full rounded-t-[10px] object-cover"
-                src="images/team-mates/Mask group.png"
-                alt="Mask group"
-              />
-              <div class="p-4">
-                <h3 class="text-[16px] sm:text-[18px] font-[600]">
-                  Magdalina Kubica
-                </h3>
-                <p class="text-[14px] text-[#555]">CEO</p>
+                  <select class="bg-transparent outline-none text-[12px] text-gray-500 font-[400]">
+                    <option value="" disabled selected>For me</option>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                  </select>
+                </div>
               </div>
             </div>
-            <div class="bg-[#F5F6F7] rounded-[10px]">
-              <img
-                class="h-[250px] sm:h-[270px] w-full rounded-t-[10px] object-cover"
-                src="images/team-mates/42w 1.png"
-                alt="42w"
-              />
-              <div class="p-4">
-                <h3 class="text-[16px] sm:text-[18px] font-[600]">
-                  Saimon Jhonson
-                </h3>
-                <p class="text-[14px] text-[#555]">Developer</p>
+
+            <div class="mt-4 bg-white p-4 flex gap-4 items-center rounded-[12px] max-w-[320px]">
+              <div class="flex flex-col items-center gap-2">
+                <div class="h-[7px] w-[7px] bg-[#F7D506] rounded-full"></div>
+                <div><img src="images/droplogo/Vector 65.png" alt="" /></div>
+                <div>
+                  <img src="images/droplogo/Group 20004.png" alt="" />
+                </div>
+              </div>
+              <div class="flex flex-col items-center gap-3">
+                <div class="bg-white flex justify-between items-center gap-10">
+                  <div class="flex items-center gap-4">
+                    <input type="text" placeholder="Pickup Location"
+                      class="text-[1rem] border-none focus:outline-none font-[400] text-[#1D2630]" />
+                  </div>
+                  <div class="">
+                    <img src="images/svg/GPS.svg" alt="" />
+                  </div>
+                </div>
+                <div class="bg-[#EBE4A6] h-[1px] w-full"></div>
+                <div class="bg-white flex justify-between items-center gap-10">
+                  <div class="flex items-center gap-4">
+                    <input type="text" placeholder="Pickup Location"
+                      class="text-[1rem] border-none focus:outline-none font-[400] text-[#1D2630]" />
+                  </div>
+                  <div class="">
+                    <img src="images/droplogo/Add.png" alt="" />
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="bg-[#F5F6F7] rounded-[10px]">
-              <img
-                class="h-[250px] sm:h-[270px] w-full rounded-t-[10px] object-cover"
-                src="images/team-mates/Mask group (1).png"
-                alt="Mask group"
-              />
-              <div class="p-4">
-                <h3 class="text-[16px] sm:text-[18px] font-[600]">
-                  Anne Marie
-                </h3>
-                <p class="text-[14px] text-[#555]">Marketing Expert</p>
-              </div>
-            </div>
-            <div class="bg-[#F5F6F7] rounded-[10px]">
-              <img
-                class="h-[250px] sm:h-[270px] w-full rounded-t-[10px] object-cover"
-                src="images/team-mates/Mask group (2).png"
-                alt="team-mates"
-              />
-              <div class="p-4">
-                <h3 class="text-[16px] sm:text-[18px] font-[600]">
-                  David Jhonas
-                </h3>
-                <p class="text-[14px] text-[#555]">UI UX Designer</p>
-              </div>
-            </div>
-          </div>
-          <div class="flex justify-center items-center py-8 relative">
-            <div class="bg-[#F5F6F7] h-[50px] w-[50px] rounded-full"></div>
-            <div class="absolute flex items-center gap-3">
-              <button>
-                <img
-                  src="images/svg/ArrowPrev.svg"
-                  alt="arrow-prev"
-                  class="w-[47px] transition-all duration-[0.2s] active:translate-x-[-10px]"
-                />
-              </button>
-              <button>
-                <img
-                  src="images/svg/ArrowNext.svg"
-                  alt="arrow-next"
-                  class="w-[47px] transition-all duration-[0.2s] active:translate-x-[10px]"
-                />
+            <div class="mt-7">
+              <button class="py-[10px] px-6 bg-[#F7D506] rounded-[10px]">
+                See Prices
               </button>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    <footer class="bg-[#F5F6F7] py-8">
-      <div class="container mx-auto">
-        <div
-          class="flex flex-wrap items-center justify-between gap-4 max-w-[1200px] mx-auto"
-        >
-          <div>
-            <h2 class="text-[#1D2630] text-[35px] font-bold">
-              Subscribe Newsletter
-            </h2>
-            <p class="text-[18px] font-medium text-[#373F46]">
-              Join with our mailing list and stay updated
+      </div>
+    </section>
+
+    <!-- Available Services In -->
+    <section>
+      <div>
+        <div class="flex flex-col pb-8 pt-16 items-center">
+          <h1 class="text-[40px] text-[#1D2630] font-[700]">
+            Available Services In
+          </h1>
+          <p class="text-[18px] text-[#1D2630] font-[400]">
+            Lorem ipsum dolor sit amet consectetur. Venenatis erat eleifend
+            quis id placerat.
+          </p>
+        </div>
+        <div class="flex gap-12 pt-4 pb-8">
+          <div
+            class="bg-[#F5F6F7] h-[400px] w-[390px] flex flex-col px-6 justify-center rounded-2xl hover:shadow-2xl transition-all duration-[0.3s]">
+            <img class="h-[135px] w-[240px]" src="images/services-image/image 31.png" alt="car1" />
+            <h4 class="text-[22px] pt-6 font-[700] text-[#1D2630]">
+              Ultra Prime
+            </h4>
+            <p class="text-[14px] text-[#373F46]">
+              Standardbiler, hverdagsreiser
+            </p>
+            <p class="text-[14px] text-[#555B60]">
+              54 kr grunnlag <br />
+              15.75 kr km + 5.4 kr min <br />
+              100 kr minimum
             </p>
           </div>
           <div
-            class="border-[1px] border-slate-500 h-[64px] rounded-[10px] flex items-center w-full max-w-md px-3 bg-[#ffffff]"
-          >
-            <input
-              type="text"
-              placeholder="Enter Your email address"
-              class="px-2 py-2 rounded-md focus:outline-none flex-1"
-            />
-            <button
-              class="bg-[#1D2630] text-white px-4 py-2 rounded-md transition-all duration-[0.3s] hover:bg-yellow-500 hover:text-black"
-            >
-              Join Us Now
+            class="bg-[#F5F6F7] h-[400px] w-[390px] flex flex-col px-6 justify-center rounded-2xl hover:shadow-2xl transition-all duration-[0.3s]">
+            <img class="h-[135px] w-[240px]" src="images/services-image/image 31 (1).png" alt="car2" />
+            <h4 class="text-[22px] pt-6 font-[700] text-[#1D2630]">Prime</h4>
+            <p class="text-[14px] text-[#373F46]">
+              Standardbiler, hverdagsreiser
+            </p>
+            <p class="text-[14px] text-[#555B60]">
+              54 kr grunnlag <br />
+              15.75 kr km + 5.4 kr min <br />
+              100 kr minimum
+            </p>
+          </div>
+          <div
+            class="bg-[#F5F6F7] h-[400px] w-[390px] flex flex-col px-6 justify-center rounded-2xl hover:shadow-2xl transition-all duration-[0.3s]">
+            <img class="h-[135px] w-[240px]" src="images/services-image/image 31 (2).png" alt="car3" />
+            <h4 class="text-[22px] pt-6 font-[700] text-[#1D2630]">
+              Standard
+            </h4>
+            <p class="text-[14px] text-[#373F46]">
+              Standardbiler, hverdagsreiser
+            </p>
+            <p class="text-[14px] text-[#555B60]">
+              54 kr grunnlag <br />
+              15.75 kr km + 5.4 kr min <br />
+              100 kr minimum
+            </p>
+          </div>
+          <div
+            class="bg-[#F5F6F7] h-[400px] w-[390px] flex flex-col px-6 justify-center rounded-2xl hover:shadow-2xl transition-all duration-[0.3s]">
+            <img class="h-[135px] w-[240px]" src="images/services-image/image 31 (3).png" alt="car4" />
+            <h4 class="text-[22px] pt-6 font-[700] text-[#1D2630]">
+              Comfort
+            </h4>
+            <p class="text-[14px] text-[#373F46]">
+              Standardbiler, hverdagsreiser
+            </p>
+            <p class="text-[14px] text-[#555B60]">
+              54 kr grunnlag <br />
+              15.75 kr km + 5.4 kr min <br />
+              100 kr minimum
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- arrow button -->
+      <div class="flex items-center justify-center gap-6 py-8">
+        <div class="">
+          <button
+            class="w-[40px] bg-[#EBE4A6] flex items-center justify-center rounded-full shadow-lg cursor-pointer text-black h-[40px] font-[900] transition-all duration-[0.2s] active:translate-x-[-10px]">
+            ←
+          </button>
+        </div>
+        <div>
+          <button
+            class="w-[40px] bg-[#EBE4A6] flex items-center justify-center rounded-full shadow-lg cursor-pointer text-black h-[40px] font-[900] transition-all duration-[0.2s] active:translate-x-[10px]">
+            →
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience 3T Rides -->
+    <section class="py-12">
+      <div class="flex flex-col md:flex-row justify-between container mx-auto">
+        <!-- Text Content -->
+        <div class="max-w-[620px]">
+          <h1 class="text-[40px] font-bold text-[#1D2630] mb-4">
+            Experience 3T Rides
+          </h1>
+          <p class="text-[#373F46] text-[18px] leading-relaxed mb-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
+            neque, vel, scelerisque non nec et egestas. Integer tincidunt
+            turpis ac nam integer etiam non cursus. Morbi mauris tellus dui
+            donec malesuada tortor egestas ultricies. Elit ultricies elit
+            faucibus cras vel nisl sagittis, lorem enim. Fermentum, mauris
+            velit vestibulum eu. Sagittis ullamcorper nibh et lobortis. Hac
+            quam penatibus pulvinar adipiscing faucibus.
+          </p>
+          <button
+            class="bg-[#1D2630] text-white py-2 px-6 rounded-[10px] transition-all duration-[0.3s] hover:bg-yellow-500 hover:text-black">
+            Read More
+          </button>
+        </div>
+
+        <!-- Image Content -->
+        <div>
+          <img src="images/exprience/Group 2609465 (1).png" alt="Mask group"
+            class="rounded-lg shadow-lg h-[340px] w-[630px]" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Become a 3T Driver -->
+
+    <!-- Ride-svg -->
+
+    <section class="py-10">
+      <div class="mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+          <div class="flex flex-col items-center rounded-lg">
+            <div class="w-20 h-20 flex items-center justify-center border-black border-[1px] p-2 rounded-full mb-4">
+              <img src="images/ride-svg/Solid.svg" alt="solid" class="w-[50px] h-[50px]" />
+            </div>
+            <h1 class="text-[25px] font-semibold mb-2">Rides On Demand</h1>
+            <p class="text-center text-[18px] text-[#373F46]">
+              Request a ride at any time and on any day of the year.
+            </p>
+          </div>
+          <div class="flex flex-col items-center rounded-lg">
+            <div class="w-20 h-20 flex items-center justify-center border-black border-[1px] p-2 rounded-full mb-4">
+              <img src="images/ride-svg/Group.svg" alt="group" class="w-[50px] h-[50px]" />
+            </div>
+            <h1 class="text-[25px] font-semibold mb-2">Always Low Price</h1>
+            <p class="text-center text-[18px] text-[#373F46]">
+              <span> Compare prices on every kind of ride, from</span>
+              <span>daily commutes to special evenings out.</span>
+            </p>
+          </div>
+          <div class="flex flex-col items-center rounded-lg">
+            <div class="w-20 h-20 flex items-center justify-center border-black border-[1px] p-2 rounded-full mb-4">
+              <img src="images/ride-svg/app 1.svg" alt="app" class="w-[50px] h-[50px]" />
+            </div>
+            <h1 class="text-[25px] font-semibold mb-2">Fast Pickups</h1>
+            <p class="text-center text-[18px] text-[#373F46]">
+              Request a ride at any time and on any day of the year.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12">
+      <div class="flex flex-wrap items-center justify-between gap-8 md:gap-4 max-w-[1500px] mx-auto px-10">
+        <!-- Text Content -->
+        <div class="text-center md:text-left max-w-lg">
+          <h1 class="text-[32px] md:text-[36px] lg:text-[40px] font-bold text-[#1D2630] mb-4">
+            Become a 3T Driver
+          </h1>
+          <p class="text-[#373F46] text-[16px] md:text-[18px] leading-relaxed mb-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
+            neque, vel, scelerisque non nec et egestas. Integer tincidunt
+            turpis ac nam integer etiam non cursus. Morbi mauris tellus dui
+            donec malesuada tortor egestas ultricies. Elit ultricies elit
+            faucibus cras vel nisl sagittis, lorem enim. Fermentum, mauris
+            velit vestibulum eu. Sagittis ullamcorper nibh et lobortis. Hac
+            quam penatibus pulvinar adipiscing faucibus.
+          </p>
+          <button
+            class="bg-[#1D2630] text-white py-2 px-6 rounded-[10px] transition-all duration-[0.3s] hover:bg-yellow-500 hover:text-black">
+            Join Us Now
+          </button>
+        </div>
+
+        <!-- Image Content -->
+        <div class="">
+          <img src="images/Driver-images/driver-image.jpg" alt="driver-image" class="rounded-lg shadow-lg w-[600px]" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Team Mates -->
+    <section class="py-12">
+      <div class="mx-auto px-4">
+        <div class="py-12">
+          <h1 class="text-[32px] sm:text-[36px] lg:text-[40px] font-[700] text-center text-[#1D2630]">
+            Our Team Mates
+          </h1>
+          <p class="text-[16px] sm:text-[18px] font-[400] text-center text-[#1D2630] mt-2">
+            Lorem ipsum dolor sit amet consectetur. Venenatis erat eleifend
+            quis id placerat.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div class="bg-[#F5F6F7] rounded-[10px]">
+            <img class="h-[250px] sm:h-[270px] w-full rounded-t-[10px] object-cover"
+              src="images/team-mates/Mask group.png" alt="Mask group" />
+            <div class="p-4">
+              <h3 class="text-[16px] sm:text-[18px] font-[600]">
+                Magdalina Kubica
+              </h3>
+              <p class="text-[14px] text-[#555]">CEO</p>
+            </div>
+          </div>
+          <div class="bg-[#F5F6F7] rounded-[10px]">
+            <img class="h-[250px] sm:h-[270px] w-full rounded-t-[10px] object-cover" src="images/team-mates/42w 1.png"
+              alt="42w" />
+            <div class="p-4">
+              <h3 class="text-[16px] sm:text-[18px] font-[600]">
+                Saimon Jhonson
+              </h3>
+              <p class="text-[14px] text-[#555]">Developer</p>
+            </div>
+          </div>
+          <div class="bg-[#F5F6F7] rounded-[10px]">
+            <img class="h-[250px] sm:h-[270px] w-full rounded-t-[10px] object-cover"
+              src="images/team-mates/Mask group (1).png" alt="Mask group" />
+            <div class="p-4">
+              <h3 class="text-[16px] sm:text-[18px] font-[600]">
+                Anne Marie
+              </h3>
+              <p class="text-[14px] text-[#555]">Marketing Expert</p>
+            </div>
+          </div>
+          <div class="bg-[#F5F6F7] rounded-[10px]">
+            <img class="h-[250px] sm:h-[270px] w-full rounded-t-[10px] object-cover"
+              src="images/team-mates/Mask group (2).png" alt="team-mates" />
+            <div class="p-4">
+              <h3 class="text-[16px] sm:text-[18px] font-[600]">
+                David Jhonas
+              </h3>
+              <p class="text-[14px] text-[#555]">UI UX Designer</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center items-center py-8 relative">
+          <div class="bg-[#F5F6F7] h-[50px] w-[50px] rounded-full"></div>
+          <div class="absolute flex items-center gap-3">
+            <button>
+              <img src="images/svg/ArrowPrev.svg" alt="arrow-prev"
+                class="w-[47px] transition-all duration-[0.2s] active:translate-x-[-10px]" />
+            </button>
+            <button>
+              <img src="images/svg/ArrowNext.svg" alt="arrow-next"
+                class="w-[47px] transition-all duration-[0.2s] active:translate-x-[10px]" />
             </button>
           </div>
         </div>
-        <div class="my-8">
-          <hr class="border-gray-300" />
-        </div>
-        <div class="flex justify-around gap-8 mx-auto items-start">
-          <div class="flex flex-col gap-3">
-            <h3 class="font-bold text-[22px] text-[#373F46]">Company</h3>
-            <ul class="space-y-2">
-              <li><a href="#" aria-label="Learn more about 3T">About 3T</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Why 3T</a></li>
-              <li><a href="#">FAQs</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="flex flex-col gap-3">
-            <h3 class="font-bold text-[22px] text-[#373F46]">Quick Links</h3>
-            <ul class="space-y-2">
-              <li><a href="#">Be Driver</a></li>
-
-              <li><a href="#">Fleet Owner</a></li>
-              <li><a href="#">Rider</a></li>
-              <li><a href="#">Lost & Found</a></li>
-            </ul>
-          </div>
-          <div class="flex flex-col gap-3">
-            <h3 class="font-bold text-[#373F46] text-[22px]">
-              Download User App
-            </h3>
-            <a href="">
-              <img
-                class="h-[60px] w-[167px] mb-2"
-                src="images/footer-images/googleplay.svg"
-                alt="Download from Google Play Store for Android"
-              />
-            </a>
-            <a href="">
-              <img
-                class="h-[60px] w-[167px]"
-                src="images/footer-images/applestore.svg"
-                alt="Download from Apple App Store for iOS"
-              />
-            </a>
-          </div>
-          <div class="flex flex-col gap-3">
-            <h3 class="font-bold text-[#373F46] text-[22px]">
-              Download Driver App
-            </h3>
-            <a href="">
-              <img
-                class="h-[60px] w-[167px] mb-2"
-                src="images/footer-images/googleplay.svg"
-                alt="Download from Google Play Store for Android"
-              />
-            </a>
-            <a href="">
-              <img
-                class="h-[60px] w-[167px]"
-                src="images/footer-images/applestore.svg"
-                alt="Download from Apple App Store for iOS"
-              />
-            </a>
-          </div>
-        </div>
       </div>
-
-      <!--footer icons -->
-
-      <div class="flex justify-center gap-4 pt-[64px]">
-        <a href="">
-          <img
-            class="h-[20px]"
-            src="./footer-logo/facebook-logo.svg"
-            alt="facebook"
-          />
-        </a>
-        <a href=""
-          ><img
-            class="h-[20px]"
-            src="./footer-logo/linkedin-letters.svg"
-            alt="linkedin"
-        /></a>
-        <a href=""
-          ><img
-            class="h-[20px]"
-            src="./footer-logo/ant-design_instagram-filled.svg"
-            alt="instagram"
-        /></a>
-        <a href=""
-          ><img class="h-[20px]" src="./footer-logo/Group.svg" alt="group"
-        /></a>
-      </div>
-
-      <!-- footer last line -->
-      <div
-        class="flex justify-between container mx-auto items-center gap-16 px-[120px] py-6 bg-gray-100"
-      >
-        <div class="flex gap-12 items-center">
-          <p class="text-[18px]">
-            <a href="#" class="hover:underline text-gray-600">Privacy Policy</a>
-            ·
-            <a href="#" class="hover:underline pl-6 text-gray-600">
-              Terms of Service</a
-            >
-          </p>
-          <p class="text-gray-500 text-[18px]">
-            Copyrights@2025 | All Rights Reserved by 3T
-          </p>
-        </div>
-
+    </section>
+  </main>
+  <footer class="bg-[#F5F6F7] py-8">
+    <div class="container mx-auto">
+      <div class="flex flex-wrap items-center justify-between gap-4 max-w-[1200px] mx-auto">
         <div>
-          <a href="#">
-            <img
-              src="./footer-logo/Group 1000002170.svg"
-              alt="Company Logo"
-              class="h-[60px]"
-            />
+          <h2 class="text-[#1D2630] text-[35px] font-bold">
+            Subscribe Newsletter
+          </h2>
+          <p class="text-[18px] font-medium text-[#373F46]">
+            Join with our mailing list and stay updated
+          </p>
+        </div>
+        <div
+          class="border-[1px] border-slate-500 h-[64px] rounded-[10px] flex items-center w-full max-w-md px-3 bg-[#ffffff]">
+          <input type="text" placeholder="Enter Your email address"
+            class="px-2 py-2 rounded-md focus:outline-none flex-1" />
+          <button
+            class="bg-[#1D2630] text-white px-4 py-2 rounded-md transition-all duration-[0.3s] hover:bg-yellow-500 hover:text-black">
+            Join Us Now
+          </button>
+        </div>
+      </div>
+      <div class="my-8">
+        <hr class="border-gray-300" />
+      </div>
+      <div class="flex justify-around gap-8 mx-auto items-start">
+        <div class="flex flex-col gap-3">
+          <h3 class="font-bold text-[22px] text-[#373F46]">Company</h3>
+          <ul class="space-y-2">
+            <li><a href="#" aria-label="Learn more about 3T">About 3T</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Why 3T</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-3">
+          <h3 class="font-bold text-[22px] text-[#373F46]">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#">Be Driver</a></li>
+
+            <li><a href="#">Fleet Owner</a></li>
+            <li><a href="#">Rider</a></li>
+            <li><a href="#">Lost & Found</a></li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-3">
+          <h3 class="font-bold text-[#373F46] text-[22px]">
+            Download User App
+          </h3>
+          <a href="">
+            <img class="h-[60px] w-[167px] mb-2" src="images/footer-images/googleplay.svg"
+              alt="Download from Google Play Store for Android" />
+          </a>
+          <a href="">
+            <img class="h-[60px] w-[167px]" src="images/footer-images/applestore.svg"
+              alt="Download from Apple App Store for iOS" />
+          </a>
+        </div>
+        <div class="flex flex-col gap-3">
+          <h3 class="font-bold text-[#373F46] text-[22px]">
+            Download Driver App
+          </h3>
+          <a href="">
+            <img class="h-[60px] w-[167px] mb-2" src="images/footer-images/googleplay.svg"
+              alt="Download from Google Play Store for Android" />
+          </a>
+          <a href="">
+            <img class="h-[60px] w-[167px]" src="images/footer-images/applestore.svg"
+              alt="Download from Apple App Store for iOS" />
           </a>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+
+    <!--footer icons -->
+
+    <div class="flex justify-center gap-4 pt-[64px]">
+      <a href="">
+        <img class="h-[20px]" src="./footer-logo/facebook-logo.svg" alt="facebook" />
+      </a>
+      <a href=""><img class="h-[20px]" src="./footer-logo/linkedin-letters.svg" alt="linkedin" /></a>
+      <a href=""><img class="h-[20px]" src="./footer-logo/ant-design_instagram-filled.svg" alt="instagram" /></a>
+      <a href=""><img class="h-[20px]" src="./footer-logo/Group.svg" alt="group" /></a>
+    </div>
+
+    <!-- footer last line -->
+    <div class="flex justify-between container mx-auto items-center gap-16 px-[120px] py-6 bg-gray-100">
+      <div class="flex gap-12 items-center">
+        <p class="text-[18px]">
+          <a href="#" class="hover:underline text-gray-600">Privacy Policy</a>
+          ·
+          <a href="#" class="hover:underline pl-6 text-gray-600">
+            Terms of Service</a>
+        </p>
+        <p class="text-gray-500 text-[18px]">
+          Copyrights@2025 | All Rights Reserved by 3T
+        </p>
+      </div>
+
+      <div>
+        <a href="#">
+          <img src="./footer-logo/Group 1000002170.svg" alt="Company Logo" class="h-[60px]" />
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
