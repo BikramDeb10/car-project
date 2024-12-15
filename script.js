@@ -52,46 +52,6 @@ if (carousel && prevButton && nextButton) {
   });
 }
 
-// next scrollbar
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   const scrollContainer = document.querySelector(".overflow-x-auto");
-//   const scrollPrev = document.getElementById("scroll-prev");
-//   const scrollNext = document.getElementById("scroll-next");
-
-//   // Scroll left
-//   scrollPrev.addEventListener("click", () => {
-//     scrollContainer.scrollBy({ left: -300, behavior: "smooth" });
-//   });
-
-//   // Scroll right
-//   scrollNext.addEventListener("click", () => {
-//     scrollContainer.scrollBy({ left: 300, behavior: "smooth" });
-//   });
-// });
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   const carousel = document.getElementById("carousel");
-//   const prevButton = document.getElementById("prevButton");
-//   const nextButton = document.getElementById("nextButton");
-
-//   const scrollAmount = 300; // Amount to scroll in pixels
-
-//   prevButton.addEventListener("click", () => {
-//     carousel.scrollBy({
-//       left: -scrollAmount,
-//       behavior: "smooth",
-//     });
-//   });
-
-//   nextButton.addEventListener("click", () => {
-//     carousel.scrollBy({
-//       left: scrollAmount,
-//       behavior: "smooth",
-//     });
-//   });
-// });
-
 const carousel2 = document.querySelector("#carousel2");
 const prevButton2 = document.querySelector("#prevButton2");
 const nextButton2 = document.querySelector("#nextButton2");
