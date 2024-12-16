@@ -24,18 +24,22 @@
       <div class="flex container mx-auto justify-between items-center">
         <!-- Logo -->
         <div class="block md:hidden">
-          <img
-            src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
-            alt="Company Logo"
-            class="h-[50px] w-[50px]"
-          />
+          <a href="/">
+            <img
+              src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
+              alt="Company Logo"
+              class="h-[50px] w-[50px]"
+            />
+          </a>
         </div>
         <div class="hidden xl:block">
-          <img
-            src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
-            alt="Company Logo"
-            class="h-[60px] w-[59px]"
-          />
+          <a href="/">
+            <img
+              src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
+              alt="Company Logo"
+              class="h-[60px] w-[59px]"
+            />
+          </a>
         </div>
 
         <!-- Mobile Menu Button -->
@@ -132,23 +136,23 @@
     </header>
     <main class="container mx-auto">
       <!-- HERO SECTION -->
-      <section class="px-2">
+      <section class="px-2 animate-item">
         <div class="relative">
           <div>
             <div
-              class="bg-[url('images/heroimage/hero.jpg')] h-[320px] bg-no-repeat bg-cover bg-center rounded-2xl lg:h-[600px] sm:h-[400px]"
+              class="bg-[url('images/heroimage/hero.jpg')] h-[320px] bg-no-repeat bg-cover bg-center rounded-2xl lg:h-[600px] sm:h-[400px] animate-fade-in"
             ></div>
             <div
-              class="absolute top-8 left-4 lg:top-24 lg:left-28 md:top-16 md:left-16 sm:top-10 sm:left-8"
+              class="absolute top-8 left-4 lg:top-24 lg:left-28 md:top-16 md:left-16 sm:top-10 sm:left-8 animate-slide-in"
             >
               <div class="leading-[1.5rem] sm:leading-[2.5rem]">
                 <h2
-                  class="text-[1.1rem] text-[#FFFFFF] font-[400] md:text-[2rem] sm:text-[1.5rem]"
+                  class="text-[1.1rem] text-[#FFFFFF] font-[400] md:text-[2rem] sm:text-[1.5rem] opacity-0 animate-fade-in-delay"
                 >
                   Welcome to 3T
                 </h2>
                 <h1
-                  class="text-[#FFFFFF] text-[1.6rem] font-[700] md:text-[3rem] sm:text-[2rem]"
+                  class="text-[#FFFFFF] text-[1.6rem] font-[700] md:text-[3rem] sm:text-[2rem] opacity-0 animate-fade-in-delay"
                 >
                   Book Your Ride
                 </h1>
@@ -157,12 +161,12 @@
                 <div class="flex space-x-4 sm:space-x-0 sm:flex-wrap sm:gap-4">
                   <!-- Pickup Now -->
                   <div
-                    class="flex items-center bg-[#ffffff] px-2 py-2 gap-1 rounded-full shadow cursor-pointer"
+                    class="flex items-center bg-[#ffffff] px-2 py-2 gap-1 rounded-full shadow cursor-pointer hover:scale-105 transition-transform duration-300"
                   >
                     <img
                       src="images/svg/Vector.svg"
                       alt="Pickup Icon"
-                      class="h-[14px] w-[14px]"
+                      class="h-[14px] w-[14px] animate-fade-in-delay"
                     />
                     <select
                       class="bg-transparent outline-none text-[12px] text-gray-500 font-[400] cursor-pointer"
@@ -175,12 +179,12 @@
                   </div>
                   <!-- For Me -->
                   <div
-                    class="flex items-center bg-[#ffffff] px-4 py-2 gap-1 rounded-full shadow cursor-pointer"
+                    class="flex items-center bg-[#ffffff] px-4 py-2 gap-1 rounded-full shadow cursor-pointer hover:scale-105 transition-transform duration-300"
                   >
                     <img
                       src="images/svg/Group.svg"
                       alt="For Me Icon"
-                      class="h-[14px] w-[14px]"
+                      class="h-[14px] w-[14px] animate-fade-in-delay"
                     />
                     <select
                       class="bg-transparent outline-none text-[12px] text-gray-500 font-[400] cursor-pointer"
@@ -194,7 +198,7 @@
                 </div>
               </div>
               <div
-                class="mt-4 bg-white p-2 flex gap-2 items-center rounded-[12px] max-w-[320px] sm:flex-wrap sm:max-w-[280px] sm:gap-2"
+                class="mt-4 bg-white p-2 flex gap-2 items-center rounded-[12px] max-w-[320px] sm:flex-wrap sm:max-w-[280px] sm:gap-2 animate-slide-up"
               >
                 <div class="flex flex-col items-center gap-1">
                   <div class="h-[7px] w-[7px] bg-[#F7D506] rounded-full"></div>
@@ -241,7 +245,7 @@
               </div>
               <div class="mt-7 sm:mt-4">
                 <button
-                  class="py-[10px] px-6 bg-[#F7D506] rounded-[10px] text-sm sm:px-4 sm:py-2"
+                  class="py-[10px] px-6 bg-[#F7D506] rounded-[10px] text-sm sm:px-4 sm:py-2 hover:bg-[#FFE600] transition-colors duration-300"
                 >
                   See Prices
                 </button>
@@ -250,9 +254,8 @@
           </div>
         </div>
       </section>
-
       <!-- Available Services In -->
-      <section class="py-16">
+      <section class="py-16 animate-item">
         <div class="flex flex-col items-center pb-8 text-center">
           <h1
             class="text-[32px] sm:text-[36px] md:text-[40px] font-[700] text-[#1D2630]"
@@ -458,18 +461,20 @@
         <div class="container mx-auto px-4">
           <!-- Container with responsive layout -->
           <div
-            class="flex flex-col xl:flex-row justify-between items-center gap-16"
+            class="flex flex-col xl:flex-row justify-between items-center gap-16 section-wrapper"
           >
             <!-- Text Content -->
             <div
-              class="max-w-[620px] sm:w-[550px] sm:h-[290px] text-center md:text-left"
+              class="max-w-[620px] sm:w-[550px] sm:h-[290px] text-center md:text-left fade-in"
             >
               <h1
-                class="text-[32px] md:text-[40px] font-bold text-[#1D2630] mb-4"
+                class="text-[32px] md:text-[40px] font-bold text-[#1D2630] mb-4 scale-up"
               >
                 Experience 3T Rides
               </h1>
-              <p class="text-[#373F46] text-[16px] md:text-[18px] mb-6">
+              <p
+                class="text-[#373F46] text-[16px] md:text-[18px] mb-6 slide-in"
+              >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
                 neque, vel, scelerisque non nec et egestas. Integer tincidunt
                 turpis ac nam integer etiam non cursus. Morbi mauris tellus dui
@@ -479,18 +484,18 @@
                 quam penatibus pulvinar adipiscing faucibus.
               </p>
               <button
-                class="bg-[#1D2630] text-white py-2 px-6 rounded-[10px] transition-all duration-[0.3s] hover:bg-yellow-500 hover:text-black"
+                class="bg-[#1D2630] text-white py-2 px-6 rounded-[10px] transition-all duration-[0.3s] hover:bg-yellow-500 hover:text-black fade-in"
               >
                 Read More
               </button>
             </div>
 
             <!-- Image Content -->
-            <div>
+            <div class="fade-in">
               <img
                 src="images/exprience/Group 2609465 (1).png"
                 alt="Mask group"
-                class="rounded-lg shadow-lg h-auto xl:w-[630px] xl:h-[340px]"
+                class="rounded-lg shadow-lg h-auto xl:w-[630px] xl:h-[340px] scale-up"
               />
             </div>
           </div>
@@ -507,13 +512,15 @@
             <img
               src="images/howitswork/howitswork.png"
               alt="howitswork"
-              class="h-[300px] md:h-[600px] xl:h-[750px] md:w-full"
+              class="h-[300px] md:h-[600px] xl:h-[750px] md:w-full animate-item"
             />
           </div>
           <div class="lg:w-1/2 max-w-[600px]">
             <div class="flex flex-col items-start p-6">
               <!-- Heading -->
-              <h2 class="text-3xl md:text-4xl font-bold mb-6">How It Works?</h2>
+              <h2 class="text-3xl md:text-4xl font-bold mb-6 animate-item">
+                How It Works?
+              </h2>
 
               <!-- Step Container -->
               <div class="relative">
@@ -525,7 +532,7 @@
                 <!-- Steps -->
                 <div class="flex flex-col gap-12">
                   <!-- Step 1 -->
-                  <div class="flex md:flex-row items-start gap-4">
+                  <div class="flex md:flex-row items-start gap-4 animate-item">
                     <!-- Circle -->
                     <div class="relative flex items-center justify-center">
                       <div
@@ -545,7 +552,7 @@
                   </div>
 
                   <!-- Step 2 -->
-                  <div class="flex md:flex-row items-start gap-4">
+                  <div class="flex md:flex-row items-start gap-4 animate-item">
                     <div class="relative flex items-center justify-center">
                       <div
                         class="w-7 h-7 bg-teal-100 rounded-full flex items-center justify-center"
@@ -565,7 +572,7 @@
                   </div>
 
                   <!-- Step 3 -->
-                  <div class="flex md:flex-row items-start gap-4">
+                  <div class="flex md:flex-row items-start gap-4 animate-item">
                     <div class="relative flex items-center justify-center">
                       <div
                         class="w-7 h-7 bg-teal-100 rounded-full flex items-center justify-center"
@@ -583,7 +590,7 @@
                   </div>
 
                   <!-- Step 4 -->
-                  <div class="flex md:flex-row items-start gap-4">
+                  <div class="flex md:flex-row items-start gap-4 animate-item">
                     <div class="relative flex items-center justify-center">
                       <div
                         class="w-7 h-7 bg-teal-100 rounded-full flex items-center justify-center"
@@ -611,7 +618,7 @@
       <section class="py-20">
         <div class="mx-auto">
           <div class="flex gap-20 flex-col sm:flex-row px-3 justify-center">
-            <div class="flex flex-col items-center rounded-lg">
+            <div class="flex flex-col items-center rounded-lg animate-item">
               <div
                 class="w-20 h-20 flex items-center justify-center border-black border-[1px] p-2 rounded-full mb-4"
               >
@@ -626,7 +633,7 @@
                 Request a ride at any time and on any day of the year.
               </p>
             </div>
-            <div class="flex flex-col items-center rounded-lg">
+            <div class="flex flex-col items-center rounded-lg animate-item">
               <div
                 class="w-20 h-20 flex items-center justify-center border-black border-[1px] p-2 rounded-full mb-4"
               >
@@ -642,7 +649,7 @@
                 <span>daily commutes to special evenings out.</span>
               </p>
             </div>
-            <div class="flex flex-col items-center rounded-lg">
+            <div class="flex flex-col items-center rounded-lg animate-item">
               <div
                 class="w-20 h-20 flex items-center justify-center border-black border-[1px] p-2 rounded-full mb-4"
               >
@@ -660,13 +667,13 @@
           </div>
         </div>
       </section>
-
+      <!-- adad -->
       <section class="py-12">
         <div
           class="flex flex-wrap items-center justify-between gap-8 md:gap-4 max-w-[1500px] mx-auto px-10"
         >
           <!-- Text Content -->
-          <div class="text-center md:text-left max-w-lg">
+          <div class="text-center md:text-left max-w-lg animate-item">
             <h1
               class="text-[32px] md:text-[36px] lg:text-[40px] font-bold text-[#1D2630] mb-4"
             >
@@ -677,11 +684,7 @@
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
               neque, vel, scelerisque non nec et egestas. Integer tincidunt
-              turpis ac nam integer etiam non cursus. Morbi mauris tellus dui
-              donec malesuada tortor egestas ultricies. Elit ultricies elit
-              faucibus cras vel nisl sagittis, lorem enim. Fermentum, mauris
-              velit vestibulum eu. Sagittis ullamcorper nibh et lobortis. Hac
-              quam penatibus pulvinar adipiscing faucibus.
+              turpis ac nam integer etiam non cursus.
             </p>
             <button
               class="bg-[#1D2630] text-white py-2 px-6 rounded-[10px] transition-all duration-[0.3s] hover:bg-yellow-500 hover:text-black"
@@ -691,7 +694,7 @@
           </div>
 
           <!-- Image Content -->
-          <div class="">
+          <div class="animate-item">
             <img
               src="images/Driver-images/driver-image.jpg"
               alt="driver-image"
@@ -714,17 +717,19 @@
             <img
               src="images/downloadapp/phoneimage.png"
               alt="App Download Preview"
-              class="w-full sm:w-[300px] md:w-[520px]"
+              class="w-full sm:w-[300px] md:w-[520px] animate-item"
             />
           </div>
 
           <!-- Text and Buttons -->
           <div class="sm:ml-auto text-center sm:text-left sm:w-1/2">
-            <h1 class="text-[2rem] sm:text-[2.8rem] font-[700] mb-4">
+            <h1
+              class="text-[2rem] sm:text-[2.8rem] font-[700] mb-4 animate-item"
+            >
               Download The App
             </h1>
             <p
-              class="text-[#373F46] text-[1rem] sm:text-[1.2rem] max-w-[600px] mb-6 mx-auto sm:mx-0"
+              class="text-[#373F46] text-[1rem] sm:text-[1.2rem] max-w-[600px] mb-6 mx-auto sm:mx-0 animate-item"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
               neque, vel, scelerisque non nec et egestas. Integer tincidunt
@@ -732,7 +737,9 @@
             </p>
 
             <!-- App Store Buttons -->
-            <div class="flex justify-start sm:justify-start space-x-4">
+            <div
+              class="flex justify-start sm:justify-start space-x-4 animate-item"
+            >
               <button>
                 <img
                   src="images/footer-images/googleplay.svg"
@@ -754,7 +761,7 @@
 
       <!-- Our Team Mates -->
 
-      <section class="py-16">
+      <section class="py-16 animate-item">
         <div class="flex flex-col items-center pb-8 text-center">
           <h1
             class="text-[32px] sm:text-[36px] md:text-[40px] font-[700] text-[#1D2630]"
@@ -985,7 +992,7 @@
       </section>
 
       <section>
-        <div class="flex flex-col items-center mb-12 px-4">
+        <div class="flex flex-col items-center mb-12 px-4 animate-item">
           <div class="mb-6">
             <h2 class="text-[2rem] font-[700] text-[#1D2630]">
               What Our Users Says
@@ -1074,7 +1081,7 @@
             </h3>
             <ul class="space-y-2">
               <li><a href="#">Be Driver</a></li>
-              <li><a href="#">Fleet Owner</a></li>
+              <li><a href="fleetowner.html">Fleet Owner</a></li>
               <li><a href="#">Rider</a></li>
               <li><a href="#">Lost & Found</a></li>
             </ul>
@@ -1159,7 +1166,7 @@
 
       <!-- footer last line -->
       <div
-        class="flex flex-wrap flex-col-reverse sm:flex-row justify-between items-center gap-4 sm:gap-16 px-4 sm:px-6 lg:px-8 py-6 bg-gray-100"
+        class="flex flex-wrap flex-col-reverse sm:flex-row justify-between container mx-auto items-center sm:gap-16 px-4 sm:px-6 lg:px-8 py-6 bg-gray-100"
       >
         <div
           class="flex flex-col sm:flex-row gap-2 sm:gap-12 items-center text-center sm:text-left"
@@ -1177,7 +1184,7 @@
         </div>
 
         <div>
-          <a href="#">
+          <a href="#" id="scrollToTop">
             <img
               src="./footer-logo/Group 1000002170.svg"
               alt="Company Logo"

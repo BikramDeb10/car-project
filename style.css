@@ -5,3 +5,118 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+
+.animate-fade-in {
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+.animate-fade-in-delay {
+  animation: fade-in 1s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+.animate-slide-in {
+  animation: slide-in 1s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slide-up 1s ease-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* animations.css */
+.fade-in {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scale-up {
+  transform: scale(0.9);
+  transition: transform 0.8s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.scale-up.show {
+  transform: scale(1);
+}
+
+/*  */
+
+@layer utilities {
+  .animate-item {
+    opacity: 0;
+    transform: translateY(100px); /* Start 20px below */
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+  }
+
+  .animate-item.show {
+    opacity: 1;
+    transform: translateY(0); /* Slide to original position */
+  }
+}
+
+/* 
+ ------------------*/
+
+@layer utilities {
+  /* Animation for items coming from the left */
+  .animate-item-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .animate-item-left.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* Animation for items coming from the right */
+  .animate-item-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .animate-item-right.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ----------------- */
