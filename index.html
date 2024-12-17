@@ -55,10 +55,34 @@
         <!-- Navigation -->
         <div class="hidden md:flex items-center gap-6">
           <nav class="hidden xl:block">
-            <ul class="flex gap-[20px] text-[16px] tracking-[0.5px]">
-              <li><a href="" class="text-[#E0B827]">Home</a></li>
-              <li><a href="">Become a Driver</a></li>
-              <li><a href="">Support</a></li>
+            <ul
+              class="flex gap-[20px] text-[16px] tracking-[0.5px]"
+              id="navMenu"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="nav-link text-gray-500 hover:text-[#e96ce6] transition-all duration-300 active"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="nav-link text-gray-500 hover:text-[#e96ce6] transition-all duration-300"
+                >
+                  Become a Driver
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="nav-link text-gray-500 hover:text-[#e96ce6] transition-all duration-300"
+                >
+                  Support
+                </a>
+              </li>
             </ul>
           </nav>
           <div class="flex items-center gap-4">
@@ -73,13 +97,15 @@
               <div>
                 <h3 class="text-[18px]">Language</h3>
               </div>
-              <div>
-                <select class="border border-gray-300 rounded px-2 py-1">
-                  <option value="">EN</option>
-                  <option value="">FR</option>
-                  <option value="">ES</option>
-                  <option value="">DE</option>
-                </select>
+
+              <div class="dropdown">
+                <div class="dropdown-toggle" id="dropdownToggle">EN</div>
+                <ul class="dropdown-menu" id="dropdownMenu">
+                  <li data-value="EN">EN</li>
+                  <li data-value="FR">FR</li>
+                  <li data-value="ES">ES</li>
+                  <li data-value="DE">DE</li>
+                </ul>
               </div>
             </div>
             <div class="bg-gray-700 text-white px-6 py-2.5 rounded-xl">
@@ -99,9 +125,30 @@
           />
         </div>
         <ul class="flex flex-col gap-2 text-gray-700 text-[18px] mb-2 xl:mb-0">
-          <li><a href="">Home</a></li>
-          <li><a href="">Become a Driver</a></li>
-          <li><a href="">Support</a></li>
+          <li>
+            <a
+              href="#"
+              class="nav-link text-gray-500 transition-all duration-300 active"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="nav-link text-gray-500 transition-all duration-300"
+            >
+              Become a Driver
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="nav-link text-gray-500] transition-all duration-300"
+            >
+              Support
+            </a>
+          </li>
         </ul>
         <div class="flex flex-col xl:flex-row xl:items-center gap-4">
           <div class="flex gap-2 items-center">
@@ -115,13 +162,14 @@
             <div>
               <h3 class="text-[18px]">Language</h3>
             </div>
-            <div>
-              <select class="border border-gray-300 rounded px-2 py-1">
-                <option value="">EN</option>
-                <option value="">FR</option>
-                <option value="">ES</option>
-                <option value="">DE</option>
-              </select>
+            <div class="dropdown">
+              <div class="dropdown-toggle" id="dropdownToggle2">EN</div>
+              <ul class="dropdown-menu" id="dropdownMenu2">
+                <li data-value="EN">EN</li>
+                <li data-value="FR">FR</li>
+                <li data-value="ES">ES</li>
+                <li data-value="DE">DE</li>
+              </ul>
             </div>
           </div>
           <div>
@@ -134,9 +182,9 @@
         </div>
       </div>
     </header>
-    <main class="container mx-auto">
+    <main class="">
       <!-- HERO SECTION -->
-      <section class="px-2 animate-item">
+      <section class="px-2 animate-item container mx-auto">
         <div class="relative">
           <div>
             <div
@@ -169,7 +217,7 @@
                       class="h-[14px] w-[14px] animate-fade-in-delay"
                     />
                     <select
-                      class="bg-transparent outline-none text-[12px] text-gray-500 font-[400] cursor-pointer"
+                      class="bg-transparent outline-none text-[12px] text-gray-500 font-[400] cursor-pointer dropdown"
                     >
                       <option value="" disabled selected>Pickup now</option>
                       <option value="option1">Option 1</option>
@@ -255,7 +303,7 @@
         </div>
       </section>
       <!-- Available Services In -->
-      <section class="py-16 animate-item">
+      <section class="py-16 animate-item container mx-auto">
         <div class="flex flex-col items-center pb-8 text-center">
           <h1
             class="text-[32px] sm:text-[36px] md:text-[40px] font-[700] text-[#1D2630]"
@@ -457,8 +505,8 @@
       </section>
 
       <!-- Experience 3T Rides -->
-      <section class="py-12">
-        <div class="container mx-auto px-4">
+      <section class="py-12 container mx-auto">
+        <div class="px-4">
           <!-- Container with responsive layout -->
           <div
             class="flex flex-col xl:flex-row justify-between items-center gap-16 section-wrapper"
@@ -506,7 +554,7 @@
 
       <section class="bg-[#F5F6F7]">
         <div
-          class="flex flex-col lg:flex-row items-center justify-between py-10 px-4"
+          class="flex flex-col lg:flex-row items-center justify-between py-10 px-4 container mx-auto"
         >
           <div class="mt-8">
             <img
@@ -616,7 +664,7 @@
       <!-- Ride-svg -->
 
       <section class="py-20">
-        <div class="mx-auto">
+        <div class="container mx-auto">
           <div class="flex gap-20 flex-col sm:flex-row px-3 justify-center">
             <div class="flex flex-col items-center rounded-lg animate-item">
               <div
@@ -670,7 +718,7 @@
       <!-- adad -->
       <section class="py-12">
         <div
-          class="flex flex-wrap items-center justify-between gap-8 md:gap-4 max-w-[1500px] mx-auto px-10"
+          class="flex flex-wrap items-center justify-between gap-8 md:gap-4 max-w-[1500px] mx-auto px-10 container"
         >
           <!-- Text Content -->
           <div class="text-center md:text-left max-w-lg animate-item">
@@ -707,7 +755,7 @@
       <!-- download the app -->
 
       <section
-        class="bg-[#F5F6F7] py-10 px-6 sm:px-10 rounded-[30px] h-[700px] sm:h-[550px] md:h-[500px] mt-28"
+        class="bg-[#F5F6F7] py-10 px-6 sm:px-10 rounded-[30px] h-[700px] sm:h-[550px] md:h-[500px] mt-28 container mx-auto"
       >
         <div
           class="container mx-auto flex flex-col sm:flex-row items-center justify-between relative"

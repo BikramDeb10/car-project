@@ -120,3 +120,66 @@ body {
 }
 
 /* ----------------- */
+
+/* styles.css */
+/* Import Tailwind */
+
+/* styles.css */
+
+/* Active state styling */
+.nav-link.active {
+  color: #b48d00;
+  background-color: rgb(239, 239, 239);
+  padding: 2px 4px;
+}
+
+.dropdown {
+  position: relative;
+  width: 120px;
+}
+
+.dropdown-toggle {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  background-color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  z-index: 1000;
+}
+
+.dropdown-menu.show {
+  max-height: 200px; /* Adjust height as needed */
+}
+
+.dropdown-menu li {
+  list-style: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0;
+}
+
+/* mobilew nav */
+
+/* Initial styles for mobile menu */
+.mobile-menu {
+  /* Set the transition duration */
+  /* transition: transform ; */
+  transition: all 0.3s ease-in-out;
+}

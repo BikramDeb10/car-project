@@ -76,10 +76,10 @@ if (carousel2 && prevButton2 && nextButton2) {
 document
   .getElementById("scrollToTop")
   .addEventListener("click", function (event) {
-    event.preventDefault(); // Prevent default anchor behavior
+    event.preventDefault();
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // Smooth scrolling
+      behavior: "smooth",
     });
   });
 
@@ -112,11 +112,11 @@ document.addEventListener("DOMContentLoaded", () => {
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("show"); // Add "show" class when in view
+          entry.target.classList.add("show");
         }
       });
     },
-    { threshold: 0.1 } // Trigger when 10% of the element is visible
+    { threshold: 0.1 }
   );
 
   animatedItems.forEach((item) => observer.observe(item));
@@ -134,22 +134,90 @@ document.addEventListener("DOMContentLoaded", () => {
   const animatedLeft = document.querySelectorAll(".animate-item-left");
   const animatedRight = document.querySelectorAll(".animate-item-right");
 
-  // Create IntersectionObserver to observe when the element comes into view
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("show"); // Add "show" class when element is in view
+          entry.target.classList.add("show");
         }
       });
     },
-    { threshold: 0.1 } // Trigger when 10% of the element is visible
+    { threshold: 0.1 }
   );
 
-  // Observe the left-side elements (e.g., phone image)
   animatedLeft.forEach((item) => observer.observe(item));
-  // Observe the right-side elements (e.g., text, buttons)
   animatedRight.forEach((item) => observer.observe(item));
+});
+
+//
+
+// button nav hover active
+
+document.addEventListener("DOMContentLoaded", () => {
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+
+      navLinks.forEach((el) => {
+        el.classList.remove("active");
+      });
+
+      link.classList.add("active");
+    });
+  });
+});
+
+//  select nav language
+
+const toggle = document.getElementById("dropdownToggle");
+const menu = document.getElementById("dropdownMenu");
+
+// Open and close dropdown with animation
+toggle.addEventListener("click", () => {
+  menu.classList.toggle("show");
+});
+
+// Update the selected value
+const options = document.querySelectorAll("#dropdownMenu li");
+options.forEach((option) => {
+  option.addEventListener("click", () => {
+    toggle.textContent = option.dataset.value;
+    menu.classList.remove("show");
+  });
+});
+
+// Close dropdown when clicking outside
+document.addEventListener("click", (e) => {
+  if (!e.target.closest(".dropdown")) {
+    menu.classList.remove("show");
+  }
+});
+
+// 2nd mobile view
+const toggle2 = document.getElementById("dropdownToggle2");
+const menu2 = document.getElementById("dropdownMenu2");
+
+// Open and close dropdown with animation
+toggle2.addEventListener("click", () => {
+  menu2.classList.toggle("show");
+});
+
+// Update the selected value
+const options2 = document.querySelectorAll("#dropdownMenu2 li");
+options2.forEach((option) => {
+  option.addEventListener("click", () => {
+    toggle2.textContent = option.dataset.value;
+    menu2.classList.remove("show");
+  });
+});
+
+// Close dropdown when clicking outside
+document.addEventListener("click", (e) => {
+  if (!e.target.closest(".dropdown")) {
+    menu2.classList.remove("show");
+  }
 });
 
 //
