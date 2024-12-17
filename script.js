@@ -59,14 +59,14 @@ const nextButton2 = document.querySelector("#nextButton2");
 if (carousel2 && prevButton2 && nextButton2) {
   prevButton2.addEventListener("click", () => {
     carousel2.scrollBy({
-      left: -390 * 1.1,
+      left: -390 * 0.8,
       behavior: "smooth",
     });
   });
 
   nextButton2.addEventListener("click", () => {
     carousel2.scrollBy({
-      left: 390 * 1.1,
+      left: 390 * 0.8,
       behavior: "smooth",
     });
   });
