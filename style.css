@@ -129,7 +129,7 @@ body {
 /* Active state styling */
 .nav-link.active {
   color: #b48d00;
-  background-color: rgb(239, 239, 239);
+  /* background-color: rgb(239, 239, 239); */
   padding: 2px 4px;
 }
 
@@ -183,3 +183,15 @@ body {
   /* transition: transform ; */
   transition: all 0.3s ease-in-out;
 }
+
+/* mobile */
+/* .mobilemenu-active {
+  height: 239px;
+  padding: 20px;
+}
+
+@media only screen and (min-width: 700px) {
+  .mobilemenu-active {
+    height: 297px;
+  }
+} */
