@@ -221,15 +221,13 @@ document.addEventListener("click", (e) => {
 
 //image rotetor
 /**
- * Rotates an image continuously with a given speed.
- * @param {string} imageId - The ID of the image element.
- * @param {number} speed - The rotation speed in seconds (lower is faster).
+ * @param {string} imageId
+ * @param {number} speed
  */
 function rotateImageContinuously(imageId, speed) {
   const image = document.getElementById(imageId);
 
   if (image) {
-    // Dynamically create a <style> tag to hold the keyframes
     const styleTag = document.createElement("style");
     styleTag.type = "text/css";
     const keyframes = `
@@ -243,11 +241,9 @@ function rotateImageContinuously(imageId, speed) {
       }
     `;
 
-    // Append the keyframes to the style tag
     styleTag.appendChild(document.createTextNode(keyframes));
     document.head.appendChild(styleTag);
 
-    // Apply the animation to the image
     image.style.animation = `rotateAnimation ${speed}s linear infinite`;
   } else {
     console.error(
