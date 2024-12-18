@@ -554,14 +554,23 @@
 
       <section class="bg-[#F5F6F7]">
         <div
-          class="flex flex-col lg:flex-row items-center justify-between py-10 px-4 container mx-auto"
+          class="howitsworkSection flex flex-col lg:flex-row items-center justify-center py-10 px-4 container mx-auto"
         >
-          <div class="mt-8">
+          <div class="AppDemoBox">
+            <img class="adImg1" src="./images//howitswork/roundBG.svg" alt="" />
             <img
-              src="images/howitswork/howitswork.png"
-              alt="howitswork"
-              class="h-[300px] md:h-[600px] xl:h-[750px] md:w-full animate-item"
+              id="roundOne"
+              class="adImg2"
+              src="./images//howitswork/Big.svg"
+              alt=""
             />
+            <img
+              id="roundTwo"
+              class="adImg2"
+              src="./images//howitswork/Small.svg"
+              alt=""
+            />
+            <img class="adImg3" src="./images//howitswork/Phone.svg" alt="" />
           </div>
           <div class="lg:w-1/2 max-w-[600px]">
             <div class="flex flex-col items-start p-6">
@@ -724,7 +733,7 @@
       <!-- adad -->
       <section class="py-12 mx-auto container">
         <div
-          class="flex flex-wrap sm:flex-nowrap items-center justify-center gap-8 md:gap-4 px-2"
+          class="flex flex-wrap sm:flex-nowrap items-center justify-center md:gap-[5%] xl:gap-[10%] px-2"
         >
           <!-- Text Content -->
           <div class="text-center md:text-left max-w-lg animate-item">
@@ -748,11 +757,11 @@
           </div>
 
           <!-- Image Content -->
-          <div class="animate-item mt-10 sm:mt-0 mx-auto">
+          <div class="animate-item mt-7 sm:mt-0">
             <img
               src="images/Driver-images/driver-image.jpg"
               alt="driver-image"
-              class="rounded-lg w-[300px] md:w-[800px]"
+              class="rounded-lg md:min-w-[300px] xl:max-w-[800px]:"
             />
           </div>
         </div>
@@ -1302,5 +1311,12 @@
 
     <!-- <script src="scrolle.js" defer></script> -->
     <script src="script.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        console.log("DOM fully loaded");
+        rotateImageContinuously("roundOne", 50);
+        rotateImageContinuously("roundTwo", 20);
+      });
+    </script>
   </body>
 </html>
