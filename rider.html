@@ -177,10 +177,54 @@
         </div>
       </div>
     </header>
-   
+    <main class="">
+      <!-- About Us hero section -->
+      <section class="relative container animate-item px-2 mx-auto">
+        <!-- Background Section -->
+        <div
+          class="bg-[url('images/rider-image/rider-hero.png')] h-[250px] sm:h-[350px] md:h-[400px] lg:h-[500px] xl:h-[550px] bg-no-repeat bg-cover bg-center rounded-2xl"
+        ></div>
+
+        <!-- Text Section -->
+        <div
+          class="absolute inset-0 flex flex-col items-center justify-center text-center px-4"
+        >
+          <div>
+            <h1
+              class="text-[25px] sm:text-[30px] md:text-[35px] xl-text-[40px] text-white font-bold mb-0 md:mb-2 xl:mb-4"
+            >
+              Rider
+            </h1>
+            <p
+              class="text-white flex flex-col items-center text-[0.70rem] sm:text-[0.80rem] md:text-[0.90rem] xl-text-[1 rem] max-w-[300px] sm:-max-w[350px] md:max-w[480px] lg:max-w-[520px] xl:max-w-full"
+            >
+              <span class="w-full break-words">
+                Do you want to become a driver with us? Are you interested in
+                being unique in your work and establishing your own
+              </span>
+              <span class="w-full break-words">
+                business? We give you the opportunity 3T offers you an excellent
+                working environment and service 24 hours a day</span
+              >
+            </p>
+          </div>
+        </div>
+
+        <!-- Logo Section -->
+        <div class="absolute bottom-[-30px] left-1/2 -translate-x-1/2">
+          <a href="index.html">
+            <img
+              src="images/about-image/about svg/logo.svg"
+              alt="nav-logo"
+              class="h-[60px] w-[60px] sm:h-[75px] sm:w-[75px] md:h-[82px] md:w-[8px]lg:lg:h-[92px] lg:w-[92px] xl:h-[100px] xl:w-[100px]"
+            />
+          </a>
+        </div>
+      </section>
+
       <!-- Experience 3T Rides -->
       <section class="py-16">
-        <div class="container mx-auto px-4">
+        <div class="container animate-item mx-auto px-4">
           <!-- Container with responsive layout -->
           <div
             class="flex flex-col xl:flex-row justify-between items-center gap-16"
@@ -227,21 +271,32 @@
 
       <!-- Become a 3T Driver -->
 
-      <section class="bg-[#F5F6F7] py-12 container mx-auto">
+      <section class="bg-[#F5F6F7]">
         <div
-          class="flex flex-col lg:flex-row items-center justify-between py-10 px-4"
+          class="howitsworkSection flex flex-col lg:flex-row items-center justify-center py-10 px-4 container mx-auto"
         >
-          <div class="mt-8">
+          <div class="AppDemoBox">
+            <img class="adImg1" src="./images//howitswork/roundBG.svg" alt="" />
             <img
-              src="images/howitswork/howitswork.png"
-              alt="howitswork"
-              class="h-[300px] md:h-[600px] xl:h-[750px] md:w-full"
+              id="roundOne"
+              class="adImg2"
+              src="./images//howitswork/Big.svg"
+              alt=""
             />
+            <img
+              id="roundTwo"
+              class="adImg2"
+              src="./images//howitswork/Small.svg"
+              alt=""
+            />
+            <img class="adImg3" src="./images//howitswork/Phone.svg" alt="" />
           </div>
           <div class="lg:w-1/2 max-w-[600px]">
             <div class="flex flex-col items-start p-6">
               <!-- Heading -->
-              <h2 class="text-3xl md:text-4xl font-bold mb-6">How It Works?</h2>
+              <h2 class="text-3xl md:text-4xl font-bold mb-6 animate-item">
+                How It Works?
+              </h2>
 
               <!-- Step Container -->
               <div class="relative">
@@ -253,7 +308,7 @@
                 <!-- Steps -->
                 <div class="flex flex-col gap-12">
                   <!-- Step 1 -->
-                  <div class="flex md:flex-row items-start gap-4">
+                  <div class="flex md:flex-row items-start gap-4 animate-item">
                     <!-- Circle -->
                     <div class="relative flex items-center justify-center">
                       <div
@@ -273,7 +328,7 @@
                   </div>
 
                   <!-- Step 2 -->
-                  <div class="flex md:flex-row items-start gap-4">
+                  <div class="flex md:flex-row items-start gap-4 animate-item">
                     <div class="relative flex items-center justify-center">
                       <div
                         class="w-7 h-7 bg-teal-100 rounded-full flex items-center justify-center"
@@ -293,7 +348,7 @@
                   </div>
 
                   <!-- Step 3 -->
-                  <div class="flex md:flex-row items-start gap-4">
+                  <div class="flex md:flex-row items-start gap-4 animate-item">
                     <div class="relative flex items-center justify-center">
                       <div
                         class="w-7 h-7 bg-teal-100 rounded-full flex items-center justify-center"
@@ -311,7 +366,7 @@
                   </div>
 
                   <!-- Step 4 -->
-                  <div class="flex md:flex-row items-start gap-4">
+                  <div class="flex md:flex-row items-start gap-4 animate-item">
                     <div class="relative flex items-center justify-center">
                       <div
                         class="w-7 h-7 bg-teal-100 rounded-full flex items-center justify-center"
@@ -337,7 +392,7 @@
       <!-- Ride-svg -->
 
       <section class="py-20 container mx-auto">
-        <div class="mx-auto">
+        <div class="mx-auto animate-item">
           <div class="flex gap-20 flex-col sm:flex-row px-3 justify-center">
             <div class="flex flex-col items-center rounded-lg">
               <div
@@ -391,7 +446,7 @@
       <!-- download the app -->
 
       <section
-        class="bg-[#F5F6F7] py-12 px-6 sm:px-10 rounded-[30px] h-[700px] sm:h-[550px] md:h-[500px] mt-28"
+        class="bg-[#F5F6F7] animate-item py-12 px-6 sm:px-10 rounded-[30px] h-[700px] sm:h-[550px] md:h-[500px] mt-28"
       >
         <div
           class="container mx-auto flex flex-col sm:flex-row items-center justify-between relative"
@@ -440,7 +495,7 @@
       </section>
 
       <section class="py-12">
-        <div class="flex flex-col items-center mb-12 px-4">
+        <div class="flex flex-col animate-item items-center mb-12 px-4">
           <div class="mb-6">
             <h2 class="text-[2rem] font-[700] text-[#1D2630]">
               What Our Users Says
@@ -556,7 +611,7 @@
             <ul class="space-y-2">
               <li>
                 <a
-                  href="#"
+                  href="driver.html"
                   class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
                   >Be Driver</a
                 >
@@ -696,10 +751,10 @@
     <!-- <script src="scrolle.js" defer></script> -->
     <script src="script.js" defer></script>
     <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        console.log("DOM fully loaded");
-        rotateImageContinuously("roundOne", 50);
-        rotateImageContinuously("roundTwo", 20);
+      document.addEventListener('DOMContentLoaded', () => {
+        console.log('DOM fully loaded');
+        rotateImageContinuously('roundOne', 50);
+        rotateImageContinuously('roundTwo', 20);
       });
     </script>
   </body>
