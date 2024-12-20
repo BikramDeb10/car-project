@@ -20,48 +20,152 @@
   </head>
 
   <body>
-    <header class="my-6 px-4 w-full">
-      <div class="flex container mx-auto justify-between items-center">
-        <!-- Logo -->
-        <div class="block md:hidden">
-          <a href="index.html">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet"
+      />
+      <title>Document</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link rel="stylesheet" href="style.css" />
+    </head>
+  
+    <body>
+      <header class="my-6 px-4 w-full">
+        <div class="flex container mx-auto justify-between items-center">
+          <!-- Logo -->
+          <div class="block md:hidden">
+            <a href="/">
+              <img
+                src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
+                alt="Company Logo"
+                class="h-[50px] w-[50px]"
+              />
+            </a>
+          </div>
+          <div class="hidden xl:block">
+            <a href="/">
+              <img
+                src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
+                alt="Company Logo"
+                class="h-[60px] w-[59px]"
+              />
+            </a>
+          </div>
+  
+          <!-- Mobile Menu Button -->
+          <button
+            id="menuButton"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+            class="xl:hidden text-gray-700 text-2xl"
+          >
+            ☰
+          </button>
+  
+          <!-- Navigation -->
+          <div class="hidden md:flex items-center gap-6">
+            <nav class="hidden xl:block">
+              <ul
+                class="flex gap-[20px] text-[16px] tracking-[0.5px]"
+                id="navMenu"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="nav-link text-gray-900 transition-all duration-300 active"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="nav-link text-gray-900 transition-all duration-300"
+                  >
+                    Become a Driver
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="nav-link text-gray-900 transition-all duration-300"
+                  >
+                    Support
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="flex items-center gap-4">
+              <div class="flex gap-2 items-center">
+                <div class="h-[24px] w-[24px] rounded-full overflow-hidden">
+                  <img
+                    src="images/istockphoto-880562092-612x612.jpg"
+                    alt="Language Selector Icon"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+                <div>
+                  <h3 class="text-[18px]">Language</h3>
+                </div>
+  
+                <div class="dropdown">
+                  <div class="dropdown-toggle" id="dropdownToggle">EN</div>
+                  <ul class="dropdown-menu" id="dropdownMenu">
+                    <li data-value="EN">EN</li>
+                    <li data-value="FR">FR</li>
+                    <li data-value="ES">ES</li>
+                    <li data-value="DE">DE</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="bg-gray-700 text-white px-6 py-2.5 rounded-xl">
+                <button>Login / Register</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden xl:hidden bg-gray-100 p-4 rounded">
+          <div class="hidden md:block mb-2">
             <img
               src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
               alt="Company Logo"
-              class="h-[50px] w-[50px]"
+              class="h-[50px] w-[50px] rounded-full"
             />
-          </a>
-        </div>
-        <div class="hidden xl:block">
-          <a href="index.html">
-            <img
-              src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
-              alt="Company Logo"
-              class="h-[60px] w-[59px]"
-            />
-          </a>
-        </div>
-
-        <!-- Mobile Menu Button -->
-        <button
-          id="menuButton"
-          aria-expanded="false"
-          aria-controls="mobileMenu"
-          class="xl:hidden text-gray-700 text-2xl"
-        >
-          ☰
-        </button>
-
-        <!-- Navigation -->
-        <div class="hidden md:flex items-center gap-6">
-          <nav class="hidden xl:block">
-            <ul class="flex gap-[20px] text-[16px] tracking-[0.5px]">
-              <li><a href="" class="text-[#E0B827]">Home</a></li>
-              <li><a href="">Become a Driver</a></li>
-              <li><a href="">Support</a></li>
-            </ul>
-          </nav>
-          <div class="flex items-center gap-4">
+          </div>
+          <ul class="flex flex-col gap-2 text-gray-700 text-[18px] mb-2 xl:mb-0">
+            <li>
+              <a
+                href="#"
+                class="nav-link text-gray-500 transition-all duration-300 active"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="nav-link text-gray-500 transition-all duration-300"
+              >
+                Become a Driver
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="nav-link text-gray-500] transition-all duration-300"
+              >
+                Support
+              </a>
+            </li>
+          </ul>
+          <div class="flex flex-col md:hidden xl:flex-row xl:items-center gap-4">
             <div class="flex gap-2 items-center">
               <div class="h-[24px] w-[24px] rounded-full overflow-hidden">
                 <img
@@ -73,69 +177,26 @@
               <div>
                 <h3 class="text-[18px]">Language</h3>
               </div>
-              <div>
-                <select class="border border-gray-300 rounded px-2 py-1">
-                  <option value="">EN</option>
-                  <option value="">FR</option>
-                  <option value="">ES</option>
-                  <option value="">DE</option>
-                </select>
+              <div class="dropdown">
+                <div class="dropdown-toggle" id="dropdownToggle2">EN</div>
+                <ul class="dropdown-menu" id="dropdownMenu2">
+                  <li data-value="EN">EN</li>
+                  <li data-value="FR">FR</li>
+                  <li data-value="ES">ES</li>
+                  <li data-value="DE">DE</li>
+                </ul>
               </div>
             </div>
-            <div class="bg-gray-700 text-white px-6 py-2.5 rounded-xl">
-              <button>Login / Register</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Mobile Menu -->
-      <div id="mobileMenu" class="hidden xl:hidden bg-gray-100 p-4 rounded">
-        <div class="hidden md:block mb-2">
-          <a href="index.html">
-            <img
-              src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
-              alt="Company Logo"
-              class="h-[50px] w-[50px] rounded-full"
-            />
-          </a>
-        </div>
-        <ul class="flex flex-col gap-2 text-gray-700 text-[18px] mb-2 xl:mb-0">
-          <li><a href="">Home</a></li>
-          <li><a href="">Become a Driver</a></li>
-          <li><a href="">Support</a></li>
-        </ul>
-        <div class="flex flex-col xl:flex-row xl:items-center gap-4">
-          <div class="flex gap-2 items-center">
-            <div class="h-[24px] w-[24px] rounded-full overflow-hidden">
-              <img
-                src="images/istockphoto-880562092-612x612.jpg"
-                alt="Language Selector Icon"
-                class="h-full w-full object-cover"
-              />
-            </div>
             <div>
-              <h3 class="text-[18px]">Language</h3>
+              <button
+                class="bg-gray-700 text-white px-6 py-2.5 rounded-xl text-center w-full"
+              >
+                Login / Register
+              </button>
             </div>
-            <div>
-              <select class="border border-gray-300 rounded px-2 py-1">
-                <option value="">EN</option>
-                <option value="">FR</option>
-                <option value="">ES</option>
-                <option value="">DE</option>
-              </select>
-            </div>
-          </div>
-          <div>
-            <button
-              class="bg-gray-700 text-white px-6 py-2.5 rounded-xl text-center w-full"
-            >
-              Login / Register
-            </button>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
     <main class="">
       <!-- About Us hero section -->
       <section class="relative container px-2 mx-auto">
@@ -155,7 +216,7 @@
               How to drive with 3T in Norway
             </h1>
             <p
-              class="text-white flex flex-col items-center text-[0.70rem] sm:text-[0.80rem] md:text-[0.90rem] xl-text-[1 rem] max-w-[300px] sm:-max-w[350px] md:max-w[480px] lg:max-w-[750px] xl:max-w-full"
+              class="text-white flex flex-col items-center mx-auto text-[0.70rem] sm:text-[0.80rem] md:text-[0.90rem] xl-text-[1 rem] max-w-[300px] sm:-max-w[550px] md:max-w[680px] lg:max-w-[750px] xl:max-w-full"
             >
               <span class="w-full break-words"
                 >Do you want to become a driver with us? Are you interested in
@@ -180,6 +241,348 @@
           </a>
         </div>
       </section>
+
+      <section class="py-12 px-8 container mx-auto bg-[#F5F6F7]">
+        <div class="grid grid-cols-2 grid-rows-2 gap-12">
+          <div
+            class="bg-[#FFFFFF] max-w-xl mx-auto p-6 px-6 border rounded-lg shadow-lg"
+          >
+            <h2 class="text-[40px] font-bold mb-4 text-gray-800">
+              Get Started
+            </h2>
+            <p class="text-[22px] text-start text-gray-600 mr-5 mb-6">
+              As usual, to start any business, you need some steps that you need
+              to implement before starting your work, so we will try to help you
+              find the right solution and get you to the last step and start
+              working as soon as possible.
+            </p>
+            <button
+              class="bg-gray-900 text-[16px] mb-6 font-[500] text-white px-4 py-2 rounded-md hover:bg-yellow-500 focus:outline-none"
+            >
+              Register as Driver
+            </button>
+          </div>
+          <div>
+            <div>
+              <img
+                src="images/Be-driver-image/be-driver-svg/id-card -w1 (1).svg"
+                alt="id-card"
+                class="h-[70px] w-[70px]"
+              />
+            </div>
+            <h3 class="text-[24px] text-[#191919] font-[700 mb-4">
+              New to the taxi industry (I have no licenses today)
+            </h3>
+            <p class="text-[18px] text-[#373F46] mb-4">
+              To be able to use the Uber app as an independent operator, you
+              must have the following:
+            </p>
+            <ul class="list-disc pl-5 text-[18px] font-[400] text-[#1D2630]">
+              <li class="mb-4">
+                Valid taxi licence, or tour cart licence. Note: a trolley
+                license only gives you access to the UberXXL product (16
+                passenger seats). Find more information by clicking here
+              </li>
+              <li class="mb-4">Valid driver's license</li>
+              <li>
+                A vehicle that meets the requirements for a taxi licence,
+                company car license or touring car licence.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div>
+              <img
+                src="images/Be-driver-image/be-driver-svg/id-card 1.svg"
+                alt="id-card"
+                class="h-[70px] w-[70px]"
+              />
+            </div>
+            <h3 class="text-[24px] font-[700] text-[#191919]">
+              Experienced operator (I already have all licences/permits)
+            </h3>
+            <p>
+              Are you an experienced operator who has a valid driver's license
+              and a taxi licence? Sign up now and start driving in the next 1-2
+              days.
+            </p>
+            <ul>
+              <li>
+                Valid taxi licence, or tour cart licence. Note: a trolley
+                license only gives you access to the UberXXL product (16
+                passenger seats). Find more information by clicking here
+              </li>
+              <li>
+                A vehicle that meets the requirements for a taxi licence,
+                company car license or touring car licence.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div>
+              <img
+                src="images/Be-driver-image/be-driver-svg/car.svg"
+                alt="be-driver"
+                class="h-[70px] w-[70px]"
+              />
+            </div>
+            <h3>
+              Run under a Fleet Partner (don't want to start my own business)
+            </h3>
+            <p>
+              Don't you want to get your own vehicle or taxi licence? Then you
+              can start driving for one of the Fleet Partners who are active on
+              the Uber platform. Get more information below.
+            </p>
+            <ul>
+              <li>
+                Valid taxi licence, or tour cart licence. Note: a trolley
+                license only gives you access to the UberXXL product (16
+                passenger seats). Find more information by clicking here
+              </li>
+              <li>Valid driver's license</li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="bg-[#F5F6F7] py-8">
+      <div class="container mx-auto">
+        <div
+          class="flex flex-wrap items-center justify-between gap-4 max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8"
+        >
+          <div>
+            <h2
+              class="text-[#1D2630] text-[28px] sm:text-[32px] md:text-[35px] font-bold"
+            >
+              Subscribe Newsletter
+            </h2>
+            <p class="text-[16px] sm:text-[18px] font-medium text-[#373F46]">
+              Join with our mailing list and stay updated
+            </p>
+          </div>
+          <div
+            class="border-[1px] border-slate-500 h-[64px] rounded-[10px] flex items-center w-full max-w-sm px-3 bg-[#ffffff]"
+          >
+            <input
+              type="text"
+              placeholder="Enter Your email address"
+              class="px-2 py-2 rounded-md focus:outline-none flex-1 text-[14px] sm:text-[16px]"
+            />
+            <button
+              class="bg-[#1D2630] text-white px-4 py-2 rounded-md text-[14px] sm:text-[16px] transition-all duration-[0.3s] hover:bg-yellow-500 hover:text-black"
+            >
+              Join Us Now
+            </button>
+          </div>
+        </div>
+        <div class="my-8 px-4 sm:px-6 lg:px-8">
+          <hr class="border-gray-300" />
+        </div>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4 sm:px-6 lg:px-8"
+        >
+          <div class="flex flex-col gap-3">
+            <h3
+              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46]"
+            >
+              Company
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="about.html"
+                  aria-label="Learn more about 3T"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >About 3T</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >Why 3T</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >FAQs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-3">
+            <h3
+              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+            >
+              Quick Links
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >Be Driver</a
+                >
+              </li>
+              <li>
+                <a
+                  href="fleetowner.html"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >Fleet Owner</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >Rider</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >Lost & Found</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-3">
+            <h3
+              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+            >
+              Download User App
+            </h3>
+            <a href="">
+              <img
+                class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto mb-2"
+                src="images/footer-images/googleplay.svg"
+                alt="Download from Google Play Store for Android"
+              />
+            </a>
+            <a href="">
+              <img
+                class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto"
+                src="images/footer-images/applestore.svg"
+                alt="Download from Apple App Store for iOS"
+              />
+            </a>
+          </div>
+          <div class="flex flex-col gap-3">
+            <h3
+              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46]"
+            >
+              Download Driver App
+            </h3>
+            <a href="">
+              <img
+                class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto mb-2"
+                src="images/footer-images/googleplay.svg"
+                alt="Download from Google Play Store for Android"
+              />
+            </a>
+            <a href="">
+              <img
+                class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto"
+                src="images/footer-images/applestore.svg"
+                alt="Download from Apple App Store for iOS"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!--footer icons -->
+
+      <div class="flex justify-center gap-4 pt-[64px] px-4 sm:px-6 lg:px-8">
+        <a href="">
+          <img
+            class="h-[18px] sm:h-[20px]"
+            src="./footer-logo/facebook-logo.svg"
+            alt="facebook"
+          />
+        </a>
+        <a href="">
+          <img
+            class="h-[18px] sm:h-[20px]"
+            src="./footer-logo/linkedin-letters.svg"
+            alt="linkedin"
+          />
+        </a>
+        <a href="">
+          <img
+            class="h-[18px] sm:h-[20px]"
+            src="./footer-logo/ant-design_instagram-filled.svg"
+            alt="instagram"
+          />
+        </a>
+        <a href="">
+          <img
+            class="h-[18px] sm:h-[20px]"
+            src="./footer-logo/Group.svg"
+            alt="group"
+          />
+        </a>
+      </div>
+
+      <!-- footer last line -->
+      <div
+        class="flex sm:flex-row justify-between container mx-auto items-center sm:gap-16 px-4 sm:px-6 lg:px-8 py-6 bg-gray-100"
+      >
+        <div
+          class="flex sm:flex-row gap-2 sm:gap-12 items-center text-center sm:text-left"
+        >
+          <p class="text-[11px] sm:text-[16px]">
+            <a href="#" class="hover:underline text-gray-600">Privacy Policy</a>
+            &middot;
+            <a href="#" class="hover:underline pl-2 text-gray-600">
+              Terms of Service
+            </a>
+          </p>
+          <p class="text-gray-500 text-[11px] sm:text-[16px]">
+            Copyrights@2025 | All Rights Reserved by 3T
+          </p>
+        </div>
+
+        <div>
+          <a href="#" id="scrollToTop">
+            <img
+              src="./footer-logo/Group 1000002170.svg"
+              alt="Company Logo"
+              class="h-[40px] sm:h-[50px] lg:h-[60px]"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <script src="scrolle.js" defer></script> -->
+    <script src="script.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        console.log("DOM fully loaded");
+        rotateImageContinuously("roundOne", 50);
+        rotateImageContinuously("roundTwo", 20);
+      });
+    </script>
   </body>
 </html>

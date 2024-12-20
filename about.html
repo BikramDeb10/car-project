@@ -100,7 +100,7 @@
           <li><a href="">Become a Driver</a></li>
           <li><a href="">Support</a></li>
         </ul>
-        <div class="flex flex-col xl:flex-row xl:items-center gap-4">
+        <div class="flex flex-col md:hidden xl:flex-row xl:items-center gap-4">
           <div class="flex gap-2 items-center">
             <div class="h-[24px] w-[24px] rounded-full overflow-hidden">
               <img
@@ -133,7 +133,7 @@
     </header>
     <main class="">
       <!-- About Us hero section -->
-      <section class="relative container px-2 mx-auto">
+      <section class="relative container animate-item px-2 mx-auto">
         <!-- Background Section -->
         <div
           class="bg-[url('images/about-image/about-herogroup.png')] h-[250px] sm:h-[350px] md:h-[400px] lg:h-[500px] xl:h-[550px] bg-no-repeat bg-cover bg-center rounded-2xl"
@@ -178,10 +178,10 @@
         <div class="container mx-auto px-4">
           <!-- Container with responsive layout -->
           <div
-            class="flex flex-col xl:flex-row justify-between items-center gap-16"
+            class="flex flex-col xl:flex-row justify-between items-center gap-16 animate-slideIn"
           >
             <!-- Image Content -->
-            <div class="">
+            <div class="animate-item">
               <img
                 src="images/exprience/Group 2609465 (1).png"
                 alt="Mask group"
@@ -212,13 +212,14 @@
 
       <!-- //////////// -->
 
-      <section class="py-12 container mx-auto">
+      <section class="py-12 container mx-auto animate-item">
         <div class="mx-auto">
-          <div class="flex gap-20 flex-col sm:flex-row px-20 justify-between">
-            <div class="flex flex-col items-center rounded-lg">
-              <div
-                class="w-20 h-20 flex items-center justify-center border-black border-[1px] p-2 rounded-full mb-4"
-              >
+          <div
+            class="flex gap-20 flex-col xl:flex-row px-20 justify-between stats-container"
+          >
+            <!-- User Stats -->
+            <div class="stat-item">
+              <div class="icon-container">
                 <img
                   src="images/about-image/about svg/profile.svg"
                   alt="solid"
@@ -230,10 +231,10 @@
                 User
               </p>
             </div>
-            <div class="flex flex-col items-center rounded-lg">
-              <div
-                class="w-20 h-20 flex items-center justify-center border-black border-[1px] p-2 rounded-full mb-4"
-              >
+
+            <!-- Fleet Owner Stats -->
+            <div class="stat-item animate-item">
+              <div class="icon-container">
                 <img
                   src="images/about-image/about svg/car-key.svg"
                   alt="group"
@@ -245,10 +246,10 @@
                 Fleet Owner
               </p>
             </div>
-            <div class="flex flex-col items-center rounded-lg">
-              <div
-                class="w-20 h-20 flex items-center justify-center border-black border-[1px] p-2 rounded-full mb-4"
-              >
+
+            <!-- Total Cars Stats -->
+            <div class="stat-item animate-item">
+              <div class="icon-container">
                 <img
                   src="images/about-image/about svg/car.svg"
                   alt="app"
@@ -261,10 +262,9 @@
               </p>
             </div>
 
-            <div class="flex flex-col items-center rounded-lg">
-              <div
-                class="w-20 h-20 flex items-center justify-center border-black border-[1px] p-2 rounded-full mb-4"
-              >
+            <!-- Happy Clients Stats -->
+            <div class="stat-item">
+              <div class="icon-container">
                 <img
                   src="images/about-image/about svg/smile.svg"
                   alt="app"
@@ -279,8 +279,9 @@
           </div>
         </div>
       </section>
+
       <!-- Our Mission & Vision -->
-      <section class="bg-[#F5F6F7]">
+      <section class="bg-[#F5F6F7] animate-item">
         <div class="container mx-auto">
           <div class="flex flex-col px-4 gap-2 pt-16 items-center">
             <h1
@@ -298,49 +299,52 @@
           <div
             class="flex justify-between flex-col px-4 sm:px-6 sm lg:flex-row gap-6 py-16"
           >
-            <div>
+            <div class="mission-item">
               <img
                 src="images//about-image/Mission/Mission1.png"
                 alt="Mission1"
-                class="h-[220px] w-[370px] py-2"
+                class="mission-image h-[220px] w-[370px] py-2"
               />
-              <h3 class="text-[24px] font-[700] text-[#191919]">
+              <h3 class="mission-title text-[24px] font-[700] text-[#191919]">
                 Sustainability
               </h3>
-              <p class="text-[#373F46] text-[18px] font-[300]">
+              <p
+                class="mission-description text-[#373F46] text-[18px] font-[300]"
+              >
                 Lorem ipsum dolor sit amet, adipiscing elit. Ut ultricies
-                pulvinar donec risus orci. In magnis orci, imperdiet ultricies
-                Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet.
+                pulvinar donec risus orci.
               </p>
             </div>
-            <div>
+            <div class="mission-item animate-item">
               <img
                 src="images//about-image/Mission/Mission2.png"
                 alt="Mission2"
-                class="h-[220px] w-[370px] py-2"
+                class="mission-image h-[220px] w-[370px] py-2"
               />
-              <h3 class="text-[24px] font-[700] text-[#191919]">
+              <h3 class="mission-title text-[24px] font-[700] text-[#191919]">
                 More than just travel
               </h3>
-              <p class="text-[#373F46] text-[18px] font-[300]">
+              <p
+                class="mission-description text-[#373F46] text-[18px] font-[300]"
+              >
                 Lorem ipsum dolor sit amet, adipiscing elit. Ut ultricies
-                pulvinar donec risus orci. In magnis orci, imperdiet ultricies
-                Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet.
+                pulvinar donec risus orci.
               </p>
             </div>
-            <div>
+            <div class="mission-item animate-item">
               <img
                 src="images//about-image/Mission/Mission3.png"
                 alt="Mission3"
-                class="h-[220px] w-[370px] py-2"
+                class="mission-image h-[220px] w-[370px] py-2"
               />
-              <h3 class="text-[24px] font-[700] text-[#191919]">
+              <h3 class="mission-title text-[24px] font-[700] text-[#191919]">
                 Your safety is our main priority
               </h3>
-              <p class="text-[#373F46] text-[18px] font-[300]">
+              <p
+                class="mission-description text-[#373F46] text-[18px] font-[300]"
+              >
                 Lorem ipsum dolor sit amet, adipiscing elit. Ut ultricies
-                pulvinar donec risus orci. In magnis orci, imperdiet ultricies
-                Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet.
+                pulvinar donec risus orci.
               </p>
             </div>
           </div>
@@ -349,7 +353,7 @@
 
       <!-- Our Team Mates -->
 
-      <section class="py-16 container mx-auto">
+      <section class="py-16 animate-item">
         <div class="flex flex-col items-center pb-8 text-center">
           <h1
             class="text-[32px] sm:text-[36px] md:text-[40px] font-[700] text-[#1D2630]"
@@ -368,11 +372,11 @@
         <div class="relative">
           <div
             id="carousel2"
-            class="flex gap-8 pt-4 pb-8 overflow-scroll overflow-x-hidden overflow-y-hidden scroll-smooth max-w-full"
+            class="flex gap-8 pt-4 pb-8 overflow-scroll overflow-x-hidden overflow-y-hidden scroll-smooth max-w-[1400px] mx-auto container"
           >
             <!-- Service Cards -->
             <div
-              class="bg-[#F5F6F7] h-[356px] w-[270px] flex-shrink-0 flex flex-col px-6 justify-center"
+              class="bg-[#F5F6F7] h-[400px] max-w-[390px] flex-shrink-0 flex flex-col px-6 justify-center ml-3"
             >
               <img
                 class="h-[250px] sm:h-[270px] w-full rounded-t-[10px] object-cover"
@@ -387,7 +391,7 @@
               </div>
             </div>
             <div
-              class="bg-[#F5F6F7] h-[356px] w-[270px] flex-shrink-0 flex flex-col px-6 justify-center"
+              class="bg-[#F5F6F7] h-[400px] max-w-[390px] flex-shrink-0 flex flex-col px-6 justify-center"
             >
               <img
                 class="h-[250px] sm:h-[270px] w-full rounded-t-[10px] object-cover"
@@ -402,10 +406,10 @@
               </div>
             </div>
             <div
-              class="bg-[#F5F6F7] h-[356px] w-[270px] flex-shrink-0 flex flex-col px-6 justify-center"
+              class="bg-[#F5F6F7] h-[400px] max-w-[390px] flex-shrink-0 flex flex-col px-6 justify-center"
             >
               <img
-                class="h-[270px] sm:h-[270px] w-full rounded-t-[10px] object-cover"
+                class="h-[250px] sm:h-[270px] w-full rounded-t-[10px] object-cover"
                 src="images/team-mates/Mask group (1).png"
                 alt="Mask group"
               />
@@ -417,7 +421,7 @@
               </div>
             </div>
             <div
-              class="bg-[#F5F6F7] h-[356px] w-[270px] flex-shrink-0 flex flex-col px-6 justify-center"
+              class="bg-[#F5F6F7] h-[400px] max-w-[390px] flex-shrink-0 flex flex-col px-6 justify-center"
             >
               <img
                 class="h-[250px] sm:h-[270px] w-full rounded-t-[10px] object-cover"
@@ -432,7 +436,7 @@
               </div>
             </div>
             <div
-              class="bg-[#F5F6F7] h-[356px] w-[270px] flex-shrink-0 flex flex-col px-6 justify-center"
+              class="bg-[#F5F6F7] h-[400px] max-w-[390px] flex-shrink-0 flex flex-col px-6 justify-center"
             >
               <img
                 class="h-[250px] sm:h-[270px] w-full rounded-t-[10px] object-cover"
@@ -447,7 +451,7 @@
               </div>
             </div>
             <div
-              class="bg-[#F5F6F7] h-[356px] w-[270px] flex-shrink-0 flex flex-col px-6 justify-center"
+              class="bg-[#F5F6F7] h-[400px] max-w-[390px] flex-shrink-0 flex flex-col px-6 justify-center"
             >
               <img
                 class="h-[250px] sm:h-[270px] w-full rounded-t-[10px] object-cover"
@@ -462,7 +466,7 @@
               </div>
             </div>
             <div
-              class="bg-[#F5F6F7] h-[356px] w-[270px] flex-shrink-0 flex flex-col px-6 justify-center"
+              class="bg-[#F5F6F7] h-[400px] max-w-[390px] flex-shrink-0 flex flex-col px-6 justify-center"
             >
               <img
                 class="h-[250px] sm:h-[270px] w-full rounded-t-[10px] object-cover"
@@ -477,7 +481,7 @@
               </div>
             </div>
             <div
-              class="bg-[#F5F6F7] h-[356px] w-[270px] flex-shrink-0 flex flex-col px-6 justify-center"
+              class="bg-[#F5F6F7] h-[400px] max-w-[390px] flex-shrink-0 flex flex-col px-6 justify-center"
             >
               <img
                 class="h-[250px] sm:h-[270px] w-full rounded-t-[10px] object-cover"
@@ -492,7 +496,7 @@
               </div>
             </div>
             <div
-              class="bg-[#F5F6F7] h-[356px] w-[270px] flex-shrink-0 flex flex-col px-6 justify-center"
+              class="bg-[#F5F6F7] h-[400px] max-w-[390px] flex-shrink-0 flex flex-col px-6 justify-center"
             >
               <img
                 class="h-[250px] sm:h-[270px] w-full rounded-t-[10px] object-cover"
@@ -507,7 +511,7 @@
               </div>
             </div>
             <div
-              class="bg-[#F5F6F7] h-[356px] w-[270px] flex-shrink-0 flex flex-col px-6 justify-center"
+              class="bg-[#F5F6F7] h-[400px] max-w-[390px] flex-shrink-0 flex flex-col px-6 justify-center"
             >
               <img
                 class="h-[250px] sm:h-[270px] w-full rounded-t-[10px] object-cover"
@@ -522,7 +526,7 @@
               </div>
             </div>
             <div
-              class="bg-[#F5F6F7] h-[356px] w-[270px] flex-shrink-0 flex flex-col px-6 justify-center"
+              class="bg-[#F5F6F7] h-[400px] max-w-[390px] flex-shrink-0 flex flex-col px-6 justify-center"
             >
               <img
                 class="h-[250px] sm:h-[270px] w-full rounded-t-[10px] object-cover"
@@ -537,7 +541,7 @@
               </div>
             </div>
             <div
-              class="bg-[#F5F6F7] h-[356px] w-[270px] flex-shrink-0 flex flex-col px-6 justify-center"
+              class="bg-[#F5F6F7] h-[400px] max-w-[390px] flex-shrink-0 flex flex-col px-6 justify-center"
             >
               <img
                 class="h-[250px] sm:h-[270px] w-full rounded-t-[10px] object-cover"
@@ -578,7 +582,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="animate-item">
         <div class="flex flex-col items-center mb-12 px-4">
           <div class="mb-6">
             <h2 class="text-[2rem] font-[700] text-[#1D2630]">
@@ -649,32 +653,83 @@
             </h3>
             <ul class="space-y-2">
               <li>
-                <a href="about.html" aria-label="Learn more about 3T"
+                <a
+                  href="about.html"
+                  aria-label="Learn more about 3T"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
                   >About 3T</a
                 >
               </li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Why 3T</a></li>
-              <li><a href="#">FAQs</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >Why 3T</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >FAQs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >Contact Us</a
+                >
+              </li>
             </ul>
           </div>
           <div class="flex flex-col gap-3">
             <h3
-              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46]"
+              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
             >
               Quick Links
             </h3>
             <ul class="space-y-2">
-              <li><a href="#">Be Driver</a></li>
-              <li><a href="#">Fleet Owner</a></li>
-              <li><a href="rider.html">Rider</a></li>
-              <li><a href="#">Lost & Found</a></li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >Be Driver</a
+                >
+              </li>
+              <li>
+                <a
+                  href="fleetowner.html"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >Fleet Owner</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >Rider</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >Lost & Found</a
+                >
+              </li>
             </ul>
           </div>
           <div class="flex flex-col gap-3">
             <h3
-              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46]"
+              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
             >
               Download User App
             </h3>
@@ -752,25 +807,25 @@
 
       <!-- footer last line -->
       <div
-        class="flex flex-wrap flex-col-reverse sm:flex-row justify-between container mx-auto items-center gap-4 sm:gap-16 px-4 sm:px-6 lg:px-8 py-6 bg-gray-100"
+        class="flex sm:flex-row justify-between container mx-auto items-center sm:gap-16 px-4 sm:px-6 lg:px-8 py-6 bg-gray-100"
       >
         <div
-          class="flex flex-col sm:flex-row gap-2 sm:gap-12 items-center text-center sm:text-left"
+          class="flex sm:flex-row gap-2 sm:gap-12 items-center text-center sm:text-left"
         >
-          <p class="text-[14px] sm:text-[16px]">
+          <p class="text-[11px] sm:text-[16px]">
             <a href="#" class="hover:underline text-gray-600">Privacy Policy</a>
             &middot;
             <a href="#" class="hover:underline pl-2 text-gray-600">
               Terms of Service
             </a>
           </p>
-          <p class="text-gray-500 text-[14px] sm:text-[16px]">
+          <p class="text-gray-500 text-[11px] sm:text-[16px]">
             Copyrights@2025 | All Rights Reserved by 3T
           </p>
         </div>
 
         <div>
-          <a href="#">
+          <a href="#" id="scrollToTop">
             <img
               src="./footer-logo/Group 1000002170.svg"
               alt="Company Logo"
@@ -780,6 +835,15 @@
         </div>
       </div>
     </footer>
+
+    <!-- <script src="scrolle.js" defer></script> -->
     <script src="script.js" defer></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        console.log('DOM fully loaded');
+        rotateImageContinuously('roundOne', 50);
+        rotateImageContinuously('roundTwo', 20);
+      });
+    </script>
   </body>
 </html>
