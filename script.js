@@ -259,3 +259,31 @@ function rotateImageContinuously(imageId, speed) {
     );
   }
 }
+
+//------This is how our fleet portal works
+
+document.addEventListener("DOMContentLoaded", () => {
+  const imageSliderTrack = document.getElementById("image-slider-track");
+  const textSliderTrack = document.getElementById("text-slider-track");
+  const prevBtn = document.getElementById("prev-btn");
+  const nextBtn = document.getElementById("next-btn");
+
+  const totalSlides = imageSliderTrack.children.length;
+  let currentSlide = 0;
+
+  const updateSlider = () => {
+    const translateValue = `-${currentSlide * 100}%`;
+    imageSliderTrack.style.transform = `translateX(${translateValue})`;
+    textSliderTrack.style.transform = `translateX(${translateValue})`;
+  };
+
+  prevBtn.addEventListener("click", () => {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    updateSlider();
+  });
+
+  nextBtn.addEventListener("click", () => {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateSlider();
+  });
+});

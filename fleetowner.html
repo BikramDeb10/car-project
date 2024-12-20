@@ -50,10 +50,34 @@
         <!-- Navigation -->
         <div class="hidden md:flex items-center gap-6">
           <nav class="hidden xl:block">
-            <ul class="flex gap-[20px] text-[16px] tracking-[0.5px]">
-              <li><a href="" class="text-[#E0B827]">Home</a></li>
-              <li><a href="">Become a Driver</a></li>
-              <li><a href="">Support</a></li>
+            <ul
+              class="flex gap-[20px] text-[16px] tracking-[0.5px]"
+              id="navMenu"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="nav-link text-gray-900 transition-all duration-300 active"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="nav-link text-gray-900 transition-all duration-300"
+                >
+                  Become a Driver
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="nav-link text-gray-900 transition-all duration-300"
+                >
+                  Support
+                </a>
+              </li>
             </ul>
           </nav>
           <div class="flex items-center gap-4">
@@ -68,13 +92,15 @@
               <div>
                 <h3 class="text-[18px]">Language</h3>
               </div>
-              <div>
-                <select class="border border-gray-300 rounded px-2 py-1">
-                  <option value="">EN</option>
-                  <option value="">FR</option>
-                  <option value="">ES</option>
-                  <option value="">DE</option>
-                </select>
+
+              <div class="dropdown">
+                <div class="dropdown-toggle" id="dropdownToggle">EN</div>
+                <ul class="dropdown-menu" id="dropdownMenu">
+                  <li data-value="EN">EN</li>
+                  <li data-value="FR">FR</li>
+                  <li data-value="ES">ES</li>
+                  <li data-value="DE">DE</li>
+                </ul>
               </div>
             </div>
             <div class="bg-gray-700 text-white px-6 py-2.5 rounded-xl">
@@ -94,9 +120,30 @@
           />
         </div>
         <ul class="flex flex-col gap-2 text-gray-700 text-[18px] mb-2 xl:mb-0">
-          <li><a href="">Home</a></li>
-          <li><a href="">Become a Driver</a></li>
-          <li><a href="">Support</a></li>
+          <li>
+            <a
+              href="#"
+              class="nav-link text-gray-500 transition-all duration-300 active"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="nav-link text-gray-500 transition-all duration-300"
+            >
+              Become a Driver
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="nav-link text-gray-500] transition-all duration-300"
+            >
+              Support
+            </a>
+          </li>
         </ul>
         <div class="flex flex-col xl:flex-row xl:items-center gap-4">
           <div class="flex gap-2 items-center">
@@ -110,13 +157,14 @@
             <div>
               <h3 class="text-[18px]">Language</h3>
             </div>
-            <div>
-              <select class="border border-gray-300 rounded px-2 py-1">
-                <option value="">EN</option>
-                <option value="">FR</option>
-                <option value="">ES</option>
-                <option value="">DE</option>
-              </select>
+            <div class="dropdown">
+              <div class="dropdown-toggle" id="dropdownToggle2">EN</div>
+              <ul class="dropdown-menu" id="dropdownMenu2">
+                <li data-value="EN">EN</li>
+                <li data-value="FR">FR</li>
+                <li data-value="ES">ES</li>
+                <li data-value="DE">DE</li>
+              </ul>
             </div>
           </div>
           <div>
@@ -134,12 +182,12 @@
       <section class="relative px-2">
         <!-- Background Section -->
         <div
-          class="bg-[url('images/about-image/about-herogroup.png')] h-[250px] sm:h-[350px] md:h-[400px] lg:h-[500px] xl:h-[550px] bg-no-repeat bg-cover bg-center rounded-2xl"
+          class="bg-[url('images/about-image/about-herogroup.png')] h-[250px] sm:h-[350px] md:h-[400px] lg:h-[500px] xl:h-[550px] bg-no-repeat bg-cover bg-center rounded-2xl animate-item"
         ></div>
 
         <!-- Text Section -->
         <div
-          class="absolute inset-0 flex flex-col items-center justify-center text-center px-4"
+          class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 animate-item"
         >
           <div>
             <h1
@@ -164,12 +212,12 @@
           <img
             src="images/about-image/about svg/logo.svg"
             alt="nav-logo"
-            class="h-[60px] w-[60px] sm:h-[75px] sm:w-[75px] md:h-[82px] md:w-[82px] lg:h-[92px] lg:w-[92px] xl:h-[100px] xl:w-[100px]"
+            class="h-[60px] w-[60px] sm:h-[75px] sm:w-[75px] md:h-[82px] md:w-[82px] lg:h-[92px] lg:w-[92px] xl:h-[100px] xl:w-[100px] animate-item"
           />
         </div>
       </section>
-      <section class="mt-16 md:mt-20 lg:mt-24">
-        <div>
+      <section class="mt-16 md:mt-20 lg:mt-24 px-2">
+        <div class="animate-item">
           <div class="flex items-center justify-center flex-col text-center">
             <h1
               class="font-[700] text-[1.1rem] sm:text-[1.5rem] md:text-[1.9rem] xl:text-[2.1rem] mb-2 max-w-[260px] sm:max-w-[360px] md:max-w-[600px] lg:max-w-[780px] xl:max-w-full"
@@ -179,14 +227,14 @@
 
             <div class="w-full text-center">
               <p
-                class="flex flex-col items-center leading-[1.4rem] text-[#77848f] font-[400]"
+                class="flex flex-col items-center leading-[1.4rem] text-[#77848f] font-[400] text-[0.8rem] sm:text-[0.9rem] md:text-[1rem]"
               >
-                <span class="w-full break-words text-[1.1rem]"
+                <span class="w-full break-words"
                   >As a Fleet owner, you can manage your drivers from the Fleet
                   Portal and ensure growth in your company. Lorem ipsum dolor
                   sit amet,</span
                 >
-                <span class="w-full break-words text-[1.1rem]">
+                <span class="w-full break-words">
                   consectetur adipiscing elit. Euismod neque, vel, scelerisque
                   non nec et egestas. Integer tincidunt turpis ac nam integer
                   etiam non</span
@@ -194,14 +242,16 @@
               </p>
             </div>
           </div>
-          <div class="flex mt-16 justify-between">
+          <div class="flex mt-16 justify-between gap-6">
             <div>
-              <div>
-                <h2 class="text-[1.9rem] font-[700] pb-2">
+              <div class="animate-item">
+                <h2
+                  class="text-[1.1rem] xl:text-[1.9rem] font-[700] pb-2 md:text-[1.4rem]"
+                >
                   Why cooperate with us?
                 </h2>
                 <p
-                  class="max-w-[500px] leading-[1.4rem] text-[#77848f] font-[400] mb-4"
+                  class="max-w-[500px] leading-[1.4rem] text-[#77848f] font-[400] mb-4 text-[0.8rem] sm:text-[0.9rem] md:text-[1rem]"
                 >
                   3T is used by fleet partners from over 45 countries
                   worldwide.We are known for:. Lorem ipsum dolor sit amet,
@@ -211,32 +261,44 @@
                 </p>
               </div>
               <div>
-                <h2 class="text-[1.3rem] font-[600] text-[#373F46]">
+                <h2
+                  class="text-[1rem] font-[600] text-[#373F46] md:text-[1.1rem]"
+                >
                   Download Driver App
                 </h2>
-                <div class="mt-2 flex gap-4">
+                <div
+                  class="mt-2 flex flex-wrap sm:flex-nowrap gap-1.5 md:gap-3 lg:gap-4"
+                >
                   <img
                     src="images/footer-images/googleplay.svg"
                     alt="googleapp"
+                    class="h-[40px] md:h-[45px] lg:h-[60px]"
                   />
                   <img
                     src="images/footer-images/applestore.svg"
                     alt="appleapp"
+                    class="h-[40px] md:h-[45px] lg:h-[60px]"
                   />
                 </div>
               </div>
             </div>
             <div>
               <div
-                class="grid gap-4 grid-cols-1 md:grid-cols-2 max-w-2xl mx-auto"
+                class="grid gap-2 xl:gap-4 grid-cols-1 md:grid-cols-2 max-w-lg lg:max-w-2xl mx-auto"
               >
                 <!-- Card 1 -->
-                <div class="bg-[#F5F6F7] rounded-lg p-6 items-start">
-                  <div class="text-blue-500 text-3xl">
-                    <img src="images/svg/bar-chart 1.svg" alt="" />
+                <div
+                  class="bg-[#F5F6F7] rounded-lg p-3 md:p-5 xl:p-6 items-start animate-item"
+                >
+                  <div class="">
+                    <img
+                      src="images/svg/bar-chart 1.svg"
+                      alt=""
+                      class="h-[37px] md:h-[50] xl:h-[60px]"
+                    />
                   </div>
                   <div class="mt-2">
-                    <h3 class="text-lg font-semibold">
+                    <h3 class="text-sm md:text-lg font-semibold">
                       Good and stable earnings
                     </h3>
                     <p class="text-gray-500 text-sm">
@@ -246,12 +308,20 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="bg-[#F5F6F7] rounded-lg p-6 items-start">
-                  <div class="text-blue-500 text-3xl">
-                    <img src="images/svg/result 1.svg" alt="" />
+                <div
+                  class="bg-[#F5F6F7] rounded-lg p-3 md:p-5 xl:p-6 items-start animate-item"
+                >
+                  <div class="">
+                    <img
+                      src="images/svg/result 1.svg"
+                      alt=""
+                      class="h-[37px] md:h-[50] xl:h-[60px]"
+                    />
                   </div>
                   <div class="mt-2">
-                    <h3 class="text-lg font-semibold">Full overview</h3>
+                    <h3 class="text-sm md:text-lg font-semibold">
+                      Full overview
+                    </h3>
                     <p class="text-gray-500 text-sm">
                       A modern portal to manage all aspects of your business.
                     </p>
@@ -260,13 +330,17 @@
 
                 <!-- Card 3 -->
                 <div
-                  class="bg-[#F5F6F7] rounded-lg p-4 flex items-start space-x-4 col-span-1 md:col-span-2"
+                  class="bg-[#F5F6F7] rounded-lg p-3 md:p-5 xl:p-6 flex-wrap flex items-start md:space-x-4 col-span-1 md:col-span-2"
                 >
-                  <div class="text-blue-500 text-3xl">
-                    <img src="images/svg/customer-service 1.svg" alt="" />
+                  <div class="">
+                    <img
+                      src="images/svg/customer-service 1.svg"
+                      alt=""
+                      class="h-[37px] md:h-[50] xl:h-[60px]"
+                    />
                   </div>
                   <div>
-                    <h3 class="text-lg font-semibold">
+                    <h3 class="text-sm md:text-lg font-semibold">
                       Excellent customer support
                     </h3>
                     <p class="text-gray-500 text-sm">
@@ -283,38 +357,138 @@
       <!--------------------- Maping -------------------- -->
 
       <section class="mt-10 bg-[#F5F6F7] py-20">
-        <div class="flex flex-wrap justify-center container mx-auto gap-16">
-          <div class="border-[9px] rounded-2xl border-[#d9ebff]">
-            <div>
-              <img
-                src="images/dashboardimage/Dashboard 1.png"
-                alt="dashboardimage"
-                class="h-[280px] rounded-2xl"
-              />
+        <div
+          class="flex flex-wrap justify-center container mx-auto gap-3 md:gap-6 xl:gap-16 animate-item"
+        >
+          <!-- Slider Section -->
+          <div
+            class="relative flex justify-between overflow-hidden w-[387px] sm:w-[515px]"
+          >
+            <div id="image-slider" class="relative overflow-hidden">
+              <div
+                id="image-slider-track"
+                class="flex transition-transform duration-500 ease-in-out"
+              >
+                <!-- Slide 1 -->
+                <div class="flex-shrink-0">
+                  <div
+                    class="border-[9px] rounded-2xl border-[#d9ebff] sm:h-[300px]"
+                  >
+                    <img
+                      src="images/dashboardimage/Dashboard 1.png"
+                      alt="dashboardimage"
+                      class="w-[370px] md:w-full sm:h-[280px] rounded-2xl"
+                    />
+                  </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="flex-shrink-0">
+                  <div
+                    class="border-[9px] rounded-2xl border-[#d9ebff] sm:h-[300px]"
+                  >
+                    <img
+                      src="images/dashboardimage/Dashboard 1.png"
+                      alt="dashboardimage"
+                      class="w-[370px] md:w-full sm:h-[280px] rounded-2xl"
+                    />
+                  </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="flex-shrink-0">
+                  <div
+                    class="border-[9px] rounded-2xl border-[#d9ebff] sm:h-[300px]"
+                  >
+                    <img
+                      src="images/dashboardimage/Dashboard 1.png"
+                      alt="dashboardimage"
+                      class="w-[370px] md:w-full sm:h-[280px] rounded-2xl"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div>
-            <h1 class="text-[2.4rem] text-[#1D2630] font-bold">
-              This is how our fleet portal works
-            </h1>
-            <h4 class="text-[1.5rem] text-[#1D2630] font-semibold mt-4">
-              Generer rapporter raskt og enkelt
-            </h4>
 
-            <p class="text-gray-500 text-lg max-w-[550px] mt-1.5">
-              Lorem ipsum dolor sit amet consectetur. Felis pulvinar enim urna
-              ac enim. Nisl orci porttitor adipiscing condimentum scelerisque
-              massa ipsum. Massa facilisis egestas nunc id. Lacus morbi
-            </p>
+          <!-- Text Slider -->
+          <div class="relative w-[500px] xl:w-[600px] px-3">
+            <div id="text-slider" class="relative overflow-hidden">
+              <div
+                id="text-slider-track"
+                class="flex transition-transform duration-500 ease-in-out"
+              >
+                <!-- Text Slide 1 -->
+                <div class="flex-shrink-0 w-full">
+                  <h1
+                    class="text-[1.6rem] md:text-[2rem] xl:text-[2.4rem] text-[#1D2630] font-bold"
+                  >
+                    This is how our fleet portal works
+                  </h1>
+                  <h4 class="text-[1.5rem] text-[#1D2630] font-semibold mt-4">
+                    Generer rapporter raskt og enkelt
+                  </h4>
 
-            <div class="flex items-center gap-4 mt-8">
-              <button class="bg-white p-2.5 rounded-full">
+                  <p class="text-gray-500 text-lg max-w-[550px] mt-1.5">
+                    Lorem ipsum dolor sit amet consectetur. Felis pulvinar enim
+                    urna ac enim. Nisl orci porttitor adipiscing condimentum
+                    scelerisque massa ipsum. Massa facilisis egestas nunc id.
+                    Lacus morbi
+                  </p>
+                </div>
+                <!-- Text Slide 2 -->
+                <div class="flex-shrink-0 w-full">
+                  <h1
+                    class="text-[1.6rem] md:text-[2rem] xl:text-[2.4rem] text-[#1D2630] font-bold"
+                  >
+                    This is how our fleet portal works
+                  </h1>
+                  <h4 class="text-[1.5rem] text-[#1D2630] font-semibold mt-4">
+                    Generer rapporter raskt og enkelt
+                  </h4>
+
+                  <p class="text-gray-500 text-lg max-w-[550px] mt-1.5">
+                    Lorem ipsum dolor sit amet consectetur. Felis pulvinar enim
+                    urna ac enim. Nisl orci porttitor adipiscing condimentum
+                    scelerisque massa ipsum. Massa facilisis egestas nunc id.
+                    Lacus morbi
+                  </p>
+                </div>
+                <!-- Text Slide 3 -->
+                <div class="flex-shrink-0 w-full">
+                  <h1
+                    class="text-[1.6rem] md:text-[2rem] xl:text-[2.4rem] text-[#1D2630] font-bold"
+                  >
+                    This is how our fleet portal works
+                  </h1>
+                  <h4 class="text-[1.5rem] text-[#1D2630] font-semibold mt-4">
+                    Generer rapporter raskt og enkelt
+                  </h4>
+
+                  <p class="text-gray-500 text-lg max-w-[550px] mt-1.5">
+                    Lorem ipsum dolor sit amet consectetur. Felis pulvinar enim
+                    urna ac enim. Nisl orci porttitor adipiscing condimentum
+                    scelerisque massa ipsum. Massa facilisis egestas nunc id.
+                    Lacus morbi
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Navigation Buttons -->
+            <div
+              class="flex items-center gap-4 mt-5 md:mt-8 justify-center md:justify-normal"
+            >
+              <button
+                id="prev-btn"
+                class="bg-white p-2.5 rounded-full shadow pointer-events-auto transition-all duration-[0.2s] active:translate-x-[-10px]"
+              >
                 <img
                   src="images/leftrightarrow/Vector 66 (Stroke).svg"
                   alt="prev"
                 />
               </button>
-              <button class="bg-white p-2.5 rounded-full">
+              <button
+                id="next-btn"
+                class="bg-white p-2.5 rounded-full shadow pointer-events-auto transition-all duration-[0.2s] active:translate-x-[10px]"
+              >
                 <img
                   src="images/leftrightarrow/Vector 66 (Stroke) (1).svg"
                   alt="next"
@@ -328,20 +502,28 @@
       <!-- Try our Fleet Portal for free -->
 
       <section>
-        <div class="mt-20">
+        <div class="mt-20 px-4 md:px-8 animate-item">
+          <!-- Heading Section -->
           <div class="text-center">
-            <h1 class="text-[2.5rem] font-bold">
+            <h1 class="text-[2rem] sm:text-[2.5rem] md:text-[3rem] font-bold">
               Try our Fleet Portal for free
             </h1>
-            <p class="text-[1.1rem]">
+            <p
+              class="text-[1rem] sm:text-[1.1rem] md:text-[1.2rem] mt-2 text-gray-600"
+            >
               Lorem ipsum dolor sit amet consectetur. Venenatis erat eleifend
               quis id placerat.
             </p>
           </div>
+
+          <!-- Cards Section -->
           <div
-            class="flex gap-20 flex-col sm:flex-row px-3 justify-center pb-16 pt-8"
+            class="flex flex-col sm:flex-row gap-10 sm:gap-8 md:gap-12 lg:gap-20 justify-center items-center pb-12 pt-8"
           >
-            <div class="flex flex-col items-center rounded-lg">
+            <!-- Card 1 -->
+            <div
+              class="flex flex-col items-center rounded-lg text-center max-w-xs"
+            >
               <div
                 class="w-20 h-20 flex items-center justify-center border-black border-[1px] p-2 rounded-full mb-4"
               >
@@ -351,13 +533,21 @@
                   class="w-[50px] h-[50px]"
                 />
               </div>
-              <h1 class="text-[25px] font-semibold mb-2">Sign up</h1>
-              <p class="text-center text-[18px] text-[#373F46] max-w-[350px]">
+              <h1
+                class="text-[20px] sm:text-[22px] md:text-[25px] font-semibold mb-2"
+              >
+                Sign up
+              </h1>
+              <p class="text-[16px] sm:text-[18px] text-gray-700 max-w-[350px]">
                 Lorem ipsum dolor sit amet consectetur. Enim amet sed amet
                 aliquam sed et urna.
               </p>
             </div>
-            <div class="flex flex-col items-center rounded-lg">
+
+            <!-- Card 2 -->
+            <div
+              class="flex flex-col items-center rounded-lg text-center max-w-xs"
+            >
               <div
                 class="w-20 h-20 flex items-center justify-center border-black border-[1px] p-2 rounded-full mb-4"
               >
@@ -367,13 +557,20 @@
                   class="w-[50px] h-[50px]"
                 />
               </div>
-              <h1 class="text-[25px] font-semibold mb-2">Verify Documents</h1>
-              <p class="text-center text-[18px] text-[#373F46] max-w-[350px]">
-                <span>Lacus morbi ornare bibendum nunc </span>
-                <span>bibendum. Laoreet non quis id.</span>
+              <h1
+                class="text-[20px] sm:text-[22px] md:text-[25px] font-semibold mb-2"
+              >
+                Verify Documents
+              </h1>
+              <p class="text-[16px] sm:text-[18px] text-gray-700 max-w-[350px]">
+                Lacus morbi ornare bibendum nunc bibendum. Laoreet non quis id.
               </p>
             </div>
-            <div class="flex flex-col items-center rounded-lg">
+
+            <!-- Card 3 -->
+            <div
+              class="flex flex-col items-center rounded-lg text-center max-w-xs"
+            >
               <div
                 class="w-20 h-20 flex items-center justify-center border-black border-[1px] p-2 rounded-full mb-4"
               >
@@ -383,19 +580,24 @@
                   class="w-[50px] h-[50px]"
                 />
               </div>
-              <h1 class="text-[25px] font-semibold mb-2">Fast Pickups</h1>
-              <p class="text-center text-[18px] text-[#373F46] max-w-[370px]">
+              <h1
+                class="text-[20px] sm:text-[22px] md:text-[25px] font-semibold mb-2"
+              >
+                Fast Pickups
+              </h1>
+              <p class="text-[16px] sm:text-[18px] text-gray-700 max-w-[350px]">
                 Laoreet non quis id massa adipiscing netus sit faucibus congue.
-                Eleifend sem diam
+                Eleifend sem diam.
               </p>
             </div>
           </div>
         </div>
       </section>
+
       <!-- download section -->
 
       <section
-        class="bg-[#F5F6F7] py-10 px-6 sm:px-10 rounded-[30px] h-[700px] sm:h-[550px] md:h-[500px] mt-28"
+        class="bg-[#F5F6F7] py-10 px-2 rounded-[30px] h-[700px] sm:h-[650px] md:h-[530px] xl:h-[430px] mt-28 container mx-auto"
       >
         <div
           class="container mx-auto flex flex-col sm:flex-row items-center justify-between relative"
@@ -405,17 +607,19 @@
             <img
               src="images/downloadapp/phoneimage.png"
               alt="App Download Preview"
-              class="w-full sm:w-[300px] md:w-[520px]"
+              class="w-full sm:w-[300px] md:w-[520px] animate-item"
             />
           </div>
 
           <!-- Text and Buttons -->
           <div class="sm:ml-auto text-center sm:text-left sm:w-1/2">
-            <h1 class="text-[2rem] sm:text-[2.8rem] font-[700] mb-4">
+            <h1
+              class="text-[2rem] sm:text-[2.8rem] font-[700] mb-4 animate-item"
+            >
               Download The App
             </h1>
             <p
-              class="text-[#373F46] text-[1rem] sm:text-[1.2rem] max-w-[600px] mb-6 mx-auto sm:mx-0"
+              class="text-[#373F46] text-[1rem] sm:text-[1.2rem] max-w-[600px] mb-6 mx-auto sm:mx-0 animate-item"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
               neque, vel, scelerisque non nec et egestas. Integer tincidunt
@@ -423,7 +627,9 @@
             </p>
 
             <!-- App Store Buttons -->
-            <div class="flex justify-start sm:justify-start space-x-4">
+            <div
+              class="flex justify-center sm:justify-start space-x-4 animate-item"
+            >
               <button>
                 <img
                   src="images/footer-images/googleplay.svg"
@@ -445,8 +651,8 @@
 
       <!-- What Our Users Says -->
 
-      <section class="mt-16">
-        <div class="flex flex-col items-center mb-12 px-4">
+      <section>
+        <div class="flex flex-col items-center my-12 px-4 animate-item">
           <div class="mb-6">
             <h2 class="text-[2rem] font-[700] text-[#1D2630]">
               What Our Users Says
@@ -516,32 +722,83 @@
             </h3>
             <ul class="space-y-2">
               <li>
-                <a href="about.html" aria-label="Learn more about 3T"
+                <a
+                  href="about.html"
+                  aria-label="Learn more about 3T"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
                   >About 3T</a
                 >
               </li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Why 3T</a></li>
-              <li><a href="#">FAQs</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >Why 3T</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >FAQs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >Contact Us</a
+                >
+              </li>
             </ul>
           </div>
           <div class="flex flex-col gap-3">
             <h3
-              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46]"
+              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
             >
               Quick Links
             </h3>
             <ul class="space-y-2">
-              <li><a href="#">Be Driver</a></li>
-              <li><a href="#">Fleet Owner</a></li>
-              <li><a href="#">Rider</a></li>
-              <li><a href="#">Lost & Found</a></li>
+              <li>
+                <a
+                  href="driver.html"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >Be Driver</a
+                >
+              </li>
+              <li>
+                <a
+                  href="fleetowner.html"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >Fleet Owner</a
+                >
+              </li>
+              <li>
+                <a
+                  href="rider.html"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >Rider</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >Lost & Found</a
+                >
+              </li>
             </ul>
           </div>
           <div class="flex flex-col gap-3">
             <h3
-              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46]"
+              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
             >
               Download User App
             </h3>
@@ -619,19 +876,19 @@
 
       <!-- footer last line -->
       <div
-        class="flex flex-wrap flex-col-reverse sm:flex-row justify-between container mx-auto gap-4 sm:gap-16 px-4 sm:px-6 lg:px-8 py-6 bg-gray-100"
+        class="flex sm:flex-row justify-between container mx-auto items-center sm:gap-16 px-4 sm:px-6 lg:px-8 py-6 bg-gray-100"
       >
         <div
-          class="flex flex-col sm:flex-row gap-2 sm:gap-12 items-center text-center sm:text-left"
+          class="flex sm:flex-row gap-2 sm:gap-12 items-center text-center sm:text-left"
         >
-          <p class="text-[14px] sm:text-[16px]">
+          <p class="text-[11px] sm:text-[16px]">
             <a href="#" class="hover:underline text-gray-600">Privacy Policy</a>
             &middot;
             <a href="#" class="hover:underline pl-2 text-gray-600">
               Terms of Service
             </a>
           </p>
-          <p class="text-gray-500 text-[14px] sm:text-[16px]">
+          <p class="text-gray-500 text-[11px] sm:text-[16px]">
             Copyrights@2025 | All Rights Reserved by 3T
           </p>
         </div>
