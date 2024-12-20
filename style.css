@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .animate-fade-in {
@@ -227,4 +227,109 @@ body {
   .AppDemoBox {
     width: 33%;
   }
+}
+
+/* ///////GUPI//////// */
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slideIn {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.image-content {
+  animation: 1s ease-out 0s 1 slideInFromRight;
+}
+/* Image hover effect */
+.mission-item:hover .mission-image {
+  transform: scale(0.95);
+  transition: transform 0.3s ease-in-out;
+}
+
+.mission-item:hover .mission-title {
+  color: goldenrod;
+  transition: color 0.3s ease-in-out;
+}
+
+.mission-item:hover .mission-description {
+  color: #080489;
+  transition: color 0.3s ease-in-out;
+}
+
+.mission-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.stats-container {
+  animation: slideUp 0.8s ease-out;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.stat-item:hover h1 {
+  color: goldenrod;
+}
+
+.stat-item:hover p {
+  color: #0073e6;
 }
