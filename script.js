@@ -253,10 +253,6 @@ function rotateImageContinuously(imageId, speed) {
 
     // Apply the animation to the image
     image.style.animation = `rotateAnimation ${speed}s linear infinite`;
-  } else {
-    console.error(
-      `Image with ID "${imageId}" not found. Check if the ID is correct.`
-    );
   }
 }
 
@@ -287,3 +283,71 @@ document.addEventListener("DOMContentLoaded", () => {
     updateSlider();
   });
 });
+
+// VIP car Pricing
+
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".tab-btn");
+
+  // Set the first button as active by default
+  const firstButton = buttons[0];
+  firstButton.classList.add("bg-gray-900", "text-white");
+
+  // Add event listeners to toggle the active state on buttons
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      // Remove active styles from all buttons
+      buttons.forEach((btn) =>
+        btn.classList.remove("bg-gray-900", "text-white")
+      );
+      // Add active styles to the clicked button
+      button.classList.add("bg-gray-900", "text-white");
+    });
+  });
+});
+
+// 2222222222222
+
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".tab-btn2");
+
+  // Set the first button as active by default
+  const firstButton = buttons[0];
+  firstButton.classList.add("bg-gray-900", "text-white");
+
+  // Add event listeners to toggle the active state on buttons
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      // Remove active styles from all buttons
+      buttons.forEach((btn) =>
+        btn.classList.remove("bg-gray-900", "text-white")
+      );
+      // Add active styles to the clicked button
+      button.classList.add("bg-gray-900", "text-white");
+    });
+  });
+});
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   const buttons = document.querySelectorAll(".tab-btn");
+
+//   // Set the first button as active by default
+//   const firstButton = buttons[0];
+//   firstButton.classList.remove("bg-gray-200", "text-gray-700");
+//   firstButton.classList.add("bg-gray-900", "text-white");
+
+//   // Add event listeners to toggle the active state on buttons
+//   buttons.forEach((button) => {
+//     button.addEventListener("click", () => {
+//       // Remove active styles from all buttons
+//       buttons.forEach((btn) => {
+//         btn.classList.remove("bg-gray-900", "text-white");
+//         btn.classList.add("bg-gray-200", "text-gray-700");
+//       });
+
+//       // Add active styles to the clicked button
+//       button.classList.remove("bg-gray-200", "text-gray-700");
+//       button.classList.add("bg-gray-900", "text-white");
+//     });
+//   });
+// });
