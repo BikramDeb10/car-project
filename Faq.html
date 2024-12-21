@@ -9,7 +9,12 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="images/about-image/about svg/logo.svg"
+      type="image/x-icon"
+    />
+    <title>3t car</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -177,156 +182,127 @@
         </div>
       </div>
     </header>
-    <main class="">
-      <!-- About Us hero section -->
-      <section class="relative container animate-item px-2 mx-auto">
-        <!-- Background Section -->
-        <div
-          class="bg-[url('images/contact-image/hero-contact.png')] h-[250px] sm:h-[350px] md:h-[400px] lg:h-[500px] xl:h-[550px] bg-no-repeat bg-cover bg-center rounded-2xl"
-        ></div>
+    <main>
+      <div class="flex bg-gray-100 min-h-screen">
+        <!-- Sidebar -->
+        <div class="w-1/4 bg-white p-6 shadow-lg">
+          <div class="space-y-4">
+            <!-- Active Button -->
+            <button
+              class="w-full bg-black text-white py-3 px-4 rounded-md cursor-pointer"
+            >
+              User
+            </button>
 
-        <!-- Text Section -->
-        <div
-          class="absolute inset-0 flex flex-col items-center justify-center xl:mt-[120px] text-center px-4"
-        >
-          <div class="animate-item">
-            <h1
-              class="text-[25px] sm:text-[30px] md:text-[35px] xl-text-[40px] text-white font-bold mb-0 md:mb-2 xl:mb-4"
+            <!-- Inactive Buttons -->
+            <button
+              class="w-full bg-gray-200 py-3 px-4 rounded-md cursor-pointer hover:bg-gray-300"
             >
-              Contact Us
-            </h1>
-            <p
-              class="text-white flex flex-col items-center text-[0.70rem] sm:text-[0.80rem] md:text-[0.90rem] xl-text-[1 rem] max-w-[300px] sm:-max-w[350px] md:max-w[480px] lg:max-w-[520px] xl:max-w-full"
+              Driver
+            </button>
+            <button
+              class="w-full bg-gray-200 py-3 px-4 rounded-md cursor-pointer hover:bg-gray-300"
             >
-              <span class="w-full break-words">
-                Lorem ipsum dolor sit amet consectetur. Cursus dolor vulputate
-                tellus sed et lacinia cras massa. Sem sed felis a
-              </span>
-              <span class="w-full break-words"> eu iaculis consectetur.</span>
-            </p>
+              Bookings
+            </button>
+            <button
+              class="w-full bg-gray-200 py-3 px-4 rounded-md cursor-pointer hover:bg-gray-300"
+            >
+              Hotel
+            </button>
+            <button
+              class="w-full bg-gray-200 py-3 px-4 rounded-md cursor-pointer hover:bg-gray-300"
+            >
+              Help & Support
+            </button>
           </div>
         </div>
 
-        <!-- Logo Section -->
-        <div class="absolute bottom-[-30px] left-1/2 -translate-x-1/2">
-          <a href="index.html">
-            <img
-              src="images/about-image/about svg/logo.svg"
-              alt="nav-logo"
-              class="h-[60px] w-[60px] sm:h-[75px] sm:w-[75px] md:h-[82px] md:w-[8px]lg:lg:h-[92px] lg:w-[92px] xl:h-[100px] xl:w-[100px]"
-            />
-          </a>
-        </div>
-      </section>
-      <section class="">
-        <div
-          class="flex items-center container animate-item py-4 mx-auto justify-center"
-        >
-          <div
-            class="bg-white lg:absolute xl:mt-[40px] top-[50%] rounded-lg p-6 max-w-4xl w-full flex flex-col lg:flex-row"
-          >
-            <!-- Left Section: Form -->
-            <div class="flex-1 flex justify-between flex-col lg:mr-6">
-              <h2 class="text-[25px] text-[#1D2630] font-[700] mb-4">
-                Get In Touch With Us
-              </h2>
-              <form class="space-y-4">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <input
-                    type="text"
-                    placeholder="Your Name *"
-                    class="border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                  />
-                  <input
-                    type="email"
-                    placeholder="E-mail *"
-                    class="border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                  />
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <input
-                    type="text"
-                    placeholder="Phone Number *"
-                    class="border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                  />
-                  <select
-                    class="border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                  >
-                    <option>Message Subject</option>
-                    <option>General Inquiry</option>
-                    <option>Support</option>
-                    <option>Feedback</option>
-                  </select>
-                </div>
-                <textarea
-                  placeholder="Type your Message..."
-                  rows="4"
-                  class="border border-gray-300 rounded-md p-2 w-full focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                ></textarea>
-              </form>
-              <div>
-                <button
-                  type="submit"
-                  class="bg-[#1D2630] text-white px-4 py-2 rounded-md hover:bg-yellow-600"
+        <!-- Main Content -->
+        <div class="w-3/4 p-6">
+          <h1 class="text-2xl font-bold mb-6">User</h1>
+
+          <!-- Accordion Section -->
+          <div class="space-y-4">
+            <!-- Accordion Item 1 -->
+            <div class="bg-gray-100 rounded-md shadow-md">
+              <button
+                class="w-full flex items-center justify-between py-4 px-6 text-left text-gray-700 focus:outline-none"
+                onclick="toggleAccordion(1)"
+              >
+                <span
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit.</span
                 >
-                  Submit
-                </button>
+                <span id="icon-1" class="text-gray-500 text-2xl font-bold"
+                  >+</span
+                >
+              </button>
+              <div id="content-1" class="hidden px-6 pb-4 text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                ultricies pulvinar donec risus orci. In magnis orci, imperdiet
+                ultricies Lorem ipsum dolor sit amet.
               </div>
             </div>
 
-            <!-- Right Section: Contact Info -->
-            <div class="bg-gray-100 p-4 rounded-lg mt-6 lg:mt-0 lg:w-1/3">
-              <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
-              <ul class="space-y-3">
-                <li class="flex items-center gap-3 mb-4">
-                  <span class="text-[16px] text-[#071C35] font-[400]">
-                    <img
-                      src="images/contact-image/about-svg/telephone-call.svg"
-                      alt="telephone icon"
-                    />
-                  </span>
-                  +00 123456789
-                </li>
-                <li class="flex items-center gap-3 mb-6">
-                  <span class="text-[16px] text-[#071C35] font-[400] mr-2">
-                    <img
-                      src="images/contact-image/about-svg/email.svg"
-                      alt="email icon"
-                    />
-                  </span>
-                  companyemail@gmail.com
-                </li>
-                <li class="flex items-start gap-1">
-                  <img
-                    src="images/contact-image/about-svg/location.svg"
-                    alt="location icon"
-                  />
-                  <div class="text-[16px] text-[#071C35] font-[400]">
-                    2123 West 04th Street, Suite 007<br />
-                    Oslo, Norway 00001
-                  </div>
-                </li>
-              </ul>
-              <div class="mt-6">
-                <h4 class="text-[#373F46] text-[14px] font-[400] mb-4">
-                  Have a Question?
-                </h4>
-                <h2 class="text-[18px] text-[#373F46] font-[700] mb-4">
-                  Check out our answers to frequently asked questions.
-                </h2>
-                <button
-                  class="bg-[#1D2630] text-white mt-4 px-4 py-2 rounded-md hover:bg-yellow-600"
+            <!-- Accordion Item 2 -->
+            <div class="bg-gray-100 rounded-md shadow-md">
+              <button
+                class="w-full flex items-center justify-between py-4 px-6 text-left text-gray-700 focus:outline-none"
+                onclick="toggleAccordion(2)"
+              >
+                <span
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit.</span
                 >
-                  View More FAQs
-                </button>
+                <span id="icon-2" class="text-gray-500 text-2xl font-bold"
+                  >+</span
+                >
+              </button>
+              <div id="content-2" class="hidden px-6 pb-4 text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                ultricies pulvinar donec risus orci. In magnis orci, imperdiet
+                ultricies Lorem ipsum dolor sit amet.
+              </div>
+            </div>
+
+            <!-- Accordion Item 3 -->
+            <div class="bg-gray-100 rounded-md shadow-md">
+              <button
+                class="w-full flex items-center justify-between py-4 px-6 text-left text-gray-700 focus:outline-none"
+                onclick="toggleAccordion(3)"
+              >
+                <span
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit.</span
+                >
+                <span id="icon-3" class="text-gray-500 text-2xl font-bold"
+                  >+</span
+                >
+              </button>
+              <div id="content-3" class="hidden px-6 pb-4 text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                ultricies pulvinar donec risus orci. In magnis orci, imperdiet
+                ultricies Lorem ipsum dolor sit amet.
               </div>
             </div>
           </div>
         </div>
-        <div class="xl:mt-[400px]">
-          <img class="w-[100%]" src="images/contact-image/map.png" alt="map" />
-        </div>
-      </section>
+      </div>
+
+      <script>
+        function toggleAccordion(id) {
+          const content = document.getElementById(`content-${id}`);
+          const icon = document.getElementById(`icon-${id}`);
+          if (content.classList.contains('hidden')) {
+            content.classList.remove('hidden');
+            icon.textContent = '-';
+          } else {
+            content.classList.add('hidden');
+            icon.textContent = '+';
+          }
+        }
+      </script>
     </main>
     <footer class="bg-[#F5F6F7] py-8">
       <div class="container mx-auto">
@@ -381,7 +357,7 @@
               </li>
               <li>
                 <a
-                  href="pricing.html"
+                  href="#"
                   class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
                   >Pricing</a
                 >
@@ -402,7 +378,7 @@
               </li>
               <li>
                 <a
-                  href="contact.html"
+                  href="#"
                   class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
                   >Contact Us</a
                 >
@@ -418,7 +394,7 @@
             <ul class="space-y-2">
               <li>
                 <a
-                  href="driver.html"
+                  href="#"
                   class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
                   >Be Driver</a
                 >
@@ -432,7 +408,7 @@
               </li>
               <li>
                 <a
-                  href="rider.html"
+                  href="#"
                   class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
                   >Rider</a
                 >
