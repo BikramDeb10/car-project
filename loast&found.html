@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="my-6 px-4 w-full">
+      <div class="flex container mx-auto justify-between items-center">
+        <!-- Logo -->
+        <div class="block md:hidden">
+          <a href="/">
+            <img
+              src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
+              alt="Company Logo"
+              class="h-[50px] w-[50px]"
+            />
+          </a>
+        </div>
+        <div class="hidden xl:block">
+          <a href="/">
+            <img
+              src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
+              alt="Company Logo"
+              class="h-[60px] w-[59px]"
+            />
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="menuButton"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+          class="xl:hidden text-gray-700 text-2xl"
+        >
+          ☰
+        </button>
+
+        <!-- Navigation -->
+        <div class="hidden md:flex items-center gap-6">
+          <nav class="hidden xl:block">
+            <ul
+              class="flex gap-[20px] text-[16px] tracking-[0.5px]"
+              id="navMenu"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="nav-link text-gray-900 transition-all duration-300 active"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="nav-link text-gray-900 transition-all duration-300"
+                >
+                  Become a Driver
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="nav-link text-gray-900 transition-all duration-300"
+                >
+                  Support
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="flex items-center gap-4">
+            <div class="flex gap-2 items-center">
+              <div class="h-[24px] w-[24px] rounded-full overflow-hidden">
+                <img
+                  src="images/istockphoto-880562092-612x612.jpg"
+                  alt="Language Selector Icon"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+              <div>
+                <h3 class="text-[18px]">Language</h3>
+              </div>
+
+              <div class="dropdown">
+                <div class="dropdown-toggle" id="dropdownToggle">EN</div>
+                <ul class="dropdown-menu" id="dropdownMenu">
+                  <li data-value="EN">EN</li>
+                  <li data-value="FR">FR</li>
+                  <li data-value="ES">ES</li>
+                  <li data-value="DE">DE</li>
+                </ul>
+              </div>
+            </div>
+            <div class="bg-gray-700 text-white px-6 py-2.5 rounded-xl">
+              <button>Login / Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="hidden xl:hidden bg-gray-100 p-4 rounded">
+        <div class="hidden md:block mb-2">
+          <img
+            src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
+            alt="Company Logo"
+            class="h-[50px] w-[50px] rounded-full"
+          />
+        </div>
+        <ul class="flex flex-col gap-2 text-gray-700 text-[18px] mb-2 xl:mb-0">
+          <li>
+            <a
+              href="#"
+              class="nav-link text-gray-500 transition-all duration-300 active"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="nav-link text-gray-500 transition-all duration-300"
+            >
+              Become a Driver
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="nav-link text-gray-500] transition-all duration-300"
+            >
+              Support
+            </a>
+          </li>
+        </ul>
+        <div class="flex flex-col xl:flex-row xl:items-center gap-4">
+          <div class="flex gap-2 items-center">
+            <div class="h-[24px] w-[24px] rounded-full overflow-hidden">
+              <img
+                src="images/istockphoto-880562092-612x612.jpg"
+                alt="Language Selector Icon"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <div>
+              <h3 class="text-[18px]">Language</h3>
+            </div>
+            <div class="dropdown">
+              <div class="dropdown-toggle" id="dropdownToggle2">EN</div>
+              <ul class="dropdown-menu" id="dropdownMenu2">
+                <li data-value="EN">EN</li>
+                <li data-value="FR">FR</li>
+                <li data-value="ES">ES</li>
+                <li data-value="DE">DE</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <button
+              class="bg-gray-700 text-white px-6 py-2.5 rounded-xl text-center w-full"
+            >
+              Login / Register
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="">
+      <section class="relative px-2 mx-auto container">
+        <!-- Background Section -->
+        <div
+          class="bg-[url('images/loast&found/loast.png')] h-[250px] sm:h-[350px] md:h-[400px] lg:h-[500px] xl:h-[550px] bg-no-repeat bg-cover bg-center rounded-2xl animate-item"
+        ></div>
+
+        <!-- Text Section -->
+        <div
+          class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 animate-item"
+        >
+          <div>
+            <h1
+              class="text-[25px] sm:text-[30px] md:text-[35px] xl:text-[40] text-white font-bold mb-0 md:mb-2 xl:mb-4"
+            >
+              Lost & Found
+            </h1>
+            <p
+              class="flex flex-col items-center text-[0.70rem] sm:text-[0.80rem] md:text-[0.90rem] xl:text-[1rem] max-w-[300px] sm:max-w-[350px] md:max-w-[480px] lg:max-w-[520px] xl:max-w-full text-[#FFFFFF]"
+            >
+              <span class="w-full break-words">
+                Lorem ipsum dolor sit amet consectetur. Cursus dolor vulputate
+                tellus sed et lacinia cras massa. Sem sed felis a</span
+              >
+              <span class="w-full break-words"> eu iaculis consectetur.</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Logo Section -->
+        <div class="absolute bottom-[-35px] left-1/2 -translate-x-1/2">
+          <img
+            src="images/about-image/about svg/logo.svg"
+            alt="nav-logo"
+            class="h-[60px] w-[60px] sm:h-[75px] sm:w-[75px] md:h-[82px] md:w-[82px] lg:h-[92px] lg:w-[92px] xl:h-[100px] xl:w-[100px] animate-item"
+          />
+        </div>
+      </section>
+      <section class="mt-20">
+        <div
+          class="p-4 mx-auto container flex flex-col items-center animate-item"
+        >
+          <h1
+            class="text-center text-[1.6rem] md:text-[2.2rem] xl:text-[2.6rem] font-semibold mb-6"
+          >
+            Search Your Product
+          </h1>
+
+          <div
+            class="flex flex-wrap gap-4 w-full md:w-3/4 items-center justify-center"
+          >
+            <!-- Dropdown for Product -->
+            <select
+              id="productSelect"
+              class="transition-all duration-300 ease-in-out w-full md:w-1/3 px-4 py-2 rounded-full border border-gray-300 bg-gray-100 hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-sm hover:shadow-md"
+            >
+              <option value="" disabled selected>What Product</option>
+              <option value="Product 1">Product 1</option>
+              <option value="Product 2">Product 2</option>
+              <option value="Product 3">Product 3</option>
+            </select>
+
+            <!-- Dropdown for Location -->
+            <select
+              id="locationSelect"
+              class="transition-all duration-300 ease-in-out w-full md:w-1/3 px-4 py-2 rounded-full border border-gray-300 bg-gray-100 hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-sm hover:shadow-md"
+            >
+              <option value="" disabled selected>Where</option>
+              <option value="Location 1">Location 1</option>
+              <option value="Location 2">Location 2</option>
+              <option value="Location 3">Location 3</option>
+            </select>
+
+            <!-- Search Input -->
+            <div class="flex w-full md:w-1/3 items-center">
+              <input
+                id="searchInput"
+                type="text"
+                placeholder="Search your product"
+                class="transition-all duration-300 ease-in-out flex-1 px-4 py-2 rounded-l-full border-t border-b border-l border-gray-300 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 hover:shadow-md"
+              />
+              <button
+                id="searchButton"
+                class="p-3 bg-gray-100 rounded-r-full border-t border-r border-b border-gray-300 hover:bg-gray-200 active:bg-gray-300 focus:outline-none transition-transform transform duration-300 hover:scale-105 shadow-sm hover:shadow-lg"
+              >
+                🔍
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-14">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 mb-10">
+          <h1 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Recent Found Products
+          </h1>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Product Card Template -->
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden animate-item"
+            >
+              <img
+                class="w-full object-cover"
+                src="images/loastproductitem/product1.png"
+                alt="Wallet"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Wallet</h2>
+                <p class="text-sm text-gray-500 mb-2">Product Category</p>
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-2 items-center">
+                    <img src="svgimage/mapsvg/map-pin.svg" alt="" />
+                    <p class="text-sm text-gray-400">By Myussetter, Norway</p>
+                  </div>
+                  <div class="flex gap-2 items-center">
+                    <img src="svgimage/watchsvg/Group (1).svg" alt="" />
+                    <p class="text-sm text-gray-400">3 days ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden animate-item"
+            >
+              <img
+                class="w-full object-cover"
+                src="images/loastproductitem/product2.png"
+                alt="Headphone"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Headphone</h2>
+                <p class="text-sm text-gray-500 mb-2">Lifestyle</p>
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-2 items-center">
+                    <img src="svgimage/mapsvg/map-pin.svg" alt="" />
+                    <p class="text-sm text-gray-400">By Myussetter, Norway</p>
+                  </div>
+                  <div class="flex gap-2 items-center">
+                    <img src="svgimage/watchsvg/Group (1).svg" alt="" />
+                    <p class="text-sm text-gray-400">3 days ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden animate-item"
+            >
+              <img
+                class="w-full object-cover"
+                src="images/loastproductitem/product3.png"
+                alt="Travel Bag"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Travel Bag</h2>
+                <p class="text-sm text-gray-500 mb-2">Bag</p>
+
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-2 items-center">
+                    <img src="svgimage/mapsvg/map-pin.svg" alt="" />
+                    <p class="text-sm text-gray-400">By Myussetter, Norway</p>
+                  </div>
+                  <div class="flex gap-2 items-center">
+                    <img src="svgimage/watchsvg/Group (1).svg" alt="" />
+                    <p class="text-sm text-gray-400">3 days ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden animate-item"
+            >
+              <img
+                class="w-full object-cover"
+                src="images/loastproductitem/product4.png"
+                alt="Dog"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Dog</h2>
+                <p class="text-sm text-gray-500 mb-2">Animal</p>
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-2 items-center">
+                    <img src="svgimage/mapsvg/map-pin.svg" alt="" />
+                    <p class="text-sm text-gray-400">By Myussetter, Norway</p>
+                  </div>
+                  <div class="flex gap-2 items-center">
+                    <img src="svgimage/watchsvg/Group (1).svg" alt="" />
+                    <p class="text-sm text-gray-400">3 days ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden animate-item"
+            >
+              <img
+                class="w-full object-cover"
+                src="images/loastproductitem/product5.png"
+                alt="Bag packs"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Bag packs</h2>
+                <p class="text-sm text-gray-500 mb-2">Bag</p>
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-2 items-center">
+                    <img src="svgimage/mapsvg/map-pin.svg" alt="" />
+                    <p class="text-sm text-gray-400">By Myussetter, Norway</p>
+                  </div>
+                  <div class="flex gap-2 items-center">
+                    <img src="svgimage/watchsvg/Group (1).svg" alt="" />
+                    <p class="text-sm text-gray-400">3 days ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden animate-item"
+            >
+              <img
+                class="w-full object-cover"
+                src="images/loastproductitem/product1.png"
+                alt="Mobile Phone"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">
+                  Mobile Phone
+                </h2>
+                <p class="text-sm text-gray-500 mb-2">Electronics</p>
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-2 items-center">
+                    <img src="svgimage/mapsvg/map-pin.svg" alt="" />
+                    <p class="text-sm text-gray-400">By Myussetter, Norway</p>
+                  </div>
+                  <div class="flex gap-2 items-center">
+                    <img src="svgimage/watchsvg/Group (1).svg" alt="" />
+                    <p class="text-sm text-gray-400">3 days ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden animate-item"
+            >
+              <img
+                class="w-full object-cover"
+                src="images/loastproductitem/product7.png"
+                alt="Cat"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Cat</h2>
+                <p class="text-sm text-gray-500 mb-2">Animal</p>
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-2 items-center">
+                    <img src="svgimage/mapsvg/map-pin.svg" alt="" />
+                    <p class="text-sm text-gray-400">By Myussetter, Norway</p>
+                  </div>
+                  <div class="flex gap-2 items-center">
+                    <img src="svgimage/watchsvg/Group (1).svg" alt="" />
+                    <p class="text-sm text-gray-400">3 days ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden animate-item"
+            >
+              <img
+                class="w-full object-cover"
+                src="images/loastproductitem/product2.png"
+                alt="Smart Watch"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Smart Watch</h2>
+                <p class="text-sm text-gray-500 mb-2">Electronics</p>
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-2 items-center">
+                    <img src="svgimage/mapsvg/map-pin.svg" alt="" />
+                    <p class="text-sm text-gray-400">By Myussetter, Norway</p>
+                  </div>
+                  <div class="flex gap-2 items-center">
+                    <img src="svgimage/watchsvg/Group (1).svg" alt="" />
+                    <p class="text-sm text-gray-400">3 days ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden animate-item"
+            >
+              <img
+                class="w-full object-cover"
+                src="images/loastproductitem/product9.png"
+                alt="Smart Watch"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Smart Watch</h2>
+                <p class="text-sm text-gray-500 mb-2">Electronics</p>
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-2 items-center">
+                    <img src="svgimage/mapsvg/map-pin.svg" alt="" />
+                    <p class="text-sm text-gray-400">By Myussetter, Norway</p>
+                  </div>
+                  <div class="flex gap-2 items-center">
+                    <img src="svgimage/watchsvg/Group (1).svg" alt="" />
+                    <p class="text-sm text-gray-400">3 days ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden animate-item"
+            >
+              <img
+                class="w-full object-cover"
+                src="images/loastproductitem/product3.png"
+                alt="Smart Watch"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Smart Watch</h2>
+                <p class="text-sm text-gray-500 mb-2">Electronics</p>
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-2 items-center">
+                    <img src="svgimage/mapsvg/map-pin.svg" alt="" />
+                    <p class="text-sm text-gray-400">By Myussetter, Norway</p>
+                  </div>
+                  <div class="flex gap-2 items-center">
+                    <img src="svgimage/watchsvg/Group (1).svg" alt="" />
+                    <p class="text-sm text-gray-400">3 days ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden animate-item"
+            >
+              <img
+                class="w-full object-cover"
+                src="images/loastproductitem/product4.png"
+                alt="Smart Watch"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Smart Watch</h2>
+                <p class="text-sm text-gray-500 mb-2">Electronics</p>
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-2 items-center">
+                    <img src="svgimage/mapsvg/map-pin.svg" alt="" />
+                    <p class="text-sm text-gray-400">By Myussetter, Norway</p>
+                  </div>
+                  <div class="flex gap-2 items-center">
+                    <img src="svgimage/watchsvg/Group (1).svg" alt="" />
+                    <p class="text-sm text-gray-400">3 days ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden animate-item"
+            >
+              <img
+                class="w-full object-cover"
+                src="images/loastproductitem/product12.png"
+                alt="Smart Watch"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Smart Watch</h2>
+                <p class="text-sm text-gray-500 mb-2">Electronics</p>
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-2 items-center">
+                    <img src="svgimage/mapsvg/map-pin.svg" alt="" />
+                    <p class="text-sm text-gray-400">By Myussetter, Norway</p>
+                  </div>
+                  <div class="flex gap-2 items-center">
+                    <img src="svgimage/watchsvg/Group (1).svg" alt="" />
+                    <p class="text-sm text-gray-400">3 days ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="flex justify-center mt-10 animate-item">
+            <nav class="flex items-center space-x-1">
+              <button
+                class="px-3 transition-all py-2 border bg-[#1D2630] text-gray-50 rounded-l-lg hover:bg-gray-500"
+              >
+                &lt;
+              </button>
+              <button
+                class="px-3 transition-all border border-yellow-400 py-2 text-gray-600 hover:bg-gray-100 rounded-md"
+              >
+                1
+              </button>
+              <button
+                class="px-3 transition-all py-2 border border-yellow-400 text-gray-600 hover:bg-gray-100 rounded-md"
+              >
+                2
+              </button>
+              <button
+                class="px-3 transition-all py-2 border border-yellow-400 text-gray-600 hover:bg-gray-100 rounded-md"
+              >
+                3
+              </button>
+              <button
+                class="px-3 transition-all py-2 border border-yellow-400 text-gray-600 hover:bg-gray-100 rounded-md"
+              >
+                ...
+              </button>
+              <button
+                class="px-3 transition-all py-2 border border-yellow-400 text-gray-600 hover:bg-gray-100 rounded-md"
+              >
+                9
+              </button>
+              <button
+                class="px-3 transition-all py-2 border border-yellow-400 text-gray-600 hover:bg-gray-100 rounded-md"
+              >
+                10
+              </button>
+              <button
+                class="px-3 transition-all py-2 bg-gray-200 text-gray-600 rounded-r-lg hover:bg-gray-500 hover:text-white"
+              >
+                &gt;
+              </button>
+            </nav>
+          </div>
+          <div
+            class="text-center container mx-auto py-8 px-10 mt-16 md:mt-20 box-shadow rounded-lg animate-item"
+          >
+            <h1 class="text-[2.3rem] font-[700] animate-item">
+              Delivered Products
+            </h1>
+            <p class="text-[1.2rem] animate-item">
+              Lorem ipsum dolor sit amet, adipiscing elit. Ut ultricies pulvinar
+              donec risus orci. In magnis orci, imperdiet ultricies Lorem ipsum
+              dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit.Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Debitis accusamus inventore dolorem
+              sed assumenda! Voluptatum eum ut optio voluptatem id. Laudantium
+            </p>
+            <button
+              class="bg-[#1D2630] text-[#FFFFFF] px-8 transition-all py-3 rounded-xl mt-4 hover:bg-yellow-500 hover:text-black"
+            >
+              <a href="foundproducts.html"> View Delivered Products </a>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#F5F6F7] py-8">
+      <div class="container mx-auto">
+        <div
+          class="flex flex-wrap items-center justify-between gap-4 max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8"
+        >
+          <div>
+            <h2
+              class="text-[#1D2630] text-[28px] sm:text-[32px] md:text-[35px] font-bold"
+            >
+              Subscribe Newsletter
+            </h2>
+            <p class="text-[16px] sm:text-[18px] font-medium text-[#373F46]">
+              Join with our mailing list and stay updated
+            </p>
+          </div>
+          <div
+            class="border-[1px] border-slate-500 h-[64px] rounded-[10px] flex items-center w-full max-w-sm px-3 bg-[#ffffff]"
+          >
+            <input
+              type="text"
+              placeholder="Enter Your email address"
+              class="px-2 py-2 rounded-md focus:outline-none flex-1 text-[14px] sm:text-[16px]"
+            />
+            <button
+              class="bg-[#1D2630] text-white px-4 py-2 rounded-md text-[14px] sm:text-[16px] transition-all duration-[0.3s] hover:bg-yellow-500 hover:text-black"
+            >
+              Join Us Now
+            </button>
+          </div>
+        </div>
+        <div class="my-8 px-4 sm:px-6 lg:px-8">
+          <hr class="border-gray-300" />
+        </div>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4 sm:px-6 lg:px-8"
+        >
+          <div class="flex flex-col gap-3">
+            <h3
+              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46]"
+            >
+              Company
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="about.html"
+                  aria-label="Learn more about 3T"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >About 3T</a
+                >
+              </li>
+              <li>
+                <a
+                  href="pricing.html"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >Why 3T</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >FAQs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-3">
+            <h3
+              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+            >
+              Quick Links
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="driver.html"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >Be Driver</a
+                >
+              </li>
+              <li>
+                <a
+                  href="fleetowner.html"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >Fleet Owner</a
+                >
+              </li>
+              <li>
+                <a
+                  href="rider.html"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >Rider</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  >Lost & Found</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-3">
+            <h3
+              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+            >
+              Download User App
+            </h3>
+            <a href="">
+              <img
+                class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto mb-2"
+                src="images/footer-images/googleplay.svg"
+                alt="Download from Google Play Store for Android"
+              />
+            </a>
+            <a href="">
+              <img
+                class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto"
+                src="images/footer-images/applestore.svg"
+                alt="Download from Apple App Store for iOS"
+              />
+            </a>
+          </div>
+          <div class="flex flex-col gap-3">
+            <h3
+              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46]"
+            >
+              Download Driver App
+            </h3>
+            <a href="">
+              <img
+                class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto mb-2"
+                src="images/footer-images/googleplay.svg"
+                alt="Download from Google Play Store for Android"
+              />
+            </a>
+            <a href="">
+              <img
+                class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto"
+                src="images/footer-images/applestore.svg"
+                alt="Download from Apple App Store for iOS"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!--footer icons -->
+
+      <div class="flex justify-center gap-4 pt-[64px] px-4 sm:px-6 lg:px-8">
+        <a href="">
+          <img
+            class="h-[18px] sm:h-[20px]"
+            src="./footer-logo/facebook-logo.svg"
+            alt="facebook"
+          />
+        </a>
+        <a href="">
+          <img
+            class="h-[18px] sm:h-[20px]"
+            src="./footer-logo/linkedin-letters.svg"
+            alt="linkedin"
+          />
+        </a>
+        <a href="">
+          <img
+            class="h-[18px] sm:h-[20px]"
+            src="./footer-logo/ant-design_instagram-filled.svg"
+            alt="instagram"
+          />
+        </a>
+        <a href="">
+          <img
+            class="h-[18px] sm:h-[20px]"
+            src="./footer-logo/Group.svg"
+            alt="group"
+          />
+        </a>
+      </div>
+
+      <!-- footer last line -->
+      <div
+        class="flex sm:flex-row justify-between container mx-auto items-center sm:gap-16 px-4 sm:px-6 lg:px-8 py-6 bg-gray-100"
+      >
+        <div
+          class="flex sm:flex-row gap-2 sm:gap-12 items-center text-center sm:text-left"
+        >
+          <p class="text-[11px] sm:text-[16px]">
+            <a href="#" class="hover:underline text-gray-600">Privacy Policy</a>
+            &middot;
+            <a href="#" class="hover:underline pl-2 text-gray-600">
+              Terms of Service
+            </a>
+          </p>
+          <p class="text-gray-500 text-[11px] sm:text-[16px]">
+            Copyrights@2025 | All Rights Reserved by 3T
+          </p>
+        </div>
+
+        <div>
+          <a href="#" id="scrollToTop">
+            <img
+              src="./footer-logo/Group 1000002170.svg"
+              alt="Company Logo"
+              class="h-[40px] sm:h-[50px] lg:h-[60px]"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <script src="scrolle.js" defer></script> -->
+    <script src="script.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        console.log("DOM fully loaded");
+        rotateImageContinuously("roundOne", 50);
+        rotateImageContinuously("roundTwo", 20);
+      });
+    </script>
+  </body>
+</html>
