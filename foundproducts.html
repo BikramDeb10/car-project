@@ -195,12 +195,12 @@
         >
           <div>
             <h1
-              class="text-[25px] sm:text-[30px] md:text-[35px] xl:text-[40] text-white font-bold mb-0 md:mb-2 xl:mb-4"
+              class="text-[25px] sm:text-[30px] md:text-[35px] xl:text-[40] text-white font-bold mb-0 md:mb-2 xl:mb-4 animate-item"
             >
               Lost & Found
             </h1>
             <p
-              class="flex flex-col items-center text-[0.70rem] sm:text-[0.80rem] md:text-[0.90rem] xl:text-[1rem] max-w-[300px] sm:max-w-[350px] md:max-w-[480px] lg:max-w-[520px] xl:max-w-full text-[#FFFFFF]"
+              class="flex flex-col items-center text-[0.70rem] sm:text-[0.80rem] md:text-[0.90rem] xl:text-[1rem] max-w-[300px] sm:max-w-[350px] md:max-w-[480px] lg:max-w-[520px] xl:max-w-full text-[#FFFFFF] animate-item"
             >
               <span class="w-full break-words">
                 Lorem ipsum dolor sit amet consectetur. Cursus dolor vulputate
@@ -220,78 +220,33 @@
           />
         </div>
       </section>
-      <section class="mt-20">
+
+      <section class="my-14">
         <div
-          class="p-4 mx-auto container flex flex-col items-center animate-item"
+          class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 mb-10 animate-item"
         >
           <h1
-            class="text-center text-[1.6rem] md:text-[2.2rem] xl:text-[2.6rem] font-semibold mb-6"
+            class="text-3xl font-bold text-gray-900 mb-8 text-center animate-item"
           >
-            Search Your Product
+            Recent Delivered Products
           </h1>
-
           <div
-            class="flex flex-wrap gap-4 w-full md:w-3/4 items-center justify-center"
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 animate-item"
           >
-            <!-- Dropdown for Product -->
-            <select
-              id="productSelect"
-              class="transition-all duration-300 ease-in-out w-full md:w-1/3 px-4 py-2 rounded-full border border-gray-300 bg-gray-100 hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-sm hover:shadow-md"
-            >
-              <option value="" disabled selected>What Product</option>
-              <option value="Product 1">Product 1</option>
-              <option value="Product 2">Product 2</option>
-              <option value="Product 3">Product 3</option>
-            </select>
-
-            <!-- Dropdown for Location -->
-            <select
-              id="locationSelect"
-              class="transition-all duration-300 ease-in-out w-full md:w-1/3 px-4 py-2 rounded-full border border-gray-300 bg-gray-100 hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-sm hover:shadow-md"
-            >
-              <option value="" disabled selected>Where</option>
-              <option value="Location 1">Location 1</option>
-              <option value="Location 2">Location 2</option>
-              <option value="Location 3">Location 3</option>
-            </select>
-
-            <!-- Search Input -->
-            <div class="flex w-full md:w-1/3 items-center">
-              <input
-                id="searchInput"
-                type="text"
-                placeholder="Search your product"
-                class="transition-all duration-300 ease-in-out flex-1 px-4 py-2 rounded-l-full border-t border-b border-l border-gray-300 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 hover:shadow-md"
-              />
-              <button
-                id="searchButton"
-                class="p-3 bg-gray-100 rounded-r-full border-t border-r border-b border-gray-300 hover:bg-gray-200 active:bg-gray-300 focus:outline-none transition-transform transform duration-300 hover:scale-105 shadow-sm hover:shadow-lg"
-              >
-                🔍
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="mb-14">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 mb-10">
-          <h1 class="text-3xl font-bold text-gray-900 mb-8 text-center">
-            Recent Found Products
-          </h1>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- Product Card Template -->
             <div
               class="bg-white rounded-lg shadow-md overflow-hidden animate-item"
             >
               <img
                 class="w-full object-cover"
-                src="images/loastproductitem/product1.png"
+                src="images/DelevaryImage/Mask group (10).png"
                 alt="Wallet"
               />
               <div class="p-4">
                 <h2 class="text-lg font-semibold text-gray-800">Wallet</h2>
-                <p class="text-sm text-gray-500 mb-2">Product Category</p>
+                <p class="text-sm text-gray-500 mb-2">
+                  Delivered to Saimon Jhonson.
+                </p>
                 <div class="flex justify-between items-center">
                   <div class="flex gap-2 items-center">
                     <img src="svgimage/mapsvg/map-pin.svg" alt="" />
@@ -309,12 +264,14 @@
             >
               <img
                 class="w-full object-cover"
-                src="images/loastproductitem/product2.png"
+                src="images/DelevaryImage/Mask group (11).png"
                 alt="Headphone"
               />
               <div class="p-4">
                 <h2 class="text-lg font-semibold text-gray-800">Headphone</h2>
-                <p class="text-sm text-gray-500 mb-2">Lifestyle</p>
+                <p class="text-sm text-gray-500 mb-2">
+                  Delivered to Leena Smith.
+                </p>
                 <div class="flex justify-between items-center">
                   <div class="flex gap-2 items-center">
                     <img src="svgimage/mapsvg/map-pin.svg" alt="" />
@@ -332,12 +289,14 @@
             >
               <img
                 class="w-full object-cover"
-                src="images/loastproductitem/product3.png"
+                src="images/DelevaryImage/Mask group (12).png"
                 alt="Travel Bag"
               />
               <div class="p-4">
                 <h2 class="text-lg font-semibold text-gray-800">Travel Bag</h2>
-                <p class="text-sm text-gray-500 mb-2">Bag</p>
+                <p class="text-sm text-gray-500 mb-2">
+                  Delivered to Leena Smith.
+                </p>
 
                 <div class="flex justify-between items-center">
                   <div class="flex gap-2 items-center">
@@ -356,198 +315,14 @@
             >
               <img
                 class="w-full object-cover"
-                src="images/loastproductitem/product4.png"
+                src="images/DelevaryImage/Mask group (13).png"
                 alt="Dog"
               />
               <div class="p-4">
                 <h2 class="text-lg font-semibold text-gray-800">Dog</h2>
-                <p class="text-sm text-gray-500 mb-2">Animal</p>
-                <div class="flex justify-between items-center">
-                  <div class="flex gap-2 items-center">
-                    <img src="svgimage/mapsvg/map-pin.svg" alt="" />
-                    <p class="text-sm text-gray-400">By Myussetter, Norway</p>
-                  </div>
-                  <div class="flex gap-2 items-center">
-                    <img src="svgimage/watchsvg/Group (1).svg" alt="" />
-                    <p class="text-sm text-gray-400">3 days ago</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="bg-white rounded-lg shadow-md overflow-hidden animate-item"
-            >
-              <img
-                class="w-full object-cover"
-                src="images/loastproductitem/product5.png"
-                alt="Bag packs"
-              />
-              <div class="p-4">
-                <h2 class="text-lg font-semibold text-gray-800">Bag packs</h2>
-                <p class="text-sm text-gray-500 mb-2">Bag</p>
-                <div class="flex justify-between items-center">
-                  <div class="flex gap-2 items-center">
-                    <img src="svgimage/mapsvg/map-pin.svg" alt="" />
-                    <p class="text-sm text-gray-400">By Myussetter, Norway</p>
-                  </div>
-                  <div class="flex gap-2 items-center">
-                    <img src="svgimage/watchsvg/Group (1).svg" alt="" />
-                    <p class="text-sm text-gray-400">3 days ago</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="bg-white rounded-lg shadow-md overflow-hidden animate-item"
-            >
-              <img
-                class="w-full object-cover"
-                src="images/loastproductitem/product1.png"
-                alt="Mobile Phone"
-              />
-              <div class="p-4">
-                <h2 class="text-lg font-semibold text-gray-800">
-                  Mobile Phone
-                </h2>
-                <p class="text-sm text-gray-500 mb-2">Electronics</p>
-                <div class="flex justify-between items-center">
-                  <div class="flex gap-2 items-center">
-                    <img src="svgimage/mapsvg/map-pin.svg" alt="" />
-                    <p class="text-sm text-gray-400">By Myussetter, Norway</p>
-                  </div>
-                  <div class="flex gap-2 items-center">
-                    <img src="svgimage/watchsvg/Group (1).svg" alt="" />
-                    <p class="text-sm text-gray-400">3 days ago</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="bg-white rounded-lg shadow-md overflow-hidden animate-item"
-            >
-              <img
-                class="w-full object-cover"
-                src="images/loastproductitem/product7.png"
-                alt="Cat"
-              />
-              <div class="p-4">
-                <h2 class="text-lg font-semibold text-gray-800">Cat</h2>
-                <p class="text-sm text-gray-500 mb-2">Animal</p>
-                <div class="flex justify-between items-center">
-                  <div class="flex gap-2 items-center">
-                    <img src="svgimage/mapsvg/map-pin.svg" alt="" />
-                    <p class="text-sm text-gray-400">By Myussetter, Norway</p>
-                  </div>
-                  <div class="flex gap-2 items-center">
-                    <img src="svgimage/watchsvg/Group (1).svg" alt="" />
-                    <p class="text-sm text-gray-400">3 days ago</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="bg-white rounded-lg shadow-md overflow-hidden animate-item"
-            >
-              <img
-                class="w-full object-cover"
-                src="images/loastproductitem/product2.png"
-                alt="Smart Watch"
-              />
-              <div class="p-4">
-                <h2 class="text-lg font-semibold text-gray-800">Smart Watch</h2>
-                <p class="text-sm text-gray-500 mb-2">Electronics</p>
-                <div class="flex justify-between items-center">
-                  <div class="flex gap-2 items-center">
-                    <img src="svgimage/mapsvg/map-pin.svg" alt="" />
-                    <p class="text-sm text-gray-400">By Myussetter, Norway</p>
-                  </div>
-                  <div class="flex gap-2 items-center">
-                    <img src="svgimage/watchsvg/Group (1).svg" alt="" />
-                    <p class="text-sm text-gray-400">3 days ago</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="bg-white rounded-lg shadow-md overflow-hidden animate-item"
-            >
-              <img
-                class="w-full object-cover"
-                src="images/loastproductitem/product9.png"
-                alt="Smart Watch"
-              />
-              <div class="p-4">
-                <h2 class="text-lg font-semibold text-gray-800">Smart Watch</h2>
-                <p class="text-sm text-gray-500 mb-2">Electronics</p>
-                <div class="flex justify-between items-center">
-                  <div class="flex gap-2 items-center">
-                    <img src="svgimage/mapsvg/map-pin.svg" alt="" />
-                    <p class="text-sm text-gray-400">By Myussetter, Norway</p>
-                  </div>
-                  <div class="flex gap-2 items-center">
-                    <img src="svgimage/watchsvg/Group (1).svg" alt="" />
-                    <p class="text-sm text-gray-400">3 days ago</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="bg-white rounded-lg shadow-md overflow-hidden animate-item"
-            >
-              <img
-                class="w-full object-cover"
-                src="images/loastproductitem/product3.png"
-                alt="Smart Watch"
-              />
-              <div class="p-4">
-                <h2 class="text-lg font-semibold text-gray-800">Smart Watch</h2>
-                <p class="text-sm text-gray-500 mb-2">Electronics</p>
-                <div class="flex justify-between items-center">
-                  <div class="flex gap-2 items-center">
-                    <img src="svgimage/mapsvg/map-pin.svg" alt="" />
-                    <p class="text-sm text-gray-400">By Myussetter, Norway</p>
-                  </div>
-                  <div class="flex gap-2 items-center">
-                    <img src="svgimage/watchsvg/Group (1).svg" alt="" />
-                    <p class="text-sm text-gray-400">3 days ago</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="bg-white rounded-lg shadow-md overflow-hidden animate-item"
-            >
-              <img
-                class="w-full object-cover"
-                src="images/loastproductitem/product4.png"
-                alt="Smart Watch"
-              />
-              <div class="p-4">
-                <h2 class="text-lg font-semibold text-gray-800">Smart Watch</h2>
-                <p class="text-sm text-gray-500 mb-2">Electronics</p>
-                <div class="flex justify-between items-center">
-                  <div class="flex gap-2 items-center">
-                    <img src="svgimage/mapsvg/map-pin.svg" alt="" />
-                    <p class="text-sm text-gray-400">By Myussetter, Norway</p>
-                  </div>
-                  <div class="flex gap-2 items-center">
-                    <img src="svgimage/watchsvg/Group (1).svg" alt="" />
-                    <p class="text-sm text-gray-400">3 days ago</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="bg-white rounded-lg shadow-md overflow-hidden animate-item"
-            >
-              <img
-                class="w-full object-cover"
-                src="images/loastproductitem/product12.png"
-                alt="Smart Watch"
-              />
-              <div class="p-4">
-                <h2 class="text-lg font-semibold text-gray-800">Smart Watch</h2>
-                <p class="text-sm text-gray-500 mb-2">Electronics</p>
+                <p class="text-sm text-gray-500 mb-2">
+                  Delivered to Leena Smith.
+                </p>
                 <div class="flex justify-between items-center">
                   <div class="flex gap-2 items-center">
                     <img src="svgimage/mapsvg/map-pin.svg" alt="" />
@@ -563,56 +338,11 @@
           </div>
 
           <!-- Pagination -->
-          <div class="flex justify-center mt-10 animate-item">
-            <nav class="flex items-center space-x-1">
-              <button
-                class="px-3 transition-all py-2 border bg-[#1D2630] text-gray-50 rounded-l-lg hover:bg-gray-500"
-              >
-                &lt;
-              </button>
-              <button
-                class="px-3 transition-all border border-yellow-400 py-2 text-gray-600 hover:bg-gray-100 rounded-md"
-              >
-                1
-              </button>
-              <button
-                class="px-3 transition-all py-2 border border-yellow-400 text-gray-600 hover:bg-gray-100 rounded-md"
-              >
-                2
-              </button>
-              <button
-                class="px-3 transition-all py-2 border border-yellow-400 text-gray-600 hover:bg-gray-100 rounded-md"
-              >
-                3
-              </button>
-              <button
-                class="px-3 transition-all py-2 border border-yellow-400 text-gray-600 hover:bg-gray-100 rounded-md"
-              >
-                ...
-              </button>
-              <button
-                class="px-3 transition-all py-2 border border-yellow-400 text-gray-600 hover:bg-gray-100 rounded-md"
-              >
-                9
-              </button>
-              <button
-                class="px-3 transition-all py-2 border border-yellow-400 text-gray-600 hover:bg-gray-100 rounded-md"
-              >
-                10
-              </button>
-              <button
-                class="px-3 transition-all py-2 bg-gray-200 text-gray-600 rounded-r-lg hover:bg-gray-500 hover:text-white"
-              >
-                &gt;
-              </button>
-            </nav>
-          </div>
+
           <div
             class="text-center container mx-auto py-8 px-10 mt-16 md:mt-20 box-shadow rounded-lg animate-item"
           >
-            <h1 class="text-[2.3rem] font-[700] animate-item">
-              Delivered Products
-            </h1>
+            <h1 class="text-[2.3rem] font-[700] animate-item">Lost Products</h1>
             <p class="text-[1.2rem] animate-item">
               Lorem ipsum dolor sit amet, adipiscing elit. Ut ultricies pulvinar
               donec risus orci. In magnis orci, imperdiet ultricies Lorem ipsum
@@ -622,9 +352,9 @@
               sed assumenda! Voluptatum eum ut optio voluptatem id. Laudantium
             </p>
             <button
-              class="bg-[#1D2630] text-[#FFFFFF] px-8 transition-all py-3 rounded-xl mt-4 hover:bg-yellow-500 hover:text-black"
+              class="bg-[#1D2630] text-[#FFFFFF] px-8 transition-all py-3 rounded-xl mt-4 hover:bg-yellow-500 hover:text-black animate-item"
             >
-              <a href="foundproducts.html"> View Delivered Products </a>
+              View Your Lost Products
             </button>
           </div>
         </div>
