@@ -260,10 +260,6 @@ body {
   animation: 1s ease-out 0s 1 slideInFromRight;
 }
 /* Image hover effect */
-.mission-item:hover .mission-image {
-  transform: scale(0.95);
-  transition: transform 0.3s ease-in-out;
-}
 
 .mission-item:hover .mission-title {
   color: goldenrod;
@@ -276,24 +272,13 @@ body {
 }
 
 .mission-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(5px);
+
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .mission-item {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-@keyframes slideUp {
-  0% {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+  transition: all 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .stats-container {
@@ -306,8 +291,7 @@ body {
   align-items: center;
   border-radius: 10px;
   padding: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease,
-    background-color 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .icon-container {
@@ -322,8 +306,6 @@ body {
 
 .stat-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
 }
 
 .stat-item:hover h1 {
