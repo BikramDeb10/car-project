@@ -351,3 +351,11 @@ document.addEventListener("DOMContentLoaded", () => {
 //     });
 //   });
 // });
+
+const searchButton = document.getElementById("searchButton");
+searchButton.addEventListener("click", () => {
+  searchButton.innerHTML = `<div class="loader"></div>`; // Add a loader icon
+  setTimeout(() => {
+    searchButton.innerHTML = "🔍"; // Reset icon after 2 seconds
+  }, 2000);
+});

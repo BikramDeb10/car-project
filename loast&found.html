@@ -9,7 +9,12 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <title>Document</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -181,7 +186,7 @@
       <section class="relative px-2 mx-auto container">
         <!-- Background Section -->
         <div
-          class="bg-[url('images/pricing/pricing.png')] h-[250px] sm:h-[350px] md:h-[400px] lg:h-[500px] xl:h-[550px] bg-no-repeat bg-cover bg-center rounded-2xl animate-item"
+          class="bg-[url('images/loast&found/loast.png')] h-[250px] sm:h-[350px] md:h-[400px] lg:h-[500px] xl:h-[550px] bg-no-repeat bg-cover bg-center rounded-2xl animate-item"
         ></div>
 
         <!-- Text Section -->
@@ -215,341 +220,304 @@
           />
         </div>
       </section>
-      <section class="mt-20 flex items-center bg-gray-50">
-        <div class="container mx-auto px-2 mt-14 animate-item">
-          <!-- Header Section -->
-          <div class="text-center mb-8">
-            <h1 class="text-2xl md:text-4xl lg:text-[3.5rem] font-bold mb-4">
-              Our prices in Norway & Egypt
-            </h1>
-            <p
-              class="text-gray-600 mx-auto text-sm md:text-lg lg:text-[1.2rem] leading-relaxed"
-            >
-              When you’re headed somewhere with a 3T ride, you’ll always get a
-              fixed price through our app. The price is calculated at the time
-              you submit your booking, and it’s based on the amount of traffic
-              as well as the expected time the ride will take.
-            </p>
-          </div>
-
-          <!-- Main Content Section -->
-          <div
-            class="flex flex-col lg:flex-row items-center justify-between gap-12"
+      <section class="mt-20">
+        <div class="p-4 mx-auto container flex flex-col items-center">
+          <h1
+            class="text-center text-[1.6rem] md:text-[2.2rem] xl:text-[2.6rem] font-semibold mb-6"
           >
-            <!-- Image Section -->
-            <div class="w-full lg:w-1/2">
-              <img
-                src="images/vpicar-image/Group 1000002183.svg"
-                alt="Car"
-                class="w-full p-4"
-              />
-            </div>
+            Search Your Product
+          </h1>
 
-            <!-- Text Section -->
-            <div class="w-full lg:w-1/2">
-              <!-- Buttons -->
-              <div
-                class="flex gap-2 flex-col sm:flex-row justify-center lg:justify-start sm:space-x-2 lg:space-x-4 mb-6"
+          <div
+            class="flex flex-wrap gap-4 w-full md:w-3/4 items-center justify-center"
+          >
+            <!-- Dropdown for Product -->
+            <select
+              id="productSelect"
+              class="transition-all duration-300 ease-in-out w-full md:w-1/3 px-4 py-2 rounded-full border border-gray-300 bg-gray-100 hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-sm hover:shadow-md"
+            >
+              <option value="" disabled selected>What Product</option>
+              <option value="Product 1">Product 1</option>
+              <option value="Product 2">Product 2</option>
+              <option value="Product 3">Product 3</option>
+            </select>
+
+            <!-- Dropdown for Location -->
+            <select
+              id="locationSelect"
+              class="transition-all duration-300 ease-in-out w-full md:w-1/3 px-4 py-2 rounded-full border border-gray-300 bg-gray-100 hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-sm hover:shadow-md"
+            >
+              <option value="" disabled selected>Where</option>
+              <option value="Location 1">Location 1</option>
+              <option value="Location 2">Location 2</option>
+              <option value="Location 3">Location 3</option>
+            </select>
+
+            <!-- Search Input -->
+            <div class="flex w-full md:w-1/3 items-center">
+              <input
+                id="searchInput"
+                type="text"
+                placeholder="Search your product"
+                class="transition-all duration-300 ease-in-out flex-1 px-4 py-2 rounded-l-full border-t border-b border-l border-gray-300 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 hover:shadow-md"
+              />
+              <button
+                id="searchButton"
+                class="p-3 bg-gray-100 rounded-r-full border-t border-r border-b border-gray-300 hover:bg-gray-200 active:bg-gray-300 focus:outline-none transition-transform transform duration-300 hover:scale-105 shadow-sm hover:shadow-lg"
               >
-                <button
-                  class="tab-btn px-6 py-3 md:px-8 md:py-4 bg-gray-200 text-white font-medium rounded-lg"
-                >
-                  VIP Luxury
-                </button>
-                <button
-                  class="tab-btn px-6 py-3 md:px-8 md:py-4 bg-gray-200 font-medium text-gray-700 rounded-lg"
-                >
-                  Family 5-9
-                </button>
-                <button
-                  class="tab-btn px-6 py-3 md:px-8 md:py-4 bg-gray-200 font-medium text-gray-700 rounded-lg"
-                >
-                  Comfort Sedan and SUV
-                </button>
-              </div>
-              <!-- Description Text -->
-              <div class="text-gray-600">
-                <p
-                  class="mb-4 text-base lg:text-[1.2rem] leading-[1.6rem] md:leading-[1.7rem]"
-                >
-                  Lorem ipsum dolor sit amet, adipiscing elit. Ut ultricies
-                  pulvinar donec risus orci. In magnis orci, imperdiet ultricies
-                  Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit.Lorem ipsum dolor sit amet,
-                  adipiscing elit. Ut ultricies pulvinar donec risus orci.
-                </p>
-                <p
-                  class="text-base lg:text-[1.2rem] leading-[1.6rem] md:leading-[1.7rem]"
-                >
-                  Consectetur adipiscing elit. Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Quia et nam quis optio
-                  blanditiis itaque doloribus reiciendis illum iure! Atque minus
-                  sapiente doloribus eveniet quis totam, corporis dicta
-                  obcaecati iure nemo numquam beatae officiis explicabo
-                </p>
-              </div>
+                🔍
+              </button>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="my-20 px-2">
-        <div class="container mx-auto animate-item">
-          <div class="text-center mb-10">
-            <h1
-              class="text-[1.9rem] md:text-[2.5rem] xl:text-[2.9rem] font-bold"
-            >
-              Available Services In
-            </h1>
-            <p class="text-[1rem] sm:text-[1.2rem]">
-              Lorem ipsum dolor sit amet consectetur. Venenatis erat eleifend
-              quis id placerat. Lorem ipsum dolor sit amet consectetur.
-            </p>
+      <section class="mb-14">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 mb-10">
+          <h1 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Recent Found Products
+          </h1>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Product Card Template -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img
+                class="w-full object-cover"
+                src="images/loastproductitem/product1.png"
+                alt="Wallet"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Wallet</h2>
+                <p class="text-sm text-gray-500 mb-2">Product Category</p>
+                <p class="text-sm text-gray-400">
+                  By Myussetter, Norway • 3 days ago
+                </p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img
+                class="w-full object-cover"
+                src="images/loastproductitem/product2.png"
+                alt="Headphone"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Headphone</h2>
+                <p class="text-sm text-gray-500 mb-2">Lifestyle</p>
+                <p class="text-sm text-gray-400">
+                  By Myussetter, Norway • 3 days ago
+                </p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img
+                class="w-full object-cover"
+                src="images/loastproductitem/product3.png"
+                alt="Travel Bag"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Travel Bag</h2>
+                <p class="text-sm text-gray-500 mb-2">Bag</p>
+                <p class="text-sm text-gray-400">
+                  By Myussetter, Norway • 3 days ago
+                </p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img
+                class="w-full object-cover"
+                src="images/loastproductitem/product4.png"
+                alt="Dog"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Dog</h2>
+                <p class="text-sm text-gray-500 mb-2">Animal</p>
+                <p class="text-sm text-gray-400">
+                  By Myussetter, Norway • 3 days ago
+                </p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img
+                class="w-full object-cover"
+                src="images/loastproductitem/product5.png"
+                alt="Bag packs"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Bag packs</h2>
+                <p class="text-sm text-gray-500 mb-2">Bag</p>
+                <p class="text-sm text-gray-400">
+                  By Myussetter, Norway • 3 days ago
+                </p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img
+                class="w-full object-cover"
+                src="images/loastproductitem/product1.png"
+                alt="Mobile Phone"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">
+                  Mobile Phone
+                </h2>
+                <p class="text-sm text-gray-500 mb-2">Electronics</p>
+                <p class="text-sm text-gray-400">
+                  By Myussetter, Norway • 3 days ago
+                </p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img
+                class="w-full object-cover"
+                src="images/loastproductitem/product7.png"
+                alt="Cat"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Cat</h2>
+                <p class="text-sm text-gray-500 mb-2">Animal</p>
+                <p class="text-sm text-gray-400">
+                  By Myussetter, Norway • 3 days ago
+                </p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img
+                class="w-full object-cover"
+                src="images/loastproductitem/product2.png"
+                alt="Smart Watch"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Smart Watch</h2>
+                <p class="text-sm text-gray-500 mb-2">Electronics</p>
+                <p class="text-sm text-gray-400">
+                  By Myussetter, Norway • 3 days ago
+                </p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img
+                class="w-full object-cover"
+                src="images/loastproductitem/product9.png"
+                alt="Smart Watch"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Smart Watch</h2>
+                <p class="text-sm text-gray-500 mb-2">Electronics</p>
+                <p class="text-sm text-gray-400">
+                  By Myussetter, Norway • 3 days ago
+                </p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img
+                class="w-full object-cover"
+                src="images/loastproductitem/product3.png"
+                alt="Smart Watch"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Smart Watch</h2>
+                <p class="text-sm text-gray-500 mb-2">Electronics</p>
+                <p class="text-sm text-gray-400">
+                  By Myussetter, Norway • 3 days ago
+                </p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img
+                class="w-full object-cover"
+                src="images/loastproductitem/product4.png"
+                alt="Smart Watch"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Smart Watch</h2>
+                <p class="text-sm text-gray-500 mb-2">Electronics</p>
+                <p class="text-sm text-gray-400">
+                  By Myussetter, Norway • 3 days ago
+                </p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <img
+                class="w-full object-cover"
+                src="images/loastproductitem/product12.png"
+                alt="Smart Watch"
+              />
+              <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Smart Watch</h2>
+                <p class="text-sm text-gray-500 mb-2">Electronics</p>
+                <p class="text-sm text-gray-400">
+                  By Myussetter, Norway • 3 days ago
+                </p>
+              </div>
+            </div>
           </div>
-          <div
-            class="flex flex-col sm:flex-row gap-2 sm:space-x-4 mb-6 justify-center"
+
+          <!-- Pagination -->
+          <div class="flex justify-center mt-10">
+            <nav class="flex items-center space-x-1">
+              <button
+                class="px-3 transition-all py-2 border bg-[#1D2630] text-gray-50 rounded-l-lg hover:bg-gray-500"
+              >
+                &lt;
+              </button>
+              <button
+                class="px-3 transition-all border border-yellow-400 py-2 text-gray-600 hover:bg-gray-100 rounded-md"
+              >
+                1
+              </button>
+              <button
+                class="px-3 transition-all py-2 border border-yellow-400 text-gray-600 hover:bg-gray-100 rounded-md"
+              >
+                2
+              </button>
+              <button
+                class="px-3 transition-all py-2 border border-yellow-400 text-gray-600 hover:bg-gray-100 rounded-md"
+              >
+                3
+              </button>
+              <button
+                class="px-3 transition-all py-2 border border-yellow-400 text-gray-600 hover:bg-gray-100 rounded-md"
+              >
+                ...
+              </button>
+              <button
+                class="px-3 transition-all py-2 border border-yellow-400 text-gray-600 hover:bg-gray-100 rounded-md"
+              >
+                9
+              </button>
+              <button
+                class="px-3 transition-all py-2 border border-yellow-400 text-gray-600 hover:bg-gray-100 rounded-md"
+              >
+                10
+              </button>
+              <button
+                class="px-3 transition-all py-2 bg-gray-200 text-gray-600 rounded-r-lg hover:bg-gray-500 hover:text-white"
+              >
+                &gt;
+              </button>
+            </nav>
+          </div>
+        </div>
+        <div
+          class="text-center container mx-auto py-8 px-10 box-shadow rounded-lg"
+        >
+          <h1 class="text-[2.3rem] font-[700]">Delivered Products</h1>
+          <p class="text-[1.2rem]">
+            Lorem ipsum dolor sit amet, adipiscing elit. Ut ultricies pulvinar
+            donec risus orci. In magnis orci, imperdiet ultricies Lorem ipsum
+            dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit.Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Debitis accusamus inventore dolorem
+            sed assumenda! Voluptatum eum ut optio voluptatem id. Laudantium
+          </p>
+          <button
+            class="bg-[#1D2630] text-[#FFFFFF] px-8 transition-all py-3 rounded-xl mt-4 hover:bg-yellow-500 hover:text-black"
           >
-            <button
-              class="tab-btn2 transition-all duration-[0.4s] ease-in-out px-8 py-2 bg-gray-200 text-white font-medium rounded-lg"
-            >
-              VIP Luxury
-            </button>
-            <button
-              class="tab-btn2 transition-all duration-[0.4s] ease-in-out px-8 py-2 bg-gray-200 font-medium text-gray-700 rounded-lg"
-            >
-              Family 5-9
-            </button>
-            <button
-              class="tab-btn2 transition-all duration-[0.4s] ease-in-out px-8 py-2 bg-gray-200 font-medium text-gray-700 rounded-lg"
-            >
-              Comfort Sedan and SUV
-            </button>
-          </div>
-
-          <div
-            class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8 xl:gap-12"
-          >
-            <!-- Card Template -->
-            <div
-              class="shadow-md rounded-xl px-3 py-4 bg-[#F5F6F7] animate-item"
-            >
-              <div class="bg-white rounded-md px-4 py-1.5 shadow-lg">
-                <h2
-                  class="text-gray-700 text-[1rem] sm:text-[1.2rem] font-medium"
-                >
-                  Mon - Fri
-                </h2>
-                <p
-                  class="text-[black] font-bold text-[1.3rem] sm:text-[1.4rem] md:text-[1.6rem] xl:text-[1.8rem]"
-                >
-                  6:00am - 6:00pm
-                </p>
-              </div>
-              <ul class="mt-4 sm:space-y-2 text-gray-600 list-disc pl-5">
-                <li class="text-[1.1] md:text-[1.3rem]">
-                  Direct Order
-                  <span class="float-right text-[black] font-medium">55</span>
-                </li>
-                <li class="text-[1.1] md:text-[1.3rem]">
-                  Advance Order
-                  <span class="float-right text-[black] font-medium">70</span>
-                </li>
-                <li class="text-[1.1] md:text-[1.3rem]">
-                  Price Per Km
-                  <span class="float-right text-[black] font-medium">12</span>
-                </li>
-                <li class="text-[1.1] md:text-[1.3rem]">
-                  Price Per Minute
-                  <span class="float-right text-[black] font-medium">7.15</span>
-                </li>
-                <li class="text-[1.1] md:text-[1.3rem]">
-                  Minimum Price
-                  <span class="float-right text-[black] font-medium">125</span>
-                </li>
-                <li class="text-[1.1] md:text-[1.3rem]">
-                  Jamfe@rpris*
-                  <span class="float-right text-[black] font-medium">315</span>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Duplicate for other cards -->
-            <div
-              class="shadow-md rounded-xl px-3 py-4 bg-[#F5F6F7] animate-item"
-            >
-              <div class="bg-white rounded-md px-4 py-1.5 shadow-lg">
-                <h2
-                  class="text-gray-700 text-[1rem] sm:text-[1.2rem] font-medium"
-                >
-                  Mon - Fri
-                </h2>
-                <p
-                  class="text-[black] font-bold text-[1.3rem] sm:text-[1.4rem] md:text-[1.6rem] xl:text-[1.8rem]"
-                >
-                  6:00am - 6:00pm
-                </p>
-              </div>
-              <ul class="mt-4 sm:space-y-2 text-gray-600 list-disc pl-5">
-                <li class="text-[1.1] md:text-[1.3rem]">
-                  Direct Order
-                  <span class="float-right text-[black] font-medium">55</span>
-                </li>
-                <li class="text-[1.1] md:text-[1.3rem]">
-                  Advance Order
-                  <span class="float-right text-[black] font-medium">70</span>
-                </li>
-                <li class="text-[1.1] md:text-[1.3rem]">
-                  Price Per Km
-                  <span class="float-right text-[black] font-medium">12</span>
-                </li>
-                <li class="text-[1.1] md:text-[1.3rem]">
-                  Price Per Minute
-                  <span class="float-right text-[black] font-medium">7.15</span>
-                </li>
-                <li class="text-[1.1] md:text-[1.3rem]">
-                  Minimum Price
-                  <span class="float-right text-[black] font-medium">125</span>
-                </li>
-                <li class="text-[1.1] md:text-[1.3rem]">
-                  Jamfe@rpris*
-                  <span class="float-right text-[black] font-medium">315</span>
-                </li>
-              </ul>
-            </div>
-
-            <div
-              class="shadow-md rounded-xl px-3 py-4 bg-[#F5F6F7] animate-item"
-            >
-              <div class="bg-white rounded-md px-4 py-1.5 shadow-lg">
-                <h2
-                  class="text-gray-700 text-[1rem] sm:text-[1.2rem] font-medium"
-                >
-                  Mon - Fri
-                </h2>
-                <p
-                  class="text-[black] font-bold text-[1.3rem] sm:text-[1.4rem] md:text-[1.6rem] xl:text-[1.8rem]"
-                >
-                  6:00am - 6:00pm
-                </p>
-              </div>
-              <ul class="mt-4 sm:space-y-2 text-gray-600 list-disc pl-5">
-                <li class="text-[1.1] md:text-[1.3rem]">
-                  Direct Order
-                  <span class="float-right text-[black] font-medium">55</span>
-                </li>
-                <li class="text-[1.1] md:text-[1.3rem]">
-                  Advance Order
-                  <span class="float-right text-[black] font-medium">70</span>
-                </li>
-                <li class="text-[1.1] md:text-[1.3rem]">
-                  Price Per Km
-                  <span class="float-right text-[black] font-medium">12</span>
-                </li>
-                <li class="text-[1.1] md:text-[1.3rem]">
-                  Price Per Minute
-                  <span class="float-right text-[black] font-medium">7.15</span>
-                </li>
-                <li class="text-[1.1] md:text-[1.3rem]">
-                  Minimum Price
-                  <span class="float-right text-[black] font-medium">125</span>
-                </li>
-                <li class="text-[1.1] md:text-[1.3rem]">
-                  Jamfe@rpris*
-                  <span class="float-right text-[black] font-medium">315</span>
-                </li>
-              </ul>
-            </div>
-
-            <div
-              class="shadow-md rounded-xl px-3 py-4 bg-[#F5F6F7] animate-item"
-            >
-              <div class="bg-white rounded-md px-4 py-1.5 shadow-lg">
-                <h2
-                  class="text-gray-700 text-[1rem] sm:text-[1.2rem] font-medium"
-                >
-                  Mon - Fri
-                </h2>
-                <p
-                  class="text-[black] font-bold text-[1.3rem] sm:text-[1.4rem] md:text-[1.6rem] xl:text-[1.8rem]"
-                >
-                  6:00am - 6:00pm
-                </p>
-              </div>
-              <ul class="mt-4 sm:space-y-2 text-gray-600 list-disc pl-5">
-                <li class="text-[1.1] md:text-[1.3rem]">
-                  Direct Order
-                  <span class="float-right text-[black] font-medium">55</span>
-                </li>
-                <li class="text-[1.1] md:text-[1.3rem]">
-                  Advance Order
-                  <span class="float-right text-[black] font-medium">70</span>
-                </li>
-                <li class="text-[1.1] md:text-[1.3rem]">
-                  Price Per Km
-                  <span class="float-right text-[black] font-medium">12</span>
-                </li>
-                <li class="text-[1.1] md:text-[1.3rem]">
-                  Price Per Minute
-                  <span class="float-right text-[black] font-medium">7.15</span>
-                </li>
-                <li class="text-[1.1] md:text-[1.3rem]">
-                  Minimum Price
-                  <span class="float-right text-[black] font-medium">125</span>
-                </li>
-                <li class="text-[1.1] md:text-[1.3rem]">
-                  Jamfe@rpris*
-                  <span class="float-right text-[black] font-medium">315</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- How to Order -->
-          <div class="bg-white rounded-lg p-2 mt-8">
-            <h2
-              class="text-gray-700 text-[1.8rem] sm:text-[2rem] md:text-[2.2rem] font-bold animate-item"
-            >
-              How to Order
-            </h2>
-            <p
-              class="text-gray-700 text-[1rem] sm:text-[1.1rem] md:text-[1.2rem] xl:text-[1.4rem] animate-item"
-            >
-              Open the app and click "contact" - then write us a message
-              including the following information:
-            </p>
-            <ul
-              class="mt-4 space-y-2 text-gray-600 text-[0.9rem] md:text-[1rem] xl:text[1.1rem] animate-item"
-            >
-              <li>1. Date and time you will need your 3THourly</li>
-              <li>2. What you need your 3THourly for</li>
-              <li>
-                3. Whether you have any specific requirements in relation to,
-                for instance, extra luggage, a child seat, or requests for a
-                specific type of car.
-              </li>
-            </ul>
-          </div>
-
-          <!-- Terms & Conditions -->
-          <div class="box-shadow bg-white rounded-lg p-2 mt-8">
-            <h2
-              class="text-gray-700 text-[1.8rem] sm:text-[2rem] md:text-[2.2rem] font-bold animate-item"
-            >
-              Terms & Conditions
-            </h2>
-            <p
-              class="mt-4 text-gray-600 text-[0.9rem] md:text-[1rem] xl:text-[1.3rem] animate-item"
-            >
-              Lorem ipsum dolor sit amet, adipiscing elit. Ut ultricies pulvinar
-              donec risus orci. In magnis orci, imperdiet ultricies Lorem ipsum
-              dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
-              amet, adipiscing elit. Ut ultricies pulvinar donec risus orci. Ut
-              ultricies pulvinar donec risus orci
-            </p>
-          </div>
+            View Delivered Products
+          </button>
         </div>
       </section>
     </main>
+
     <footer class="bg-[#F5F6F7] py-8">
       <div class="container mx-auto">
         <div
@@ -603,7 +571,7 @@
               </li>
               <li>
                 <a
-                  href="#"
+                  href="pricing.html"
                   class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
                   >Pricing</a
                 >
@@ -776,6 +744,15 @@
         </div>
       </div>
     </footer>
+
+    <!-- <script src="scrolle.js" defer></script> -->
     <script src="script.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        console.log("DOM fully loaded");
+        rotateImageContinuously("roundOne", 50);
+        rotateImageContinuously("roundTwo", 20);
+      });
+    </script>
   </body>
 </html>
