@@ -1,15 +1,15 @@
-const menuButton = document.getElementById("menuButton");
-const mobileMenu = document.getElementById("mobileMenu");
+const menuButton = document.getElementById('menuButton');
+const mobileMenu = document.getElementById('mobileMenu');
 
-menuButton.addEventListener("click", () => {
-  const isExpanded = menuButton.getAttribute("aria-expanded") === "true";
-  menuButton.setAttribute("aria-expanded", !isExpanded);
-  mobileMenu.classList.toggle("hidden");
+menuButton.addEventListener('click', () => {
+  const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+  menuButton.setAttribute('aria-expanded', !isExpanded);
+  mobileMenu.classList.toggle('hidden');
 
   if (!isExpanded) {
-    document.addEventListener("click", handleOutsideClick);
+    document.addEventListener('click', handleOutsideClick);
   } else {
-    document.removeEventListener("click", handleOutsideClick);
+    document.removeEventListener('click', handleOutsideClick);
   }
 });
 
@@ -18,86 +18,86 @@ function handleOutsideClick(event) {
     !mobileMenu.contains(event.target) &&
     !menuButton.contains(event.target)
   ) {
-    mobileMenu.classList.add("hidden");
-    menuButton.setAttribute("aria-expanded", "false");
-    document.removeEventListener("click", handleOutsideClick);
+    mobileMenu.classList.add('hidden');
+    menuButton.setAttribute('aria-expanded', 'false');
+    document.removeEventListener('click', handleOutsideClick);
   }
 }
 
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape" && !mobileMenu.classList.contains("hidden")) {
-    mobileMenu.classList.add("hidden");
-    menuButton.setAttribute("aria-expanded", "false");
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+    mobileMenu.classList.add('hidden');
+    menuButton.setAttribute('aria-expanded', 'false');
   }
 });
 
 //scroll
-const carousel = document.querySelector("#carousel");
-const prevButton = document.querySelector("#prevButton");
-const nextButton = document.querySelector("#nextButton");
+const carousel = document.querySelector('#carousel');
+const prevButton = document.querySelector('#prevButton');
+const nextButton = document.querySelector('#nextButton');
 
 if (carousel && prevButton && nextButton) {
-  prevButton.addEventListener("click", () => {
+  prevButton.addEventListener('click', () => {
     carousel.scrollBy({
       left: -390 * 1,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   });
 
-  nextButton.addEventListener("click", () => {
+  nextButton.addEventListener('click', () => {
     carousel.scrollBy({
       left: 390 * 1,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   });
 }
 
-const carousel2 = document.querySelector("#carousel2");
-const prevButton2 = document.querySelector("#prevButton2");
-const nextButton2 = document.querySelector("#nextButton2");
+const carousel2 = document.querySelector('#carousel2');
+const prevButton2 = document.querySelector('#prevButton2');
+const nextButton2 = document.querySelector('#nextButton2');
 
 if (carousel2 && prevButton2 && nextButton2) {
-  prevButton2.addEventListener("click", () => {
+  prevButton2.addEventListener('click', () => {
     carousel2.scrollBy({
       left: -390 * 0.8,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   });
 
-  nextButton2.addEventListener("click", () => {
+  nextButton2.addEventListener('click', () => {
     carousel2.scrollBy({
       left: 390 * 0.8,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   });
 }
 
 // Scroll to Top Functionality
 document
-  .getElementById("scrollToTop")
-  .addEventListener("click", function (event) {
+  .getElementById('scrollToTop')
+  .addEventListener('click', function (event) {
     event.preventDefault();
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   });
 
 // animations.js
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("show");
+          entry.target.classList.add('show');
         }
       });
     },
     { threshold: 0.2 }
   );
 
-  const elements = document.querySelectorAll(".fade-in, .scale-up");
+  const elements = document.querySelectorAll('.fade-in, .scale-up');
   elements.forEach((el) => observer.observe(el));
 });
 
@@ -105,14 +105,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // scroll-animations.js
 
-document.addEventListener("DOMContentLoaded", () => {
-  const animatedItems = document.querySelectorAll(".animate-item");
+document.addEventListener('DOMContentLoaded', () => {
+  const animatedItems = document.querySelectorAll('.animate-item');
 
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("show");
+          entry.target.classList.add('show');
         }
       });
     },
@@ -129,16 +129,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // -------------------------
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
   // Select all elements to animate
-  const animatedLeft = document.querySelectorAll(".animate-item-left");
-  const animatedRight = document.querySelectorAll(".animate-item-right");
+  const animatedLeft = document.querySelectorAll('.animate-item-left');
+  const animatedRight = document.querySelectorAll('.animate-item-right');
 
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("show");
+          entry.target.classList.add('show');
         }
       });
     },
@@ -153,70 +153,70 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // button nav hover active
 
-document.addEventListener("DOMContentLoaded", () => {
-  const navLinks = document.querySelectorAll(".nav-link");
+document.addEventListener('DOMContentLoaded', () => {
+  const navLinks = document.querySelectorAll('.nav-link');
 
   navLinks.forEach((link) => {
-    link.addEventListener("click", (event) => {
+    link.addEventListener('click', (event) => {
       event.preventDefault();
 
       navLinks.forEach((el) => {
-        el.classList.remove("active");
+        el.classList.remove('active');
       });
 
-      link.classList.add("active");
+      link.classList.add('active');
     });
   });
 });
 
 //  select nav language
 
-const toggle = document.getElementById("dropdownToggle");
-const menu = document.getElementById("dropdownMenu");
+const toggle = document.getElementById('dropdownToggle');
+const menu = document.getElementById('dropdownMenu');
 
 // Open and close dropdown with animation
-toggle.addEventListener("click", () => {
-  menu.classList.toggle("show");
+toggle.addEventListener('click', () => {
+  menu.classList.toggle('show');
 });
 
 // Update the selected value
-const options = document.querySelectorAll("#dropdownMenu li");
+const options = document.querySelectorAll('#dropdownMenu li');
 options.forEach((option) => {
-  option.addEventListener("click", () => {
+  option.addEventListener('click', () => {
     toggle.textContent = option.dataset.value;
-    menu.classList.remove("show");
+    menu.classList.remove('show');
   });
 });
 
 // Close dropdown when clicking outside
-document.addEventListener("click", (e) => {
-  if (!e.target.closest(".dropdown")) {
-    menu.classList.remove("show");
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.dropdown')) {
+    menu.classList.remove('show');
   }
 });
 
 // 2nd mobile view
-const toggle2 = document.getElementById("dropdownToggle2");
-const menu2 = document.getElementById("dropdownMenu2");
+const toggle2 = document.getElementById('dropdownToggle2');
+const menu2 = document.getElementById('dropdownMenu2');
 
 // Open and close dropdown with animation
-toggle2.addEventListener("click", () => {
-  menu2.classList.toggle("show");
+toggle2.addEventListener('click', () => {
+  menu2.classList.toggle('show');
 });
 
 // Update the selected value
-const options2 = document.querySelectorAll("#dropdownMenu2 li");
+const options2 = document.querySelectorAll('#dropdownMenu2 li');
 options2.forEach((option) => {
-  option.addEventListener("click", () => {
+  option.addEventListener('click', () => {
     toggle2.textContent = option.dataset.value;
-    menu2.classList.remove("show");
+    menu2.classList.remove('show');
   });
 });
 
 // Close dropdown when clicking outside
-document.addEventListener("click", (e) => {
-  if (!e.target.closest(".dropdown")) {
-    menu2.classList.remove("show");
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.dropdown')) {
+    menu2.classList.remove('show');
   }
 });
 
@@ -234,8 +234,8 @@ function rotateImageContinuously(imageId, speed) {
 
   if (image) {
     // Dynamically create a <style> tag to hold the keyframes
-    const styleTag = document.createElement("style");
-    styleTag.type = "text/css";
+    const styleTag = document.createElement('style');
+    styleTag.type = 'text/css';
     const keyframes = `
       @keyframes rotateAnimation {
         from {
@@ -258,11 +258,11 @@ function rotateImageContinuously(imageId, speed) {
 
 //------This is how our fleet portal works
 
-document.addEventListener("DOMContentLoaded", () => {
-  const imageSliderTrack = document.getElementById("image-slider-track");
-  const textSliderTrack = document.getElementById("text-slider-track");
-  const prevBtn = document.getElementById("prev-btn");
-  const nextBtn = document.getElementById("next-btn");
+document.addEventListener('DOMContentLoaded', () => {
+  const imageSliderTrack = document.getElementById('image-slider-track');
+  const textSliderTrack = document.getElementById('text-slider-track');
+  const prevBtn = document.getElementById('prev-btn');
+  const nextBtn = document.getElementById('next-btn');
 
   const totalSlides = imageSliderTrack.children.length;
   let currentSlide = 0;
@@ -273,12 +273,12 @@ document.addEventListener("DOMContentLoaded", () => {
     textSliderTrack.style.transform = `translateX(${translateValue})`;
   };
 
-  prevBtn.addEventListener("click", () => {
+  prevBtn.addEventListener('click', () => {
     currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
     updateSlider();
   });
 
-  nextBtn.addEventListener("click", () => {
+  nextBtn.addEventListener('click', () => {
     currentSlide = (currentSlide + 1) % totalSlides;
     updateSlider();
   });
