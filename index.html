@@ -20,73 +20,141 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
-    <header class="my-6 px-4 w-full">
-      <div class="flex container mx-auto justify-between items-center">
-        <!-- Logo -->
-        <div class="block md:hidden">
-          <a href="/">
+  <body class="w-full flex justify-center">
+    <div class="w-[95%] lg:w-[85%] xl:w-[80%]">
+      <header class="my-6 w-full">
+        <div class="flex justify-between items-center">
+          <!-- Logo -->
+          <div class="block md:hidden">
+            <a href="/">
+              <img
+                src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
+                alt="Company Logo"
+                class="h-[50px] w-[50px]"
+              />
+            </a>
+          </div>
+          <div class="hidden xl:block">
+            <a href="/">
+              <img
+                src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
+                alt="Company Logo"
+                class="h-[60px] w-[59px]"
+              />
+            </a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="menuButton"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+            class="xl:hidden text-gray-700 text-2xl"
+          >
+            ☰
+          </button>
+
+          <!-- Navigation -->
+          <div class="hidden md:flex items-center gap-6">
+            <nav class="hidden xl:block">
+              <ul
+                class="flex gap-[20px] text-[16px] tracking-[0.5px]"
+                id="navMenu"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="nav-link text-gray-900 transition-all duration-300 active"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="nav-link text-gray-900 transition-all duration-300"
+                  >
+                    Become a Driver
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="nav-link text-gray-900 transition-all duration-300"
+                  >
+                    Support
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="flex items-center gap-4">
+              <div class="flex gap-2 items-center">
+                <div class="h-[24px] w-[24px] rounded-full overflow-hidden">
+                  <img
+                    src="images/istockphoto-880562092-612x612.jpg"
+                    alt="Language Selector Icon"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+                <div>
+                  <h3 class="text-[18px]">Language</h3>
+                </div>
+
+                <div class="dropdown">
+                  <div class="dropdown-toggle" id="dropdownToggle">EN</div>
+                  <ul class="dropdown-menu" id="dropdownMenu">
+                    <li data-value="EN">EN</li>
+                    <li data-value="FR">FR</li>
+                    <li data-value="ES">ES</li>
+                    <li data-value="DE">DE</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="bg-gray-700 text-white px-6 py-2.5 rounded-xl">
+                <button>Login / Register</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden xl:hidden bg-gray-100 p-4 rounded">
+          <div class="hidden md:block mb-2">
             <img
               src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
               alt="Company Logo"
-              class="h-[50px] w-[50px]"
+              class="h-[50px] w-[50px] rounded-full"
             />
-          </a>
-        </div>
-        <div class="hidden xl:block">
-          <a href="/">
-            <img
-              src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
-              alt="Company Logo"
-              class="h-[60px] w-[59px]"
-            />
-          </a>
-        </div>
-
-        <!-- Mobile Menu Button -->
-        <button
-          id="menuButton"
-          aria-expanded="false"
-          aria-controls="mobileMenu"
-          class="xl:hidden text-gray-700 text-2xl"
-        >
-          ☰
-        </button>
-
-        <!-- Navigation -->
-        <div class="hidden md:flex items-center gap-6">
-          <nav class="hidden xl:block">
-            <ul
-              class="flex gap-[20px] text-[16px] tracking-[0.5px]"
-              id="navMenu"
-            >
-              <li>
-                <a
-                  href="#"
-                  class="nav-link text-gray-900 transition-all duration-300 active"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="nav-link text-gray-900 transition-all duration-300"
-                >
-                  Become a Driver
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="nav-link text-gray-900 transition-all duration-300"
-                >
-                  Support
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div class="flex items-center gap-4">
+          </div>
+          <ul
+            class="flex flex-col gap-2 text-gray-700 text-[18px] mb-2 xl:mb-0"
+          >
+            <li>
+              <a
+                href="#"
+                class="nav-link text-gray-500 transition-all duration-300 active"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="nav-link text-gray-500 transition-all duration-300"
+              >
+                Become a Driver
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="nav-link text-gray-500] transition-all duration-300"
+              >
+                Support
+              </a>
+            </li>
+          </ul>
+          <div class="flex flex-col xl:flex-row xl:items-center gap-4">
             <div class="flex gap-2 items-center">
               <div class="h-[24px] w-[24px] rounded-full overflow-hidden">
                 <img
@@ -98,10 +166,9 @@
               <div>
                 <h3 class="text-[18px]">Language</h3>
               </div>
-
               <div class="dropdown">
-                <div class="dropdown-toggle" id="dropdownToggle">EN</div>
-                <ul class="dropdown-menu" id="dropdownMenu">
+                <div class="dropdown-toggle" id="dropdownToggle2">EN</div>
+                <ul class="dropdown-menu" id="dropdownMenu2">
                   <li data-value="EN">EN</li>
                   <li data-value="FR">FR</li>
                   <li data-value="ES">ES</li>
@@ -109,1248 +176,1232 @@
                 </ul>
               </div>
             </div>
-            <div class="bg-gray-700 text-white px-6 py-2.5 rounded-xl">
-              <button>Login / Register</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Mobile Menu -->
-      <div id="mobileMenu" class="hidden xl:hidden bg-gray-100 p-4 rounded">
-        <div class="hidden md:block mb-2">
-          <img
-            src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
-            alt="Company Logo"
-            class="h-[50px] w-[50px] rounded-full"
-          />
-        </div>
-        <ul class="flex flex-col gap-2 text-gray-700 text-[18px] mb-2 xl:mb-0">
-          <li>
-            <a
-              href="#"
-              class="nav-link text-gray-500 transition-all duration-300 active"
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="nav-link text-gray-500 transition-all duration-300"
-            >
-              Become a Driver
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="nav-link text-gray-500] transition-all duration-300"
-            >
-              Support
-            </a>
-          </li>
-        </ul>
-        <div class="flex flex-col xl:flex-row xl:items-center gap-4">
-          <div class="flex gap-2 items-center">
-            <div class="h-[24px] w-[24px] rounded-full overflow-hidden">
-              <img
-                src="images/istockphoto-880562092-612x612.jpg"
-                alt="Language Selector Icon"
-                class="h-full w-full object-cover"
-              />
-            </div>
             <div>
-              <h3 class="text-[18px]">Language</h3>
-            </div>
-            <div class="dropdown">
-              <div class="dropdown-toggle" id="dropdownToggle2">EN</div>
-              <ul class="dropdown-menu" id="dropdownMenu2">
-                <li data-value="EN">EN</li>
-                <li data-value="FR">FR</li>
-                <li data-value="ES">ES</li>
-                <li data-value="DE">DE</li>
-              </ul>
-            </div>
-          </div>
-          <div>
-            <button
-              class="bg-gray-700 text-white px-6 py-2.5 rounded-xl text-center w-full"
-            >
-              Login / Register
-            </button>
-          </div>
-        </div>
-      </div>
-    </header>
-    <main class="">
-      <!-- HERO SECTION -->
-      <section class="px-2 animate-item container mx-auto">
-        <div class="relative">
-          <div>
-            <div
-              class="bg-[url('images/heroimage/hero.jpg')] h-[320px] bg-no-repeat bg-cover bg-center rounded-2xl lg:h-[600px] sm:h-[400px] animate-fade-in"
-            ></div>
-            <div
-              class="absolute top-8 left-4 lg:top-24 lg:left-28 md:top-16 md:left-16 sm:top-10 sm:left-8 animate-slide-in"
-            >
-              <div class="leading-[1.5rem] sm:leading-[2.5rem]">
-                <h2
-                  class="text-[1.1rem] text-[#FFFFFF] font-[400] md:text-[2rem] sm:text-[1.5rem] opacity-0 animate-fade-in-delay"
-                >
-                  Welcome to 3T
-                </h2>
-                <h1
-                  class="text-[#FFFFFF] text-[1.6rem] font-[700] md:text-[3rem] sm:text-[2rem] opacity-0 animate-fade-in-delay"
-                >
-                  Book Your Ride
-                </h1>
-              </div>
-              <div class="flex mt-6 sm:flex-wrap sm:mt-4 sm:gap-4">
-                <div class="flex space-x-4 sm:space-x-0 sm:flex-wrap sm:gap-4">
-                  <!-- Pickup Now -->
-                  <div
-                    class="flex items-center bg-[#ffffff] px-2 py-2 gap-1 rounded-full shadow cursor-pointer hover:scale-105 transition-transform duration-300"
-                  >
-                    <img
-                      src="images/svg/Vector.svg"
-                      alt="Pickup Icon"
-                      class="h-[14px] w-[14px] animate-fade-in-delay"
-                    />
-                    <select
-                      class="bg-transparent outline-none text-[12px] text-gray-500 font-[400] cursor-pointer dropdown"
-                    >
-                      <option value="" disabled selected>Pickup now</option>
-                      <option value="option1">Option 1</option>
-                      <option value="option2">Option 2</option>
-                      <option value="option3">Option 3</option>
-                    </select>
-                  </div>
-                  <!-- For Me -->
-                  <div
-                    class="flex items-center bg-[#ffffff] px-4 py-2 gap-1 rounded-full shadow cursor-pointer hover:scale-105 transition-transform duration-300"
-                  >
-                    <img
-                      src="images/svg/Group.svg"
-                      alt="For Me Icon"
-                      class="h-[14px] w-[14px] animate-fade-in-delay"
-                    />
-                    <select
-                      class="bg-transparent outline-none text-[12px] text-gray-500 font-[400] cursor-pointer"
-                    >
-                      <option value="" disabled selected>For me</option>
-                      <option value="option1">Option 1</option>
-                      <option value="option2">Option 2</option>
-                      <option value="option3">Option 3</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="mt-4 bg-white p-2 flex gap-2 items-center rounded-[12px] max-w-[320px] sm:flex-wrap sm:max-w-[280px] sm:gap-2 animate-slide-up"
-              >
-                <div class="flex flex-col items-center gap-1">
-                  <div class="h-[7px] w-[7px] bg-[#F7D506] rounded-full"></div>
-                  <div><img src="images/droplogo/Vector 65.png" alt="" /></div>
-                  <div>
-                    <img src="images/droplogo/Group 20004.png" alt="" />
-                  </div>
-                </div>
-                <div class="flex flex-col items-center gap-1 sm:gap-2">
-                  <div
-                    class="bg-white flex justify-between items-center gap-10 sm:gap-4"
-                  >
-                    <div class="flex items-center gap-4">
-                      <input
-                        type="text"
-                        placeholder="Pickup Location"
-                        class="text-[1rem] border-none focus:outline-none font-[400] text-[#1D2630]"
-                      />
-                    </div>
-                    <div>
-                      <button>
-                        <img src="images/svg/GPS.svg" alt="" />
-                      </button>
-                    </div>
-                  </div>
-                  <div class="bg-[#EBE4A6] h-[1px] w-full"></div>
-                  <div
-                    class="bg-white flex justify-between items-center gap-10 sm:gap-4"
-                  >
-                    <div class="flex items-center gap-4">
-                      <input
-                        type="text"
-                        placeholder="Drop Location"
-                        class="text-[1rem] border-none focus:outline-none font-[400] text-[#1D2630]"
-                      />
-                    </div>
-                    <div>
-                      <button>
-                        <img src="images/droplogo/Add.png" alt="" />
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="mt-7 sm:mt-4">
-                <button
-                  class="py-[10px] px-6 bg-[#F7D506] rounded-[10px] text-sm sm:px-4 sm:py-2 hover:bg-[#FFE600] transition-colors duration-300"
-                >
-                  See Prices
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Available Services In -->
-      <section class="py-16 animate-item container mx-auto px-2">
-        <div class="flex flex-col items-center pb-8 text-center">
-          <h1
-            class="text-[32px] sm:text-[36px] md:text-[40px] font-[700] text-[#1D2630]"
-          >
-            Available Services In
-          </h1>
-          <p
-            class="text-[16px] sm:text-[18px] font-[400] text-[#1D2630] px-4 md:px-0"
-          >
-            Lorem ipsum dolor sit amet consectetur. Venenatis erat eleifend quis
-            id placerat.
-          </p>
-        </div>
-
-        <!-- Scrollable Services Section -->
-        <div class="relative">
-          <div
-            id="carousel"
-            class="flex gap-8 pt-4 pb-8 overflow-scroll overflow-x-hidden overflow-y-hidden scroll-smooth max-w-full"
-          >
-            <!-- Service Cards -->
-            <div
-              class="bg-[#F5F6F7] h-[400px] w-[390px] flex-shrink-0 flex flex-col px-6 justify-center rounded-2xl hover:shadow-2xl transition-all duration-[0.3s]"
-            >
-              <img
-                class="h-[135px] w-[240px]"
-                src="images/services-image/image 31.png"
-                alt="car1"
-              />
-              <h4 class="text-[26px] pt-6 font-[700] text-[#1D2630]">
-                Ultra Prime
-              </h4>
-              <p class="text-[17px] text-[#373F46]">
-                Standardbiler, hverdagsreiser
-              </p>
-              <p class="text-[16px] text-[#555B60]">
-                54 kr grunnlag <br />
-                15.75 kr km + 5.4 kr min <br />
-                100 kr minimum
-              </p>
-            </div>
-            <div
-              class="bg-[#F5F6F7] h-[400px] w-[390px] flex-shrink-0 flex flex-col px-6 justify-center rounded-2xl hover:shadow-2xl transition-all duration-[0.3s]"
-            >
-              <img
-                class="h-[135px] w-[240px]"
-                src="images/services-image/image 31 (1).png"
-                alt="car2"
-              />
-              <h4 class="text-[26px] pt-6 font-[700] text-[#1D2630]">Prime</h4>
-              <p class="text-[17px] text-[#373F46]">
-                Standardbiler, hverdagsreiser
-              </p>
-              <p class="text-[16px] text-[#555B60]">
-                54 kr grunnlag <br />
-                15.75 kr km + 5.4 kr min <br />
-                100 kr minimum
-              </p>
-            </div>
-            <div
-              class="bg-[#F5F6F7] h-[400px] w-[390px] flex-shrink-0 flex flex-col px-6 justify-center rounded-2xl hover:shadow-2xl transition-all duration-[0.3s]"
-            >
-              <img
-                class="h-[135px] w-[240px]"
-                src="images/services-image/image 31 (2).png"
-                alt="car3"
-              />
-              <h4 class="text-[26px] pt-6 font-[700] text-[#1D2630]">
-                Standard
-              </h4>
-              <p class="text-[17px] text-[#373F46]">
-                Standardbiler, hverdagsreiser
-              </p>
-              <p class="text-[16px] text-[#555B60]">
-                54 kr grunnlag <br />
-                15.75 kr km + 5.4 kr min <br />
-                100 kr minimum
-              </p>
-            </div>
-            <div
-              class="bg-[#F5F6F7] h-[400px] w-[390px] flex-shrink-0 flex flex-col px-6 justify-center rounded-2xl hover:shadow-2xl transition-all duration-[0.3s]"
-            >
-              <img
-                class="h-[135px] w-[240px]"
-                src="images/services-image/image 31 (3).png"
-                alt="car4"
-              />
-              <h4 class="text-[26px] pt-6 font-[700] text-[#1D2630]">
-                Comfort
-              </h4>
-              <p class="text-[17px] text-[#373F46]">
-                Standardbiler, hverdagsreiser
-              </p>
-              <p class="text-[16px] text-[#555B60]">
-                54 kr grunnlag <br />
-                15.75 kr km + 5.4 kr min <br />
-                100 kr minimum
-              </p>
-            </div>
-            <div
-              class="bg-[#F5F6F7] h-[400px] w-[390px] flex-shrink-0 flex flex-col px-6 justify-center rounded-2xl hover:shadow-2xl transition-all duration-[0.3s]"
-            >
-              <img
-                class="h-[135px] w-[240px]"
-                src="images/services-image/image 31.png"
-                alt="car1"
-              />
-              <h4 class="text-[26px] pt-6 font-[700] text-[#1D2630]">
-                Ultra Prime
-              </h4>
-              <p class="text-[17px] text-[#373F46]">
-                Standardbiler, hverdagsreiser
-              </p>
-              <p class="text-[16px] text-[#555B60]">
-                54 kr grunnlag <br />
-                15.75 kr km + 5.4 kr min <br />
-                100 kr minimum
-              </p>
-            </div>
-            <div
-              class="bg-[#F5F6F7] h-[400px] w-[390px] flex-shrink-0 flex flex-col px-6 justify-center rounded-2xl hover:shadow-2xl transition-all duration-[0.3s]"
-            >
-              <img
-                class="h-[135px] w-[240px]"
-                src="images/services-image/image 31 (1).png"
-                alt="car2"
-              />
-              <h4 class="text-[26px] pt-6 font-[700] text-[#1D2630]">Prime</h4>
-              <p class="text-[17px] text-[#373F46]">
-                Standardbiler, hverdagsreiser
-              </p>
-              <p class="text-[16px] text-[#555B60]">
-                54 kr grunnlag <br />
-                15.75 kr km + 5.4 kr min <br />
-                100 kr minimum
-              </p>
-            </div>
-            <div
-              class="bg-[#F5F6F7] h-[400px] w-[390px] flex-shrink-0 flex flex-col px-6 justify-center rounded-2xl hover:shadow-2xl transition-all duration-[0.3s]"
-            >
-              <img
-                class="h-[135px] w-[240px]"
-                src="images/services-image/image 31 (2).png"
-                alt="car3"
-              />
-              <h4 class="text-[26px] pt-6 font-[700] text-[#1D2630]">
-                Standard
-              </h4>
-              <p class="text-[17px] text-[#373F46]">
-                Standardbiler, hverdagsreiser
-              </p>
-              <p class="text-[16px] text-[#555B60]">
-                54 kr grunnlag <br />
-                15.75 kr km + 5.4 kr min <br />
-                100 kr minimum
-              </p>
-            </div>
-            <div
-              class="bg-[#F5F6F7] h-[400px] w-[390px] flex-shrink-0 flex flex-col px-6 justify-center rounded-2xl hover:shadow-2xl transition-all duration-[0.3s]"
-            >
-              <img
-                class="h-[135px] w-[240px]"
-                src="images/services-image/image 31 (3).png"
-                alt="car4"
-              />
-              <h4 class="text-[26px] pt-6 font-[700] text-[#1D2630]">
-                Comfort
-              </h4>
-              <p class="text-[17px] text-[#373F46]">
-                Standardbiler, hverdagsreiser
-              </p>
-              <p class="text-[16px] text-[#555B60]">
-                54 kr grunnlag <br />
-                15.75 kr km + 5.4 kr min <br />
-                100 kr minimum
-              </p>
-            </div>
-          </div>
-
-          <!-- Arrow Buttons -->
-          <div
-            class="flex items-center justify-center px-4 gap-4 mt-4"
-            style="pointer-events: none"
-          >
-            <button
-              id="prevButton"
-              class="w-[40px] h-[40px] bg-[#EBE4A6] flex items-center justify-center rounded-full shadow-lg text-black font-[900] pointer-events-auto transition-all duration-[0.2s] active:translate-x-[-10px]"
-            >
-              ←
-            </button>
-            <button
-              id="nextButton"
-              class="w-[40px] h-[40px] bg-[#EBE4A6] flex items-center justify-center rounded-full shadow-lg text-black font-[900] pointer-events-auto transition-all duration-[0.2s] active:translate-x-[10px]"
-            >
-              →
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <!-- Experience 3T Rides -->
-      <section class="px-2 mb-44 mt-24 container mx-auto">
-        <div class="">
-          <!-- Container with responsive layout -->
-          <div
-            class="flex flex-col sm:flex-row justify-center items-center gap-[5%] sm:gap-[7%] lg:gap-[10%] xl:gap-[13%] section-wrapper"
-          >
-            <!-- Text Content -->
-            <div
-              class="max-w-[620px] sm:w-[550px] sm:h-[290px] text-center md:text-left fade-in"
-            >
-              <h1
-                class="text-[26px] md:text-[30px] font-bold text-[#1D2630] mb-4 scale-up"
-              >
-                Experience 3T Rides
-              </h1>
-              <p
-                class="text-[#373F46] text-[14px] md:text-[16px] xl:text-[18px] mb-6 slide-in"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
-                neque, vel, scelerisque non nec et egestas. Integer tincidunt
-                turpis ac nam integer etiam non cursus. Morbi mauris tellus dui
-                donec malesuada tortor egestas ultricies. Elit ultricies elit
-                faucibus cras vel nisl sagittis, lorem enim. Fermentum, mauris
-                velit vestibulum eu. Sagittis ullamcorper nibh et lobortis. Hac
-                quam penatibus pulvinar adipiscing faucibus.
-              </p>
               <button
-                class="bg-[#1D2630] text-white py-2 px-6 rounded-[10px] transition-all duration-[0.3s] hover:bg-yellow-500 hover:text-black fade-in"
+                class="bg-gray-700 text-white px-6 py-2.5 rounded-xl text-center w-full"
               >
-                Read More
+                Login / Register
               </button>
-            </div>
-
-            <!-- Image Content -->
-            <div class="fade-in mt-10">
-              <img
-                src="images/exprience/Group 2609465 (1).png"
-                alt="Mask group"
-                class="rounded-lg h-auto xl:w-[630px] xl:h-[340px] scale-up"
-              />
             </div>
           </div>
         </div>
-      </section>
-
-      <!--How It Works? -->
-
-      <section class="bg-[#F5F6F7]">
-        <div
-          class="howitsworkSection flex flex-col lg:flex-row items-center justify-center py-10 px-4 container mx-auto"
-        >
-          <div class="AppDemoBox overflow-hidden sm:overflow-visible h-[600px]">
-            <img class="adImg1" src="./images//howitswork/roundBG.svg" alt="" />
-            <img
-              id="roundOne"
-              class="adImg2"
-              src="./images//howitswork/Big.svg"
-              alt=""
-            />
-            <img
-              id="roundTwo"
-              class="adImg2"
-              src="./images//howitswork/Small.svg"
-              alt=""
-            />
-            <img
-              class="adImg3 mt-10"
-              src="./images//howitswork/Phone.svg"
-              alt=""
-            />
-          </div>
-          <div class="lg:w-1/2 max-w-[600px]">
-            <div class="flex flex-col items-start p-6">
-              <!-- Heading -->
-              <h2 class="text-3xl md:text-4xl font-bold mb-6 animate-item">
-                How It Works?
-              </h2>
-
-              <!-- Step Container -->
-              <div class="relative">
-                <!-- Vertical Line -->
+      </header>
+      <main class="">
+        <!-- HERO SECTION -->
+        <section class="animate-item">
+          <div class="relative">
+            <div>
+              <div
+                class="bg-[url('images/heroimage/hero.jpg')] h-[320px] bg-no-repeat bg-cover bg-center rounded-2xl lg:h-[600px] sm:h-[400px] animate-fade-in"
+              ></div>
+              <div
+                class="absolute top-8 left-4 lg:top-24 lg:left-28 md:top-16 md:left-16 sm:top-10 sm:left-8 animate-slide-in"
+              >
+                <div class="leading-[1.5rem] sm:leading-[2.5rem]">
+                  <h2
+                    class="text-[1.1rem] text-[#FFFFFF] font-[400] md:text-[2rem] sm:text-[1.5rem] opacity-0 animate-fade-in-delay"
+                  >
+                    Welcome to 3T
+                  </h2>
+                  <h1
+                    class="text-[#FFFFFF] text-[1.6rem] font-[700] md:text-[3rem] sm:text-[2rem] opacity-0 animate-fade-in-delay"
+                  >
+                    Book Your Ride
+                  </h1>
+                </div>
+                <div class="flex mt-6 sm:flex-wrap sm:mt-4 sm:gap-4">
+                  <div
+                    class="flex space-x-4 sm:space-x-0 sm:flex-wrap sm:gap-4"
+                  >
+                    <!-- Pickup Now -->
+                    <div
+                      class="flex items-center bg-[#ffffff] px-2 py-2 gap-1 rounded-full shadow cursor-pointer hover:scale-105 transition-transform duration-300"
+                    >
+                      <img
+                        src="images/svg/Vector.svg"
+                        alt="Pickup Icon"
+                        class="h-[14px] w-[14px] animate-fade-in-delay"
+                      />
+                      <select
+                        class="bg-transparent outline-none text-[12px] text-gray-500 font-[400] cursor-pointer dropdown"
+                      >
+                        <option value="" disabled selected>Pickup now</option>
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                      </select>
+                    </div>
+                    <!-- For Me -->
+                    <div
+                      class="flex items-center bg-[#ffffff] px-4 py-2 gap-1 rounded-full shadow cursor-pointer hover:scale-105 transition-transform duration-300"
+                    >
+                      <img
+                        src="images/svg/Group.svg"
+                        alt="For Me Icon"
+                        class="h-[14px] w-[14px] animate-fade-in-delay"
+                      />
+                      <select
+                        class="bg-transparent outline-none text-[12px] text-gray-500 font-[400] cursor-pointer"
+                      >
+                        <option value="" disabled selected>For me</option>
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
                 <div
-                  class="absolute top-0 left-3 w-[3px] bg-teal-500 h-full"
-                ></div>
-
-                <!-- Steps -->
-                <div class="flex flex-col gap-12">
-                  <!-- Step 1 -->
-                  <div class="flex md:flex-row items-start gap-4 animate-item">
-                    <!-- Circle -->
-                    <div class="relative flex items-center justify-center">
-                      <div
-                        class="w-7 h-7 bg-teal-100 rounded-full flex items-center justify-center"
-                      >
-                        <div class="w-2.5 h-2.5 bg-teal-500 rounded-full"></div>
-                      </div>
-                    </div>
-                    <!-- Text -->
+                  class="mt-4 bg-white p-2 flex gap-2 items-center rounded-[12px] max-w-[320px] sm:flex-wrap sm:max-w-[280px] sm:gap-2 animate-slide-up"
+                >
+                  <div class="flex flex-col items-center gap-1">
+                    <div
+                      class="h-[7px] w-[7px] bg-[#F7D506] rounded-full"
+                    ></div>
                     <div>
-                      <h3 class="text-lg font-semibold">Search Your Address</h3>
-                      <p class="text-gray-500">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Euismod neque, vel, scelerisque non nec et egestas.
-                      </p>
-                    </div>
-                  </div>
-
-                  <!-- Step 2 -->
-                  <div class="flex md:flex-row items-start gap-4 animate-item">
-                    <div class="relative flex items-center justify-center">
-                      <div
-                        class="w-7 h-7 bg-teal-100 rounded-full flex items-center justify-center"
-                      >
-                        <div class="w-2.5 h-2.5 bg-teal-500 rounded-full"></div>
-                      </div>
+                      <img src="images/droplogo/Vector 65.png" alt="" />
                     </div>
                     <div>
-                      <h3 class="text-lg font-semibold">
-                        Choose Car & Payment Method
-                      </h3>
-                      <p class="text-gray-500">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Euismod neque, vel, scelerisque non nec et egestas.
-                      </p>
+                      <img src="images/droplogo/Group 20004.png" alt="" />
                     </div>
                   </div>
-
-                  <!-- Step 3 -->
-                  <div class="flex md:flex-row items-start gap-4 animate-item">
-                    <div class="relative flex items-center justify-center">
-                      <div
-                        class="w-7 h-7 bg-teal-100 rounded-full flex items-center justify-center"
-                      >
-                        <div class="w-2.5 h-2.5 bg-teal-500 rounded-full"></div>
+                  <div class="flex flex-col items-center gap-1 sm:gap-2">
+                    <div
+                      class="bg-white flex justify-between items-center gap-10 sm:gap-4"
+                    >
+                      <div class="flex items-center gap-4">
+                        <input
+                          type="text"
+                          placeholder="Pickup Location"
+                          class="text-[1rem] border-none focus:outline-none font-[400] text-[#1D2630]"
+                        />
+                      </div>
+                      <div>
+                        <button>
+                          <img src="images/svg/GPS.svg" alt="" />
+                        </button>
                       </div>
                     </div>
-                    <div>
-                      <h3 class="text-lg font-semibold">Enjoy Your Ride</h3>
-                      <p class="text-gray-500">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Euismod neque, vel, scelerisque non nec et egestas.
-                      </p>
-                    </div>
-                  </div>
-
-                  <!-- Step 4 -->
-                  <div class="flex md:flex-row items-start gap-4 animate-item">
-                    <div class="relative flex items-center justify-center">
-                      <div
-                        class="w-7 h-7 bg-teal-100 rounded-full flex items-center justify-center"
-                      >
-                        <div class="w-2.5 h-2.5 bg-teal-500 rounded-full"></div>
+                    <div class="bg-[#EBE4A6] h-[1px] w-full"></div>
+                    <div
+                      class="bg-white flex justify-between items-center gap-10 sm:gap-4"
+                    >
+                      <div class="flex items-center gap-4">
+                        <input
+                          type="text"
+                          placeholder="Drop Location"
+                          class="text-[1rem] border-none focus:outline-none font-[400] text-[#1D2630]"
+                        />
+                      </div>
+                      <div>
+                        <button>
+                          <img src="images/droplogo/Add.png" alt="" />
+                        </button>
                       </div>
                     </div>
-                    <div>
-                      <h3 class="text-lg font-semibold">Put Your Review</h3>
-                      <p class="text-gray-500">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Euismod neque, vel, scelerisque non nec et egestas.
-                      </p>
-                    </div>
                   </div>
+                </div>
+                <div class="mt-7 sm:mt-4">
+                  <button
+                    class="py-[10px] px-6 bg-[#F7D506] rounded-[10px] text-sm sm:px-4 sm:py-2 hover:bg-[#FFE600] transition-colors duration-300"
+                  >
+                    See Prices
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <!-- Ride-svg -->
-
-      <section class="py-20">
-        <div class="container mx-auto px-2">
-          <div class="flex gap-20 flex-col sm:flex-row justify-center">
-            <div class="flex flex-col items-center rounded-lg animate-item">
-              <div
-                class="w-20 h-20 flex items-center justify-center border-black border-[1px] p-2 rounded-full mb-4"
-              >
-                <img
-                  src="images/ride-svg/Solid.svg"
-                  alt="solid"
-                  class="w-[50px] h-[50px]"
-                />
-              </div>
-              <h1 class="text-[20px] xl:text-[25px] font-semibold mb-2">
-                Rides On Demand
-              </h1>
-              <p class="text-center text-[18px] text-[#373F46] max-w-[300px]">
-                Request a ride at any time and on any day of the year.
-              </p>
-            </div>
-            <div class="flex flex-col items-center rounded-lg animate-item">
-              <div
-                class="w-20 h-20 flex items-center justify-center border-black border-[1px] p-2 rounded-full mb-4"
-              >
-                <img
-                  src="images/ride-svg/Group.svg"
-                  alt="group"
-                  class="w-[50px] h-[50px]"
-                />
-              </div>
-              <h1 class="text-[20px] xl:text-[25px] font-semibold mb-2">
-                Always Low Price
-              </h1>
-              <p class="text-center text-[18px] text-[#373F46] max-w-[400px]">
-                <span> Compare prices on every kind of ride, from</span>
-                <span>daily commutes to special evenings out.</span>
-              </p>
-            </div>
-            <div class="flex flex-col items-center rounded-lg animate-item">
-              <div
-                class="w-20 h-20 flex items-center justify-center border-black border-[1px] p-2 rounded-full mb-4"
-              >
-                <img
-                  src="images/ride-svg/app 1.svg"
-                  alt="app"
-                  class="w-[50px] h-[50px]"
-                />
-              </div>
-              <h1 class="text-[20px] xl:text-[25px] font-semibold mb-2">
-                Fast Pickups
-              </h1>
-              <p class="text-center text-[18px] text-[#373F46] max-w-[370px]">
-                Tap and let your driver take you where you want to go.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- adad -->
-      <section class="py-12 mx-auto container">
-        <div
-          class="flex flex-wrap sm:flex-nowrap items-center justify-center md:gap-[5%] xl:gap-[10%] px-2"
-        >
-          <!-- Text Content -->
-          <div class="text-center md:text-left max-w-lg animate-item">
+        </section>
+        <!-- Available Services In -->
+        <section class="py-16 animate-item px-2">
+          <div class="flex flex-col items-center pb-8 text-center">
             <h1
-              class="text-[32px] md:text-[36px] lg:text-[45px] xl:text-[55px] font-bold text-[#1D2630] mb-4"
+              class="text-[32px] sm:text-[36px] md:text-[40px] font-[700] text-[#1D2630]"
             >
-              Become a 3T Driver
+              Available Services In
             </h1>
             <p
-              class="text-[#373F46] text-[14px] md:text-[17px] lg:text-[22px] max-w-[600px] md:max-w-full leading-relaxed mb-6"
+              class="text-[16px] sm:text-[18px] font-[400] text-[#1D2630] px-4 md:px-0"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
-              neque, vel, scelerisque non nec et egestas. Integer tincidunt
-              turpis ac nam integer etiam non cursus.
+              Lorem ipsum dolor sit amet consectetur. Venenatis erat eleifend
+              quis id placerat.
             </p>
-            <button
-              class="bg-[#1D2630] text-white py-2 px-6 rounded-[10px] transition-all duration-[0.3s] hover:bg-yellow-500 hover:text-black"
-            >
-              Join Us Now
-            </button>
           </div>
 
-          <!-- Image Content -->
-          <div class="animate-item mt-7 sm:mt-0">
-            <img
-              src="images/Driver-images/driver-image.jpg"
-              alt="driver-image"
-              class="rounded-lg md:min-w-[300px] xl:max-w-[800px]:"
-            />
-          </div>
-        </div>
-      </section>
-
-      <!-- download the app -->
-
-      <section
-        class="bg-[#F5F6F7] py-10 px-2 rounded-[30px] h-[700px] sm:h-[650px] md:h-[530px] xl:h-[430px] mt-28 container mx-auto"
-      >
-        <div
-          class="container mx-auto flex flex-col sm:flex-row items-center justify-between relative"
-        >
-          <!-- Phone Image -->
-          <div class="w-full xl:w-auto xl:absolute xl:left-4">
-            <img
-              src="images/downloadapp/phoneimage.png"
-              alt="App Download Preview"
-              class="w-full sm:w-[300px] md:w-[520px] animate-item"
-            />
-          </div>
-
-          <!-- Text and Buttons -->
-          <div class="sm:ml-auto text-center sm:text-left sm:w-1/2">
-            <h1
-              class="text-[2rem] sm:text-[2.8rem] font-[700] mb-4 animate-item"
-            >
-              Download The App
-            </h1>
-            <p
-              class="text-[#373F46] text-[1rem] sm:text-[1.2rem] max-w-[600px] mb-6 mx-auto sm:mx-0 animate-item"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
-              neque, vel, scelerisque non nec et egestas. Integer tincidunt
-              turpis ac nam integer etiam non cursus.
-            </p>
-
-            <!-- App Store Buttons -->
+          <!-- Scrollable Services Section -->
+          <div class="relative">
             <div
-              class="flex justify-center sm:justify-start space-x-4 animate-item"
+              id="carousel"
+              class="flex gap-8 pt-4 pb-8 overflow-scroll overflow-x-hidden overflow-y-hidden scroll-smooth max-w-full"
             >
-              <button>
+              <!-- Service Cards -->
+              <div
+                class="bg-[#F5F6F7] h-[400px] w-[390px] flex-shrink-0 flex flex-col px-6 justify-center rounded-2xl hover:shadow-2xl transition-all duration-[0.3s]"
+              >
                 <img
-                  src="images/footer-images/googleplay.svg"
-                  alt="Google Play App"
-                  class="w-[150px]"
+                  class="h-[135px] w-[240px]"
+                  src="images/services-image/image 31.png"
+                  alt="car1"
                 />
-              </button>
-              <button>
+                <h4 class="text-[26px] pt-6 font-[700] text-[#1D2630]">
+                  Ultra Prime
+                </h4>
+                <p class="text-[17px] text-[#373F46]">
+                  Standardbiler, hverdagsreiser
+                </p>
+                <p class="text-[16px] text-[#555B60]">
+                  54 kr grunnlag <br />
+                  15.75 kr km + 5.4 kr min <br />
+                  100 kr minimum
+                </p>
+              </div>
+              <div
+                class="bg-[#F5F6F7] h-[400px] w-[390px] flex-shrink-0 flex flex-col px-6 justify-center rounded-2xl hover:shadow-2xl transition-all duration-[0.3s]"
+              >
                 <img
-                  src="images/footer-images/applestore.svg"
-                  alt="iOS App Store"
-                  class="w-[150px]"
+                  class="h-[135px] w-[240px]"
+                  src="images/services-image/image 31 (1).png"
+                  alt="car2"
                 />
-              </button>
+                <h4 class="text-[26px] pt-6 font-[700] text-[#1D2630]">
+                  Prime
+                </h4>
+                <p class="text-[17px] text-[#373F46]">
+                  Standardbiler, hverdagsreiser
+                </p>
+                <p class="text-[16px] text-[#555B60]">
+                  54 kr grunnlag <br />
+                  15.75 kr km + 5.4 kr min <br />
+                  100 kr minimum
+                </p>
+              </div>
+              <div
+                class="bg-[#F5F6F7] h-[400px] w-[390px] flex-shrink-0 flex flex-col px-6 justify-center rounded-2xl hover:shadow-2xl transition-all duration-[0.3s]"
+              >
+                <img
+                  class="h-[135px] w-[240px]"
+                  src="images/services-image/image 31 (2).png"
+                  alt="car3"
+                />
+                <h4 class="text-[26px] pt-6 font-[700] text-[#1D2630]">
+                  Standard
+                </h4>
+                <p class="text-[17px] text-[#373F46]">
+                  Standardbiler, hverdagsreiser
+                </p>
+                <p class="text-[16px] text-[#555B60]">
+                  54 kr grunnlag <br />
+                  15.75 kr km + 5.4 kr min <br />
+                  100 kr minimum
+                </p>
+              </div>
+              <div
+                class="bg-[#F5F6F7] h-[400px] w-[390px] flex-shrink-0 flex flex-col px-6 justify-center rounded-2xl hover:shadow-2xl transition-all duration-[0.3s]"
+              >
+                <img
+                  class="h-[135px] w-[240px]"
+                  src="images/services-image/image 31 (3).png"
+                  alt="car4"
+                />
+                <h4 class="text-[26px] pt-6 font-[700] text-[#1D2630]">
+                  Comfort
+                </h4>
+                <p class="text-[17px] text-[#373F46]">
+                  Standardbiler, hverdagsreiser
+                </p>
+                <p class="text-[16px] text-[#555B60]">
+                  54 kr grunnlag <br />
+                  15.75 kr km + 5.4 kr min <br />
+                  100 kr minimum
+                </p>
+              </div>
+              <div
+                class="bg-[#F5F6F7] h-[400px] w-[390px] flex-shrink-0 flex flex-col px-6 justify-center rounded-2xl hover:shadow-2xl transition-all duration-[0.3s]"
+              >
+                <img
+                  class="h-[135px] w-[240px]"
+                  src="images/services-image/image 31.png"
+                  alt="car1"
+                />
+                <h4 class="text-[26px] pt-6 font-[700] text-[#1D2630]">
+                  Ultra Prime
+                </h4>
+                <p class="text-[17px] text-[#373F46]">
+                  Standardbiler, hverdagsreiser
+                </p>
+                <p class="text-[16px] text-[#555B60]">
+                  54 kr grunnlag <br />
+                  15.75 kr km + 5.4 kr min <br />
+                  100 kr minimum
+                </p>
+              </div>
+              <div
+                class="bg-[#F5F6F7] h-[400px] w-[390px] flex-shrink-0 flex flex-col px-6 justify-center rounded-2xl hover:shadow-2xl transition-all duration-[0.3s]"
+              >
+                <img
+                  class="h-[135px] w-[240px]"
+                  src="images/services-image/image 31 (1).png"
+                  alt="car2"
+                />
+                <h4 class="text-[26px] pt-6 font-[700] text-[#1D2630]">
+                  Prime
+                </h4>
+                <p class="text-[17px] text-[#373F46]">
+                  Standardbiler, hverdagsreiser
+                </p>
+                <p class="text-[16px] text-[#555B60]">
+                  54 kr grunnlag <br />
+                  15.75 kr km + 5.4 kr min <br />
+                  100 kr minimum
+                </p>
+              </div>
+              <div
+                class="bg-[#F5F6F7] h-[400px] w-[390px] flex-shrink-0 flex flex-col px-6 justify-center rounded-2xl hover:shadow-2xl transition-all duration-[0.3s]"
+              >
+                <img
+                  class="h-[135px] w-[240px]"
+                  src="images/services-image/image 31 (2).png"
+                  alt="car3"
+                />
+                <h4 class="text-[26px] pt-6 font-[700] text-[#1D2630]">
+                  Standard
+                </h4>
+                <p class="text-[17px] text-[#373F46]">
+                  Standardbiler, hverdagsreiser
+                </p>
+                <p class="text-[16px] text-[#555B60]">
+                  54 kr grunnlag <br />
+                  15.75 kr km + 5.4 kr min <br />
+                  100 kr minimum
+                </p>
+              </div>
+              <div
+                class="bg-[#F5F6F7] h-[400px] w-[390px] flex-shrink-0 flex flex-col px-6 justify-center rounded-2xl hover:shadow-2xl transition-all duration-[0.3s]"
+              >
+                <img
+                  class="h-[135px] w-[240px]"
+                  src="images/services-image/image 31 (3).png"
+                  alt="car4"
+                />
+                <h4 class="text-[26px] pt-6 font-[700] text-[#1D2630]">
+                  Comfort
+                </h4>
+                <p class="text-[17px] text-[#373F46]">
+                  Standardbiler, hverdagsreiser
+                </p>
+                <p class="text-[16px] text-[#555B60]">
+                  54 kr grunnlag <br />
+                  15.75 kr km + 5.4 kr min <br />
+                  100 kr minimum
+                </p>
+              </div>
             </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- Our Team Mates -->
-
-      <section class="py-16 animate-item">
-        <div class="flex flex-col items-center pb-8 text-center">
-          <h1
-            class="text-[32px] sm:text-[36px] md:text-[40px] font-[700] text-[#1D2630]"
-          >
-            Our Team Mates
-          </h1>
-          <p
-            class="text-[16px] sm:text-[18px] font-[400] text-[#1D2630] px-4 md:px-0"
-          >
-            Lorem ipsum dolor sit amet consectetur. Venenatis erat eleifend quis
-            id placerat.
-          </p>
-        </div>
-
-        <!-- Scrollable Services Section -->
-        <div class="relative">
-          <div
-            id="carousel2"
-            class="flex gap-8 pt-4 pb-8 overflow-scroll overflow-x-hidden overflow-y-hidden scroll-smooth max-w-[1400px] mx-auto container"
-          >
-            <!-- Service Cards -->
+            <!-- Arrow Buttons -->
             <div
-              class="bg-[#F5F6F7] h-[360px] sm:h-[400px] max-w-[390px] flex-shrink-0 flex flex-col justify-center ml-3 rounded-xl"
-            >
-              <img
-                class="h-[280px] sm:h-[320px] w-full object-cover"
-                src="images/team-mates/Mask group.png"
-                alt="Mask group"
-              />
-              <div class="p-4">
-                <h3
-                  class="text-[16px] sm:text-[18px] lg:text-[21px] font-[600]"
-                >
-                  Magdalina Kubica
-                </h3>
-                <p class="text-[14px] md:text-[17px] text-[#555]">CEO</p>
-              </div>
-            </div>
-            <div
-              class="bg-[#F5F6F7] h-[360px] sm:h-[400px] max-w-[390px] flex-shrink-0 flex flex-col justify-center ml-3 rounded-xl"
-            >
-              <img
-                class="h-[280px] sm:h-[320px] w-full object-cover"
-                src="images/team-mates/42w 1.png"
-                alt="Mask group"
-              />
-              <div class="p-4">
-                <h3
-                  class="text-[16px] sm:text-[18px] lg:text-[21px] font-[600]"
-                >
-                  Saimon Jhonson
-                </h3>
-                <p class="text-[14px] md:text-[17px] text-[#555]">Developer</p>
-              </div>
-            </div>
-            <div
-              class="bg-[#F5F6F7] h-[360px] sm:h-[400px] max-w-[390px] flex-shrink-0 flex flex-col justify-center ml-3 rounded-xl"
-            >
-              <img
-                class="h-[280px] sm:h-[320px] w-full object-cover"
-                src="images/team-mates/Mask group (1).png"
-                alt="Mask group"
-              />
-              <div class="p-4">
-                <h3
-                  class="text-[16px] sm:text-[18px] font-[600] lg:text-[21px]"
-                >
-                  Anne Marie
-                </h3>
-                <p class="text-[14px] md:text-[17px] text-[#555]">
-                  Marketing Expert
-                </p>
-              </div>
-            </div>
-            <div
-              class="bg-[#F5F6F7] h-[360px] sm:h-[400px] max-w-[390px] flex-shrink-0 flex flex-col justify-center ml-3 rounded-xl"
-            >
-              <img
-                class="h-[280px] sm:h-[320px] w-full object-cover"
-                src="images/team-mates/Mask group (2).png"
-                alt="Mask group"
-              />
-              <div class="p-4">
-                <h3
-                  class="text-[16px] sm:text-[18px] lg:text-[21px] font-[600]"
-                >
-                  David Jhonas
-                </h3>
-                <p class="text-[14px] md:text-[17px] text-[#555]">
-                  UI UX Designer
-                </p>
-              </div>
-            </div>
-            <div
-              class="bg-[#F5F6F7] h-[360px] sm:h-[400px] max-w-[390px] flex-shrink-0 flex flex-col justify-center ml-3 rounded-xl"
-            >
-              <img
-                class="h-[280px] sm:h-[320px] w-full object-cover"
-                src="images/team-mates/Mask group.png"
-                alt="Mask group"
-              />
-              <div class="p-4">
-                <h3
-                  class="text-[16px] sm:text-[18px] lg:text-[21px] font-[600]"
-                >
-                  Magdalina Kubica
-                </h3>
-                <p class="text-[14px] md:text-[17px] text-[#555]">CEO</p>
-              </div>
-            </div>
-            <div
-              class="bg-[#F5F6F7] h-[360px] sm:h-[400px] max-w-[390px] flex-shrink-0 flex flex-col justify-center ml-3 rounded-xl"
-            >
-              <img
-                class="h-[280px] sm:h-[320px] w-full object-cover"
-                src="images/team-mates/42w 1.png"
-                alt="Mask group"
-              />
-              <div class="p-4">
-                <h3
-                  class="text-[16px] sm:text-[18px] lg:text-[21px] font-[600]"
-                >
-                  Saimon Jhonson
-                </h3>
-                <p class="text-[14px] md:text-[17px] text-[#555]">Developer</p>
-              </div>
-            </div>
-            <div
-              class="bg-[#F5F6F7] h-[360px] sm:h-[400px] max-w-[390px] flex-shrink-0 flex flex-col justify-center ml-3 rounded-xl"
-            >
-              <img
-                class="h-[280px] sm:h-[320px] w-full object-cover"
-                src="images/team-mates/Mask group (1).png"
-                alt="Mask group"
-              />
-              <div class="p-4">
-                <h3
-                  class="text-[16px] sm:text-[18px] font-[600] lg:text-[21px]"
-                >
-                  Anne Marie
-                </h3>
-                <p class="text-[14px] md:text-[17px] text-[#555]">
-                  Marketing Expert
-                </p>
-              </div>
-            </div>
-            <div
-              class="bg-[#F5F6F7] h-[360px] sm:h-[400px] max-w-[390px] flex-shrink-0 flex flex-col justify-center ml-3 rounded-xl"
-            >
-              <img
-                class="h-[280px] sm:h-[320px] w-full object-cover"
-                src="images/team-mates/Mask group (2).png"
-                alt="Mask group"
-              />
-              <div class="p-4">
-                <h3
-                  class="text-[16px] sm:text-[18px] lg:text-[21px] font-[600]"
-                >
-                  David Jhonas
-                </h3>
-                <p class="text-[14px] md:text-[17px] text-[#555]">
-                  UI UX Designer
-                </p>
-              </div>
-            </div>
-            <div
-              class="bg-[#F5F6F7] h-[360px] sm:h-[400px] max-w-[390px] flex-shrink-0 flex flex-col justify-center ml-3 rounded-xl"
-            >
-              <img
-                class="h-[280px] sm:h-[320px] w-full object-cover"
-                src="images/team-mates/Mask group.png"
-                alt="Mask group"
-              />
-              <div class="p-4">
-                <h3
-                  class="text-[16px] sm:text-[18px] lg:text-[21px] font-[600]"
-                >
-                  Magdalina Kubica
-                </h3>
-                <p class="text-[14px] md:text-[17px] text-[#555]">CEO</p>
-              </div>
-            </div>
-            <div
-              class="bg-[#F5F6F7] h-[360px] sm:h-[400px] max-w-[390px] flex-shrink-0 flex flex-col justify-center ml-3 rounded-xl"
-            >
-              <img
-                class="h-[280px] sm:h-[320px] w-full object-cover"
-                src="images/team-mates/42w 1.png"
-                alt="Mask group"
-              />
-              <div class="p-4">
-                <h3
-                  class="text-[16px] sm:text-[18px] lg:text-[21px] font-[600]"
-                >
-                  Saimon Jhonson
-                </h3>
-                <p class="text-[14px] md:text-[17px] text-[#555]">Developer</p>
-              </div>
-            </div>
-            <div
-              class="bg-[#F5F6F7] h-[360px] sm:h-[400px] max-w-[390px] flex-shrink-0 flex flex-col justify-center ml-3 rounded-xl"
-            >
-              <img
-                class="h-[280px] sm:h-[320px] w-full object-cover"
-                src="images/team-mates/Mask group (1).png"
-                alt="Mask group"
-              />
-              <div class="p-4">
-                <h3
-                  class="text-[16px] sm:text-[18px] font-[600] lg:text-[21px]"
-                >
-                  Anne Marie
-                </h3>
-                <p class="text-[14px] md:text-[17px] text-[#555]">
-                  Marketing Expert
-                </p>
-              </div>
-            </div>
-            <div
-              class="bg-[#F5F6F7] h-[360px] sm:h-[400px] max-w-[390px] flex-shrink-0 flex flex-col justify-center ml-3 rounded-xl"
-            >
-              <img
-                class="h-[280px] sm:h-[320px] w-full object-cover"
-                src="images/team-mates/Mask group (2).png"
-                alt="Mask group"
-              />
-              <div class="p-4">
-                <h3
-                  class="text-[16px] sm:text-[18px] lg:text-[21px] font-[600]"
-                >
-                  David Jhonas
-                </h3>
-                <p class="text-[14px] md:text-[17px] text-[#555]">
-                  UI UX Designer
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Arrow Buttons -->
-          <div class="flex justify-center items-center py-8 relative">
-            <div class="bg-[#F5F6F7] h-[50px] w-[50px] rounded-full"></div>
-            <div
-              class="absolute flex items-center gap-3"
+              class="flex items-center justify-center px-4 gap-4 mt-4"
               style="pointer-events: none"
             >
-              <button id="prevButton2">
-                <img
-                  src="images/svg/ArrowPrev.svg"
-                  alt="arrow-prev"
-                  class="w-[47px] transition-all duration-[0.2s] active:translate-x-[-10px] pointer-events-auto"
-                />
+              <button
+                id="prevButton"
+                class="w-[40px] h-[40px] bg-[#EBE4A6] flex items-center justify-center rounded-full shadow-lg text-black font-[900] pointer-events-auto transition-all duration-[0.2s] active:translate-x-[-10px]"
+              >
+                ←
               </button>
-              <button id="nextButton2">
-                <img
-                  src="images/svg/ArrowNext.svg"
-                  alt="arrow-next"
-                  class="w-[47px] transition-all duration-[0.2s] active:translate-x-[10px] pointer-events-auto"
-                />
+              <button
+                id="nextButton"
+                class="w-[40px] h-[40px] bg-[#EBE4A6] flex items-center justify-center rounded-full shadow-lg text-black font-[900] pointer-events-auto transition-all duration-[0.2s] active:translate-x-[10px]"
+              >
+                →
               </button>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section>
-        <div class="flex flex-col items-center mb-12 px-4 animate-item">
-          <div class="mb-6">
-            <h2 class="text-[2rem] font-[700] text-[#1D2630]">
-              What Our Users Says
-            </h2>
-          </div>
-          <div class="flex flex-col items-center">
-            <div>
-              <img src="images/user-image/Group 1000002166.png" alt="" />
-            </div>
+        <!-- Experience 3T Rides -->
+        <section class="px-2 mb-44 mt-24">
+          <div class="">
+            <!--  with responsive layout -->
             <div
-              class="flex flex-col items-center justify-center max-w-[1000px] text-center"
+              class="flex flex-col sm:flex-row justify-center items-center gap-[5%] sm:gap-[7%] lg:gap-[10%] xl:gap-[13%] section-wrapper"
             >
-              <p class="text-[#373F46] mt-4 text-[0.8rem] sm:text-[1rem]">
+              <!-- Text Content -->
+              <div
+                class="max-w-[620px] sm:w-[550px] sm:h-[290px] text-center md:text-left fade-in"
+              >
+                <h1
+                  class="text-[26px] md:text-[30px] font-bold text-[#1D2630] mb-4 scale-up"
+                >
+                  Experience 3T Rides
+                </h1>
+                <p
+                  class="text-[#373F46] text-[14px] md:text-[16px] xl:text-[18px] mb-6 slide-in"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Euismod neque, vel, scelerisque non nec et egestas. Integer
+                  tincidunt turpis ac nam integer etiam non cursus. Morbi mauris
+                  tellus dui donec malesuada tortor egestas ultricies. Elit
+                  ultricies elit faucibus cras vel nisl sagittis, lorem enim.
+                  Fermentum, mauris velit vestibulum eu. Sagittis ullamcorper
+                  nibh et lobortis. Hac quam penatibus pulvinar adipiscing
+                  faucibus.
+                </p>
+                <button
+                  class="bg-[#1D2630] text-white py-2 px-6 rounded-[10px] transition-all duration-[0.3s] hover:bg-yellow-500 hover:text-black fade-in"
+                >
+                  Read More
+                </button>
+              </div>
+
+              <!-- Image Content -->
+              <div class="fade-in mt-10">
+                <img
+                  src="images/exprience/Group 2609465 (1).png"
+                  alt="Mask group"
+                  class="rounded-lg h-auto xl:w-[630px] xl:h-[340px] scale-up"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--How It Works? -->
+
+        <section class="bg-[#F5F6F7]">
+          <div
+            class="howitsworkSection flex flex-col lg:flex-row items-center justify-center py-10 px-4"
+          >
+            <div
+              class="AppDemoBox overflow-hidden sm:overflow-visible h-[600px]"
+            >
+              <img
+                class="adImg1"
+                src="./images//howitswork/roundBG.svg"
+                alt=""
+              />
+              <img
+                id="roundOne"
+                class="adImg2"
+                src="./images//howitswork/Big.svg"
+                alt=""
+              />
+              <img
+                id="roundTwo"
+                class="adImg2"
+                src="./images//howitswork/Small.svg"
+                alt=""
+              />
+              <img
+                class="adImg3 mt-10"
+                src="./images//howitswork/Phone.svg"
+                alt=""
+              />
+            </div>
+            <div class="lg:w-1/2 max-w-[600px]">
+              <div class="flex flex-col items-start p-6">
+                <!-- Heading -->
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 animate-item">
+                  How It Works?
+                </h2>
+
+                <!-- Step  -->
+                <div class="relative">
+                  <!-- Vertical Line -->
+                  <div
+                    class="absolute top-0 left-3 w-[3px] bg-teal-500 h-full"
+                  ></div>
+
+                  <!-- Steps -->
+                  <div class="flex flex-col gap-12">
+                    <!-- Step 1 -->
+                    <div
+                      class="flex md:flex-row items-start gap-4 animate-item"
+                    >
+                      <!-- Circle -->
+                      <div class="relative flex items-center justify-center">
+                        <div
+                          class="w-7 h-7 bg-teal-100 rounded-full flex items-center justify-center"
+                        >
+                          <div
+                            class="w-2.5 h-2.5 bg-teal-500 rounded-full"
+                          ></div>
+                        </div>
+                      </div>
+                      <!-- Text -->
+                      <div>
+                        <h3 class="text-lg font-semibold">
+                          Search Your Address
+                        </h3>
+                        <p class="text-gray-500">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Euismod neque, vel, scelerisque non nec et
+                          egestas.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div
+                      class="flex md:flex-row items-start gap-4 animate-item"
+                    >
+                      <div class="relative flex items-center justify-center">
+                        <div
+                          class="w-7 h-7 bg-teal-100 rounded-full flex items-center justify-center"
+                        >
+                          <div
+                            class="w-2.5 h-2.5 bg-teal-500 rounded-full"
+                          ></div>
+                        </div>
+                      </div>
+                      <div>
+                        <h3 class="text-lg font-semibold">
+                          Choose Car & Payment Method
+                        </h3>
+                        <p class="text-gray-500">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Euismod neque, vel, scelerisque non nec et
+                          egestas.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div
+                      class="flex md:flex-row items-start gap-4 animate-item"
+                    >
+                      <div class="relative flex items-center justify-center">
+                        <div
+                          class="w-7 h-7 bg-teal-100 rounded-full flex items-center justify-center"
+                        >
+                          <div
+                            class="w-2.5 h-2.5 bg-teal-500 rounded-full"
+                          ></div>
+                        </div>
+                      </div>
+                      <div>
+                        <h3 class="text-lg font-semibold">Enjoy Your Ride</h3>
+                        <p class="text-gray-500">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Euismod neque, vel, scelerisque non nec et
+                          egestas.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div
+                      class="flex md:flex-row items-start gap-4 animate-item"
+                    >
+                      <div class="relative flex items-center justify-center">
+                        <div
+                          class="w-7 h-7 bg-teal-100 rounded-full flex items-center justify-center"
+                        >
+                          <div
+                            class="w-2.5 h-2.5 bg-teal-500 rounded-full"
+                          ></div>
+                        </div>
+                      </div>
+                      <div>
+                        <h3 class="text-lg font-semibold">Put Your Review</h3>
+                        <p class="text-gray-500">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Euismod neque, vel, scelerisque non nec et
+                          egestas.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Ride-svg -->
+
+        <section class="py-20">
+          <div class="px-2">
+            <div class="flex gap-20 flex-col sm:flex-row justify-center">
+              <div class="flex flex-col items-center rounded-lg animate-item">
+                <div
+                  class="w-20 h-20 flex items-center justify-center border-black border-[1px] p-2 rounded-full mb-4"
+                >
+                  <img
+                    src="images/ride-svg/Solid.svg"
+                    alt="solid"
+                    class="w-[50px] h-[50px]"
+                  />
+                </div>
+                <h1 class="text-[20px] xl:text-[25px] font-semibold mb-2">
+                  Rides On Demand
+                </h1>
+                <p class="text-center text-[18px] text-[#373F46] max-w-[300px]">
+                  Request a ride at any time and on any day of the year.
+                </p>
+              </div>
+              <div class="flex flex-col items-center rounded-lg animate-item">
+                <div
+                  class="w-20 h-20 flex items-center justify-center border-black border-[1px] p-2 rounded-full mb-4"
+                >
+                  <img
+                    src="images/ride-svg/Group.svg"
+                    alt="group"
+                    class="w-[50px] h-[50px]"
+                  />
+                </div>
+                <h1 class="text-[20px] xl:text-[25px] font-semibold mb-2">
+                  Always Low Price
+                </h1>
+                <p class="text-center text-[18px] text-[#373F46] max-w-[400px]">
+                  <span> Compare prices on every kind of ride, from</span>
+                  <span>daily commutes to special evenings out.</span>
+                </p>
+              </div>
+              <div class="flex flex-col items-center rounded-lg animate-item">
+                <div
+                  class="w-20 h-20 flex items-center justify-center border-black border-[1px] p-2 rounded-full mb-4"
+                >
+                  <img
+                    src="images/ride-svg/app 1.svg"
+                    alt="app"
+                    class="w-[50px] h-[50px]"
+                  />
+                </div>
+                <h1 class="text-[20px] xl:text-[25px] font-semibold mb-2">
+                  Fast Pickups
+                </h1>
+                <p class="text-center text-[18px] text-[#373F46] max-w-[370px]">
+                  Tap and let your driver take you where you want to go.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- adad -->
+        <section class="py-12">
+          <div
+            class="flex flex-wrap sm:flex-nowrap items-center justify-center md:gap-[5%] xl:gap-[10%] px-2"
+          >
+            <!-- Text Content -->
+            <div class="text-center md:text-left max-w-lg animate-item">
+              <h1
+                class="text-[32px] md:text-[36px] lg:text-[45px] xl:text-[55px] font-bold text-[#1D2630] mb-4"
+              >
+                Become a 3T Driver
+              </h1>
+              <p
+                class="text-[#373F46] text-[14px] md:text-[17px] lg:text-[22px] max-w-[600px] md:max-w-full leading-relaxed mb-6"
+              >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
                 neque, vel, scelerisque non nec et egestas. Integer tincidunt
                 turpis ac nam integer etiam non cursus.
               </p>
-              <img src="images/svg/star.svg" alt="star" class="my-6" />
-              <h4 class="mb-4 font-bold text-[#1E212F]">Saomon Jhonson</h4>
-              <img src="images/svg/dot.svg" alt="dot-svg" />
+              <button
+                class="bg-[#1D2630] text-white py-2 px-6 rounded-[10px] transition-all duration-[0.3s] hover:bg-yellow-500 hover:text-black"
+              >
+                Join Us Now
+              </button>
+            </div>
+
+            <!-- Image Content -->
+            <div class="animate-item mt-7 sm:mt-0">
+              <img
+                src="images/Driver-images/driver-image.jpg"
+                alt="driver-image"
+                class="rounded-lg md:min-w-[300px] xl:max-w-[800px]:"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- download the app -->
+
+        <section
+          class="bg-[#F5F6F7] py-10 px-2 rounded-[30px] h-[700px] sm:h-[650px] md:h-[530px] xl:h-[430px] mt-28"
+        >
+          <div
+            class="flex flex-col sm:flex-row items-center justify-between relative"
+          >
+            <!-- Phone Image -->
+            <div class="w-full xl:w-auto xl:absolute xl:left-4">
+              <img
+                src="images/downloadapp/phoneimage.png"
+                alt="App Download Preview"
+                class="w-full sm:w-[300px] md:w-[520px] animate-item"
+              />
+            </div>
+
+            <!-- Text and Buttons -->
+            <div class="sm:ml-auto text-center sm:text-left sm:w-1/2">
+              <h1
+                class="text-[2rem] sm:text-[2.8rem] font-[700] mb-4 animate-item"
+              >
+                Download The App
+              </h1>
+              <p
+                class="text-[#373F46] text-[1rem] sm:text-[1.2rem] max-w-[600px] mb-6 sm:mx-0 animate-item"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
+                neque, vel, scelerisque non nec et egestas. Integer tincidunt
+                turpis ac nam integer etiam non cursus.
+              </p>
+
+              <!-- App Store Buttons -->
+              <div
+                class="flex justify-center sm:justify-start space-x-4 animate-item"
+              >
+                <button>
+                  <img
+                    src="images/footer-images/googleplay.svg"
+                    alt="Google Play App"
+                    class="w-[150px]"
+                  />
+                </button>
+                <button>
+                  <img
+                    src="images/footer-images/applestore.svg"
+                    alt="iOS App Store"
+                    class="w-[150px]"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Our Team Mates -->
+
+        <section class="py-16 animate-item">
+          <div class="flex flex-col items-center pb-8 text-center">
+            <h1
+              class="text-[32px] sm:text-[36px] md:text-[40px] font-[700] text-[#1D2630]"
+            >
+              Our Team Mates
+            </h1>
+            <p
+              class="text-[16px] sm:text-[18px] font-[400] text-[#1D2630] px-4 md:px-0"
+            >
+              Lorem ipsum dolor sit amet consectetur. Venenatis erat eleifend
+              quis id placerat.
+            </p>
+          </div>
+
+          <!-- Scrollable Services Section -->
+          <div class="relative">
+            <div
+              id="carousel2"
+              class="flex gap-8 pt-4 pb-8 overflow-scroll overflow-x-hidden overflow-y-hidden scroll-smooth max-w-[1400px]"
+            >
+              <!-- Service Cards -->
+              <div
+                class="bg-[#F5F6F7] h-[360px] sm:h-[400px] max-w-[390px] flex-shrink-0 flex flex-col justify-center ml-3 rounded-xl"
+              >
+                <img
+                  class="h-[280px] sm:h-[320px] w-full object-cover"
+                  src="images/team-mates/Mask group.png"
+                  alt="Mask group"
+                />
+                <div class="p-4">
+                  <h3
+                    class="text-[16px] sm:text-[18px] lg:text-[21px] font-[600]"
+                  >
+                    Magdalina Kubica
+                  </h3>
+                  <p class="text-[14px] md:text-[17px] text-[#555]">CEO</p>
+                </div>
+              </div>
+              <div
+                class="bg-[#F5F6F7] h-[360px] sm:h-[400px] max-w-[390px] flex-shrink-0 flex flex-col justify-center ml-3 rounded-xl"
+              >
+                <img
+                  class="h-[280px] sm:h-[320px] w-full object-cover"
+                  src="images/team-mates/42w 1.png"
+                  alt="Mask group"
+                />
+                <div class="p-4">
+                  <h3
+                    class="text-[16px] sm:text-[18px] lg:text-[21px] font-[600]"
+                  >
+                    Saimon Jhonson
+                  </h3>
+                  <p class="text-[14px] md:text-[17px] text-[#555]">
+                    Developer
+                  </p>
+                </div>
+              </div>
+              <div
+                class="bg-[#F5F6F7] h-[360px] sm:h-[400px] max-w-[390px] flex-shrink-0 flex flex-col justify-center ml-3 rounded-xl"
+              >
+                <img
+                  class="h-[280px] sm:h-[320px] w-full object-cover"
+                  src="images/team-mates/Mask group (1).png"
+                  alt="Mask group"
+                />
+                <div class="p-4">
+                  <h3
+                    class="text-[16px] sm:text-[18px] font-[600] lg:text-[21px]"
+                  >
+                    Anne Marie
+                  </h3>
+                  <p class="text-[14px] md:text-[17px] text-[#555]">
+                    Marketing Expert
+                  </p>
+                </div>
+              </div>
+              <div
+                class="bg-[#F5F6F7] h-[360px] sm:h-[400px] max-w-[390px] flex-shrink-0 flex flex-col justify-center ml-3 rounded-xl"
+              >
+                <img
+                  class="h-[280px] sm:h-[320px] w-full object-cover"
+                  src="images/team-mates/Mask group (2).png"
+                  alt="Mask group"
+                />
+                <div class="p-4">
+                  <h3
+                    class="text-[16px] sm:text-[18px] lg:text-[21px] font-[600]"
+                  >
+                    David Jhonas
+                  </h3>
+                  <p class="text-[14px] md:text-[17px] text-[#555]">
+                    UI UX Designer
+                  </p>
+                </div>
+              </div>
+              <div
+                class="bg-[#F5F6F7] h-[360px] sm:h-[400px] max-w-[390px] flex-shrink-0 flex flex-col justify-center ml-3 rounded-xl"
+              >
+                <img
+                  class="h-[280px] sm:h-[320px] w-full object-cover"
+                  src="images/team-mates/Mask group.png"
+                  alt="Mask group"
+                />
+                <div class="p-4">
+                  <h3
+                    class="text-[16px] sm:text-[18px] lg:text-[21px] font-[600]"
+                  >
+                    Magdalina Kubica
+                  </h3>
+                  <p class="text-[14px] md:text-[17px] text-[#555]">CEO</p>
+                </div>
+              </div>
+              <div
+                class="bg-[#F5F6F7] h-[360px] sm:h-[400px] max-w-[390px] flex-shrink-0 flex flex-col justify-center ml-3 rounded-xl"
+              >
+                <img
+                  class="h-[280px] sm:h-[320px] w-full object-cover"
+                  src="images/team-mates/42w 1.png"
+                  alt="Mask group"
+                />
+                <div class="p-4">
+                  <h3
+                    class="text-[16px] sm:text-[18px] lg:text-[21px] font-[600]"
+                  >
+                    Saimon Jhonson
+                  </h3>
+                  <p class="text-[14px] md:text-[17px] text-[#555]">
+                    Developer
+                  </p>
+                </div>
+              </div>
+              <div
+                class="bg-[#F5F6F7] h-[360px] sm:h-[400px] max-w-[390px] flex-shrink-0 flex flex-col justify-center ml-3 rounded-xl"
+              >
+                <img
+                  class="h-[280px] sm:h-[320px] w-full object-cover"
+                  src="images/team-mates/Mask group (1).png"
+                  alt="Mask group"
+                />
+                <div class="p-4">
+                  <h3
+                    class="text-[16px] sm:text-[18px] font-[600] lg:text-[21px]"
+                  >
+                    Anne Marie
+                  </h3>
+                  <p class="text-[14px] md:text-[17px] text-[#555]">
+                    Marketing Expert
+                  </p>
+                </div>
+              </div>
+              <div
+                class="bg-[#F5F6F7] h-[360px] sm:h-[400px] max-w-[390px] flex-shrink-0 flex flex-col justify-center ml-3 rounded-xl"
+              >
+                <img
+                  class="h-[280px] sm:h-[320px] w-full object-cover"
+                  src="images/team-mates/Mask group (2).png"
+                  alt="Mask group"
+                />
+                <div class="p-4">
+                  <h3
+                    class="text-[16px] sm:text-[18px] lg:text-[21px] font-[600]"
+                  >
+                    David Jhonas
+                  </h3>
+                  <p class="text-[14px] md:text-[17px] text-[#555]">
+                    UI UX Designer
+                  </p>
+                </div>
+              </div>
+              <div
+                class="bg-[#F5F6F7] h-[360px] sm:h-[400px] max-w-[390px] flex-shrink-0 flex flex-col justify-center ml-3 rounded-xl"
+              >
+                <img
+                  class="h-[280px] sm:h-[320px] w-full object-cover"
+                  src="images/team-mates/Mask group.png"
+                  alt="Mask group"
+                />
+                <div class="p-4">
+                  <h3
+                    class="text-[16px] sm:text-[18px] lg:text-[21px] font-[600]"
+                  >
+                    Magdalina Kubica
+                  </h3>
+                  <p class="text-[14px] md:text-[17px] text-[#555]">CEO</p>
+                </div>
+              </div>
+              <div
+                class="bg-[#F5F6F7] h-[360px] sm:h-[400px] max-w-[390px] flex-shrink-0 flex flex-col justify-center ml-3 rounded-xl"
+              >
+                <img
+                  class="h-[280px] sm:h-[320px] w-full object-cover"
+                  src="images/team-mates/42w 1.png"
+                  alt="Mask group"
+                />
+                <div class="p-4">
+                  <h3
+                    class="text-[16px] sm:text-[18px] lg:text-[21px] font-[600]"
+                  >
+                    Saimon Jhonson
+                  </h3>
+                  <p class="text-[14px] md:text-[17px] text-[#555]">
+                    Developer
+                  </p>
+                </div>
+              </div>
+              <div
+                class="bg-[#F5F6F7] h-[360px] sm:h-[400px] max-w-[390px] flex-shrink-0 flex flex-col justify-center ml-3 rounded-xl"
+              >
+                <img
+                  class="h-[280px] sm:h-[320px] w-full object-cover"
+                  src="images/team-mates/Mask group (1).png"
+                  alt="Mask group"
+                />
+                <div class="p-4">
+                  <h3
+                    class="text-[16px] sm:text-[18px] font-[600] lg:text-[21px]"
+                  >
+                    Anne Marie
+                  </h3>
+                  <p class="text-[14px] md:text-[17px] text-[#555]">
+                    Marketing Expert
+                  </p>
+                </div>
+              </div>
+              <div
+                class="bg-[#F5F6F7] h-[360px] sm:h-[400px] max-w-[390px] flex-shrink-0 flex flex-col justify-center ml-3 rounded-xl"
+              >
+                <img
+                  class="h-[280px] sm:h-[320px] w-full object-cover"
+                  src="images/team-mates/Mask group (2).png"
+                  alt="Mask group"
+                />
+                <div class="p-4">
+                  <h3
+                    class="text-[16px] sm:text-[18px] lg:text-[21px] font-[600]"
+                  >
+                    David Jhonas
+                  </h3>
+                  <p class="text-[14px] md:text-[17px] text-[#555]">
+                    UI UX Designer
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Arrow Buttons -->
+            <div class="flex justify-center items-center py-8 relative">
+              <div class="bg-[#F5F6F7] h-[50px] w-[50px] rounded-full"></div>
+              <div
+                class="absolute flex items-center gap-3"
+                style="pointer-events: none"
+              >
+                <button id="prevButton2">
+                  <img
+                    src="images/svg/ArrowPrev.svg"
+                    alt="arrow-prev"
+                    class="w-[47px] transition-all duration-[0.2s] active:translate-x-[-10px] pointer-events-auto"
+                  />
+                </button>
+                <button id="nextButton2">
+                  <img
+                    src="images/svg/ArrowNext.svg"
+                    alt="arrow-next"
+                    class="w-[47px] transition-all duration-[0.2s] active:translate-x-[10px] pointer-events-auto"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="flex flex-col items-center mb-12 px-4 animate-item">
+            <div class="mb-6">
+              <h2 class="text-[2rem] font-[700] text-[#1D2630]">
+                What Our Users Says
+              </h2>
+            </div>
+            <div class="flex flex-col items-center">
+              <div>
+                <img src="images/user-image/Group 1000002166.png" alt="" />
+              </div>
+              <div
+                class="flex flex-col items-center justify-center max-w-[1000px] text-center"
+              >
+                <p class="text-[#373F46] mt-4 text-[0.8rem] sm:text-[1rem]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Euismod neque, vel, scelerisque non nec et egestas. Integer
+                  tincidunt turpis ac nam integer etiam non cursus.
+                </p>
+                <img src="images/svg/star.svg" alt="star" class="my-6" />
+                <h4 class="mb-4 font-bold text-[#1E212F]">Saomon Jhonson</h4>
+                <img src="images/svg/dot.svg" alt="dot-svg" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="bg-[#F5F6F7] py-8">
+        <div class="">
+          <div
+            class="flex flex-wrap items-center justify-between gap-4 max-w-[1200px] px-4 sm:px-6 lg:px-8"
+          >
+            <div>
+              <h2
+                class="text-[#1D2630] text-[28px] sm:text-[32px] md:text-[35px] font-bold"
+              >
+                Subscribe Newsletter
+              </h2>
+              <p class="text-[16px] sm:text-[18px] font-medium text-[#373F46]">
+                Join with our mailing list and stay updated
+              </p>
+            </div>
+            <div
+              class="border-[1px] border-slate-500 h-[64px] rounded-[10px] flex items-center w-full max-w-sm px-3 bg-[#ffffff]"
+            >
+              <input
+                type="text"
+                placeholder="Enter Your email address"
+                class="px-2 py-2 rounded-md focus:outline-none flex-1 text-[14px] sm:text-[16px]"
+              />
+              <button
+                class="bg-[#1D2630] text-white px-4 py-2 rounded-md text-[14px] sm:text-[16px] transition-all duration-[0.3s] hover:bg-yellow-500 hover:text-black"
+              >
+                Join Us Now
+              </button>
+            </div>
+          </div>
+          <div class="my-8 px-4 sm:px-6 lg:px-8">
+            <hr class="border-gray-300" />
+          </div>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4 sm:px-6 lg:px-8"
+          >
+            <div class="flex flex-col gap-3">
+              <h3
+                class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46]"
+              >
+                Company
+              </h3>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="about.html"
+                    aria-label="Learn more about 3T"
+                    class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                    >About 3T</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="pricing.html"
+                    class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                    >Pricing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                    >Why 3T</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                    >FAQs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="flex flex-col gap-3">
+              <h3
+                class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+              >
+                Quick Links
+              </h3>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="driver.html"
+                    class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                    >Be Driver</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="fleetowner.html"
+                    class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                    >Fleet Owner</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="rider.html"
+                    class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                    >Rider</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="loast&found.html"
+                    class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                    >Lost & Found</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="flex flex-col gap-3">
+              <h3
+                class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+              >
+                Download User App
+              </h3>
+              <a href="">
+                <img
+                  class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto mb-2"
+                  src="images/footer-images/googleplay.svg"
+                  alt="Download from Google Play Store for Android"
+                />
+              </a>
+              <a href="">
+                <img
+                  class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto"
+                  src="images/footer-images/applestore.svg"
+                  alt="Download from Apple App Store for iOS"
+                />
+              </a>
+            </div>
+            <div class="flex flex-col gap-3">
+              <h3
+                class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46]"
+              >
+                Download Driver App
+              </h3>
+              <a href="">
+                <img
+                  class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto mb-2"
+                  src="images/footer-images/googleplay.svg"
+                  alt="Download from Google Play Store for Android"
+                />
+              </a>
+              <a href="">
+                <img
+                  class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto"
+                  src="images/footer-images/applestore.svg"
+                  alt="Download from Apple App Store for iOS"
+                />
+              </a>
             </div>
           </div>
         </div>
-      </section>
-    </main>
 
-    <footer class="bg-[#F5F6F7] py-8">
-      <div class="container mx-auto">
-        <div
-          class="flex flex-wrap items-center justify-between gap-4 max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8"
-        >
-          <div>
-            <h2
-              class="text-[#1D2630] text-[28px] sm:text-[32px] md:text-[35px] font-bold"
-            >
-              Subscribe Newsletter
-            </h2>
-            <p class="text-[16px] sm:text-[18px] font-medium text-[#373F46]">
-              Join with our mailing list and stay updated
-            </p>
-          </div>
-          <div
-            class="border-[1px] border-slate-500 h-[64px] rounded-[10px] flex items-center w-full max-w-sm px-3 bg-[#ffffff]"
-          >
-            <input
-              type="text"
-              placeholder="Enter Your email address"
-              class="px-2 py-2 rounded-md focus:outline-none flex-1 text-[14px] sm:text-[16px]"
-            />
-            <button
-              class="bg-[#1D2630] text-white px-4 py-2 rounded-md text-[14px] sm:text-[16px] transition-all duration-[0.3s] hover:bg-yellow-500 hover:text-black"
-            >
-              Join Us Now
-            </button>
-          </div>
-        </div>
-        <div class="my-8 px-4 sm:px-6 lg:px-8">
-          <hr class="border-gray-300" />
-        </div>
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4 sm:px-6 lg:px-8"
-        >
-          <div class="flex flex-col gap-3">
-            <h3
-              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46]"
-            >
-              Company
-            </h3>
-            <ul class="space-y-2">
-              <li>
-                <a
-                  href="about.html"
-                  aria-label="Learn more about 3T"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
-                  >About 3T</a
-                >
-              </li>
-              <li>
-                <a
-                  href="pricing.html"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
-                  >Pricing</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
-                  >Why 3T</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
-                  >FAQs</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
-                  >Contact Us</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="flex flex-col gap-3">
-            <h3
-              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
-            >
-              Quick Links
-            </h3>
-            <ul class="space-y-2">
-              <li>
-                <a
-                  href="driver.html"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
-                  >Be Driver</a
-                >
-              </li>
-              <li>
-                <a
-                  href="fleetowner.html"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
-                  >Fleet Owner</a
-                >
-              </li>
-              <li>
-                <a
-                  href="rider.html"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
-                  >Rider</a
-                >
-              </li>
-              <li>
-                <a
-                  href="loast&found.html"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
-                  >Lost & Found</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="flex flex-col gap-3">
-            <h3
-              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
-            >
-              Download User App
-            </h3>
-            <a href="">
-              <img
-                class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto mb-2"
-                src="images/footer-images/googleplay.svg"
-                alt="Download from Google Play Store for Android"
-              />
-            </a>
-            <a href="">
-              <img
-                class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto"
-                src="images/footer-images/applestore.svg"
-                alt="Download from Apple App Store for iOS"
-              />
-            </a>
-          </div>
-          <div class="flex flex-col gap-3">
-            <h3
-              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46]"
-            >
-              Download Driver App
-            </h3>
-            <a href="">
-              <img
-                class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto mb-2"
-                src="images/footer-images/googleplay.svg"
-                alt="Download from Google Play Store for Android"
-              />
-            </a>
-            <a href="">
-              <img
-                class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto"
-                src="images/footer-images/applestore.svg"
-                alt="Download from Apple App Store for iOS"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
+        <!--footer icons -->
 
-      <!--footer icons -->
-
-      <div class="flex justify-center gap-4 pt-[64px] px-4 sm:px-6 lg:px-8">
-        <a href="">
-          <img
-            class="h-[18px] sm:h-[20px]"
-            src="./footer-logo/facebook-logo.svg"
-            alt="facebook"
-          />
-        </a>
-        <a href="">
-          <img
-            class="h-[18px] sm:h-[20px]"
-            src="./footer-logo/linkedin-letters.svg"
-            alt="linkedin"
-          />
-        </a>
-        <a href="">
-          <img
-            class="h-[18px] sm:h-[20px]"
-            src="./footer-logo/ant-design_instagram-filled.svg"
-            alt="instagram"
-          />
-        </a>
-        <a href="">
-          <img
-            class="h-[18px] sm:h-[20px]"
-            src="./footer-logo/Group.svg"
-            alt="group"
-          />
-        </a>
-      </div>
-
-      <!-- footer last line -->
-      <div
-        class="flex sm:flex-row justify-between container mx-auto items-center sm:gap-16 px-4 sm:px-6 lg:px-8 py-6 bg-gray-100"
-      >
-        <div
-          class="flex sm:flex-row gap-2 sm:gap-12 items-center text-center sm:text-left"
-        >
-          <p class="text-[11px] sm:text-[16px]">
-            <a href="#" class="hover:underline text-gray-600">Privacy Policy</a>
-            &middot;
-            <a href="#" class="hover:underline pl-2 text-gray-600">
-              Terms of Service
-            </a>
-          </p>
-          <p class="text-gray-500 text-[11px] sm:text-[16px]">
-            Copyrights@2025 | All Rights Reserved by 3T
-          </p>
-        </div>
-
-        <div>
-          <a href="#" id="scrollToTop">
+        <div class="flex justify-center gap-4 pt-[64px] px-4 sm:px-6 lg:px-8">
+          <a href="">
             <img
-              src="./footer-logo/Group 1000002170.svg"
-              alt="Company Logo"
-              class="h-[40px] sm:h-[50px] lg:h-[60px]"
+              class="h-[18px] sm:h-[20px]"
+              src="./footer-logo/facebook-logo.svg"
+              alt="facebook"
+            />
+          </a>
+          <a href="">
+            <img
+              class="h-[18px] sm:h-[20px]"
+              src="./footer-logo/linkedin-letters.svg"
+              alt="linkedin"
+            />
+          </a>
+          <a href="">
+            <img
+              class="h-[18px] sm:h-[20px]"
+              src="./footer-logo/ant-design_instagram-filled.svg"
+              alt="instagram"
+            />
+          </a>
+          <a href="">
+            <img
+              class="h-[18px] sm:h-[20px]"
+              src="./footer-logo/Group.svg"
+              alt="group"
             />
           </a>
         </div>
-      </div>
-    </footer>
 
-    <!-- <script src="scrolle.js" defer></script> -->
+        <!-- footer last line -->
+        <div
+          class="flex sm:flex-row justify-between items-center sm:gap-16 px-4 sm:px-6 lg:px-8 py-6 bg-gray-100"
+        >
+          <div
+            class="flex sm:flex-row gap-2 sm:gap-12 items-center text-center sm:text-left"
+          >
+            <p class="text-[11px] sm:text-[16px]">
+              <a href="#" class="hover:underline text-gray-600"
+                >Privacy Policy</a
+              >
+              &middot;
+              <a href="#" class="hover:underline pl-2 text-gray-600">
+                Terms of Service
+              </a>
+            </p>
+            <p class="text-gray-500 text-[11px] sm:text-[16px]">
+              Copyrights@2025 | All Rights Reserved by 3T
+            </p>
+          </div>
+
+          <div>
+            <a href="#" id="scrollToTop">
+              <img
+                src="./footer-logo/Group 1000002170.svg"
+                alt="Company Logo"
+                class="h-[40px] sm:h-[50px] lg:h-[60px]"
+              />
+            </a>
+          </div>
+        </div>
+      </footer>
+
+      <!-- <script src="scrolle.js" defer></script> -->
+    </div>
     <script src="script.js" defer></script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
