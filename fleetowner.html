@@ -19,8 +19,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body class="w-full flex justify-center">
-    <div class="w-[95%] lg:w-[85%] xl:w-[80%]">
+  <body class="w-full flex justify-center flex-col">
+    <div class="w-[95%] lg:w-[85%] xl:w-[80%] mx-auto">
       <header class="my-6 px-4 w-full">
         <div class="flex container mx-auto justify-between items-center">
           <!-- Logo -->
@@ -185,8 +185,10 @@
           </div>
         </div>
       </header>
-      <main class="container mx-auto">
-        <!-- About Us hero section -->
+    </div>
+    <main>
+      <!-- About Us hero section -->
+      <div class="w-[95%] lg:w-[85%] xl:w-[80%] mx-auto">
         <section class="relative px-2">
           <!-- Background Section -->
           <div
@@ -361,12 +363,13 @@
             </div>
           </div>
         </section>
+      </div>
+      <!--------------------- Maping -------------------- -->
 
-        <!--------------------- Maping -------------------- -->
-
-        <section class="mt-10 bg-[#F5F6F7] py-20">
+      <section class="mt-10 bg-[#F5F6F7] py-20">
+        <div class="w-[95%] lg:w-[85%] xl:w-[80%] mx-auto">
           <div
-            class="flex flex-wrap justify-center container mx-auto gap-3 md:gap-6 xl:gap-16 animate-item"
+            class="flex flex-col lg:flex-row lg:justify-between xl:justify-center xl:gap-[14%] animate-item"
           >
             <!-- Slider Section -->
             <div
@@ -505,10 +508,11 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Try our Fleet Portal for free -->
-
+      <!-- Try our Fleet Portal for free -->
+      <div class="w-[95%] lg:w-[85%] xl:w-[80%] mx-auto">
         <section>
           <div class="mt-20 px-4 md:px-8 animate-item">
             <!-- Heading Section -->
@@ -692,236 +696,244 @@
             </div>
           </div>
         </section>
-      </main>
-      <footer class="bg-[#F5F6F7] py-8">
-        <div class="container mx-auto">
-          <div
-            class="flex flex-wrap items-center justify-between gap-4 max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8"
-          >
-            <div>
-              <h2
-                class="text-[#1D2630] text-[28px] sm:text-[32px] md:text-[35px] font-bold"
-              >
-                Subscribe Newsletter
-              </h2>
-              <p class="text-[16px] sm:text-[18px] font-medium text-[#373F46]">
-                Join with our mailing list and stay updated
-              </p>
-            </div>
-            <div
-              class="border-[1px] border-slate-500 h-[64px] rounded-[10px] flex items-center w-full max-w-sm px-3 bg-[#ffffff]"
-            >
-              <input
-                type="text"
-                placeholder="Enter Your email address"
-                class="px-2 py-2 rounded-md focus:outline-none flex-1 text-[14px] sm:text-[16px]"
-              />
-              <button
-                class="bg-[#1D2630] text-white px-4 py-2 rounded-md text-[14px] sm:text-[16px] transition-all duration-[0.3s] hover:bg-yellow-500 hover:text-black"
-              >
-                Join Us Now
-              </button>
-            </div>
-          </div>
-          <div class="my-8 px-4 sm:px-6 lg:px-8">
-            <hr class="border-gray-300" />
-          </div>
-          <div
-            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4 sm:px-6 lg:px-8"
-          >
-            <div class="flex flex-col gap-3">
-              <h3
-                class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46]"
-              >
-                Company
-              </h3>
-              <ul class="space-y-2">
-                <li>
-                  <a
-                    href="about.html"
-                    aria-label="Learn more about 3T"
-                    class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
-                    >About 3T</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
-                    >Pricing</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
-                    >Why 3T</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
-                    >FAQs</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
-                    >Contact Us</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="flex flex-col gap-3">
-              <h3
-                class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
-              >
-                Quick Links
-              </h3>
-              <ul class="space-y-2">
-                <li>
-                  <a
-                    href="driver.html"
-                    class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
-                    >Be Driver</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="fleetowner.html"
-                    class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
-                    >Fleet Owner</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="rider.html"
-                    class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
-                    >Rider</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
-                    >Lost & Found</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="flex flex-col gap-3">
-              <h3
-                class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
-              >
-                Download User App
-              </h3>
-              <a href="">
-                <img
-                  class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto mb-2"
-                  src="images/footer-images/googleplay.svg"
-                  alt="Download from Google Play Store for Android"
-                />
-              </a>
-              <a href="">
-                <img
-                  class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto"
-                  src="images/footer-images/applestore.svg"
-                  alt="Download from Apple App Store for iOS"
-                />
-              </a>
-            </div>
-            <div class="flex flex-col gap-3">
-              <h3
-                class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46]"
-              >
-                Download Driver App
-              </h3>
-              <a href="">
-                <img
-                  class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto mb-2"
-                  src="images/footer-images/googleplay.svg"
-                  alt="Download from Google Play Store for Android"
-                />
-              </a>
-              <a href="">
-                <img
-                  class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto"
-                  src="images/footer-images/applestore.svg"
-                  alt="Download from Apple App Store for iOS"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!--footer icons -->
-
-        <div class="flex justify-center gap-4 pt-[64px] px-4 sm:px-6 lg:px-8">
-          <a href="">
-            <img
-              class="h-[18px] sm:h-[20px]"
-              src="./footer-logo/facebook-logo.svg"
-              alt="facebook"
-            />
-          </a>
-          <a href="">
-            <img
-              class="h-[18px] sm:h-[20px]"
-              src="./footer-logo/linkedin-letters.svg"
-              alt="linkedin"
-            />
-          </a>
-          <a href="">
-            <img
-              class="h-[18px] sm:h-[20px]"
-              src="./footer-logo/ant-design_instagram-filled.svg"
-              alt="instagram"
-            />
-          </a>
-          <a href="">
-            <img
-              class="h-[18px] sm:h-[20px]"
-              src="./footer-logo/Group.svg"
-              alt="group"
-            />
-          </a>
-        </div>
-
-        <!-- footer last line -->
+      </div>
+    </main>
+    <footer class="bg-[#F5F6F7] py-8 w-full">
+      <div class="">
         <div
-          class="flex sm:flex-row justify-between container mx-auto items-center sm:gap-16 px-4 sm:px-6 lg:px-8 py-6 bg-gray-100"
+          class="flex items-center justify-center flex-col sm:flex-row md:gap-[12%] xl:gap-[30%] px-4 sm:px-6 lg:px-8"
         >
-          <div
-            class="flex sm:flex-row gap-2 sm:gap-12 items-center text-center sm:text-left"
-          >
-            <p class="text-[11px] sm:text-[16px]">
-              <a href="#" class="hover:underline text-gray-600"
-                >Privacy Policy</a
-              >
-              &middot;
-              <a href="#" class="hover:underline pl-2 text-gray-600">
-                Terms of Service
-              </a>
-            </p>
-            <p class="text-gray-500 text-[11px] sm:text-[16px]">
-              Copyrights@2025 | All Rights Reserved by 3T
+          <div class="mb-4 sm:mb-0">
+            <h2 class="text-[#1D2630] text-[25px] lg:text-[35px] font-bold">
+              Subscribe Newsletter
+            </h2>
+            <p
+              class="text-[16px] sm:text-[14px] lg:text-[19px] font-medium text-[#373F46]"
+            >
+              Join with our mailing list and stay updated
             </p>
           </div>
-
-          <div>
-            <a href="#" id="scrollToTop">
+          <div
+            class="border-[1px] border-slate-500 h-[40px] sm:h-[45px] md:h-[50px] lg:h-[55px] rounded-[10px] flex items-center md:w-full md:max-w-sm px-2 md:px-3 bg-[#ffffff]"
+          >
+            <input
+              type="text"
+              placeholder="Enter Your email address"
+              class="px-1 py-1 lg:px-2 lg:py-2 rounded-md focus:outline-none flex-1 text-[11px] sm:text-[12px] lg:text-[14px] xl:text-[16px]"
+            />
+            <button
+              class="bg-[#1D2630] text-white px-4 py-2 rounded-md text-[8px] sm:text-[11px] lg:text-[14px] transition-all duration-[0.3s] hover:bg-yellow-500 hover:text-black"
+            >
+              Join Us Now
+            </button>
+          </div>
+        </div>
+        <div class="my-8 px-4 sm:px-6 lg:px-8">
+          <hr class="border-gray-300" />
+        </div>
+        <div
+          class="flex justify-center gap-[2%] sm:gap-[7%] md:gap-[10%] xl:gap-[15%] px-4 lg:px-0"
+        >
+          <div class="flex flex-col gap-3">
+            <h3
+              class="font-bold text-[14px] sm:text-[20px] lg:text-[22px] text-[#373F46]"
+            >
+              Company
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="about.html"
+                  aria-label="Learn more about 3T"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
+                  >About 3T</a
+                >
+              </li>
+              <li>
+                <a
+                  href="pricing.html"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
+                  >Why 3T</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
+                  >FAQs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-3">
+            <h3
+              class="font-bold text-[14px] sm:text-[20px] lg:text-[22px] text-[#373F46] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+            >
+              Quick Links
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="driver.html"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
+                  >Be Driver</a
+                >
+              </li>
+              <li>
+                <a
+                  href="fleetowner.html"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
+                  >Fleet Owner</a
+                >
+              </li>
+              <li>
+                <a
+                  href="rider.html"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
+                  >Rider</a
+                >
+              </li>
+              <li>
+                <a
+                  href="loast&found.html"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
+                  >Lost & Found</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-3 items-center">
+            <h3
+              class="font-bold text-[14px] sm:text-[20px] lg:text-[22px] text-[#373F46] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-center"
+            >
+              Download User App
+            </h3>
+            <a href="">
               <img
-                src="./footer-logo/Group 1000002170.svg"
-                alt="Company Logo"
-                class="h-[40px] sm:h-[50px] lg:h-[60px]"
+                class="h-[30px] sm:h-[45px] lg:h-[50px] w-auto mb-2"
+                src="images/footer-images/googleplay.svg"
+                alt="Download from Google Play Store for Android"
+              />
+            </a>
+            <a href="">
+              <img
+                class="h-[30px] sm:h-[45px] lg:h-[50px] w-auto"
+                src="images/footer-images/applestore.svg"
+                alt="Download from Apple App Store for iOS"
+              />
+            </a>
+          </div>
+          <div class="flex flex-col gap-3 items-center">
+            <h3
+              class="font-bold text-[14px] sm:text-[20px] lg:text-[22px] text-[#373F46] text-center"
+            >
+              Download Driver App
+            </h3>
+            <a href="">
+              <img
+                class="h-[30px] sm:h-[45px] lg:h-[50px] w-auto mb-2"
+                src="images/footer-images/googleplay.svg"
+                alt="Download from Google Play Store for Android"
+              />
+            </a>
+            <a href="">
+              <img
+                class="h-[30px] sm:h-[45px] lg:h-[50px] w-auto"
+                src="images/footer-images/applestore.svg"
+                alt="Download from Apple App Store for iOS"
               />
             </a>
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+
+      <!--footer icons -->
+
+      <div class="flex justify-center gap-4 pt-[64px] px-4 sm:px-6 lg:px-8">
+        <a href="">
+          <img
+            class="h-[18px] sm:h-[20px]"
+            src="./footer-logo/facebook-logo.svg"
+            alt="facebook"
+          />
+        </a>
+        <a href="">
+          <img
+            class="h-[18px] sm:h-[20px]"
+            src="./footer-logo/linkedin-letters.svg"
+            alt="linkedin"
+          />
+        </a>
+        <a href="">
+          <img
+            class="h-[18px] sm:h-[20px]"
+            src="./footer-logo/ant-design_instagram-filled.svg"
+            alt="instagram"
+          />
+        </a>
+        <a href="">
+          <img
+            class="h-[18px] sm:h-[20px]"
+            src="./footer-logo/Group.svg"
+            alt="group"
+          />
+        </a>
+      </div>
+
+      <!-- footer last line -->
+      <div
+        class="flex sm:flex-row justify-center items-center gap-[10%] sm:gap-[22%] md:gap-[22%] lg:gap-[39%] py-6 bg-gray-100 px-3 lg:px-0"
+      >
+        <div
+          class="flex sm:flex-row gap-2 sm:gap-4 md:gap-8 lg:gap-12 items-center text-center"
+        >
+          <p class="text-[11px] sm:text-[14px] lg:text-[16px]">
+            <a
+              href="#"
+              class="hover:underline text-gray-600 text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
+              >Privacy Policy</a
+            >
+            &middot;
+            <a
+              href="#"
+              class="hover:underline pl-2 text-gray-600 text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
+            >
+              Terms of Service
+            </a>
+          </p>
+          <p
+            class="text-gray-500 text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
+          >
+            Copyrights@2025 | All Rights Reserved by 3T
+          </p>
+        </div>
+
+        <div>
+          <a href="#" id="scrollToTop">
+            <img
+              src="./footer-logo/Group 1000002170.svg"
+              alt="Company Logo"
+              class="h-[40px] sm:h-[50px] lg:h-[60px]"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+
     <script src="script.js" defer></script>
   </body>
 </html>
