@@ -14,78 +14,146 @@
       href="images/about-image/about svg/logo.svg"
       type="image/x-icon"
     />
-    <title>3t car</title>
+    <title>Be Driver</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <header class="my-6 px-4 w-full">
-      <div class="flex container mx-auto justify-between items-center">
-        <!-- Logo -->
-        <div class="block md:hidden">
-          <a href="/">
+    <div class="w-[97%] lg:w-[85%] xl:w-[80%] mx-auto">
+      <header class="my-4">
+        <div class="flex justify-between items-center">
+          <!-- Logo -->
+          <div class="block md:hidden">
+            <a href="/">
+              <img
+                src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
+                alt="Company Logo"
+                class="h-[50px] w-[50px]"
+              />
+            </a>
+          </div>
+          <div class="hidden xl:block">
+            <a href="/">
+              <img
+                src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
+                alt="Company Logo"
+                class="h-[60px] w-[59px]"
+              />
+            </a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="menuButton"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+            class="xl:hidden text-gray-700 text-2xl"
+          >
+            ☰
+          </button>
+
+          <!-- Navigation -->
+          <div class="hidden md:flex items-center gap-6">
+            <nav class="hidden xl:block">
+              <ul
+                class="flex gap-[20px] text-[16px] tracking-[0.5px]"
+                id="navMenu"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="nav-link text-gray-900 transition-all duration-300 active"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="nav-link text-gray-900 transition-all duration-300"
+                  >
+                    Become a Driver
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="nav-link text-gray-900 transition-all duration-300"
+                  >
+                    Support
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="flex items-center gap-4">
+              <div class="flex gap-2 items-center">
+                <div class="h-[24px] w-[24px] rounded-full overflow-hidden">
+                  <img
+                    src="images/istockphoto-880562092-612x612.jpg"
+                    alt="Language Selector Icon"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+                <div>
+                  <h3 class="text-[18px]">Language</h3>
+                </div>
+
+                <div class="dropdown">
+                  <div class="dropdown-toggle" id="dropdownToggle">EN</div>
+                  <ul class="dropdown-menu" id="dropdownMenu">
+                    <li data-value="EN">EN</li>
+                    <li data-value="FR">FR</li>
+                    <li data-value="ES">ES</li>
+                    <li data-value="DE">DE</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="bg-gray-700 text-white px-6 py-2.5 rounded-xl">
+                <button>Login / Register</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden xl:hidden bg-gray-100 p-4 rounded">
+          <div class="hidden md:block mb-2">
             <img
               src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
               alt="Company Logo"
-              class="h-[50px] w-[50px]"
+              class="h-[50px] w-[50px] rounded-full"
             />
-          </a>
-        </div>
-        <div class="hidden xl:block">
-          <a href="/">
-            <img
-              src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
-              alt="Company Logo"
-              class="h-[60px] w-[59px]"
-            />
-          </a>
-        </div>
-
-        <!-- Mobile Menu Button -->
-        <button
-          id="menuButton"
-          aria-expanded="false"
-          aria-controls="mobileMenu"
-          class="xl:hidden text-gray-700 text-2xl"
-        >
-          ☰
-        </button>
-
-        <!-- Navigation -->
-        <div class="hidden md:flex items-center gap-6">
-          <nav class="hidden xl:block">
-            <ul
-              class="flex gap-[20px] text-[16px] tracking-[0.5px]"
-              id="navMenu"
-            >
-              <li>
-                <a
-                  href="#"
-                  class="nav-link text-gray-900 transition-all duration-300 active"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="nav-link text-gray-900 transition-all duration-300"
-                >
-                  Become a Driver
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="nav-link text-gray-900 transition-all duration-300"
-                >
-                  Support
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div class="flex items-center gap-4">
+          </div>
+          <ul
+            class="flex flex-col gap-2 text-gray-700 text-[18px] mb-2 xl:mb-0"
+          >
+            <li>
+              <a
+                href="#"
+                class="nav-link text-gray-500 transition-all duration-300 active"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="nav-link text-gray-500 transition-all duration-300"
+              >
+                Become a Driver
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="nav-link text-gray-500] transition-all duration-300"
+              >
+                Support
+              </a>
+            </li>
+          </ul>
+          <div class="flex flex-col xl:flex-row xl:items-center gap-4">
             <div class="flex gap-2 items-center">
               <div class="h-[24px] w-[24px] rounded-full overflow-hidden">
                 <img
@@ -97,10 +165,9 @@
               <div>
                 <h3 class="text-[18px]">Language</h3>
               </div>
-
               <div class="dropdown">
-                <div class="dropdown-toggle" id="dropdownToggle">EN</div>
-                <ul class="dropdown-menu" id="dropdownMenu">
+                <div class="dropdown-toggle" id="dropdownToggle2">EN</div>
+                <ul class="dropdown-menu" id="dropdownMenu2">
                   <li data-value="EN">EN</li>
                   <li data-value="FR">FR</li>
                   <li data-value="ES">ES</li>
@@ -108,464 +175,410 @@
                 </ul>
               </div>
             </div>
-            <div class="bg-gray-700 text-white px-6 py-2.5 rounded-xl">
-              <button>Login / Register</button>
+            <div>
+              <button
+                class="bg-gray-700 text-white px-6 py-2.5 rounded-xl text-center w-full"
+              >
+                Login / Register
+              </button>
             </div>
           </div>
         </div>
-      </div>
+      </header>
+          
+    </div>
+    <main class="">
+      <div class="w-[97%] lg:w-[85%] xl:w-[80%] mx-auto">
+        <!-- About Us hero section -->
+        <section class="relative px-2 mx-auto">
+          <!-- Background Section -->
+          <div
+            class="bg-[url('images/Be-driver-image/be-driver-hero.png')] h-[250px] sm:h-[350px] md:h-[400px] lg:h-[500px] xl:h-[550px] bg-no-repeat bg-cover bg-center rounded-2xl"
+          ></div>
 
-      <!-- Mobile Menu -->
-      <div id="mobileMenu" class="hidden xl:hidden bg-gray-100 p-4 rounded">
-        <div class="hidden md:block mb-2">
-          <img
-            src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
-            alt="Company Logo"
-            class="h-[50px] w-[50px] rounded-full"
-          />
-        </div>
-        <ul class="flex flex-col gap-2 text-gray-700 text-[18px] mb-2 xl:mb-0">
-          <li>
-            <a
-              href="#"
-              class="nav-link text-gray-500 transition-all duration-300 active"
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="nav-link text-gray-500 transition-all duration-300"
-            >
-              Become a Driver
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="nav-link text-gray-500] transition-all duration-300"
-            >
-              Support
-            </a>
-          </li>
-        </ul>
-        <div class="flex flex-col md:hidden xl:flex-row xl:items-center gap-4">
-          <div class="flex gap-2 items-center">
-            <div class="h-[24px] w-[24px] rounded-full overflow-hidden">
+          <!-- Text Section -->
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center text-center px-4"
+          >
+            <div class="animate-item">
+              <h1
+                class="text-[25px] sm:text-[30px] md:text-[35px] xl-text-[40px] text-white font-bold mb-0 md:mb-2 xl:mb-4"
+              >
+                How to drive with 3T in Norway
+              </h1>
+              <p
+                class="text-white flex flex-col items-center mx-auto text-[0.70rem] sm:text-[0.80rem] md:text-[0.90rem] xl-text-[1 rem] max-w-[300px] sm:-max-w[550px] md:max-w[680px] lg:max-w-[750px] xl:max-w-full"
+              >
+                <span class="w-full break-words"
+                  >Do you want to become a driver with us? Are you interested in
+                  being unique in your work and establishing your own
+                </span>
+                <span class="w-full break-words"
+                  >business? We give you the opportunity 3T offers you an
+                  excellent working environment and service 24 hours a day</span
+                >
+              </p>
+            </div>
+          </div>
+
+          <!-- Logo Section -->
+          <div class="absolute bottom-[-30px] left-1/2 -translate-x-1/2">
+            <a href="index.html">
               <img
-                src="images/istockphoto-880562092-612x612.jpg"
-                alt="Language Selector Icon"
-                class="h-full w-full object-cover"
+                src="images/about-image/about svg/logo.svg"
+                alt="nav-logo"
+                class="h-[60px] w-[60px] sm:h-[75px] sm:w-[75px] md:h-[82px] md:w-[8px]lg:lg:h-[92px] lg:w-[92px] xl:h-[100px] xl:w-[100px]"
               />
+            </a>
+          </div>
+        </section>
+
+        <section class="py-12 px-8 mx-auto bg-[#F5F6F7]">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 animate-item gap-12"
+          >
+            <!-- Get Started Section -->
+            <div
+              class="bg-[#FFFFFF] max-w-2xl mx-auto p-6 px-6 border rounded-lg"
+            >
+              <h2 class="text-[40px] font-bold mb-4 text-gray-800">
+                Get Started
+              </h2>
+              <p class="text-[22px] text-start text-gray-600 mr-5 mb-6">
+                As usual, to start any business, you need some steps that you
+                need to implement before starting your work, so we will try to
+                help you find the right solution and get you to the last step
+                and start working as soon as possible.
+              </p>
+              <button
+                class="bg-gray-900 text-[16px] mb-6 font-[500] text-white px-4 py-2 rounded-md hover:bg-yellow-500 focus:outline-none"
+              >
+                Register as Driver
+              </button>
             </div>
+
+            <!-- New to the taxi industry -->
             <div>
-              <h3 class="text-[18px]">Language</h3>
+              <div>
+                <img
+                  src="images/Be-driver-image/be-driver-svg/id-card -w1 (1).svg"
+                  alt="id-card"
+                  class="h-[70px] w-[70px]"
+                />
+              </div>
+              <h3 class="text-[24px] text-[#191919] font-[700] mb-4">
+                New to the taxi industry (I have no licenses today)
+              </h3>
+              <p class="text-[18px] text-[#373F46] mb-4">
+                To be able to use the Uber app as an independent operator, you
+                must have the following:
+              </p>
+              <ul class="list-disc pl-5 text-[18px] font-[400] text-[#1D2630]">
+                <li class="mb-4">
+                  Valid taxi licence, or tour cart licence. Note: a trolley
+                  license only gives you access to the UberXXL product (16
+                  passenger seats). Find more information by
+                  <a href="#">clicking here</a>
+                </li>
+                <li class="mb-4">Valid driver's license</li>
+                <li>
+                  A vehicle that meets the requirements for a taxi licence,
+                  company car license or touring car licence.
+                </li>
+              </ul>
             </div>
-            <div class="dropdown">
-              <div class="dropdown-toggle" id="dropdownToggle2">EN</div>
-              <ul class="dropdown-menu" id="dropdownMenu2">
-                <li data-value="EN">EN</li>
-                <li data-value="FR">FR</li>
-                <li data-value="ES">ES</li>
-                <li data-value="DE">DE</li>
+
+            <!-- Experienced operator -->
+            <div class="2xl:px-12 mx-auto">
+              <div>
+                <img
+                  src="images/Be-driver-image/be-driver-svg/id-card 1.svg"
+                  alt="id-card"
+                  class="h-[70px] w-[70px]"
+                />
+              </div>
+              <h3 class="text-[24px] font-[700] text-[#191919] mb-4">
+                Experienced operator (I already have all licences/permits)
+              </h3>
+              <p class="text-[18px] text-[#373F46] mb-4">
+                Are you an experienced operator who has a valid driver's license
+                and a taxi licence? Sign up now and start driving in the next
+                1-2 days.
+              </p>
+              <ul class="list-disc pl-5 text-[18px] font-[400] text-[#1D2630]">
+                <li class="mb-4">
+                  Valid taxi licence, or tour cart licence. Note: a trolley
+                  license only gives you access to the UberXXL product (16
+                  passenger seats). Find more information by
+                  <span
+                    ><a class="underline" href="#"
+                      >clicking <br />
+                      here</a
+                    ></span
+                  >
+                </li>
+                <li class="mb-4">
+                  A vehicle that meets the requirements for a taxi licence,
+                  company car license or touring car licence.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Fleet Partner -->
+            <div>
+              <div>
+                <img
+                  src="images/Be-driver-image/be-driver-svg/car.svg"
+                  alt="be-driver"
+                  class="h-[70px] w-[70px]"
+                />
+              </div>
+              <h3 class="text-[24px] font-[700] text-[#191919] mb-4">
+                Run under a Fleet Partner (don't want to start my own business)
+              </h3>
+              <p class="text-[18px] text-[#373F46] mb-4">
+                Don't you want to get your own vehicle or taxi licence? Then you
+                can start driving for one of the Fleet Partners who are active
+                on the Uber platform. Get more information below.
+              </p>
+              <ul class="list-disc pl-5 text-[18px] font-[400] text-[#1D2630]">
+                <li class="mb-4">
+                  Valid taxi licence, or tour cart licence. Note: a trolley
+                  license only gives you access to the UberXXL product (16
+                  passenger seats). Find more information by
+                  <span
+                    ><a class="underline" href="#"
+                      >clicking <br />
+                      here</a
+                    ></span
+                  >
+                </li>
+                <li class="mb-4">Valid driver's license</li>
               </ul>
             </div>
           </div>
-          <div>
-            <button
-              class="bg-gray-700 text-white px-6 py-2.5 rounded-xl text-center w-full"
-            >
-              Login / Register
-            </button>
-          </div>
-        </div>
-      </div>
-    </header>
-    <main class="">
-      <!-- About Us hero section -->
-      <section class="relative container px-2 mx-auto">
-        <!-- Background Section -->
-        <div
-          class="bg-[url('images/Be-driver-image/be-driver-hero.png')] h-[250px] sm:h-[350px] md:h-[400px] lg:h-[500px] xl:h-[550px] bg-no-repeat bg-cover bg-center rounded-2xl"
-        ></div>
+        </section>
 
-        <!-- Text Section -->
-        <div
-          class="absolute inset-0 flex flex-col items-center justify-center text-center px-4"
-        >
-          <div class="animate-item">
+        <section>
+          <div
+            class="flex flex-col items-center animate-item justify-center text-center py-8"
+          >
             <h1
-              class="text-[25px] sm:text-[30px] md:text-[35px] xl-text-[40px] text-white font-bold mb-0 md:mb-2 xl:mb-4"
+              class="text-[25px] text-[#1D2630] font-[700] sm:text-[35px] md:text-[40px] lg:text-[45px]"
             >
-              How to drive with 3T in Norway
+              New to the taxi industry
             </h1>
             <p
-              class="text-white flex flex-col items-center mx-auto text-[0.70rem] sm:text-[0.80rem] md:text-[0.90rem] xl-text-[1 rem] max-w-[300px] sm:-max-w[550px] md:max-w[680px] lg:max-w-[750px] xl:max-w-full"
+              class="text-[#1D2630] font-[400] text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] w-full sm:max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-full px-2 md:0"
             >
               <span class="w-full break-words"
-                >Do you want to become a driver with us? Are you interested in
-                being unique in your work and establishing your own
-              </span>
-              <span class="w-full break-words"
-                >business? We give you the opportunity 3T offers you an
-                excellent working environment and service 24 hours a day</span
+                >If you do not currently have a valid driver's license and taxi
+                license, please follow the steps below to obtain the necessary
+                licenses and</span
               >
+              <br class="hidden xl:block" />
+              <span class="w-full break-words">documents.</span>
             </p>
           </div>
-        </div>
 
-        <!-- Logo Section -->
-        <div class="absolute bottom-[-30px] left-1/2 -translate-x-1/2">
-          <a href="index.html">
-            <img
-              src="images/about-image/about svg/logo.svg"
-              alt="nav-logo"
-              class="h-[60px] w-[60px] sm:h-[75px] sm:w-[75px] md:h-[82px] md:w-[8px]lg:lg:h-[92px] lg:w-[92px] xl:h-[100px] xl:w-[100px]"
-            />
-          </a>
-        </div>
-      </section>
-
-      <section class="py-12 px-8 container mx-auto bg-[#F5F6F7]">
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 animate-item gap-12"
-        >
-          <!-- Get Started Section -->
-          <div
-            class="bg-[#FFFFFF] max-w-2xl mx-auto p-6 px-6 border rounded-lg"
-          >
-            <h2 class="text-[40px] font-bold mb-4 text-gray-800">
-              Get Started
-            </h2>
-            <p class="text-[22px] text-start text-gray-600 mr-5 mb-6">
-              As usual, to start any business, you need some steps that you need
-              to implement before starting your work, so we will try to help you
-              find the right solution and get you to the last step and start
-              working as soon as possible.
-            </p>
+          <div class="flex flex-col sm:flex-row gap-2 mb-6 justify-center">
             <button
-              class="bg-gray-900 text-[16px] mb-6 font-[500] text-white px-4 py-2 rounded-md hover:bg-yellow-500 focus:outline-none"
+              class="tab-btn2 transition-all duration-[0.4s] ease-in-out px-8 py-2 bg-gray-200 text-white font-medium rounded-lg"
             >
-              Register as Driver
+              New to the taxi industry
+            </button>
+            <button
+              class="tab-btn2 transition-all duration-[0.4s] ease-in-out px-8 py-2 bg-gray-200 font-medium text-gray-700 rounded-lg"
+            >
+              Experienced operator with licence
+            </button>
+            <button
+              class="tab-btn2 transition-all duration-[0.4s] ease-in-out px-8 py-2 bg-gray-200 font-medium text-gray-700 rounded-lg"
+            >
+              Comfort Sedan and SUV
             </button>
           </div>
 
-          <!-- New to the taxi industry -->
           <div>
-            <div>
-              <img
-                src="images/Be-driver-image/be-driver-svg/id-card -w1 (1).svg"
-                alt="id-card"
-                class="h-[70px] w-[70px]"
-              />
-            </div>
-            <h3 class="text-[24px] text-[#191919] font-[700] mb-4">
-              New to the taxi industry (I have no licenses today)
-            </h3>
-            <p class="text-[18px] text-[#373F46] mb-4">
-              To be able to use the Uber app as an independent operator, you
-              must have the following:
-            </p>
-            <ul class="list-disc pl-5 text-[18px] font-[400] text-[#1D2630]">
-              <li class="mb-4">
-                Valid taxi licence, or tour cart licence. Note: a trolley
-                license only gives you access to the UberXXL product (16
-                passenger seats). Find more information by
-                <a href="#">clicking here</a>
-              </li>
-              <li class="mb-4">Valid driver's license</li>
-              <li>
-                A vehicle that meets the requirements for a taxi licence,
-                company car license or touring car licence.
-              </li>
-            </ul>
-          </div>
-
-          <!-- Experienced operator -->
-          <div class="2xl:px-12 mx-auto">
-            <div>
-              <img
-                src="images/Be-driver-image/be-driver-svg/id-card 1.svg"
-                alt="id-card"
-                class="h-[70px] w-[70px]"
-              />
-            </div>
-            <h3 class="text-[24px] font-[700] text-[#191919] mb-4">
-              Experienced operator (I already have all licences/permits)
-            </h3>
-            <p class="text-[18px] text-[#373F46] mb-4">
-              Are you an experienced operator who has a valid driver's license
-              and a taxi licence? Sign up now and start driving in the next 1-2
-              days.
-            </p>
-            <ul class="list-disc pl-5 text-[18px] font-[400] text-[#1D2630]">
-              <li class="mb-4">
-                Valid taxi licence, or tour cart licence. Note: a trolley
-                license only gives you access to the UberXXL product (16
-                passenger seats). Find more information by
-                <span
-                  ><a class="underline" href="#"
-                    >clicking <br />
-                    here</a
-                  ></span
-                >
-              </li>
-              <li class="mb-4">
-                A vehicle that meets the requirements for a taxi licence,
-                company car license or touring car licence.
-              </li>
-            </ul>
-          </div>
-
-          <!-- Fleet Partner -->
-          <div>
-            <div>
-              <img
-                src="images/Be-driver-image/be-driver-svg/car.svg"
-                alt="be-driver"
-                class="h-[70px] w-[70px]"
-              />
-            </div>
-            <h3 class="text-[24px] font-[700] text-[#191919] mb-4">
-              Run under a Fleet Partner (don't want to start my own business)
-            </h3>
-            <p class="text-[18px] text-[#373F46] mb-4">
-              Don't you want to get your own vehicle or taxi licence? Then you
-              can start driving for one of the Fleet Partners who are active on
-              the Uber platform. Get more information below.
-            </p>
-            <ul class="list-disc pl-5 text-[18px] font-[400] text-[#1D2630]">
-              <li class="mb-4">
-                Valid taxi licence, or tour cart licence. Note: a trolley
-                license only gives you access to the UberXXL product (16
-                passenger seats). Find more information by
-                <span
-                  ><a class="underline" href="#"
-                    >clicking <br />
-                    here</a
-                  ></span
-                >
-              </li>
-              <li class="mb-4">Valid driver's license</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div
-          class="flex flex-col items-center animate-item justify-center text-center py-8"
-        >
-          <h1
-            class="text-[25px] text-[#1D2630] font-[700] sm:text-[35px] md:text-[40px] lg:text-[45px]"
-          >
-            New to the taxi industry
-          </h1>
-          <p
-            class="text-[#1D2630] font-[400] text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] w-full sm:max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-full px-2 md:0"
-          >
-            <span class="w-full break-words"
-              >If you do not currently have a valid driver's license and taxi
-              license, please follow the steps below to obtain the necessary
-              licenses and</span
+            <div
+              class="howitsworkSection flex flex-col lg:flex-row animate-item items-center justify-center py-10 px-4 mx-auto"
             >
-            <br class="hidden xl:block" />
-            <span class="w-full break-words">documents.</span>
-          </p>
-        </div>
+              <div class="AppDemoBox">
+                <img
+                  class="adImg1"
+                  src="./images//howitswork/roundBG.svg"
+                  alt=""
+                />
+                <img
+                  id="roundOne"
+                  class="adImg2"
+                  src="./images//howitswork/Big.svg"
+                  alt=""
+                />
+                <img
+                  id="roundTwo"
+                  class="adImg2"
+                  src="./images//howitswork/Small.svg"
+                  alt=""
+                />
+                <img
+                  class="adImg3"
+                  src="./images//howitswork/Phone.svg"
+                  alt=""
+                />
+              </div>
+              <div class="lg:w-1/2 max-w-[600px]">
+                <div class="flex flex-col items-start p-6">
+                  <!-- Heading -->
+                  <h2 class="text-3xl md:text-4xl font-bold mb-6 animate-item">
+                    Apply for a Taxi Licence
+                  </h2>
 
-        <div class="flex flex-col sm:flex-row gap-2 mb-6 justify-center">
-          <button
-            class="tab-btn2 transition-all duration-[0.4s] ease-in-out px-8 py-2 bg-gray-200 text-white font-medium rounded-lg"
-          >
-            New to the taxi industry
-          </button>
-          <button
-            class="tab-btn2 transition-all duration-[0.4s] ease-in-out px-8 py-2 bg-gray-200 font-medium text-gray-700 rounded-lg"
-          >
-            Experienced operator with licence
-          </button>
-          <button
-            class="tab-btn2 transition-all duration-[0.4s] ease-in-out px-8 py-2 bg-gray-200 font-medium text-gray-700 rounded-lg"
-          >
-            Comfort Sedan and SUV
-          </button>
-        </div>
-
-        <div>
-          <div
-            class="howitsworkSection flex flex-col lg:flex-row animate-item items-center justify-center py-10 px-4 container mx-auto"
-          >
-            <div class="AppDemoBox">
-              <img
-                class="adImg1"
-                src="./images//howitswork/roundBG.svg"
-                alt=""
-              />
-              <img
-                id="roundOne"
-                class="adImg2"
-                src="./images//howitswork/Big.svg"
-                alt=""
-              />
-              <img
-                id="roundTwo"
-                class="adImg2"
-                src="./images//howitswork/Small.svg"
-                alt=""
-              />
-              <img class="adImg3" src="./images//howitswork/Phone.svg" alt="" />
-            </div>
-            <div class="lg:w-1/2 max-w-[600px]">
-              <div class="flex flex-col items-start p-6">
-                <!-- Heading -->
-                <h2 class="text-3xl md:text-4xl font-bold mb-6 animate-item">
-                  Apply for a Taxi Licence
-                </h2>
-
-                <!-- Step Container -->
-                <div class="relative">
-                  <!-- Vertical Line -->
-                  <div
-                    class="absolute top-0 left-3 w-[3px] bg-teal-500 h-full"
-                  ></div>
-
-                  <!-- Steps -->
-                  <div class="flex flex-col gap-3">
-                    <!-- Step 1 -->
+                  <!-- Step Container -->
+                  <div class="relative">
+                    <!-- Vertical Line -->
                     <div
-                      class="flex md:flex-row items-start gap-0 animate-item"
-                    >
-                      <!-- Circle -->
-                      <div class="relative flex items-center justify-center">
-                        <div
-                          class="w-7 h-7 bg-teal-100 rounded-full flex items-center justify-center"
-                        >
+                      class="absolute top-0 left-3 w-[3px] bg-teal-500 h-full"
+                    ></div>
+
+                    <!-- Steps -->
+                    <div class="flex flex-col gap-3">
+                      <!-- Step 1 -->
+                      <div
+                        class="flex md:flex-row items-start gap-0 animate-item"
+                      >
+                        <!-- Circle -->
+                        <div class="relative flex items-center justify-center">
                           <div
-                            class="w-2.5 h-2.5 bg-teal-500 rounded-full"
-                          ></div>
+                            class="w-7 h-7 bg-teal-100 rounded-full flex items-center justify-center"
+                          >
+                            <div
+                              class="w-2.5 h-2.5 bg-teal-500 rounded-full"
+                            ></div>
+                          </div>
+                        </div>
+                        <!-- Text -->
+                        <div>
+                          <h3
+                            class="text-[22px] text-[#1D2630] font-[600] mb-2"
+                          >
+                            To apply, you must meet the following requirements:
+                          </h3>
+                          <ul class="text-gray-500 list-disc pl-5">
+                            <li class="font-[300] text-[18px]">
+                              <strong
+                                class="text-[18px] text-[#373F46] font-[600]"
+                                >An established company in Norway:</strong
+                              >
+                              You must have a business address registered in
+                              Norway.
+                            </li>
+                          </ul>
                         </div>
                       </div>
-                      <!-- Text -->
-                      <div>
-                        <h3 class="text-[22px] text-[#1D2630] font-[600] mb-2">
-                          To apply, you must meet the following requirements:
-                        </h3>
-                        <ul class="text-gray-500 list-disc pl-5">
-                          <li class="font-[300] text-[18px]">
-                            <strong
-                              class="text-[18px] text-[#373F46] font-[600]"
-                              >An established company in Norway:</strong
-                            >
-                            You must have a business address registered in
-                            Norway.
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
 
-                    <!-- Step 2 -->
-                    <div
-                      class="flex md:flex-row items-start gap-0 animate-item"
-                    >
-                      <!-- Circle -->
-                      <div class="relative flex items-center justify-center">
-                        <div
-                          class="w-7 h-7 bg-teal-100 rounded-full flex items-center justify-center"
-                        >
+                      <!-- Step 2 -->
+                      <div
+                        class="flex md:flex-row items-start gap-0 animate-item"
+                      >
+                        <!-- Circle -->
+                        <div class="relative flex items-center justify-center">
                           <div
-                            class="w-2.5 h-2.5 bg-teal-500 rounded-full"
-                          ></div>
+                            class="w-7 h-7 bg-teal-100 rounded-full flex items-center justify-center"
+                          >
+                            <div
+                              class="w-2.5 h-2.5 bg-teal-500 rounded-full"
+                            ></div>
+                          </div>
+                        </div>
+                        <!-- Text -->
+                        <div>
+                          <ul class="text-gray-500 list-disc pl-5">
+                            <li class="font-[300] text-[18px]">
+                              <strong
+                                class="text-[18px] text-[#373F46] font-[600]"
+                                >Finances:</strong
+                              >
+                              You must have satisfactory financial ability. This
+                              means that you must provide a tax and value-added
+                              tax certificate ("tax certificate"), and
+                              confirmation from the Bankruptcy Register, for
+                              your company
+                            </li>
+                          </ul>
                         </div>
                       </div>
-                      <!-- Text -->
-                      <div>
-                        <ul class="text-gray-500 list-disc pl-5">
-                          <li class="font-[300] text-[18px]">
-                            <strong
-                              class="text-[18px] text-[#373F46] font-[600]"
-                              >Finances:</strong
-                            >
-                            You must have satisfactory financial ability. This
-                            means that you must provide a tax and value-added
-                            tax certificate ("tax certificate"), and
-                            confirmation from the Bankruptcy Register, for your
-                            company
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
 
-                    <!-- Step 3 -->
-                    <div
-                      class="flex md:flex-row items-start gap-0 animate-item"
-                    >
-                      <!-- Circle -->
-                      <div class="relative flex items-center justify-center">
-                        <div
-                          class="w-7 h-7 bg-teal-100 rounded-full flex items-center justify-center"
-                        >
+                      <!-- Step 3 -->
+                      <div
+                        class="flex md:flex-row items-start gap-0 animate-item"
+                      >
+                        <!-- Circle -->
+                        <div class="relative flex items-center justify-center">
                           <div
-                            class="w-2.5 h-2.5 bg-teal-500 rounded-full"
-                          ></div>
+                            class="w-7 h-7 bg-teal-100 rounded-full flex items-center justify-center"
+                          >
+                            <div
+                              class="w-2.5 h-2.5 bg-teal-500 rounded-full"
+                            ></div>
+                          </div>
+                        </div>
+                        <!-- Text -->
+                        <div>
+                          <ul class="text-gray-500 list-disc pl-5">
+                            <li class="font-[300] text-[18px]">
+                              <strong
+                                class="text-[18px] text-[#373F46] font-[600]"
+                              >
+                                You must be of good character:</strong
+                              >
+                              This means that you must have a police certificate
+                              for both your company and the owner/managing
+                              director.
+                            </li>
+                          </ul>
                         </div>
                       </div>
-                      <!-- Text -->
-                      <div>
-                        <ul class="text-gray-500 list-disc pl-5">
-                          <li class="font-[300] text-[18px]">
-                            <strong
-                              class="text-[18px] text-[#373F46] font-[600]"
-                            >
-                              You must be of good character:</strong
-                            >
-                            This means that you must have a police certificate
-                            for both your company and the owner/managing
-                            director.
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
 
-                    <!-- Step 4 -->
-                    <div
-                      class="flex md:flex-row items-start gap-4 animate-item"
-                    >
-                      <!-- Circle -->
-                      <div class="relative flex items-center justify-center">
-                        <div
-                          class="w-7 h-7 bg-teal-100 rounded-full flex items-center justify-center"
-                        >
+                      <!-- Step 4 -->
+                      <div
+                        class="flex md:flex-row items-start gap-4 animate-item"
+                      >
+                        <!-- Circle -->
+                        <div class="relative flex items-center justify-center">
                           <div
-                            class="w-2.5 h-2.5 bg-teal-500 rounded-full"
-                          ></div>
+                            class="w-7 h-7 bg-teal-100 rounded-full flex items-center justify-center"
+                          >
+                            <div
+                              class="w-2.5 h-2.5 bg-teal-500 rounded-full"
+                            ></div>
+                          </div>
                         </div>
-                      </div>
-                      <!-- Text -->
-                      <div>
-                        <h3 class="text-[22px] text-[#1D2630] font-[600]">
-                          Recommended Steps:
-                        </h3>
-                        <ul class="text-gray-500 list-disc pl-5">
-                          <li class="text-[18px] font-[400]">
-                            Register your business with Altinn by
-                            <a
-                              href="#"
-                              class="text-yellow-600 font-[600] underline"
-                              >Clicking Here</a
-                            >.
-                          </li>
-                          <li class="text-[18px] font-[400]">
-                            Obtain a tax certificate from the Swedish Tax Agency
-                            by
-                            <a
-                              href="#"
-                              class="text-yellow-600 underline font-[600]"
-                              >Clicking Here</a
-                            >
-                          </li>
-                        </ul>
+                        <!-- Text -->
+                        <div>
+                          <h3 class="text-[22px] text-[#1D2630] font-[600]">
+                            Recommended Steps:
+                          </h3>
+                          <ul class="text-gray-500 list-disc pl-5">
+                            <li class="text-[18px] font-[400]">
+                              Register your business with Altinn by
+                              <a
+                                href="#"
+                                class="text-yellow-600 font-[600] underline"
+                                >Clicking Here</a
+                              >.
+                            </li>
+                            <li class="text-[18px] font-[400]">
+                              Obtain a tax certificate from the Swedish Tax
+                              Agency by
+                              <a
+                                href="#"
+                                class="text-yellow-600 underline font-[600]"
+                                >Clicking Here</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -573,34 +586,34 @@
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
-    <footer class="bg-[#F5F6F7] py-8">
-      <div class="container mx-auto">
+    <footer class="bg-[#F5F6F7] py-8 w-full">
+      <div class="">
         <div
-          class="flex flex-wrap items-center justify-between gap-4 max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8"
+          class="flex items-center justify-center flex-col sm:flex-row md:gap-[12%] xl:gap-[30%] px-4 sm:px-6 lg:px-8"
         >
-          <div>
-            <h2
-              class="text-[#1D2630] text-[28px] sm:text-[32px] md:text-[35px] font-bold"
-            >
+          <div class="mb-4 sm:mb-0">
+            <h2 class="text-[#1D2630] text-[25px] lg:text-[35px] font-bold">
               Subscribe Newsletter
             </h2>
-            <p class="text-[16px] sm:text-[18px] font-medium text-[#373F46]">
+            <p
+              class="text-[16px] sm:text-[14px] lg:text-[19px] font-medium text-[#373F46]"
+            >
               Join with our mailing list and stay updated
             </p>
           </div>
           <div
-            class="border-[1px] border-slate-500 h-[64px] rounded-[10px] flex items-center w-full max-w-sm px-3 bg-[#ffffff]"
+            class="border-[1px] border-slate-500 h-[40px] sm:h-[45px] md:h-[50px] lg:h-[55px] rounded-[10px] flex items-center md:w-full md:max-w-sm px-2 md:px-3 bg-[#ffffff]"
           >
             <input
               type="text"
               placeholder="Enter Your email address"
-              class="px-2 py-2 rounded-md focus:outline-none flex-1 text-[14px] sm:text-[16px]"
+              class="px-1 py-1 lg:px-2 lg:py-2 rounded-md focus:outline-none flex-1 text-[11px] sm:text-[12px] lg:text-[14px] xl:text-[16px]"
             />
             <button
-              class="bg-[#1D2630] text-white px-4 py-2 rounded-md text-[14px] sm:text-[16px] transition-all duration-[0.3s] hover:bg-yellow-500 hover:text-black"
+              class="bg-[#1D2630] text-white px-4 py-2 rounded-md text-[8px] sm:text-[11px] lg:text-[14px] transition-all duration-[0.3s] hover:bg-yellow-500 hover:text-black"
             >
               Join Us Now
             </button>
@@ -610,11 +623,11 @@
           <hr class="border-gray-300" />
         </div>
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4 sm:px-6 lg:px-8"
+          class="flex justify-center gap-[2%] sm:gap-[7%] md:gap-[10%] xl:gap-[15%] px-4 lg:px-0"
         >
           <div class="flex flex-col gap-3">
             <h3
-              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46]"
+              class="font-bold text-[14px] sm:text-[20px] lg:text-[22px] text-[#373F46]"
             >
               Company
             </h3>
@@ -623,35 +636,35 @@
                 <a
                   href="about.html"
                   aria-label="Learn more about 3T"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
                   >About 3T</a
                 >
               </li>
               <li>
                 <a
                   href="pricing.html"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
                   >Pricing</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
                   >Why 3T</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  href="Faq.html"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
                   >FAQs</a
                 >
               </li>
               <li>
                 <a
                   href="contact.html"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
                   >Contact Us</a
                 >
               </li>
@@ -659,7 +672,7 @@
           </div>
           <div class="flex flex-col gap-3">
             <h3
-              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+              class="font-bold text-[14px] sm:text-[20px] lg:text-[22px] text-[#373F46] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
             >
               Quick Links
             </h3>
@@ -667,70 +680,70 @@
               <li>
                 <a
                   href="driver.html"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
                   >Be Driver</a
                 >
               </li>
               <li>
                 <a
                   href="fleetowner.html"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
                   >Fleet Owner</a
                 >
               </li>
               <li>
                 <a
-                  href="driver.html"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  href="rider.html"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
                   >Rider</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  href="loast&found.html"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
                   >Lost & Found</a
                 >
               </li>
             </ul>
           </div>
-          <div class="flex flex-col gap-3">
+          <div class="flex flex-col gap-3 items-center">
             <h3
-              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+              class="font-bold text-[14px] sm:text-[20px] lg:text-[22px] text-[#373F46] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-center"
             >
               Download User App
             </h3>
             <a href="">
               <img
-                class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto mb-2"
+                class="h-[30px] sm:h-[45px] lg:h-[50px] w-auto mb-2"
                 src="images/footer-images/googleplay.svg"
                 alt="Download from Google Play Store for Android"
               />
             </a>
             <a href="">
               <img
-                class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto"
+                class="h-[30px] sm:h-[45px] lg:h-[50px] w-auto"
                 src="images/footer-images/applestore.svg"
                 alt="Download from Apple App Store for iOS"
               />
             </a>
           </div>
-          <div class="flex flex-col gap-3">
+          <div class="flex flex-col gap-3 items-center">
             <h3
-              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46]"
+              class="font-bold text-[14px] sm:text-[20px] lg:text-[22px] text-[#373F46] text-center"
             >
               Download Driver App
             </h3>
             <a href="">
               <img
-                class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto mb-2"
+                class="h-[30px] sm:h-[45px] lg:h-[50px] w-auto mb-2"
                 src="images/footer-images/googleplay.svg"
                 alt="Download from Google Play Store for Android"
               />
             </a>
             <a href="">
               <img
-                class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto"
+                class="h-[30px] sm:h-[45px] lg:h-[50px] w-auto"
                 src="images/footer-images/applestore.svg"
                 alt="Download from Apple App Store for iOS"
               />
@@ -774,19 +787,28 @@
 
       <!-- footer last line -->
       <div
-        class="flex sm:flex-row justify-between container mx-auto items-center sm:gap-16 px-4 sm:px-6 lg:px-8 py-6 bg-gray-100"
+        class="flex sm:flex-row justify-center items-center gap-[10%] sm:gap-[22%] md:gap-[22%] lg:gap-[39%] py-6 bg-gray-100 px-3 lg:px-0"
       >
         <div
-          class="flex sm:flex-row gap-2 sm:gap-12 items-center text-center sm:text-left"
+          class="flex sm:flex-row gap-2 sm:gap-4 md:gap-8 lg:gap-12 items-center text-center"
         >
-          <p class="text-[11px] sm:text-[16px]">
-            <a href="#" class="hover:underline text-gray-600">Privacy Policy</a>
+          <p class="text-[11px] sm:text-[14px] lg:text-[16px]">
+            <a
+              href="#"
+              class="hover:underline text-gray-600 text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
+              >Privacy Policy</a
+            >
             &middot;
-            <a href="#" class="hover:underline pl-2 text-gray-600">
+            <a
+              href="#"
+              class="hover:underline pl-2 text-gray-600 text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
+            >
               Terms of Service
             </a>
           </p>
-          <p class="text-gray-500 text-[11px] sm:text-[16px]">
+          <p
+            class="text-gray-500 text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
+          >
             Copyrights@2025 | All Rights Reserved by 3T
           </p>
         </div>
@@ -802,7 +824,6 @@
         </div>
       </div>
     </footer>
-
     <!-- <script src="scrolle.js" defer></script> -->
     <script src="script.js" defer></script>
   </body>
