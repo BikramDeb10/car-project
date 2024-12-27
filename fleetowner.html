@@ -366,14 +366,14 @@
       </div>
       <!--------------------- Maping -------------------- -->
 
-      <section class="mt-10 bg-[#F5F6F7] py-20">
+      <section class="mt-10 bg-[#F5F6F7] py-20 overflow-hidden mx-auto">
         <div class="w-[95%] lg:w-[85%] xl:w-[80%] mx-auto">
           <div
-            class="flex flex-col lg:flex-row lg:justify-between xl:justify-center xl:gap-[14%] animate-item"
+            class="flex flex-col justify-center items-center lg:flex-row lg:justify-between xl:justify-center lg:gap-[6%] xl:gap-[14%] animate-item"
           >
             <!-- Slider Section -->
             <div
-              class="relative flex justify-between overflow-hidden w-[387px] sm:w-[515px]"
+              class="relative flex justify-between overflow-hidden sm:w-[605px]"
             >
               <div id="image-slider" class="relative overflow-hidden">
                 <div
@@ -381,38 +381,38 @@
                   class="flex transition-transform duration-500 ease-in-out"
                 >
                   <!-- Slide 1 -->
-                  <div class="flex-shrink-0">
+                  <div class="flex-shrink-0 w-full">
                     <div
-                      class="border-[9px] rounded-2xl border-[#d9ebff] sm:h-[300px]"
+                      class="border-[9px] rounded-3xl border-[#d9ebff] w-full"
                     >
                       <img
                         src="images/dashboardimage/Dashboard 1.png"
                         alt="dashboardimage"
-                        class="w-[370px] md:w-full sm:h-[280px] rounded-2xl"
+                        class="rounded-2xl w-full"
                       />
                     </div>
                   </div>
                   <!-- Slide 2 -->
-                  <div class="flex-shrink-0">
+                  <div class="flex-shrink-0 w-full">
                     <div
-                      class="border-[9px] rounded-2xl border-[#d9ebff] sm:h-[300px]"
+                      class="border-[9px] rounded-3xl border-[#d9ebff] w-full"
                     >
                       <img
                         src="images/dashboardimage/Dashboard 1.png"
                         alt="dashboardimage"
-                        class="w-[370px] md:w-full sm:h-[280px] rounded-2xl"
+                        class="w-full rounded-2xl"
                       />
                     </div>
                   </div>
                   <!-- Slide 3 -->
-                  <div class="flex-shrink-0">
+                  <div class="flex-shrink-0 w-full">
                     <div
-                      class="border-[9px] rounded-2xl border-[#d9ebff] sm:h-[300px]"
+                      class="border-[9px] rounded-3xl border-[#d9ebff] w-full"
                     >
                       <img
                         src="images/dashboardimage/Dashboard 1.png"
                         alt="dashboardimage"
-                        class="w-[370px] md:w-full sm:h-[280px] rounded-2xl"
+                        class="w-full rounded-2xl"
                       />
                     </div>
                   </div>
@@ -421,8 +421,11 @@
             </div>
 
             <!-- Text Slider -->
-            <div class="relative w-[500px] xl:w-[600px] px-3">
-              <div id="text-slider" class="relative overflow-hidden">
+            <div class="relative w-[570px] xl:w-[600px] px-3">
+              <div
+                id="text-slider"
+                class="relative overflow-hidden ml-20 md:ml-6"
+              >
                 <div
                   id="text-slider-track"
                   class="flex transition-transform duration-500 ease-in-out"
@@ -438,7 +441,7 @@
                       Generer rapporter raskt og enkelt
                     </h4>
 
-                    <p class="text-gray-500 text-lg max-w-[550px] mt-1.5">
+                    <p class="text-gray-500 text-lg max-w-[350px] mt-1.5">
                       Lorem ipsum dolor sit amet consectetur. Felis pulvinar
                       enim urna ac enim. Nisl orci porttitor adipiscing
                       condimentum scelerisque massa ipsum. Massa facilisis
@@ -456,7 +459,7 @@
                       Generer rapporter raskt og enkelt
                     </h4>
 
-                    <p class="text-gray-500 text-lg max-w-[550px] mt-1.5">
+                    <p class="text-gray-500 text-lg max-w-[350px] mt-1.5">
                       Lorem ipsum dolor sit amet consectetur. Felis pulvinar
                       enim urna ac enim. Nisl orci porttitor adipiscing
                       condimentum scelerisque massa ipsum. Massa facilisis
@@ -474,7 +477,7 @@
                       Generer rapporter raskt og enkelt
                     </h4>
 
-                    <p class="text-gray-500 text-lg max-w-[550px] mt-1.5">
+                    <p class="text-gray-500 text-lg max-w-[350px] mt-1.5">
                       Lorem ipsum dolor sit amet consectetur. Felis pulvinar
                       enim urna ac enim. Nisl orci porttitor adipiscing
                       condimentum scelerisque massa ipsum. Massa facilisis
@@ -671,20 +674,30 @@
         <!-- What Our Users Says -->
 
         <section>
-          <div class="flex flex-col items-center my-12 px-4 animate-item">
-            <div class="mb-6">
-              <h2 class="text-[2rem] font-[700] text-[#1D2630]">
+          <div class="flex flex-col items-center mb-12 animate-item w-full">
+            <div class="mb-6 text-center">
+              <h2
+                class="text-[2rem] md:text-[2.5rem] lg:text-[3rem] font-[700] text-[#1D2630]"
+              >
                 What Our Users Says
               </h2>
             </div>
+
             <div class="flex flex-col items-center">
-              <div>
-                <img src="images/user-image/Group 1000002166.png" alt="" />
+              <div class="flex justify-center items-center">
+                <img
+                  src="images/user-image/Group 1000002166.png"
+                  alt=""
+                  class="h-[80px] md:h-[150px] lg:h-[200px] xl:h-[270px] w-auto"
+                />
               </div>
+
               <div
                 class="flex flex-col items-center justify-center max-w-[1000px] text-center"
               >
-                <p class="text-[#373F46] mt-4 text-[0.8rem] sm:text-[1rem]">
+                <p
+                  class="text-[#373F46] mt-8 text-[0.9rem] sm:text-[1.1rem] md:text-[1.3rem]"
+                >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Euismod neque, vel, scelerisque non nec et egestas. Integer
                   tincidunt turpis ac nam integer etiam non cursus.
