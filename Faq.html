@@ -14,78 +14,146 @@
       href="images/about-image/about svg/logo.svg"
       type="image/x-icon"
     />
-    <title>3t car</title>
+    <title>FAQs</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <header class="my-6 px-4 w-full">
-      <div class="flex container mx-auto justify-between items-center">
-        <!-- Logo -->
-        <div class="block md:hidden">
-          <a href="/">
+    <div class="w-[97%] lg:w-[85%] xl:w-[80%] mx-auto">
+      <header class="my-4">
+        <div class="flex justify-between items-center">
+          <!-- Logo -->
+          <div class="block md:hidden">
+            <a href="/">
+              <img
+                src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
+                alt="Company Logo"
+                class="h-[50px] w-[50px]"
+              />
+            </a>
+          </div>
+          <div class="hidden xl:block">
+            <a href="/">
+              <img
+                src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
+                alt="Company Logo"
+                class="h-[60px] w-[59px]"
+              />
+            </a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="menuButton"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+            class="xl:hidden text-gray-700 text-2xl"
+          >
+            ☰
+          </button>
+
+          <!-- Navigation -->
+          <div class="hidden md:flex items-center gap-6">
+            <nav class="hidden xl:block">
+              <ul
+                class="flex gap-[20px] text-[16px] tracking-[0.5px]"
+                id="navMenu"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="nav-link text-gray-900 transition-all duration-300 active"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="nav-link text-gray-900 transition-all duration-300"
+                  >
+                    Become a Driver
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="nav-link text-gray-900 transition-all duration-300"
+                  >
+                    Support
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="flex items-center gap-4">
+              <div class="flex gap-2 items-center">
+                <div class="h-[24px] w-[24px] rounded-full overflow-hidden">
+                  <img
+                    src="images/istockphoto-880562092-612x612.jpg"
+                    alt="Language Selector Icon"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+                <div>
+                  <h3 class="text-[18px]">Language</h3>
+                </div>
+
+                <div class="dropdown">
+                  <div class="dropdown-toggle" id="dropdownToggle">EN</div>
+                  <ul class="dropdown-menu" id="dropdownMenu">
+                    <li data-value="EN">EN</li>
+                    <li data-value="FR">FR</li>
+                    <li data-value="ES">ES</li>
+                    <li data-value="DE">DE</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="bg-gray-700 text-white px-6 py-2.5 rounded-xl">
+                <button>Login / Register</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden xl:hidden bg-gray-100 p-4 rounded">
+          <div class="hidden md:block mb-2">
             <img
               src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
               alt="Company Logo"
-              class="h-[50px] w-[50px]"
+              class="h-[50px] w-[50px] rounded-full"
             />
-          </a>
-        </div>
-        <div class="hidden xl:block">
-          <a href="/">
-            <img
-              src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
-              alt="Company Logo"
-              class="h-[60px] w-[59px]"
-            />
-          </a>
-        </div>
-
-        <!-- Mobile Menu Button -->
-        <button
-          id="menuButton"
-          aria-expanded="false"
-          aria-controls="mobileMenu"
-          class="xl:hidden text-gray-700 text-2xl"
-        >
-          ☰
-        </button>
-
-        <!-- Navigation -->
-        <div class="hidden md:flex items-center gap-6">
-          <nav class="hidden xl:block">
-            <ul
-              class="flex gap-[20px] text-[16px] tracking-[0.5px]"
-              id="navMenu"
-            >
-              <li>
-                <a
-                  href="#"
-                  class="nav-link text-gray-900 transition-all duration-300 active"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="nav-link text-gray-900 transition-all duration-300"
-                >
-                  Become a Driver
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="nav-link text-gray-900 transition-all duration-300"
-                >
-                  Support
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div class="flex items-center gap-4">
+          </div>
+          <ul
+            class="flex flex-col gap-2 text-gray-700 text-[18px] mb-2 xl:mb-0"
+          >
+            <li>
+              <a
+                href="#"
+                class="nav-link text-gray-500 transition-all duration-300 active"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="nav-link text-gray-500 transition-all duration-300"
+              >
+                Become a Driver
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="nav-link text-gray-500] transition-all duration-300"
+              >
+                Support
+              </a>
+            </li>
+          </ul>
+          <div class="flex flex-col xl:flex-row xl:items-center gap-4">
             <div class="flex gap-2 items-center">
               <div class="h-[24px] w-[24px] rounded-full overflow-hidden">
                 <img
@@ -97,10 +165,9 @@
               <div>
                 <h3 class="text-[18px]">Language</h3>
               </div>
-
               <div class="dropdown">
-                <div class="dropdown-toggle" id="dropdownToggle">EN</div>
-                <ul class="dropdown-menu" id="dropdownMenu">
+                <div class="dropdown-toggle" id="dropdownToggle2">EN</div>
+                <ul class="dropdown-menu" id="dropdownMenu2">
                   <li data-value="EN">EN</li>
                   <li data-value="FR">FR</li>
                   <li data-value="ES">ES</li>
@@ -108,227 +175,269 @@
                 </ul>
               </div>
             </div>
-            <div class="bg-gray-700 text-white px-6 py-2.5 rounded-xl">
-              <button>Login / Register</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Mobile Menu -->
-      <div id="mobileMenu" class="hidden xl:hidden bg-gray-100 p-4 rounded">
-        <div class="hidden md:block mb-2">
-          <img
-            src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
-            alt="Company Logo"
-            class="h-[50px] w-[50px] rounded-full"
-          />
-        </div>
-        <ul class="flex flex-col gap-2 text-gray-700 text-[18px] mb-2 xl:mb-0">
-          <li>
-            <a
-              href="#"
-              class="nav-link text-gray-500 transition-all duration-300 active"
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="nav-link text-gray-500 transition-all duration-300"
-            >
-              Become a Driver
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="nav-link text-gray-500] transition-all duration-300"
-            >
-              Support
-            </a>
-          </li>
-        </ul>
-        <div class="flex flex-col md:hidden xl:flex-row xl:items-center gap-4">
-          <div class="flex gap-2 items-center">
-            <div class="h-[24px] w-[24px] rounded-full overflow-hidden">
-              <img
-                src="images/istockphoto-880562092-612x612.jpg"
-                alt="Language Selector Icon"
-                class="h-full w-full object-cover"
-              />
-            </div>
             <div>
-              <h3 class="text-[18px]">Language</h3>
+              <button
+                class="bg-gray-700 text-white px-6 py-2.5 rounded-xl text-center w-full"
+              >
+                Login / Register
+              </button>
             </div>
-            <div class="dropdown">
-              <div class="dropdown-toggle" id="dropdownToggle2">EN</div>
-              <ul class="dropdown-menu" id="dropdownMenu2">
-                <li data-value="EN">EN</li>
-                <li data-value="FR">FR</li>
-                <li data-value="ES">ES</li>
-                <li data-value="DE">DE</li>
-              </ul>
-            </div>
-          </div>
-          <div>
-            <button
-              class="bg-gray-700 text-white px-6 py-2.5 rounded-xl text-center w-full"
-            >
-              Login / Register
-            </button>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
+          
+    </div>
     <main>
-      <div class="flex bg-gray-100 min-h-screen">
-        <!-- Sidebar -->
-        <div class="w-1/4 bg-white p-6 shadow-lg">
-          <div class="space-y-4">
-            <!-- Active Button -->
-            <button
-              class="w-full bg-black text-white py-3 px-4 rounded-md cursor-pointer"
-            >
-              User
-            </button>
+      <div class="w-[97%] lg:w-[85%] xl:w-[80%] mx-auto">
+        <!-- About Us hero section -->
+        <section class="relative animate-item px-2 mx-auto">
+          <!-- Background Section -->
+          <div
+            class="bg-[url('images/Faq-image/Faq-hero.png')] h-[250px] sm:h-[350px] md:h-[400px] lg:h-[500px] xl:h-[550px] bg-no-repeat bg-cover bg-center rounded-2xl"
+          ></div>
 
-            <!-- Inactive Buttons -->
-            <button
-              class="w-full bg-gray-200 py-3 px-4 rounded-md cursor-pointer hover:bg-gray-300"
-            >
-              Driver
-            </button>
-            <button
-              class="w-full bg-gray-200 py-3 px-4 rounded-md cursor-pointer hover:bg-gray-300"
-            >
-              Bookings
-            </button>
-            <button
-              class="w-full bg-gray-200 py-3 px-4 rounded-md cursor-pointer hover:bg-gray-300"
-            >
-              Hotel
-            </button>
-            <button
-              class="w-full bg-gray-200 py-3 px-4 rounded-md cursor-pointer hover:bg-gray-300"
-            >
-              Help & Support
-            </button>
-          </div>
-        </div>
-
-        <!-- Main Content -->
-        <div class="w-3/4 p-6">
-          <h1 class="text-2xl font-bold mb-6">User</h1>
-
-          <!-- Accordion Section -->
-          <div class="space-y-4">
-            <!-- Accordion Item 1 -->
-            <div class="bg-gray-100 rounded-md shadow-md">
-              <button
-                class="w-full flex items-center justify-between py-4 px-6 text-left text-gray-700 focus:outline-none"
-                onclick="toggleAccordion(1)"
+          <!-- Text Section -->
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center xl:mt-[120px] text-center px-4"
+          >
+            <div>
+              <h1
+                class="text-[25px] sm:text-[30px] md:text-[35px] xl-text-[40px] text-white font-bold mb-0 md:mb-2 xl:mb-4"
               >
-                <span
-                  >Lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit.</span
-                >
-                <span id="icon-1" class="text-gray-500 text-2xl font-bold"
-                  >+</span
-                >
-              </button>
-              <div id="content-1" class="hidden px-6 pb-4 text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                ultricies pulvinar donec risus orci. In magnis orci, imperdiet
-                ultricies Lorem ipsum dolor sit amet.
-              </div>
-            </div>
-
-            <!-- Accordion Item 2 -->
-            <div class="bg-gray-100 rounded-md shadow-md">
-              <button
-                class="w-full flex items-center justify-between py-4 px-6 text-left text-gray-700 focus:outline-none"
-                onclick="toggleAccordion(2)"
+                Frequently Asks Questions
+              </h1>
+              <p
+                class="text-white text-center text-[0.7rem] sm:text-[0.8rem] md:text-[0.9rem] xl:text-[1rem] max-w-[300px] sm:max-w-[350px] md:max-w-[480px] lg:max-w-[520px] xl:max-w-full mx-auto"
               >
-                <span
-                  >Lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit.</span
-                >
-                <span id="icon-2" class="text-gray-500 text-2xl font-bold"
-                  >+</span
-                >
-              </button>
-              <div id="content-2" class="hidden px-6 pb-4 text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                ultricies pulvinar donec risus orci. In magnis orci, imperdiet
-                ultricies Lorem ipsum dolor sit amet.
-              </div>
-            </div>
-
-            <!-- Accordion Item 3 -->
-            <div class="bg-gray-100 rounded-md shadow-md">
-              <button
-                class="w-full flex items-center justify-between py-4 px-6 text-left text-gray-700 focus:outline-none"
-                onclick="toggleAccordion(3)"
-              >
-                <span
-                  >Lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit.</span
-                >
-                <span id="icon-3" class="text-gray-500 text-2xl font-bold"
-                  >+</span
-                >
-              </button>
-              <div id="content-3" class="hidden px-6 pb-4 text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                ultricies pulvinar donec risus orci. In magnis orci, imperdiet
-                ultricies Lorem ipsum dolor sit amet.
-              </div>
+                <span class="w-full break-words">
+                  Lorem ipsum dolor sit amet consectetur. Cursus dolor vulputate
+                  tellus sed et lacinia cras massa. Sem sed felis a eu
+                </span>
+                <br class="hidden xl:block" />
+                <span class="w-full break-words">iaculis consectetur. </span>
+              </p>
             </div>
           </div>
-        </div>
-      </div>
 
-      <script>
-        function toggleAccordion(id) {
-          const content = document.getElementById(`content-${id}`);
-          const icon = document.getElementById(`icon-${id}`);
-          if (content.classList.contains('hidden')) {
-            content.classList.remove('hidden');
-            icon.textContent = '-';
-          } else {
-            content.classList.add('hidden');
-            icon.textContent = '+';
-          }
-        }
-      </script>
-    </main>
-    <footer class="bg-[#F5F6F7] py-8">
-      <div class="container mx-auto">
+          <!-- Logo Section -->
+          <div class="absolute bottom-[-30px] left-1/2 -translate-x-1/2">
+            <a href="index.html">
+              <img
+                src="images/about-image/about svg/logo.svg"
+                alt="nav-logo"
+                class="h-[60px] w-[60px] sm:h-[75px] sm:w-[75px] md:h-[82px] md:w-[8px]lg:lg:h-[92px] lg:w-[92px] xl:h-[100px] xl:w-[100px]"
+              />
+            </a>
+          </div>
+        </section>
         <div
-          class="flex flex-wrap items-center justify-between gap-4 max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8"
+          class="flex flex-col sm:flex-row mt-[80px] space-y-4 sm:space-y-0 sm:space-x-4"
         >
-          <div>
-            <h2
-              class="text-[#1D2630] text-[28px] sm:text-[32px] md:text-[35px] font-bold"
-            >
+          <!-- Sidebar -->
+          <div class="w-full sm:w-1/4 bg-white p-6">
+            <div class="space-y-4 animate-item">
+              <!-- Active Button -->
+              <button
+                class="w-full bg-black text-white py-3 px-4 rounded-md cursor-pointer hover:bg-yellow-500 transition duration-300"
+              >
+                User
+              </button>
+
+              <!-- Inactive Buttons -->
+              <button
+                class="w-full bg-gray-200 py-3 px-4 rounded-md cursor-pointer hover:bg-yellow-500 transition duration-300"
+              >
+                Driver
+              </button>
+              <button
+                class="w-full bg-gray-200 py-3 px-4 rounded-md cursor-pointer hover:bg-yellow-500 transition duration-300"
+              >
+                Bookings
+              </button>
+              <button
+                class="w-full bg-gray-200 py-3 px-4 rounded-md cursor-pointer hover:bg-yellow-500 transition duration-300"
+              >
+                Hotel
+              </button>
+              <button
+                class="w-full bg-gray-200 py-3 px-4 rounded-md cursor-pointer hover:bg-yellow-500 transition duration-300"
+              >
+                Help & Support
+              </button>
+            </div>
+          </div>
+
+          <!-- Main Content -->
+          <div class="w-full sm:w-3/4 p-6">
+            <h1 class="text-2xl font-bold mb-6">User</h1>
+
+            <!-- Accordion Section -->
+            <div class="animate-item space-y-4">
+              <!-- Accordion Items -->
+              <div class="bg-gray-100 rounded-md shadow-md">
+                <button
+                  class="w-full flex items-center justify-between py-4 px-6 text-left text-gray-700 focus:outline-none"
+                  onclick="toggleAccordion(1)"
+                >
+                  <span class="text-[18px] text-[#1D2630] font-[700]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </span>
+                  <span id="icon-1" class="text-gray-500 text-2xl font-bold"
+                    >+</span
+                  >
+                </button>
+                <div id="content-1" class="hidden px-6 pb-4 text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  ultricies pulvinar donec risus orci. In magnis orci, imperdiet
+                  ultricies Lorem ipsum dolor sit amet.
+                </div>
+              </div>
+
+              <!-- Additional accordion items go here -->
+              <!-- Example Accordion Item 2 -->
+              <div class="bg-gray-100 rounded-md shadow-md">
+                <button
+                  class="w-full flex items-center justify-between py-4 px-6 text-left text-gray-700 focus:outline-none"
+                  onclick="toggleAccordion(2)"
+                >
+                  <span class="text-[18px] text-[#1D2630] font-[700]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </span>
+                  <span id="icon-2" class="text-gray-500 text-2xl font-bold"
+                    >+</span
+                  >
+                </button>
+                <div id="content-2" class="hidden px-6 pb-4 text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  ultricies pulvinar donec risus orci. In magnis orci, imperdiet
+                  ultricies Lorem ipsum dolor sit amet.
+                </div>
+              </div>
+              <!-- Accordion Item 3 -->
+              <div class="bg-gray-100 rounded-md shadow-md">
+                <button
+                  class="w-full flex items-center justify-between py-4 px-6 text-left text-gray-700 focus:outline-none"
+                  onclick="toggleAccordion(3)"
+                >
+                  <span class="text-[18px] text-[#1D2630] font-[700]"
+                    >Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.</span
+                  >
+                  <span id="icon-3" class="text-gray-500 text-2xl font-bold"
+                    >+</span
+                  >
+                </button>
+                <div id="content-3" class="hidden px-6 pb-4 text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  ultricies pulvinar donec risus orci. In magnis orci, imperdiet
+                  ultricies Lorem ipsum dolor sit amet.
+                </div>
+              </div>
+              <!-- Accordion Item 4 -->
+              <div class="bg-gray-100 rounded-md shadow-md">
+                <button
+                  class="w-full flex items-center justify-between py-4 px-6 text-left text-gray-700 focus:outline-none"
+                  onclick="toggleAccordion(4)"
+                >
+                  <span class="text-[18px] text-[#1D2630] font-[700]"
+                    >Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.</span
+                  >
+                  <span id="icon-4" class="text-gray-500 text-2xl font-bold"
+                    >+</span
+                  >
+                </button>
+                <div id="content-4" class="hidden px-6 pb-4 text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  ultricies pulvinar donec risus orci. In magnis orci, imperdiet
+                  ultricies Lorem ipsum dolor sit amet.
+                </div>
+              </div>
+
+              <!-- Accordion Item 5-->
+              <div class="bg-gray-100 rounded-md shadow-md">
+                <button
+                  class="w-full flex items-center justify-between py-4 px-6 text-left text-gray-700 focus:outline-none"
+                  onclick="toggleAccordion(5)"
+                >
+                  <span class="text-[18px] text-[#1D2630] font-[700]"
+                    >Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.</span
+                  >
+                  <span id="icon-5" class="text-gray-500 text-2xl font-bold"
+                    >+</span
+                  >
+                </button>
+                <div id="content-5" class="hidden px-6 pb-4 text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  ultricies pulvinar donec risus orci. In magnis orci, imperdiet
+                  ultricies Lorem ipsum dolor sit amet.
+                </div>
+              </div>
+
+              <!-- Accordion Item 6-->
+              <div class="bg-gray-100 rounded-md shadow-md">
+                <button
+                  class="w-full flex items-center justify-between py-4 px-6 text-left text-gray-700 focus:outline-none"
+                  onclick="toggleAccordion(6)"
+                >
+                  <span class="text-[18px] text-[#1D2630] font-[700]"
+                    >Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.</span
+                  >
+                  <span id="icon-6" class="text-gray-500 text-2xl font-bold"
+                    >+</span
+                  >
+                </button>
+                <div id="content-6" class="hidden px-6 pb-4 text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  ultricies pulvinar donec risus orci. In magnis orci, imperdiet
+                  ultricies Lorem ipsum dolor sit amet.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section
+          class="rounded-lg animate-item p-6 mb-[80px] mt-[50px] mx-auto text-center"
+        >
+          <p class="text-[#1D2630] text-[22px] md:text-[30px] font-[700] mb-4">
+            Didn’t find your Answer? Contact Us Now
+          </p>
+          <button
+            class="bg-gray-900 text-white font-semibold py-2 px-6 rounded-lg cursor-pointer hover:bg-yellow-600 transition duration-300"
+          >
+            Make a Message to Us
+          </button>
+        </section>
+      </div>
+    </main>
+    <footer class="bg-[#F5F6F7] py-8 w-full">
+      <div class="">
+        <div
+          class="flex items-center justify-center flex-col sm:flex-row md:gap-[12%] xl:gap-[30%] px-4 sm:px-6 lg:px-8"
+        >
+          <div class="mb-4 sm:mb-0">
+            <h2 class="text-[#1D2630] text-[25px] lg:text-[35px] font-bold">
               Subscribe Newsletter
             </h2>
-            <p class="text-[16px] sm:text-[18px] font-medium text-[#373F46]">
+            <p
+              class="text-[16px] sm:text-[14px] lg:text-[19px] font-medium text-[#373F46]"
+            >
               Join with our mailing list and stay updated
             </p>
           </div>
           <div
-            class="border-[1px] border-slate-500 h-[64px] rounded-[10px] flex items-center w-full max-w-sm px-3 bg-[#ffffff]"
+            class="border-[1px] border-slate-500 h-[40px] sm:h-[45px] md:h-[50px] lg:h-[55px] rounded-[10px] flex items-center md:w-full md:max-w-sm px-2 md:px-3 bg-[#ffffff]"
           >
             <input
               type="text"
               placeholder="Enter Your email address"
-              class="px-2 py-2 rounded-md focus:outline-none flex-1 text-[14px] sm:text-[16px]"
+              class="px-1 py-1 lg:px-2 lg:py-2 rounded-md focus:outline-none flex-1 text-[11px] sm:text-[12px] lg:text-[14px] xl:text-[16px]"
             />
             <button
-              class="bg-[#1D2630] text-white px-4 py-2 rounded-md text-[14px] sm:text-[16px] transition-all duration-[0.3s] hover:bg-yellow-500 hover:text-black"
+              class="bg-[#1D2630] text-white px-4 py-2 rounded-md text-[8px] sm:text-[11px] lg:text-[14px] transition-all duration-[0.3s] hover:bg-yellow-500 hover:text-black"
             >
               Join Us Now
             </button>
@@ -338,11 +447,11 @@
           <hr class="border-gray-300" />
         </div>
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4 sm:px-6 lg:px-8"
+          class="flex justify-center gap-[2%] sm:gap-[7%] md:gap-[10%] xl:gap-[15%] px-4 lg:px-0"
         >
           <div class="flex flex-col gap-3">
             <h3
-              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46]"
+              class="font-bold text-[14px] sm:text-[20px] lg:text-[22px] text-[#373F46]"
             >
               Company
             </h3>
@@ -351,35 +460,35 @@
                 <a
                   href="about.html"
                   aria-label="Learn more about 3T"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
                   >About 3T</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  href="pricing.html"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
                   >Pricing</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
                   >Why 3T</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  href="Faq.html"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
                   >FAQs</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  href="contact.html"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
                   >Contact Us</a
                 >
               </li>
@@ -387,78 +496,78 @@
           </div>
           <div class="flex flex-col gap-3">
             <h3
-              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+              class="font-bold text-[14px] sm:text-[20px] lg:text-[22px] text-[#373F46] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
             >
               Quick Links
             </h3>
             <ul class="space-y-2">
               <li>
                 <a
-                  href="#"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  href="driver.html"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
                   >Be Driver</a
                 >
               </li>
               <li>
                 <a
                   href="fleetowner.html"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
                   >Fleet Owner</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  href="rider.html"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
                   >Rider</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  href="loast&found.html"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
                   >Lost & Found</a
                 >
               </li>
             </ul>
           </div>
-          <div class="flex flex-col gap-3">
+          <div class="flex flex-col gap-3 items-center">
             <h3
-              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+              class="font-bold text-[14px] sm:text-[20px] lg:text-[22px] text-[#373F46] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-center"
             >
               Download User App
             </h3>
             <a href="">
               <img
-                class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto mb-2"
+                class="h-[30px] sm:h-[45px] lg:h-[50px] w-auto mb-2"
                 src="images/footer-images/googleplay.svg"
                 alt="Download from Google Play Store for Android"
               />
             </a>
             <a href="">
               <img
-                class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto"
+                class="h-[30px] sm:h-[45px] lg:h-[50px] w-auto"
                 src="images/footer-images/applestore.svg"
                 alt="Download from Apple App Store for iOS"
               />
             </a>
           </div>
-          <div class="flex flex-col gap-3">
+          <div class="flex flex-col gap-3 items-center">
             <h3
-              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46]"
+              class="font-bold text-[14px] sm:text-[20px] lg:text-[22px] text-[#373F46] text-center"
             >
               Download Driver App
             </h3>
             <a href="">
               <img
-                class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto mb-2"
+                class="h-[30px] sm:h-[45px] lg:h-[50px] w-auto mb-2"
                 src="images/footer-images/googleplay.svg"
                 alt="Download from Google Play Store for Android"
               />
             </a>
             <a href="">
               <img
-                class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto"
+                class="h-[30px] sm:h-[45px] lg:h-[50px] w-auto"
                 src="images/footer-images/applestore.svg"
                 alt="Download from Apple App Store for iOS"
               />
@@ -502,19 +611,28 @@
 
       <!-- footer last line -->
       <div
-        class="flex sm:flex-row justify-between container mx-auto items-center sm:gap-16 px-4 sm:px-6 lg:px-8 py-6 bg-gray-100"
+        class="flex sm:flex-row justify-center items-center gap-[10%] sm:gap-[22%] md:gap-[22%] lg:gap-[39%] py-6 bg-gray-100 px-3 lg:px-0"
       >
         <div
-          class="flex sm:flex-row gap-2 sm:gap-12 items-center text-center sm:text-left"
+          class="flex sm:flex-row gap-2 sm:gap-4 md:gap-8 lg:gap-12 items-center text-center"
         >
-          <p class="text-[11px] sm:text-[16px]">
-            <a href="#" class="hover:underline text-gray-600">Privacy Policy</a>
+          <p class="text-[11px] sm:text-[14px] lg:text-[16px]">
+            <a
+              href="#"
+              class="hover:underline text-gray-600 text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
+              >Privacy Policy</a
+            >
             &middot;
-            <a href="#" class="hover:underline pl-2 text-gray-600">
+            <a
+              href="#"
+              class="hover:underline pl-2 text-gray-600 text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
+            >
               Terms of Service
             </a>
           </p>
-          <p class="text-gray-500 text-[11px] sm:text-[16px]">
+          <p
+            class="text-gray-500 text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
+          >
             Copyrights@2025 | All Rights Reserved by 3T
           </p>
         </div>
@@ -530,8 +648,20 @@
         </div>
       </div>
     </footer>
-
     <!-- <script src="scrolle.js" defer></script> -->
     <script src="script.js" defer></script>
+    <script>
+      function toggleAccordion(id) {
+        const content = document.getElementById(`content-${id}`);
+        const icon = document.getElementById(`icon-${id}`);
+        if (content.classList.contains('hidden')) {
+          content.classList.remove('hidden');
+          icon.textContent = '-';
+        } else {
+          content.classList.add('hidden');
+          icon.textContent = '+';
+        }
+      }
+    </script>
   </body>
 </html>

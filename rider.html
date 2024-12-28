@@ -14,78 +14,146 @@
       href="images/about-image/about svg/logo.svg"
       type="image/x-icon"
     />
-    <title>Be Driver</title>
+    <title>Rider</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <header class="my-6 px-4 w-full">
-      <div class="flex container mx-auto justify-between items-center">
-        <!-- Logo -->
-        <div class="block md:hidden">
-          <a href="/">
+    <div class="w-[97%] lg:w-[85%] xl:w-[80%] mx-auto">
+      <header class="my-4">
+        <div class="flex justify-between items-center">
+          <!-- Logo -->
+          <div class="block md:hidden">
+            <a href="/">
+              <img
+                src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
+                alt="Company Logo"
+                class="h-[50px] w-[50px]"
+              />
+            </a>
+          </div>
+          <div class="hidden xl:block">
+            <a href="/">
+              <img
+                src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
+                alt="Company Logo"
+                class="h-[60px] w-[59px]"
+              />
+            </a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="menuButton"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+            class="xl:hidden text-gray-700 text-2xl"
+          >
+            ☰
+          </button>
+
+          <!-- Navigation -->
+          <div class="hidden md:flex items-center gap-6">
+            <nav class="hidden xl:block">
+              <ul
+                class="flex gap-[20px] text-[16px] tracking-[0.5px]"
+                id="navMenu"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="nav-link text-gray-900 transition-all duration-300 active"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="nav-link text-gray-900 transition-all duration-300"
+                  >
+                    Become a Driver
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="nav-link text-gray-900 transition-all duration-300"
+                  >
+                    Support
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="flex items-center gap-4">
+              <div class="flex gap-2 items-center">
+                <div class="h-[24px] w-[24px] rounded-full overflow-hidden">
+                  <img
+                    src="images/istockphoto-880562092-612x612.jpg"
+                    alt="Language Selector Icon"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+                <div>
+                  <h3 class="text-[18px]">Language</h3>
+                </div>
+
+                <div class="dropdown">
+                  <div class="dropdown-toggle" id="dropdownToggle">EN</div>
+                  <ul class="dropdown-menu" id="dropdownMenu">
+                    <li data-value="EN">EN</li>
+                    <li data-value="FR">FR</li>
+                    <li data-value="ES">ES</li>
+                    <li data-value="DE">DE</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="bg-gray-700 text-white px-6 py-2.5 rounded-xl">
+                <button>Login / Register</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden xl:hidden bg-gray-100 p-4 rounded">
+          <div class="hidden md:block mb-2">
             <img
               src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
               alt="Company Logo"
-              class="h-[50px] w-[50px]"
+              class="h-[50px] w-[50px] rounded-full"
             />
-          </a>
-        </div>
-        <div class="hidden xl:block">
-          <a href="/">
-            <img
-              src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
-              alt="Company Logo"
-              class="h-[60px] w-[59px]"
-            />
-          </a>
-        </div>
-
-        <!-- Mobile Menu Button -->
-        <button
-          id="menuButton"
-          aria-expanded="false"
-          aria-controls="mobileMenu"
-          class="xl:hidden text-gray-700 text-2xl"
-        >
-          ☰
-        </button>
-
-        <!-- Navigation -->
-        <div class="hidden md:flex items-center gap-6">
-          <nav class="hidden xl:block">
-            <ul
-              class="flex gap-[20px] text-[16px] tracking-[0.5px]"
-              id="navMenu"
-            >
-              <li>
-                <a
-                  href="#"
-                  class="nav-link text-gray-900 transition-all duration-300 active"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="nav-link text-gray-900 transition-all duration-300"
-                >
-                  Become a Driver
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="nav-link text-gray-900 transition-all duration-300"
-                >
-                  Support
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div class="flex items-center gap-4">
+          </div>
+          <ul
+            class="flex flex-col gap-2 text-gray-700 text-[18px] mb-2 xl:mb-0"
+          >
+            <li>
+              <a
+                href="#"
+                class="nav-link text-gray-500 transition-all duration-300 active"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="nav-link text-gray-500 transition-all duration-300"
+              >
+                Become a Driver
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="nav-link text-gray-500] transition-all duration-300"
+              >
+                Support
+              </a>
+            </li>
+          </ul>
+          <div class="flex flex-col xl:flex-row xl:items-center gap-4">
             <div class="flex gap-2 items-center">
               <div class="h-[24px] w-[24px] rounded-full overflow-hidden">
                 <img
@@ -97,10 +165,9 @@
               <div>
                 <h3 class="text-[18px]">Language</h3>
               </div>
-
               <div class="dropdown">
-                <div class="dropdown-toggle" id="dropdownToggle">EN</div>
-                <ul class="dropdown-menu" id="dropdownMenu">
+                <div class="dropdown-toggle" id="dropdownToggle2">EN</div>
+                <ul class="dropdown-menu" id="dropdownMenu2">
                   <li data-value="EN">EN</li>
                   <li data-value="FR">FR</li>
                   <li data-value="ES">ES</li>
@@ -108,283 +175,247 @@
                 </ul>
               </div>
             </div>
-            <div class="bg-gray-700 text-white px-6 py-2.5 rounded-xl">
-              <button>Login / Register</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Mobile Menu -->
-      <div id="mobileMenu" class="hidden xl:hidden bg-gray-100 p-4 rounded">
-        <div class="hidden md:block mb-2">
-          <img
-            src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
-            alt="Company Logo"
-            class="h-[50px] w-[50px] rounded-full"
-          />
-        </div>
-        <ul class="flex flex-col gap-2 text-gray-700 text-[18px] mb-2 xl:mb-0">
-          <li>
-            <a
-              href="#"
-              class="nav-link text-gray-500 transition-all duration-300 active"
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="nav-link text-gray-500 transition-all duration-300"
-            >
-              Become a Driver
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="nav-link text-gray-500] transition-all duration-300"
-            >
-              Support
-            </a>
-          </li>
-        </ul>
-        <div class="flex flex-col md:hidden xl:flex-row xl:items-center gap-4">
-          <div class="flex gap-2 items-center">
-            <div class="h-[24px] w-[24px] rounded-full overflow-hidden">
-              <img
-                src="images/istockphoto-880562092-612x612.jpg"
-                alt="Language Selector Icon"
-                class="h-full w-full object-cover"
-              />
-            </div>
             <div>
-              <h3 class="text-[18px]">Language</h3>
+              <button
+                class="bg-gray-700 text-white px-6 py-2.5 rounded-xl text-center w-full"
+              >
+                Login / Register
+              </button>
             </div>
-            <div class="dropdown">
-              <div class="dropdown-toggle" id="dropdownToggle2">EN</div>
-              <ul class="dropdown-menu" id="dropdownMenu2">
-                <li data-value="EN">EN</li>
-                <li data-value="FR">FR</li>
-                <li data-value="ES">ES</li>
-                <li data-value="DE">DE</li>
-              </ul>
-            </div>
-          </div>
-          <div>
-            <button
-              class="bg-gray-700 text-white px-6 py-2.5 rounded-xl text-center w-full"
-            >
-              Login / Register
-            </button>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
+          
+    </div>
     <main class="">
-      <!-- About Us hero section -->
-      <section class="relative container animate-item px-2 mx-auto">
-        <!-- Background Section -->
-        <div
-          class="bg-[url('images/rider-image/rider-hero.png')] h-[250px] sm:h-[350px] md:h-[400px] lg:h-[500px] xl:h-[550px] bg-no-repeat bg-cover bg-center rounded-2xl"
-        ></div>
-
-        <!-- Text Section -->
-        <div
-          class="absolute inset-0 flex flex-col items-center justify-center xl:mt-[120px] text-center px-4"
-        >
-          <div>
-            <h1
-              class="text-[25px] sm:text-[30px] md:text-[35px] xl-text-[40px] text-white font-bold mb-0 md:mb-2 xl:mb-4"
-            >
-              Rider
-            </h1>
-            <p
-              class="text-white flex flex-col items-center text-[0.70rem] sm:text-[0.80rem] md:text-[0.90rem] xl-text-[1 rem] max-w-[300px] sm:-max-w[350px] md:max-w[480px] lg:max-w-[520px] xl:max-w-full"
-            >
-              <span class="w-full break-words">
-                Do you want to become a driver with us? Are you interested in
-                being unique in your work and establishing your own
-              </span>
-              <span class="w-full break-words">
-                business? We give you the opportunity 3T offers you an excellent
-                working environment and service 24 hours a day</span
-              >
-            </p>
-          </div>
-        </div>
-
-        <!-- Logo Section -->
-        <div class="absolute bottom-[-30px] left-1/2 -translate-x-1/2">
-          <a href="index.html">
-            <img
-              src="images/about-image/about svg/logo.svg"
-              alt="nav-logo"
-              class="h-[60px] w-[60px] sm:h-[75px] sm:w-[75px] md:h-[82px] md:w-[8px]lg:lg:h-[92px] lg:w-[92px] xl:h-[100px] xl:w-[100px]"
-            />
-          </a>
-        </div>
-      </section>
-
-      <!-- Experience 3T Rides -->
-      <section class="py-16">
-        <div class="container animate-item mx-auto px-4">
-          <!-- Container with responsive layout -->
+      <div class="w-[97%] lg:w-[85%] xl:w-[80%] mx-auto">
+        <!-- About Us hero section -->
+        <section class="relative animate-item px-2 mx-auto">
+          <!-- Background Section -->
           <div
-            class="flex flex-col xl:flex-row justify-between items-center gap-16"
-          >
-            <!-- Image Content -->
-            <div>
-              <img
-                src="images/exprience/Group 2609465 (1).png"
-                alt="Mask group"
-                class="rounded-lg shadow-lg h-auto xl:w-[630px] xl:h-[340px]"
-              />
-            </div>
-            <!-- Text Content -->
+            class="bg-[url('images/rider-image/rider-hero.png')] h-[250px] sm:h-[350px] md:h-[400px] lg:h-[500px] xl:h-[550px] bg-no-repeat bg-cover bg-center rounded-2xl"
+          ></div>
 
+          <!-- Text Section -->
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center xl:mt-[120px] text-center px-4"
+          >
             <div>
-              <div
-                class="max-w-[620px] sm:w-[550px] sm:h-[290px] text-center md:text-left"
+              <h1
+                class="text-[25px] sm:text-[30px] md:text-[35px] xl-text-[40px] text-white font-bold mb-0 md:mb-2 xl:mb-4"
               >
-                <h1
-                  class="text-[32px] md:text-[40px] font-bold text-[#1D2630] mb-4"
+                Rider
+              </h1>
+              <p
+                class="text-white flex flex-col items-center text-[0.70rem] sm:text-[0.80rem] md:text-[0.90rem] xl-text-[1 rem] max-w-[300px] sm:-max-w[350px] md:max-w[480px] lg:max-w-[520px] xl:max-w-full"
+              >
+                <span class="w-full break-words">
+                  Do you want to become a driver with us? Are you interested in
+                  being unique in your work and establishing your own
+                </span>
+                <span class="w-full break-words">
+                  business? We give you the opportunity 3T offers you an
+                  excellent working environment and service 24 hours a day</span
                 >
-                  Experience 3T Rides
-                </h1>
-                <p class="text-[#373F46] text-[16px] md:text-[18px] mb-6">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Euismod neque, vel, scelerisque non nec et egestas. Integer
-                  tincidunt turpis ac nam integer etiam non cursus. Morbi mauris
-                  tellus dui donec malesuada tortor egestas ultricies. Elit
-                  ultricies elit faucibus cras vel nisl sagittis, lorem enim.
-                  Fermentum, mauris velit vestibulum eu. Sagittis ullamcorper
-                  nibh et lobortis. Hac quam penatibus pulvinar adipiscing
-                  faucibus.
-                </p>
-                <button
-                  class="bg-[#1D2630] text-white py-2 px-6 rounded-[10px] transition-all duration-[0.3s] hover:bg-yellow-500 hover:text-black"
-                >
-                  Read More
-                </button>
+              </p>
+            </div>
+          </div>
+
+          <!-- Logo Section -->
+          <div class="absolute bottom-[-30px] left-1/2 -translate-x-1/2">
+            <a href="index.html">
+              <img
+                src="images/about-image/about svg/logo.svg"
+                alt="nav-logo"
+                class="h-[60px] w-[60px] sm:h-[75px] sm:w-[75px] md:h-[82px] md:w-[8px]lg:lg:h-[92px] lg:w-[92px] xl:h-[100px] xl:w-[100px]"
+              />
+            </a>
+          </div>
+        </section>
+
+        <!-- Experience 3T Rides -->
+        <section class="py-16">
+          <div class="animate-item mx-auto px-4">
+            <div
+              class="flex flex-col md:flex-row md:justify-between items-center gap-8"
+            >
+              <!-- Image Content -->
+              <div class="w-full md:w-1/2">
+                <img
+                  src="images/exprience/Group 2609465 (1).png"
+                  alt="Mask group"
+                  class="rounded-lg shadow-lg w-full h-auto object-cover"
+                />
+              </div>
+              <!-- Text Content -->
+              <div class="w-full md:w-1/2">
+                <div class="max-w-[620px] sm:w-full text-center md:text-left">
+                  <h1
+                    class="sm:text-[28px] md:text-[24px] xl:text-[40px] font-bold text-[#1D2630] mb-4"
+                  >
+                    Experience 3T Rides
+                  </h1>
+                  <p
+                    class="text-[#373F46] text-[14px] md:text-[16px] xl:text-[18px] mb-6"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Euismod neque, vel, scelerisque non nec et egestas. Integer
+                    tincidunt turpis ac nam integer etiam non cursus. Morbi
+                    mauris tellus dui donec malesuada tortor egestas ultricies.
+                    Elit ultricies elit faucibus cras vel nisl sagittis, lorem
+                    enim. Fermentum, mauris velit vestibulum eu. Sagittis
+                    ullamcorper nibh et lobortis. Hac quam penatibus pulvinar
+                    adipiscing faucibus
+                  </p>
+                  <button
+                    class="bg-[#1D2630] text-white py-2 px-6 rounded-[10px] transition-all duration-[0.3s] hover:bg-yellow-500 hover:text-black"
+                  >
+                    Read More
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
+        </section>
+      </div>
       <!-- Become a 3T Driver -->
-
       <section class="bg-[#F5F6F7]">
-        <div
-          class="howitsworkSection animate-item flex flex-col lg:flex-row items-center justify-center py-10 px-4 container mx-auto"
-        >
-          <div class="AppDemoBox">
-            <img class="adImg1" src="./images//howitswork/roundBG.svg" alt="" />
-            <img
-              id="roundOne"
-              class="adImg2"
-              src="./images//howitswork/Big.svg"
-              alt=""
-            />
-            <img
-              id="roundTwo"
-              class="adImg2"
-              src="./images//howitswork/Small.svg"
-              alt=""
-            />
-            <img class="adImg3" src="./images//howitswork/Phone.svg" alt="" />
-          </div>
-          <div class="lg:w-1/2 max-w-[600px]">
-            <div class="flex flex-col items-start p-6">
-              <!-- Heading -->
-              <h2 class="text-3xl md:text-4xl font-bold mb-6 animate-item">
-                How It Works?
-              </h2>
+        <div class="w-[97%] lg:w-[85%] xl:w-[80%] mx-auto">
+          <div
+            class="howitsworkSection flex flex-col lg:flex-row items-center justify-center py-10 px-4 mx-auto"
+          >
+            <div class="AppDemoBox">
+              <img
+                class="adImg1"
+                src="./images//howitswork/roundBG.svg"
+                alt=""
+              />
+              <img
+                id="roundOne"
+                class="adImg2"
+                src="./images//howitswork/Big.svg"
+                alt=""
+              />
+              <img
+                id="roundTwo"
+                class="adImg2"
+                src="./images//howitswork/Small.svg"
+                alt=""
+              />
+              <img class="adImg3" src="./images//howitswork/Phone.svg" alt="" />
+            </div>
+            <div class="lg:w-1/2 max-w-[600px]">
+              <div class="flex flex-col items-start p-6">
+                <!-- Heading -->
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 animate-item">
+                  How It Works?
+                </h2>
 
-              <!-- Step Container -->
-              <div class="relative">
-                <!-- Vertical Line -->
-                <div
-                  class="absolute top-0 left-3 w-[3px] bg-teal-500 h-full"
-                ></div>
+                <!-- Step Container -->
+                <div class="relative">
+                  <!-- Vertical Line -->
+                  <div
+                    class="absolute top-0 left-3 w-[3px] bg-teal-500 h-full"
+                  ></div>
 
-                <!-- Steps -->
-                <div class="flex flex-col gap-12">
-                  <!-- Step 1 -->
-                  <div class="flex md:flex-row items-start gap-4 animate-item">
-                    <!-- Circle -->
-                    <div class="relative flex items-center justify-center">
-                      <div
-                        class="w-7 h-7 bg-teal-100 rounded-full flex items-center justify-center"
-                      >
-                        <div class="w-2.5 h-2.5 bg-teal-500 rounded-full"></div>
+                  <!-- Steps -->
+                  <div class="flex flex-col gap-12">
+                    <!-- Step 1 -->
+                    <div
+                      class="flex md:flex-row items-start gap-4 animate-item"
+                    >
+                      <!-- Circle -->
+                      <div class="relative flex items-center justify-center">
+                        <div
+                          class="w-7 h-7 bg-teal-100 rounded-full flex items-center justify-center"
+                        >
+                          <div
+                            class="w-2.5 h-2.5 bg-teal-500 rounded-full"
+                          ></div>
+                        </div>
+                      </div>
+                      <!-- Text -->
+                      <div>
+                        <h3 class="text-lg font-semibold">
+                          Search Your Address
+                        </h3>
+                        <p class="text-gray-500">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Euismod neque, vel, scelerisque non nec et
+                          egestas.
+                        </p>
                       </div>
                     </div>
-                    <!-- Text -->
-                    <div>
-                      <h3 class="text-lg font-semibold">Search Your Address</h3>
-                      <p class="text-gray-500">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Euismod neque, vel, scelerisque non nec et egestas.
-                      </p>
-                    </div>
-                  </div>
 
-                  <!-- Step 2 -->
-                  <div class="flex md:flex-row items-start gap-4 animate-item">
-                    <div class="relative flex items-center justify-center">
-                      <div
-                        class="w-7 h-7 bg-teal-100 rounded-full flex items-center justify-center"
-                      >
-                        <div class="w-2.5 h-2.5 bg-teal-500 rounded-full"></div>
+                    <!-- Step 2 -->
+                    <div
+                      class="flex md:flex-row items-start gap-4 animate-item"
+                    >
+                      <div class="relative flex items-center justify-center">
+                        <div
+                          class="w-7 h-7 bg-teal-100 rounded-full flex items-center justify-center"
+                        >
+                          <div
+                            class="w-2.5 h-2.5 bg-teal-500 rounded-full"
+                          ></div>
+                        </div>
+                      </div>
+                      <div>
+                        <h3 class="text-lg font-semibold">
+                          Choose Car & Payment Method
+                        </h3>
+                        <p class="text-gray-500">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Euismod neque, vel, scelerisque non nec et
+                          egestas.
+                        </p>
                       </div>
                     </div>
-                    <div>
-                      <h3 class="text-lg font-semibold">
-                        Choose Car & Payment Method
-                      </h3>
-                      <p class="text-gray-500">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Euismod neque, vel, scelerisque non nec et egestas.
-                      </p>
-                    </div>
-                  </div>
 
-                  <!-- Step 3 -->
-                  <div class="flex md:flex-row items-start gap-4 animate-item">
-                    <div class="relative flex items-center justify-center">
-                      <div
-                        class="w-7 h-7 bg-teal-100 rounded-full flex items-center justify-center"
-                      >
-                        <div class="w-2.5 h-2.5 bg-teal-500 rounded-full"></div>
+                    <!-- Step 3 -->
+                    <div
+                      class="flex md:flex-row items-start gap-4 animate-item"
+                    >
+                      <div class="relative flex items-center justify-center">
+                        <div
+                          class="w-7 h-7 bg-teal-100 rounded-full flex items-center justify-center"
+                        >
+                          <div
+                            class="w-2.5 h-2.5 bg-teal-500 rounded-full"
+                          ></div>
+                        </div>
+                      </div>
+                      <div>
+                        <h3 class="text-lg font-semibold">Enjoy Your Ride</h3>
+                        <p class="text-gray-500">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Euismod neque, vel, scelerisque non nec et
+                          egestas.
+                        </p>
                       </div>
                     </div>
-                    <div>
-                      <h3 class="text-lg font-semibold">Enjoy Your Ride</h3>
-                      <p class="text-gray-500">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Euismod neque, vel, scelerisque non nec et egestas.
-                      </p>
-                    </div>
-                  </div>
 
-                  <!-- Step 4 -->
-                  <div class="flex md:flex-row items-start gap-4 animate-item">
-                    <div class="relative flex items-center justify-center">
-                      <div
-                        class="w-7 h-7 bg-teal-100 rounded-full flex items-center justify-center"
-                      >
-                        <div class="w-2.5 h-2.5 bg-teal-500 rounded-full"></div>
+                    <!-- Step 4 -->
+                    <div
+                      class="flex md:flex-row items-start gap-4 animate-item"
+                    >
+                      <div class="relative flex items-center justify-center">
+                        <div
+                          class="w-7 h-7 bg-teal-100 rounded-full flex items-center justify-center"
+                        >
+                          <div
+                            class="w-2.5 h-2.5 bg-teal-500 rounded-full"
+                          ></div>
+                        </div>
                       </div>
-                    </div>
-                    <div>
-                      <h3 class="text-lg font-semibold">Put Your Review</h3>
-                      <p class="text-gray-500">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Euismod neque, vel, scelerisque non nec et egestas.
-                      </p>
+                      <div>
+                        <h3 class="text-lg font-semibold">Put Your Review</h3>
+                        <p class="text-gray-500">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Euismod neque, vel, scelerisque non nec et
+                          egestas.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -395,180 +426,172 @@
       </section>
 
       <!-- Ride-svg -->
-
-      <section class="py-20 container mx-auto">
-        <div class="mx-auto animate-item">
-          <div class="flex flex-col sm:flex-row sm:gap-12 px-3 justify-center">
-            <!-- Ride On Demand -->
-            <div class="flex flex-col items-center rounded-lg mb-8 sm:mb-0">
-              <div
-                class="w-20 h-20 flex items-center justify-center border-black border-[1px] p-2 rounded-full mb-4"
-              >
-                <img
-                  src="images/ride-svg/Solid.svg"
-                  alt="solid"
-                  class="w-[50px] h-[50px]"
-                />
-              </div>
-              <h1 class="text-[20px] sm:text-[25px] font-semibold mb-2">
-                Rides On Demand
-              </h1>
-              <p
-                class="text-center text-[16px] sm:text-[18px] text-[#373F46] max-w-[300px] sm:max-w-[350px]"
-              >
-                Request a ride at any time and on any day of the year.
-              </p>
-            </div>
-
-            <!-- Always Low Price -->
-            <div class="flex flex-col items-center rounded-lg mb-8 sm:mb-0">
-              <div
-                class="w-20 h-20 flex items-center justify-center border-black border-[1px] p-2 rounded-full mb-4"
-              >
-                <img
-                  src="images/ride-svg/Group.svg"
-                  alt="group"
-                  class="w-[50px] h-[50px]"
-                />
-              </div>
-              <h1 class="text-[20px] sm:text-[25px] font-semibold mb-2">
-                Always Low Price
-              </h1>
-              <p
-                class="text-center text-[16px] sm:text-[18px] text-[#373F46] max-w-[350px] sm:max-w-[400px]"
-              >
-                <span>Compare prices on every kind of ride, from</span>
-                <span>daily commutes to special evenings out.</span>
-              </p>
-            </div>
-
-            <!-- Fast Pickups -->
-            <div class="flex flex-col items-center rounded-lg">
-              <div
-                class="w-20 h-20 flex items-center justify-center border-black border-[1px] p-2 rounded-full mb-4"
-              >
-                <img
-                  src="images/ride-svg/app 1.svg"
-                  alt="app"
-                  class="w-[50px] h-[50px]"
-                />
-              </div>
-              <h1 class="text-[20px] sm:text-[25px] font-semibold mb-2">
-                Fast Pickups
-              </h1>
-              <p
-                class="text-center text-[16px] sm:text-[18px] text-[#373F46] max-w-[350px] sm:max-w-[370px]"
-              >
-                Tap and let your driver take you where you want to go.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- download the app -->
-
-      <section
-        class="bg-[#F5F6F7] animate-item py-12 px-6 sm:px-10 rounded-[30px] h-[700px] sm:h-[550px] md:h-[500px] mt-28"
-      >
-        <div
-          class="container mx-auto flex flex-col sm:flex-row items-center justify-between relative"
-        >
-          <!-- Phone Image -->
-          <div class="w-full xl:w-auto xl:absolute xl:left-4">
-            <img
-              src="images/downloadapp/phoneimage.png"
-              alt="App Download Preview"
-              class="w-full sm:w-[300px] md:w-[520px]"
-            />
-          </div>
-
-          <!-- Text and Buttons -->
-          <div class="sm:ml-auto text-center sm:text-left sm:w-1/2">
-            <h1 class="text-[2rem] sm:text-[2.8rem] font-[700] mb-4">
-              Download The App
-            </h1>
-            <p
-              class="text-[#373F46] text-[1rem] sm:text-[1.2rem] max-w-[600px] mb-6 mx-auto sm:mx-0"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
-              neque, vel, scelerisque non nec et egestas. Integer tincidunt
-              turpis ac nam integer etiam non cursus.
-            </p>
-
-            <!-- App Store Buttons -->
-            <div class="flex justify-center sm:justify-center space-x-4">
-              <button>
-                <img
-                  src="images/footer-images/googleplay.svg"
-                  alt="Google Play App"
-                  class="w-[150px]"
-                />
-              </button>
-              <button>
-                <img
-                  src="images/footer-images/applestore.svg"
-                  alt="iOS App Store"
-                  class="w-[150px]"
-                />
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="py-12">
-        <div class="flex flex-col animate-item items-center mb-12 px-4">
-          <div class="mb-6">
-            <h2 class="text-[2rem] font-[700] text-[#1D2630]">
-              What Our Users Says
-            </h2>
-          </div>
-          <div class="flex flex-col items-center">
-            <div>
-              <img src="images/user-image/Group 1000002166.png" alt="" />
-            </div>
+      <div class="w-[97%] lg:w-[85%] xl:w-[80%] mx-auto">
+        <section class="py-20">
+          <div class="px-2">
             <div
-              class="flex flex-col items-center justify-center max-w-[1000px] text-center"
+              class="flex gap-10 md:gap-14 lg:gap-32 xl:gap-40 flex-col sm:flex-row justify-center"
             >
-              <p class="text-[#373F46] mt-4 text-[0.8rem] sm:text-[1rem]">
+              <div class="flex flex-col items-center rounded-lg animate-item">
+                <div
+                  class="w-20 h-20 flex items-center justify-center border-black border-[1px] p-2 rounded-full mb-4"
+                >
+                  <img
+                    src="images/ride-svg/Solid.svg"
+                    alt="solid"
+                    class="w-[50px] h-[50px]"
+                  />
+                </div>
+                <h1 class="text-[20px] xl:text-[25px] font-semibold mb-2">
+                  Rides On Demand
+                </h1>
+                <p class="text-center text-[18px] text-[#373F46] max-w-[300px]">
+                  Request a ride at any time and on any day of the year.
+                </p>
+              </div>
+              <div class="flex flex-col items-center rounded-lg animate-item">
+                <div
+                  class="w-20 h-20 flex items-center justify-center border-black border-[1px] p-2 rounded-full mb-4"
+                >
+                  <img
+                    src="images/ride-svg/Group.svg"
+                    alt="group"
+                    class="w-[50px] h-[50px]"
+                  />
+                </div>
+                <h1 class="text-[20px] xl:text-[25px] font-semibold mb-2">
+                  Always Low Price
+                </h1>
+                <p class="text-center text-[18px] text-[#373F46] max-w-[400px]">
+                  <span> Compare prices on every kind of ride, from</span>
+                  <span>daily commutes to special evenings out.</span>
+                </p>
+              </div>
+              <div class="flex flex-col items-center rounded-lg animate-item">
+                <div
+                  class="w-20 h-20 flex items-center justify-center border-black border-[1px] p-2 rounded-full mb-4"
+                >
+                  <img
+                    src="images/ride-svg/app 1.svg"
+                    alt="app"
+                    class="w-[50px] h-[50px]"
+                  />
+                </div>
+                <h1 class="text-[20px] xl:text-[25px] font-semibold mb-2">
+                  Fast Pickups
+                </h1>
+                <p class="text-center text-[18px] text-[#373F46] max-w-[370px]">
+                  Tap and let your driver take you where you want to go.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- download the app -->
+
+        <section
+          class="bg-[#F5F6F7] animate-item py-12 px-6 sm:px-10 rounded-[30px] h-[700px] sm:h-[550px] md:h-[500px] mt-28"
+        >
+          <div
+            class="mx-auto flex flex-col sm:flex-row items-center justify-between relative"
+          >
+            <!-- Phone Image -->
+            <div class="w-full xl:w-auto xl:absolute xl:left-4">
+              <img
+                src="images/downloadapp/phoneimage.png"
+                alt="App Download Preview"
+                class="w-full sm:w-[300px] md:w-[520px]"
+              />
+            </div>
+
+            <!-- Text and Buttons -->
+            <div class="sm:ml-auto text-center sm:text-left sm:w-1/2">
+              <h1 class="text-[2rem] sm:text-[2.8rem] font-[700] mb-4">
+                Download The App
+              </h1>
+              <p
+                class="text-[#373F46] text-[1rem] sm:text-[1.2rem] max-w-[600px] mb-6 mx-auto sm:mx-0"
+              >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
                 neque, vel, scelerisque non nec et egestas. Integer tincidunt
                 turpis ac nam integer etiam non cursus.
               </p>
-              <img src="images/svg/star.svg" alt="star" class="my-6" />
-              <h4 class="mb-4 font-bold text-[#1E212F]">Saomon Jhonson</h4>
-              <img src="images/svg/dot.svg" alt="dot-svg" />
+
+              <!-- App Store Buttons -->
+              <div class="flex justify-center sm:justify-center space-x-4">
+                <button>
+                  <img
+                    src="images/footer-images/googleplay.svg"
+                    alt="Google Play App"
+                    class="w-[150px]"
+                  />
+                </button>
+                <button>
+                  <img
+                    src="images/footer-images/applestore.svg"
+                    alt="iOS App Store"
+                    class="w-[150px]"
+                  />
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        <section class="py-12">
+          <div class="flex flex-col animate-item items-center mb-12 px-4">
+            <div class="mb-6">
+              <h2 class="text-[2rem] font-[700] text-[#1D2630]">
+                What Our Users Says
+              </h2>
+            </div>
+            <div class="flex flex-col items-center">
+              <div>
+                <img src="images/user-image/Group 1000002166.png" alt="" />
+              </div>
+              <div
+                class="flex flex-col items-center justify-center max-w-[1000px] text-center"
+              >
+                <p class="text-[#373F46] mt-4 text-[0.8rem] sm:text-[1rem]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Euismod neque, vel, scelerisque non nec et egestas. Integer
+                  tincidunt turpis ac nam integer etiam non cursus.
+                </p>
+                <img src="images/svg/star.svg" alt="star" class="my-6" />
+                <h4 class="mb-4 font-bold text-[#1E212F]">Saomon Jhonson</h4>
+                <img src="images/svg/dot.svg" alt="dot-svg" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
-    <footer class="bg-[#F5F6F7] py-8">
-      <div class="container mx-auto">
+    <footer class="bg-[#F5F6F7] py-8 w-full">
+      <div class="">
         <div
-          class="flex flex-wrap items-center justify-between gap-4 max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8"
+          class="flex items-center justify-center flex-col sm:flex-row md:gap-[12%] xl:gap-[30%] px-4 sm:px-6 lg:px-8"
         >
-          <div>
-            <h2
-              class="text-[#1D2630] text-[28px] sm:text-[32px] md:text-[35px] font-bold"
-            >
+          <div class="mb-4 sm:mb-0">
+            <h2 class="text-[#1D2630] text-[25px] lg:text-[35px] font-bold">
               Subscribe Newsletter
             </h2>
-            <p class="text-[16px] sm:text-[18px] font-medium text-[#373F46]">
+            <p
+              class="text-[16px] sm:text-[14px] lg:text-[19px] font-medium text-[#373F46]"
+            >
               Join with our mailing list and stay updated
             </p>
           </div>
           <div
-            class="border-[1px] border-slate-500 h-[64px] rounded-[10px] flex items-center w-full max-w-sm px-3 bg-[#ffffff]"
+            class="border-[1px] border-slate-500 h-[40px] sm:h-[45px] md:h-[50px] lg:h-[55px] rounded-[10px] flex items-center md:w-full md:max-w-sm px-2 md:px-3 bg-[#ffffff]"
           >
             <input
               type="text"
               placeholder="Enter Your email address"
-              class="px-2 py-2 rounded-md focus:outline-none flex-1 text-[14px] sm:text-[16px]"
+              class="px-1 py-1 lg:px-2 lg:py-2 rounded-md focus:outline-none flex-1 text-[11px] sm:text-[12px] lg:text-[14px] xl:text-[16px]"
             />
             <button
-              class="bg-[#1D2630] text-white px-4 py-2 rounded-md text-[14px] sm:text-[16px] transition-all duration-[0.3s] hover:bg-yellow-500 hover:text-black"
+              class="bg-[#1D2630] text-white px-4 py-2 rounded-md text-[8px] sm:text-[11px] lg:text-[14px] transition-all duration-[0.3s] hover:bg-yellow-500 hover:text-black"
             >
               Join Us Now
             </button>
@@ -578,11 +601,11 @@
           <hr class="border-gray-300" />
         </div>
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4 sm:px-6 lg:px-8"
+          class="flex justify-center gap-[2%] sm:gap-[7%] md:gap-[10%] xl:gap-[15%] px-4 lg:px-0"
         >
           <div class="flex flex-col gap-3">
             <h3
-              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46]"
+              class="font-bold text-[14px] sm:text-[20px] lg:text-[22px] text-[#373F46]"
             >
               Company
             </h3>
@@ -591,35 +614,35 @@
                 <a
                   href="about.html"
                   aria-label="Learn more about 3T"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
                   >About 3T</a
                 >
               </li>
               <li>
                 <a
                   href="pricing.html"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
                   >Pricing</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
                   >Why 3T</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  href="Faq.html"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
                   >FAQs</a
                 >
               </li>
               <li>
                 <a
                   href="contact.html"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
                   >Contact Us</a
                 >
               </li>
@@ -627,7 +650,7 @@
           </div>
           <div class="flex flex-col gap-3">
             <h3
-              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+              class="font-bold text-[14px] sm:text-[20px] lg:text-[22px] text-[#373F46] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
             >
               Quick Links
             </h3>
@@ -635,70 +658,70 @@
               <li>
                 <a
                   href="driver.html"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
                   >Be Driver</a
                 >
               </li>
               <li>
                 <a
                   href="fleetowner.html"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
                   >Fleet Owner</a
                 >
               </li>
               <li>
                 <a
                   href="rider.html"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
                   >Rider</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
-                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+                  href="loast&found.html"
+                  class="hover:border-b-[1px] hover:border-b-[#3b3b3b] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
                   >Lost & Found</a
                 >
               </li>
             </ul>
           </div>
-          <div class="flex flex-col gap-3">
+          <div class="flex flex-col gap-3 items-center">
             <h3
-              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46] transition-all duration-[0.2s] hover:text-[#3b3b3b]"
+              class="font-bold text-[14px] sm:text-[20px] lg:text-[22px] text-[#373F46] transition-all duration-[0.2s] hover:text-[#3b3b3b] text-center"
             >
               Download User App
             </h3>
             <a href="">
               <img
-                class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto mb-2"
+                class="h-[30px] sm:h-[45px] lg:h-[50px] w-auto mb-2"
                 src="images/footer-images/googleplay.svg"
                 alt="Download from Google Play Store for Android"
               />
             </a>
             <a href="">
               <img
-                class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto"
+                class="h-[30px] sm:h-[45px] lg:h-[50px] w-auto"
                 src="images/footer-images/applestore.svg"
                 alt="Download from Apple App Store for iOS"
               />
             </a>
           </div>
-          <div class="flex flex-col gap-3">
+          <div class="flex flex-col gap-3 items-center">
             <h3
-              class="font-bold text-[18px] sm:text-[20px] lg:text-[22px] text-[#373F46]"
+              class="font-bold text-[14px] sm:text-[20px] lg:text-[22px] text-[#373F46] text-center"
             >
               Download Driver App
             </h3>
             <a href="">
               <img
-                class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto mb-2"
+                class="h-[30px] sm:h-[45px] lg:h-[50px] w-auto mb-2"
                 src="images/footer-images/googleplay.svg"
                 alt="Download from Google Play Store for Android"
               />
             </a>
             <a href="">
               <img
-                class="h-[50px] sm:h-[55px] lg:h-[60px] w-auto"
+                class="h-[30px] sm:h-[45px] lg:h-[50px] w-auto"
                 src="images/footer-images/applestore.svg"
                 alt="Download from Apple App Store for iOS"
               />
@@ -742,19 +765,28 @@
 
       <!-- footer last line -->
       <div
-        class="flex sm:flex-row justify-between container mx-auto items-center sm:gap-16 px-4 sm:px-6 lg:px-8 py-6 bg-gray-100"
+        class="flex sm:flex-row justify-center items-center gap-[10%] sm:gap-[22%] md:gap-[22%] lg:gap-[39%] py-6 bg-gray-100 px-3 lg:px-0"
       >
         <div
-          class="flex sm:flex-row gap-2 sm:gap-12 items-center text-center sm:text-left"
+          class="flex sm:flex-row gap-2 sm:gap-4 md:gap-8 lg:gap-12 items-center text-center"
         >
-          <p class="text-[11px] sm:text-[16px]">
-            <a href="#" class="hover:underline text-gray-600">Privacy Policy</a>
+          <p class="text-[11px] sm:text-[14px] lg:text-[16px]">
+            <a
+              href="#"
+              class="hover:underline text-gray-600 text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
+              >Privacy Policy</a
+            >
             &middot;
-            <a href="#" class="hover:underline pl-2 text-gray-600">
+            <a
+              href="#"
+              class="hover:underline pl-2 text-gray-600 text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
+            >
               Terms of Service
             </a>
           </p>
-          <p class="text-gray-500 text-[11px] sm:text-[16px]">
+          <p
+            class="text-gray-500 text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem]"
+          >
             Copyrights@2025 | All Rights Reserved by 3T
           </p>
         </div>
@@ -771,7 +803,6 @@
       </div>
     </footer>
 
-    <!-- <script src="scrolle.js" defer></script> -->
     <script src="script.js" defer></script>
   </body>
 </html>
