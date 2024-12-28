@@ -327,3 +327,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// Car rounded ------------
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("DOM fully loaded");
+  rotateImageContinuously("roundOne", 50);
+  rotateImageContinuously("roundTwo", 20);
+});
+
+// FAQs ------------------
