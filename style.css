@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .animate-fade-in {
@@ -327,6 +327,10 @@ body {
 }
 .box-shadow-lite {
   box-shadow: 0px 0px 20px 0px #e7ebef;
+}
+
+.box-shadow3 {
+  box-shadow: 0 0 20px 1px #cbc48773;
 }
 
 .loader {

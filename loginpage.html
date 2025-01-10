@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="images/about-image/about svg/logo.svg"
+      type="image/x-icon"
+    />
+    <title>3T Car</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="w-full flex justify-center flex-col h-[100vh]">
+    <section class="w-full flex justify-center items-center">
+      <div
+        class="w-[97%] lg:w-[85%] xl:w-[80%] rounded-2xl flex justify-center"
+      >
+        <div
+          class="bg-white sm:flex justify-between relative shadow-2xl md:h-[600px] lg:h-[650px] rounded-2xl overflow-hidden w-full lg:w-[95%] xl:w-[90%] 2xl:w-[78%] lg:px-16"
+        >
+          <!-- Left Section -->
+          <a
+            href="index.html"
+            class="absolute top-6 left-6 rounded-md p-3 box-shadow3 z-30"
+          >
+            <img src="svgimage/arrow/arrow.svg" alt="arrow" class="h-[16px]" />
+          </a>
+          <div
+            class="flex flex-col justify-center sm:w-1/3 sm:ml-8 z-20 p-4 mt-16 md:mt-20 lg:mt-0"
+          >
+            <h1 class="text-3xl font-extrabold mb-1 text-center sm:text-start">
+              Login
+            </h1>
+            <p
+              class="text-[#48525a] text-[1rem] font-normal text-center sm:text-start"
+            >
+              Welcome back, enter details to continue.
+            </p>
+
+            <form action="" class="gap-2 lg:space-y-6 flex flex-col mt-4">
+              <div>
+                <label
+                  for="email"
+                  class="block text-[0.9rem] font-medium text-gray-700"
+                  >Your email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email address"
+                  class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-primary_500 focus:border-primary_500 sm:text-sm py-3 px-4"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="password"
+                  class="block text-[0.9rem] font-medium text-gray-700"
+                  >Create password</label
+                >
+                <div class="relative mt-1">
+                  <input
+                    type="password"
+                    id="password"
+                    placeholder="Type Password"
+                    class="block w-full border border-gray-300 rounded-md shadow-sm focus:ring-primary_500 focus:border-primary_500 sm:text-sm py-3 px-4"
+                  />
+                  <img
+                    src="svgimage/eyesvg/eye.svg"
+                    alt="Show Password"
+                    class="absolute inset-y-3.5 right-3 w-5 cursor-pointer"
+                  />
+                </div>
+              </div>
+
+              <div
+                class="flex lg:items-center flex-row justify-between sm:flex-col items-start lg:flex-row mt-2 lg:mt-0 lg:space-x-4"
+              >
+                <div class="flex items-center justify-center">
+                  <input
+                    type="checkbox"
+                    id="remember"
+                    class="h-4 w-4 text-primary_500 border-[#555B60] rounded"
+                  />
+                  <label
+                    for="remember"
+                    class="ml-2 block text-sm text-[#373F46] font-medium"
+                    >Save Login details</label
+                  >
+                </div>
+                <div>
+                  <a
+                    href="#"
+                    class="text-sm text-primary_500 hover:underline text-[#373F46] font-medium"
+                    >Forgot password?</a
+                  >
+                </div>
+              </div>
+
+              <div class="mt-2">
+                <button
+                  type="submit"
+                  class="bg-[#1D2630] hover:bg-yellow-500 transition-all duration-150 text-white py-2 px-6 rounded-[10px] hover:bg-primary_400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary_500"
+                >
+                  Login
+                </button>
+              </div>
+            </form>
+            <div
+              class="flex items-center justify-between sm:justify-end mt-8 sm:mt-0"
+            >
+              <p class="sm:hidden text-[0.8rem]">
+                You don’t have an Account?
+                <a href="downloadregister.html" class="text-blue-600">Signup</a>
+              </p>
+              <a
+                href="#"
+                class="block sm:mt-6 text-[0.8rem] sm:text-base text-primary_500 hover:underline text-[#62696e] hover:text-[#393d41] font-medium"
+                >Login as a Driver →</a
+              >
+            </div>
+          </div>
+
+          <!-- Right Section -->
+          <div class="">
+            <img
+              src="images/loginpage/Rectangle-black.png"
+              alt="Background"
+              class="absolute right-0 h-full object-cover top-0 -z-10 sm:-z-0"
+            />
+            <img
+              src="images/loginpage/rb_2148974904 1.png"
+              alt="Background"
+              class="absolute right-0 md:h-[350px] lg:h-[450px] object-cover top-0"
+            />
+
+            <!-- <img
+              src="images/loginpage/thatsneed.png"
+              alt="Background"
+              class="absolute right-0 md:h-[350px] lg:h-[450px] object-cover top-0 sm:hidden"
+            /> -->
+            <div
+              class="absolute z-10 sm:flex flex-col items-end right-10 top-28 text-white w-[25%] hidden"
+            >
+              <h2 class="text-[2rem] font-bold mb-4 text-end">
+                Don’t have an Account?
+              </h2>
+              <p class="mb-6 text-end">
+                Simply create your account by clicking signup button below.
+              </p>
+              <a
+                href="downloadregister.html"
+                class="text-primary_500 py-2 px-6 rounded-lg font-medium hover:bg-yellow-500 border-2 border-primary_500 hover:text-black transition-all duration-150"
+              >
+                Sign up
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
