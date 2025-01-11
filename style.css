@@ -221,6 +221,9 @@ body {
 .adImg3 {
   z-index: 3;
 }
+.LogFormBox {
+  z-index: 9;
+}
 @media only screen and (min-width: 700px) {
 }
 @media only screen and (min-width: 1000px) {
