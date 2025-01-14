@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Receipts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex items-center justify-center min-h-screen p-4">
+    <div class="absolute top-5 left-5 flex row gap-6">
+      <div>
+        <a href="index.html">
+          <img
+            class="bg-white shadow-md rounded-lg h-[40px] w-[40px] p-2"
+            src="images/End-trip/Back Arrow.svg"
+            alt="Back Arrow"
+          />
+        </a>
+      </div>
+      <div>
+        <h3 class="font-[800] text-[#1D2630] text-[26px]">Receipts</h3>
+      </div>
+    </div>
+
+    <div
+      class="flex flex-col items-center shadow-[0px_0px_100px_1px_rgba(0,0,0,0.1)] rounded-md justify-center lg:flex-row gap-8"
+    >
+      <!-- Receipts Section -->
+      <div class="flex flex-col gap-4">
+        <!-- Card Component -->
+        <div
+          class="bg-white shadow-md rounded-lg p-4 w-full max-w-sm cursor-pointer receipt-card"
+          data-details='{
+            "bookingId": "#03215487",
+            "time": "16:35 - 18:52",
+            "distance": "2.5km",
+            "orderType": "Prime",
+            "plateNo": "WB 16 AZ 9382",
+            "driverId": "#124578902",
+            "totalPrice": "125 NOK",
+            "promoDiscount": "20 NOK",
+            "paymentMethod": "Cash",
+            "paymentStatus": "Completed"
+          }'
+        >
+          <div class="flex justify-between items-center border-b pb-2">
+            <h5 class="text-gray-800 text-lg font-medium">7th September</h5>
+            <h3 class="text-lg font-bold">NOK 125</h3>
+          </div>
+          <div class="bg-gray-200 rounded-lg p-4 mt-4 flex gap-5">
+            <div class="flex flex-col items-center">
+              <span class="h-4 w-4 rounded-full bg-yellow-500 mb-2"></span>
+              <div class="flex-grow w-[2px] bg-gray-600"></div>
+              <span class="h-4 w-4 rounded-full bg-red-500 mt-2"></span>
+            </div>
+            <div class="flex flex-col gap-4">
+              <p class="text-gray-800 text-sm font-normal">
+                Your current location, Dhaka Bangladesh
+              </p>
+              <div class="h-[1px] bg-gray-600"></div>
+              <p class="text-gray-800 text-sm font-normal">
+                Bakul Nessa (B.N.) High School, Dhaka Bangladesh
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat Card Component for other receipts -->
+        <div
+          class="bg-white shadow-md rounded-lg p-4 w-full max-w-sm cursor-pointer receipt-card"
+          data-details='{
+            "bookingId": "#04567812",
+            "time": "14:20 - 15:50",
+            "distance": "3.2km",
+            "orderType": "Economy",
+            "plateNo": "WB 18 CZ 9843",
+            "driverId": "#567890123",
+            "totalPrice": "140 NOK",
+            "promoDiscount": "10 NOK",
+            "paymentMethod": "Card",
+            "paymentStatus": "Completed"
+          }'
+        >
+          <div class="flex justify-between items-center border-b pb-2">
+            <h5 class="text-gray-800 text-lg font-medium">8th September</h5>
+            <h3 class="text-lg font-bold">NOK 125</h3>
+          </div>
+          <div class="bg-gray-200 rounded-lg p-4 mt-4 flex gap-5">
+            <div class="flex flex-col items-center">
+              <span class="h-4 w-4 rounded-full bg-yellow-500 mb-2"></span>
+              <div class="flex-grow w-[2px] bg-gray-600"></div>
+              <span class="h-4 w-4 rounded-full bg-red-500 mt-2"></span>
+            </div>
+            <div class="flex flex-col gap-4">
+              <p class="text-gray-800 text-sm font-normal">
+                Your current location, Dhaka Bangladesh
+              </p>
+              <div class="h-[1px] bg-gray-600"></div>
+              <p class="text-gray-800 text-sm font-normal">
+                Bakul Nessa (B.N.) High School, Dhaka Bangladesh
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-white shadow-md rounded-lg p-4 w-full max-w-sm cursor-pointer receipt-card"
+          data-details='{
+            "bookingId": "#04567812",
+            "time": "14:20 - 15:50",
+            "distance": "3.2km",
+            "orderType": "Economy",
+            "plateNo": "WB 18 CZ 9843",
+            "driverId": "#567890123",
+            "totalPrice": "140 NOK",
+            "promoDiscount": "10 NOK",
+            "paymentMethod": "Card",
+            "paymentStatus": "Completed"
+          }'
+        >
+          <div class="flex justify-between items-center border-b pb-2">
+            <h5 class="text-gray-800 text-lg font-medium">7th September</h5>
+            <h3 class="text-lg font-bold">NOK 125</h3>
+          </div>
+          <div class="bg-gray-200 rounded-lg p-4 mt-4 flex gap-5">
+            <div class="flex flex-col items-center">
+              <span class="h-4 w-4 rounded-full bg-yellow-500 mb-2"></span>
+              <div class="flex-grow w-[2px] bg-gray-600"></div>
+              <span class="h-4 w-4 rounded-full bg-red-500 mt-2"></span>
+            </div>
+            <div class="flex flex-col gap-4">
+              <p class="text-gray-800 text-sm font-normal">
+                Your current location, Dhaka Bangladesh
+              </p>
+              <div class="h-[1px] bg-gray-600"></div>
+              <p class="text-gray-800 text-sm font-normal">
+                Bakul Nessa (B.N.) High School, Dhaka Bangladesh
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Details Section -->
+      <div
+        id="details-section"
+        class="flex flex-col gap-4 bg-white shadow-md rounded-lg p-4 w-full max-w-lg"
+      >
+        <script>
+          const receiptCards = document.querySelectorAll('.receipt-card');
+
+          receiptCards.forEach((card) => {
+            card.addEventListener('click', () => {
+              const details = JSON.parse(card.dataset.details);
+
+              detailsSection.innerHTML = ``;
+            });
+          });
+        </script>
+        <img src="./images/Recipt/map-image.png" alt="Map" class="rounded-lg" />
+        <div class="flex items-center gap-4">
+          <h2 class="text-gray-700 text-lg font-semibold">Trip Details</h2>
+          <div
+            class="h-[0.5px] sm:w-[360px] flex flex-row mb-1 bg-gray-600"
+          ></div>
+        </div>
+        <div class="flex justify-between">
+          <div class="flex flex-col gap-2">
+            <p>Booking ID: <strong>#03215487</strong></p>
+            <p>Time: <strong>16:35 - 18:52</strong></p>
+          </div>
+          <div class="flex flex-col gap-2">
+            <p>Distance: <strong>2.5km</strong></p>
+            <p>Order Type: <strong>Prime</strong></p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <h2 class="text-[#555B60] text-lg font-semibold">Trip Details</h2>
+          <div
+            class="h-[0.6px] sm:w-[360px] flex flex-row mb-1 bg-gray-500"
+          ></div>
+        </div>
+        <div class="flex justify-between">
+          <p>Plate No.: <strong>WB 16 AZ 9382</strong></p>
+          <p>Driver ID: <strong>#124578902</strong></p>
+        </div>
+        <div class="flex items-center gap-4">
+          <h2 class="text-[#555B60] text-lg font-semibold">Price Info</h2>
+          <div
+            class="h-[0.6px] sm:w-[375px] flex flex-row mb-1 bg-gray-500"
+          ></div>
+        </div>
+        <div class="flex justify-between">
+          <p>Total Price: <strong>125 NOK</strong></p>
+          <p>Promo Discount: <strong>20 NOK</strong></p>
+        </div>
+        <div class="flex items-center gap-4">
+          <h2 class="text-[#555B60] text-lg font-semibold">Payment Info</h2>
+          <div
+            class="h-[0.6px] sm:w-[355px] flex flex-row mb-1 bg-gray-500"
+          ></div>
+        </div>
+        <div class="flex justify-between">
+          <p>Payment Method:<strong>Cash</strong></p>
+          <p>Payment Status:<strong>Completed</strong></p>
+        </div>
+        <div class="flex justify-center gap-6 items-center">
+          <button class="bg-blue-500 flex gap-1 text-white px-12 py-2 rounded">
+            <img
+              class="text-[#ffffff]"
+              src="./images/Recipt/Email.svg"
+              alt="Email"
+            />
+            <p>Email Receipt</p>
+          </button>
+          <button class="bg-red-500 flex gap-1 text-white px-12 py-2 rounded">
+            <img src="./images/Recipt/Delete.svg" alt="Delete" />
+            <p>Delete Receipt</p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
