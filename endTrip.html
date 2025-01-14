@@ -3,13 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trip Summary</title>
+    <title>End Trip</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="shortcut icon"
       href="images/about-image/about svg/logo.svg"
       type="image/x-icon"
     />
+    <title>End Trip</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="bg-white flex justify-center items-center min-h-screen">
     <div class="w-[97%] lg:w-[85%] xl:w-[80%] mx-auto">
@@ -108,15 +115,15 @@
       function selectTip(selectedButton) {
         // Remove selected styling from all buttons
         document.querySelectorAll("[data-selected='true']").forEach((btn) => {
-          btn.classList.remove('bg-yellow-300');
-          btn.classList.add('bg-[#EBE4A6]');
-          btn.setAttribute('data-selected', 'false');
+          btn.classList.remove("bg-yellow-300");
+          btn.classList.add("bg-[#EBE4A6]");
+          btn.setAttribute("data-selected", "false");
         });
 
         // Apply selected styling to the clicked button
-        selectedButton.classList.remove('bg-[#EBE4A6]');
-        selectedButton.classList.add('bg-yellow-300');
-        selectedButton.setAttribute('data-selected', 'true');
+        selectedButton.classList.remove("bg-[#EBE4A6]");
+        selectedButton.classList.add("bg-yellow-300");
+        selectedButton.setAttribute("data-selected", "true");
       }
     </script>
   </body>
