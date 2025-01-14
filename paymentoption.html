@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="images/about-image/about svg/logo.svg"
+      type="image/x-icon"
+    />
+    <title>3T Car</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="bg-gray-100 min-h-screen flex items-center justify-center relative"
+  >
+    <div
+      class="w-full sm:max-w-md md:max-w-2xl lg:max-w-5xl bg-white sm:p-6 md:p-8 rounded-lg mt-24 md:mt-16 shadow-[0px_0px_100px_1px_rgba(0,0,0,0.1)]"
+    >
+      <!-- Header -->
+      <div class="absolute top-6 left-8 flex items-center gap-4">
+        <a href="index.html" class="bg-white p-3 rounded-lg box-shadow3">
+          <img src="svgimage/arrow/arrow.svg" alt="arrow" class="h-[16px]" />
+        </a>
+        <p class="text-[1.5rem] font-bold">Payment Options</p>
+      </div>
+      <!-- Main Content -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+        <!-- Left: Your Cards -->
+        <div>
+          <h3
+            class="text-base sm:text-lg md:text-xl font-bold text-gray-700 mb-4"
+          >
+            Your cards
+          </h3>
+          <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+            <!-- Visa Card -->
+            <div
+              class="flex items-center justify-between relative w-24 sm:w-28 md:w-32"
+            >
+              <img
+                src="images/paymentOption/visacard.svg"
+                alt="Visa"
+                class="h-12 sm:h-16"
+              />
+              <button
+                class="text-gray-400 hover:text-red-500 text-sm absolute top-0 right-4"
+              >
+                <img
+                  src="images/paymentOption/delete.svg"
+                  alt="deleteicon"
+                  class="h-4 sm:h-5"
+                />
+              </button>
+            </div>
+            <!-- MasterCard -->
+            <div
+              class="flex items-center justify-between relative w-24 sm:w-28 md:w-32"
+            >
+              <img
+                src="images/paymentOption/mastercard.svg"
+                alt="MasterCard"
+                class="h-12 sm:h-16"
+              />
+              <button
+                class="text-gray-400 hover:text-red-500 text-sm absolute top-[-5px] right-4"
+              >
+                <img
+                  src="images/paymentOption/delete.svg"
+                  alt="deleteicon"
+                  class="h-4 sm:h-5"
+                />
+              </button>
+            </div>
+            <!-- Discover -->
+            <div
+              class="flex items-center justify-between relative w-24 sm:w-28 md:w-32"
+            >
+              <img
+                src="images/paymentOption/discovercard.svg"
+                alt="Discover"
+                class="h-12 sm:h-16"
+              />
+              <button
+                class="text-gray-400 hover:text-red-500 text-sm absolute top-[-2px] right-4"
+              >
+                <img
+                  src="images/paymentOption/delete.svg"
+                  alt="deleteicon"
+                  class="h-4 sm:h-5"
+                />
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex items-center gap-2 mt-4 ml-2 justify-center md:justify-start"
+          >
+            <button>
+              <img
+                src="images/paymentOption/plus.svg"
+                alt="Add"
+                class="h-6 sm:h-8"
+              />
+            </button>
+            <p class="font-semibold text-sm sm:text-base">
+              Add New Payment Method
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: Add New Card -->
+        <div>
+          <div class="p-4 bg-gray-100 rounded-lg">
+            <h3
+              class="text-base sm:text-lg md:text-xl font-bold text-gray-700 mb-2"
+            >
+              Add New Card
+            </h3>
+            <!-- Scan or Upload -->
+            <img
+              src="images/paymentOption/scan.png"
+              alt="Scan"
+              class="w-full rounded-md"
+            />
+            <!-- Form -->
+            <form id="add-card-form" class="space-y-2 md:space-y-4 mt-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="" class="text-[1.2rem]">Card Number</label>
+                  <input
+                    type="text"
+                    placeholder="Enter your card number"
+                    class="w-full mt-2 px-4 py-3 border-[1.8px] border-[#555B60] rounded-xl focus:ring-2 focus:ring-[#36393c]"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="" class="text-[1.2rem]">Your name</label>
+
+                  <input
+                    type="text"
+                    placeholder="Enter cardholder name"
+                    class="w-full mt-2 px-4 py-3 border-[1.8px] border-[#555B60] rounded-xl focus:ring-2 focus:ring-[#36393c]"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="" class="text-[1.2rem]">Expiry Date</label>
+
+                  <input
+                    type="text"
+                    placeholder="Enter expiery date"
+                    class="w-full mt-2 px-4 py-3 border-[1.8px] border-[#555B60] rounded-xl focus:ring-2 focus:ring-[#36393c]"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="" class="text-[1.2rem]">CVV</label>
+
+                  <input
+                    type="text"
+                    placeholder="Enter CVV"
+                    class="w-full mt-2 px-4 py-3 border-[1.8px] border-[#555B60] rounded-xl focus:ring-2 focus:ring-[#36393c]"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="flex items-center">
+                <input
+                  type="checkbox"
+                  id="save-details"
+                  class="w-4 h-4 text-yellow-600 border-yellow-600 rounded focus:ring-2 focus:ring-yellow-600 bg-yellow-600"
+                />
+                <label for="save-details" class="ml-2 text-sm text-gray-600">
+                  Save Card Details
+                </label>
+              </div>
+              <button
+                type="submit"
+                class="w-full py-2 bg-[#1D2630] text-white rounded-lg hover:bg-[#2e3339]"
+              >
+                Add Card Now
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Remove card functionality
+      document.querySelectorAll("button.text-gray-400").forEach((button) => {
+        button.addEventListener("click", () => {
+          button.closest("div").remove();
+        });
+      });
+
+      // Handle Add Card Form Submission
+      document
+        .getElementById("add-card-form")
+        .addEventListener("submit", (e) => {
+          e.preventDefault();
+          alert("Card added successfully!");
+        });
+    </script>
+  </body>
+</html>

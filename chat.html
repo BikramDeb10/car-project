@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="images/about-image/about svg/logo.svg"
+      type="image/x-icon"
+    />
+    <title>3T Car</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="bg-gray-100 min-h-screen flex items-center justify-center relative"
+  >
+    <div
+      class="w-full sm:max-w-md md:max-w-2xl lg:max-w-6xl bg-white rounded-3xl shadow-[0px_0px_100px_1px_rgba(0,0,0,0.1)] mt-24 md:mt-16"
+    >
+      <!-- Header -->
+      <div class="absolute top-6 left-8 flex items-center gap-4">
+        <a href="index.html" class="bg-white p-3 rounded-lg box-shadow3">
+          <img src="svgimage/arrow/arrow.svg" alt="arrow" class="h-[16px]" />
+        </a>
+        <p class="text-[1.5rem] font-bold">Wallet</p>
+      </div>
+      <!-- Header -->
+      <div class="p-6 flex items-center justify-between">
+        <div class="flex items-center">
+          <div class="w-14 h-14 rounded-full bg-gray-300">
+            <img
+              src="images/chat/joy.jpg"
+              alt=""
+              class="w-14 h-14 rounded-full"
+            />
+          </div>
+          <div class="ml-3">
+            <p class="text-sm font-medium text-gray-800">Saimon Jhonson</p>
+            <p class="text-xs text-gray-500">Last seen 5 min ago</p>
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-10">
+          <button class="text-gray-500">
+            <img src="images/chat/call.svg" alt="" />
+          </button>
+          <button>
+            <img src="images/chat/threedot.svg" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <!-- Chat messages -->
+      <div id="chat-window" class="p-6 space-y-4 max-h-[530px] overflow-y-auto">
+        <!-- Recipient message -->
+        <div class="flex">
+          <div
+            class="max-w-xs bg-yellow-200 text-gray-800 px-4 py-2 rounded-lg shadow"
+          >
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </div>
+          <span class="ml-2 text-xs text-gray-500 self-end">12:05pm</span>
+        </div>
+
+        <!-- User message -->
+        <div class="flex justify-end">
+          <div
+            class="max-w-xs bg-[#09BBC7] text-white px-4 py-2 rounded-lg shadow"
+          >
+            Lorem Ipsum is simply dummy text of the printing and typesetting.
+          </div>
+          <span class="ml-2 text-xs text-gray-500 self-end">12:07pm</span>
+        </div>
+        <div class="flex">
+          <div
+            class="max-w-xs bg-yellow-200 text-gray-800 px-4 py-2 rounded-lg shadow"
+          >
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </div>
+          <span class="ml-2 text-xs text-gray-500 self-end">12:05pm</span>
+        </div>
+
+        <!-- User message -->
+        <div class="flex justify-end">
+          <div
+            class="max-w-xs bg-[#09BBC7] text-white px-4 py-2 rounded-lg shadow"
+          >
+            Lorem Ipsum is simply dummy text of the printing and typesetting.
+          </div>
+          <span class="ml-2 text-xs text-gray-500 self-end">12:07pm</span>
+        </div>
+        <div class="flex">
+          <div
+            class="max-w-xs bg-yellow-200 text-gray-800 px-4 py-2 rounded-lg shadow"
+          >
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </div>
+          <span class="ml-2 text-xs text-gray-500 self-end">12:05pm</span>
+        </div>
+        <!-- Typing indicator -->
+        <div id="typing-indicator" class="flex items-center">
+          <div
+            class="max-w-xs bg-yellow-200 text-gray-800 px-4 py-2 rounded-lg shadow"
+          >
+            Typing...
+          </div>
+        </div>
+      </div>
+
+      <!-- Input box -->
+      <div class="p-4 bg-[#FFF9D9] flex items-center rounded-bl-3xl">
+        <div
+          class="border-[1.5px] border-[#5b5b5bdd] rounded-lg bg-white flex items-center justify-between focus:outline-none focus:ring focus:border-blue-300 w-full"
+        >
+          <input
+            id="message-input"
+            type="text"
+            placeholder="Type your message..."
+            class="flex-1 p-4 shadow-sm ml-2 focus:outline-none"
+          />
+          <button id="send-button" class="ml-2 text-white px-4 py-2">
+            <img src="images/chat/send.svg" alt="" />
+          </button>
+        </div>
+      </div>
+      <script>
+        const chatWindow = document.getElementById("chat-window");
+        const messageInput = document.getElementById("message-input");
+        const sendButton = document.getElementById("send-button");
+        const typingIndicator = document.getElementById("typing-indicator");
+
+        messageInput.addEventListener("input", () => {
+          typingIndicator.classList.remove("hidden");
+          setTimeout(() => typingIndicator.classList.add("hidden"), 1000);
+        });
+
+        sendButton.addEventListener("click", () => {
+          const messageText = messageInput.value.trim();
+          if (messageText) {
+            const userMessage = `
+              <div class="flex justify-end">
+                <div class="max-w-xs bg-[#09BBC7] text-white px-4 py-2 rounded-lg shadow">
+                  ${messageText}
+                </div>
+                <span class="ml-2 text-xs text-gray-500 self-end">${new Date().toLocaleTimeString(
+                  [],
+                  { hour: "2-digit", minute: "2-digit" }
+                )}</span>
+              </div>
+            `;
+            chatWindow.innerHTML += userMessage;
+            messageInput.value = "";
+
+            chatWindow.scrollTop = chatWindow.scrollHeight;
+
+            setTimeout(() => {
+              const recipientMessage = `
+                <div class="flex">
+                  <div class="max-w-xs bg-yellow-200 text-gray-800 px-4 py-2 rounded-lg shadow">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </div>
+                  <span class="ml-2 text-xs text-gray-500 self-end">${new Date().toLocaleTimeString(
+                    [],
+                    { hour: "2-digit", minute: "2-digit" }
+                  )}</span>
+                </div>
+              `;
+              chatWindow.innerHTML += recipientMessage;
+              chatWindow.scrollTop = chatWindow.scrollHeight;
+            }, 1000);
+          }
+        });
+      </script>
+    </div>
+  </body>
+</html>
