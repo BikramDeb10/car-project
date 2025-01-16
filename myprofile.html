@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="images/about-image/about svg/logo.svg"
+      type="image/x-icon"
+    />
+    <title>My Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="bg-gray-100 min-h-screen flex items-center justify-center relative"
+  >
+    <div
+      class="w-full sm:max-w-md md:max-w-2xl lg:max-w-5xl bg-white sm:p-6 md:p-8 rounded-lg shadow-[0px_0px_100px_1px_rgba(0,0,0,0.1)] mt-24 md:mt-16"
+    >
+      <!-- Header -->
+      <div class="absolute top-6 left-8 flex items-center gap-4">
+        <a href="index.html" class="bg-white p-3 rounded-lg box-shadow3">
+          <img src="svgimage/arrow/arrow.svg" alt="arrow" class="h-[16px]" />
+        </a>
+        <p class="text-[1.5rem] font-bold">My Profile</p>
+      </div>
+      <div>
+        <!-- main -->
+        <div class="flex justify-between">
+          <div class="flex items-center gap-4 flex-wrap">
+            <!-- profile section -->
+            <div class="relative">
+              <!-- Profile Picture -->
+              <img
+                src="images/myProfile/Person.svg"
+                alt="Profile Picture"
+                class="h-[80px] w-[80px] rounded-full border-[1.5px] border-[#E0B827] p-1"
+              />
+              <!-- File Input for Picture -->
+              <div
+                class="absolute right-0 top-14 flex items-center justify-center bg-[#F7EA9C] p-1.5 rounded-full cursor-pointer"
+              >
+                <label
+                  for="profileUpload"
+                  class="flex items-center cursor-pointer"
+                >
+                  <img
+                    src="images/myProfile/camera.svg"
+                    alt="Upload Icon"
+                    class="h-4 w-4"
+                  />
+                </label>
+                <input
+                  id="profileUpload"
+                  type="file"
+                  class="hidden"
+                  aria-label="Upload Profile Picture"
+                />
+              </div>
+            </div>
+
+            <div class="md:mt-0 lg:mt-4">
+              <!-- details -->
+              <h3 class="font-semibold text-[#232c37] text-[1.3rem]">
+                David Warner
+              </h3>
+              <p
+                class="text-[#808182] text-[1rem] leading-[19.36px] font-medium my-1"
+              >
+                +00 1234567890
+              </p>
+              <p
+                class="text-[#808182] text-[0.9rem] leading-[19.36px] font-[400] my-1"
+              >
+                davidwarner22@gmail.com
+              </p>
+
+              <div class="flex items-center mt-2">
+                <!-- Stars Container -->
+
+                <div id="stars" class="flex space-x-1">
+                  <!-- Stars will be dynamically generated here -->
+                </div>
+                <p id="rating" class="text-[#BAB6AE] font-medium">(0)</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3 lg:mt-6">
+            <!-- logout section -->
+            <div class="flex justify-end">
+              <button class="flex">
+                <img src="images/myProfile/Logout.svg" alt="" />
+                <p>Logout</p>
+              </button>
+            </div>
+            <div class="flex border-[1px] border-[#EBE4A6] rounded-xl">
+              <div
+                class="border-r-[1px] border-[#EBE4A6] px-2 py-2 lg:px-5 lg:py-3 xl:py-4 xl:px-8 text-center"
+              >
+                <h3 class="font-[700] md:text-[17px] lg:text-[22px]">250</h3>
+                <h4
+                  class="text-[#1D2630] text-[14px] lg:text-[16px] font-[400]"
+                >
+                  Total Rides
+                </h4>
+              </div>
+              <div
+                class="border-r-[1px] border-[#EBE4A6] px-2 py-2 lg:px-5 lg:py-3 xl:py-4 xl:px-8 text-center"
+              >
+                <h3 class="font-[700] md:text-[17px] lg:text-[22px]">250</h3>
+                <h4
+                  class="text-[#1D2630] text-[14px] lg:text-[16px] font-[400]"
+                >
+                  Requested Rides
+                </h4>
+              </div>
+              <div
+                class="px-2 py-2 lg:px-5 lg:py-3 xl:py-4 xl:px-8 text-center"
+              >
+                <h3 class="font-[700] md:text-[17px] lg:text-[22px]">250</h3>
+                <h4
+                  class="text-[#1D2630] text-[14px] lg:text-[16px] font-[400]"
+                >
+                  Cancelled Rides
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <form id="profileForm" class="space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-medium text-gray-700"
+                  >Your Name</label
+                >
+                <input
+                  type="text"
+                  class="w-full border-[1.5px] border-[#555B60] py-2 px-4 rounded-xl focus:ring-blue-500 focus:border-blue-500"
+                  placeholder="Saimon Jhonson"
+                />
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700"
+                  >Your Date of Birth</label
+                >
+                <input
+                  type="date"
+                  class="w-full border-[1.5px] border-[#555B60] py-2 px-4 rounded-xl focus:ring-blue-500 focus:border-blue-500"
+                />
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-medium text-gray-700"
+                  >Phone Number</label
+                >
+                <div class="relative">
+                  <input
+                    type="text"
+                    class="w-full border-[1.5px] border-[#555B60] py-2 px-4 rounded-xl focus:ring-blue-500 focus:border-blue-500 pr-10"
+                    placeholder="+00 1234567890"
+                  />
+                  <span
+                    class="absolute right-2 top-2 text-green-600 text-sm font-medium"
+                    >Verified</span
+                  >
+                </div>
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700"
+                  >Email Address</label
+                >
+                <div class="relative">
+                  <input
+                    type="email"
+                    class="w-full border-[1.5px] border-[#555B60] py-2 px-4 rounded-xl focus:ring-blue-500 focus:border-blue-500 pr-10"
+                    placeholder="saimonjhonson55@gmail.com"
+                  />
+                  <span
+                    class="absolute right-2 top-2 text-green-600 text-sm font-medium"
+                    >Verified</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center space-x-2">
+              <label class="block text-sm font-medium text-gray-700"
+                >Change Password</label
+              >
+              <input
+                id="togglePassword"
+                type="checkbox"
+                class="h-5 w-5 text-blue-600 focus:ring-blue-500"
+              />
+            </div>
+            <div id="passwordFields">
+              <div class="grid grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-sm font-medium text-gray-700"
+                    >Current Password</label
+                  >
+                  <input
+                    type="password"
+                    id="currentPassword"
+                    class="w-full border-[1.5px] border-[#555B60] py-2 px-4 rounded-xl focus:ring-blue-500 focus:border-blue-500"
+                    placeholder="Enter current Password"
+                    readonly
+                  />
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-gray-700"
+                    >Enter New Password</label
+                  >
+                  <div class="relative">
+                    <input
+                      type="password"
+                      id="newPassword"
+                      class="w-full border-[1.5px] border-[#555B60] py-2 px-4 rounded-xl focus:ring-blue-500 focus:border-blue-500"
+                      placeholder="Enter New Password"
+                      readonly
+                    />
+                    <button
+                      type="button"
+                      class="absolute right-2 top-2 text-gray-500"
+                      onclick="toggleVisibility(this, 'newPassword')"
+                    >
+                      👁️
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-sm font-medium text-gray-700"
+                    >Confirm New Password</label
+                  >
+                  <input
+                    type="password"
+                    id="confirmPassword"
+                    class="w-full border-[1.5px] border-[#555B60] py-2 px-4 rounded-xl focus:ring-blue-500 focus:border-blue-500"
+                    placeholder="Retype New Password"
+                    readonly
+                  />
+                </div>
+                <div class="mt-4">
+                  <button
+                    type="submit"
+                    class="w-full bg-blue-600 text-white rounded-md py-2 hover:bg-blue-700"
+                  >
+                    Save & Update
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      // JavaScript functionality
+      document.addEventListener("DOMContentLoaded", () => {
+        const starsContainer = document.getElementById("stars");
+        const ratingDisplay = document.getElementById("rating");
+        const totalStars = 5;
+        let selectedRating = 0;
+
+        // Create stars dynamically
+        for (let i = 1; i <= totalStars; i++) {
+          const star = document.createElement("img");
+          star.src = "images/myProfile/Star.svg";
+          star.alt = `Star ${i}`;
+          star.className = "cursor-pointer transition-colors duration-200";
+          star.dataset.value = i;
+          star.style.filter = "grayscale(1)"; // Light color (unselected state)
+
+          // Add event listeners
+          star.addEventListener("click", () => {
+            selectedRating = i;
+            updateStars();
+            ratingDisplay.textContent = `(${selectedRating})`;
+          });
+
+          star.addEventListener("mouseover", () => {
+            highlightStars(i);
+          });
+
+          star.addEventListener("mouseout", () => {
+            updateStars();
+          });
+
+          starsContainer.appendChild(star);
+        }
+
+        // Update stars based on the selected rating
+        function updateStars() {
+          Array.from(starsContainer.children).forEach((star) => {
+            const starValue = parseInt(star.dataset.value, 10);
+            if (starValue <= selectedRating) {
+              star.style.filter = "none"; // Full color (selected state)
+            } else {
+              star.style.filter = "grayscale(1)"; // Light color (unselected state)
+            }
+          });
+        }
+
+        // Highlight stars on hover
+        function highlightStars(rating) {
+          Array.from(starsContainer.children).forEach((star) => {
+            const starValue = parseInt(star.dataset.value, 10);
+            if (starValue <= rating) {
+              star.style.filter = "none";
+            } else {
+              star.style.filter = "grayscale(1)";
+            }
+          });
+        }
+      });
+      // -------------------
+      document
+        .getElementById("togglePassword")
+        .addEventListener("change", function () {
+          const isChecked = this.checked;
+          document.getElementById("currentPassword").readOnly = !isChecked;
+          document.getElementById("newPassword").readOnly = !isChecked;
+          document.getElementById("confirmPassword").readOnly = !isChecked;
+        });
+
+      function toggleVisibility(button, fieldId) {
+        const input = document.getElementById(fieldId);
+        if (input.type === "password") {
+          input.type = "text";
+          button.textContent = "🙈"; // Icon changes to "hide"
+        } else {
+          input.type = "password";
+          button.textContent = "👁️"; // Icon changes to "show"
+        }
+      }
+    </script>
+  </body>
+</html>
