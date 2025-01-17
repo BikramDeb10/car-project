@@ -11,11 +11,11 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <body class="sm:bg-gray-100 flex items-center justify-center min-h-[100vh]">
     <div
-      class="w-full sm:max-w-md md:max-w-2xl lg:max-w-5xl bg-white rounded-3xl shadow-[0px_0px_100px_1px_rgba(0,0,0,0.1)] mt-24 md:mt-16"
+      class="w-full sm:max-w-md md:max-w-3xl lg:max-w-5xl bg-white rounded-3xl shadow-[0px_0px_100px_1px_rgba(0,0,0,0.1)] mt-24 md:mt-16"
     >
-      <div class="absolute top-5 left-5 flex row gap-6">
+      <div class="absolute top-5 left-5 flex items-center space-x-6">
         <div>
           <a href="index.html">
             <img
@@ -30,171 +30,199 @@
         </div>
       </div>
 
-      <div class="">
-        <div class="bg-gray-400 p-4 flex justify-between gap-[50px]">
-          <h2 class="text-[#1D2630] text-[24px] font-[600]">
+      <div class="flex flex-col space-y-4 p-4 sm:p-8 h-[100%] xl:h-[80%]">
+        <!-- Coupon Code Section -->
+        <div
+          class="bg-[#F5F6F7] flex flex-wrap sm:flex-nowrap items-center p-4 space-y-4 sm:space-y-0 sm:space-x-12"
+        >
+          <h2 class="text-[#1D2630] text-[24px] font-semibold">
             I have a Coupon code
           </h2>
           <input
             placeholder="Enter your coupon code"
             type="text"
-            class="border-[2px] rounded-lg px-2 border-gray-500 w-[400px]"
+            class="border-2 rounded-lg px-4 py-2 border-[#555B60] w-full sm:w-[400px]"
             aria-label="Coupon code input"
           />
-          <button class="py-2 px-12 rounded-md bg-[#1D2630] text-[#ffffff]">
+          <button
+            class="py-2 px-12 rounded-md bg-[#1D2630] text-white font-medium"
+          >
             Redeem
           </button>
         </div>
-      </div>
 
-      <div class="flex justify-center gap-6">
-        <div class="flex flex-col w-[20%] justify-center gap-3">
-          <!-- Promo Card 1 -->
-          <div class="relative">
-            <div>
-              <img
-                class="h-[87px] w-[505px]"
-                src="images/Promo/Subtract.svg"
-                alt="Promo background"
-              />
-              <img
-                class="absolute top-5 left-3"
-                src="images/Promo/Tag.svg"
-                alt="Promo Tag Icon"
-              />
-            </div>
+        <h2 class="text-[22px] font-[600] text-[#1D2630]">Promo Codes</h2>
+
+        <!-- Promo Section -->
+        <div class="grid grid-cols-1 lg:grid-cols-[40%_60%] gap-2">
+          <!-- Promo Cards -->
+          <div class="flex flex-col space-y-4">
+            <!-- Promo Card 1 -->
             <div
-              class="absolute flex flex-col gap-1 justify-between w-[23%px] top-2 left-24"
+              class="sm:flex space-y-4 sm:space-y-0 sm:gap-12 lg:gap-4 lg:flex-col"
             >
-              <p class="text-[12px] font-[600] leading-tight">
-                Congrats! You have unlocked 40% discount on your next 3T ride.
-                Promo amount and validity subject to change.
-              </p>
-              <ul
-                class="text-[9px] text-[#555B60] font-[500] justify-between flex list-disc pl-4"
+              <div class="relative">
+                <div>
+                  <img
+                    class="h-[87px] w-[335px]"
+                    src="images/Promo/Subtract.svg"
+                    alt="Promo background"
+                  />
+                  <img
+                    class="absolute top-5 left-3"
+                    src="images/Promo/Tag.svg"
+                    alt="Promo Tag Icon"
+                  />
+                </div>
+                <div
+                  class="absolute flex flex-col space-y-2 w-[230px] top-2 left-24 text-[12px] font-semibold"
+                >
+                  <p>
+                    Congrats! You have unlocked 40% discount on your next 3T
+                    ride. Promo amount and validity subject to change.
+                  </p>
+                  <ul
+                    class="text-[9px] text-[#555B60] font-medium flex flex-wrap sm:flex-nowrap space-x-6 list-disc pl-4"
+                  >
+                    <li>18th Oct, 2024</li>
+                    <li>One trip left</li>
+                    <li>Norway</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Repeat similar structure for other promo cards -->
+              <div class="relative">
+                <div>
+                  <img
+                    class="h-[87px] w-[335px]"
+                    src="images/Promo/SubtractGray.svg"
+                    alt="Promo background"
+                  />
+                  <img
+                    class="absolute top-5 left-3"
+                    src="images/Promo/Tag (1).svg"
+                    alt="Promo Tag Icon"
+                  />
+                </div>
+                <div
+                  class="absolute flex flex-col space-y-2 w-[230px] top-2 left-24 text-[12px] font-semibold"
+                >
+                  <p>
+                    Congrats! You have 15% off up to NOK 150 on your Reserve
+                    rides.
+                  </p>
+                  <ul
+                    class="text-[9px] text-[#555B60] font-medium flex flex-wrap sm:flex-nowrap space-x-6 list-disc pl-4"
+                  >
+                    <li>18th Oct, 2024</li>
+                    <li>One trip left</li>
+                    <li>Norway</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Repeat similar structure for other promo cards -->
+            <div
+              class="sm:flex space-y-4 sm:space-y-0 sm:gap-12 lg:gap-4 lg:flex-col"
+            >
+              <div class="relative">
+                <div>
+                  <img
+                    class="h-[87px] w-[335px]"
+                    src="images/Promo/SubtractGray.svg"
+                    alt="Promo background"
+                  />
+                  <img
+                    class="absolute top-5 left-3"
+                    src="images/Promo/Tag (1).svg"
+                    alt="Promo Tag Icon"
+                  />
+                </div>
+                <div
+                  class="absolute flex flex-col space-y-2 w-[230px] top-2 left-24 text-[12px] font-semibold"
+                >
+                  <p>
+                    Congrats! You have 15% off up to NOK 150 on your Reserve
+                    rides.
+                  </p>
+                  <ul
+                    class="text-[9px] text-[#555B60] font-medium flex flex-wrap sm:flex-nowrap space-x-6 list-disc pl-4"
+                  >
+                    <li>18th Oct, 2024</li>
+                    <li>One trip left</li>
+                    <li>Norway</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Repeat similar structure for other promo cards -->
+
+              <div class="relative">
+                <div>
+                  <img
+                    class="h-[87px] w-[335px]"
+                    src="images/Promo/SubtractGray.svg"
+                    alt="Promo background"
+                  />
+                  <img
+                    class="absolute top-5 left-3"
+                    src="images/Promo/Tag (1).svg"
+                    alt="Promo Tag Icon"
+                  />
+                </div>
+                <div
+                  class="absolute flex flex-col space-y-2 w-[230px] top-2 left-24 text-[12px] font-semibold"
+                >
+                  <p>
+                    Congrats! You have 15% off up to NOK 150 on your Reserve
+                    rides.
+                  </p>
+                  <ul
+                    class="text-[9px] text-[#555B60] font-medium flex flex-wrap sm:flex-nowrap space-x-6 list-disc pl-4"
+                  >
+                    <li>18th Oct, 2024</li>
+                    <li>One trip left</li>
+                    <li>Norway</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Promo Details -->
+          <div class="bg-[#FFF9D9] mb-[20px] p-6">
+            <h1 class="text-[35px] font-[700] text-center text-[#1D2630]">
+              40% Off
+            </h1>
+            <h4 class="mt-4 text-[#1D2630] text-[18px] font-[600]">
+              Congrats! You have unlocked 40% discount on your next 3T ride.
+              Promo amount and validity subject to change.
+            </h4>
+            <p class="mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra
+              mauris, velit cursus vitae, eget massa arcu porta metus. Nibh
+              praesent posuere sem enim, proin pellentesque lectus non nisl.
+              Venenatis.
+            </p>
+            <div
+              class="mt-6 flex-col sm:flex-row gap-4 flex justify-between px-2 py-2 sm:items-center font-[400] bg-[#ffff] text-[#373F46] text-[14px]"
+            >
+              <h2 class="text-lg font-semibold">
+                <span class="block">COUPON CODE</span>
+                DiscountCOUPONS 40%
+              </h2>
+              <button
+                class="py-2 px-12 rounded-md bg-[#1D2630] text-white font-medium"
               >
-                <li>18th Oct, 2024</li>
-                <li>One trip left</li>
-                <li>Norway</li>
-              </ul>
+                Redeem
+              </button>
             </div>
+            <p class="mt-4 text-[#373F46] text-[12px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra
+              mauris, velit cursus vitae, eget massa arcu porta metus. Nibh
+              praesent posuere sem.
+            </p>
           </div>
-
-          <!-- Promo Card 2 -->
-          <div class="relative">
-            <div>
-              <img
-                class="h-[87px] w-[335px]"
-                src="images/Promo/SubtractGray.svg"
-                alt="Promo background"
-              />
-              <img
-                class="absolute top-5 left-3"
-                src="images/Promo/Tag (1).svg"
-                alt="Promo Tag Icon"
-              />
-            </div>
-            <div
-              class="absolute flex flex-col gap-3 justify-between top-2 left-24"
-            >
-              <p class="text-[12px] font-[600] leading-tight">
-                Congrats! You have 15% off up to NOK 150 on your Reserve rides.
-              </p>
-              <ul
-                class="text-[9px] text-[#555B60] font-[500] justify-between mt-1 flex list-disc pl-4"
-              >
-                <li>18th Oct, 2024</li>
-                <li>One trip left</li>
-                <li>Norway</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Promo Card 3 -->
-          <div class="relative">
-            <div>
-              <img
-                class="h-[87px] w-[335px]"
-                src="images/Promo/SubtractGray.svg"
-                alt="Promo background"
-              />
-              <img
-                class="absolute top-5 left-3"
-                src="images/Promo/Tag (1).svg"
-                alt="Promo Tag Icon"
-              />
-            </div>
-            <div
-              class="absolute flex flex-col gap-3 justify-between top-2 left-24"
-            >
-              <p class="text-[12px] text-[#1D2630] font-[600] leading-tight">
-                Congrats! You have unlocked 40% discount on your next 3T ride.
-                Promo amount and validity subject to change.
-              </p>
-              <ul
-                class="text-[9px] text-[#555B60] font-[500] justify-between mt-1 flex list-disc pl-4"
-              >
-                <li>18th Oct, 2024</li>
-                <li>One trip left</li>
-                <li>Norway</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Promo Card 4 -->
-          <div class="relative">
-            <div class="h-[100px] w-[505px]">
-              <img
-                class="h-[100%] w-[100%]"
-                src="images/Promo/SubtractGray.svg"
-                alt="Promo background"
-              />
-              <img
-                class="absolute top-5 left-3"
-                src="images/Promo/Tag (1).svg"
-                alt="Promo Tag Icon"
-              />
-            </div>
-            <div
-              class="absolute flex text-[#555B60] font-[500] flex-col gap-3 justify-between top-2 left-24"
-            >
-              <p class="text-[12px] font-[600] leading-tight">
-                Congrats! You have 15% off up to NOK 150 on your Reserve rides.
-              </p>
-              <ul class="text-[9px] justify-between mt-1 flex list-disc pl-4">
-                <li>18th Oct, 2024</li>
-                <li>One trip left</li>
-                <li>Norway</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="p-4 w-[75%] bg-[#FFF9D9]">
-          <h1 class="text-[35px] font-[700] text-center text-[#1D2630]">
-            40% Off
-          </h1>
-          <h4>
-            Congrats! You have unlocked 40% discount on your next 3T ride. Promo
-            amount and validity subject to change.
-          </h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra
-            mauris, velit cursus vitae, eget massa arcu porta metus. Nibh
-            praesent posuere sem enim, proin pellentesque lectus non nisl.
-            Venenatis.
-          </p>
-          <div>
-            <h2>
-              <span>COUPON CODE</span> <br />
-              DiscountCOUPONS 40%
-            </h2>
-            <button>Redeem</button>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra
-            mauris, velit cursus vitae, eget massa arcu porta metus. Nibh
-            praesent posuere sem.
-          </p>
         </div>
       </div>
     </div>
