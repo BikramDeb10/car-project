@@ -365,3 +365,7 @@ body {
 .toggle-circle {
   transition: transform 0.2s ease-in-out;
 }
+
+.bg-custom-yellow {
+  background-color: #e8c300;
+}

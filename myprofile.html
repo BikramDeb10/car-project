@@ -22,7 +22,7 @@
     class="bg-gray-100 min-h-screen flex items-center justify-center relative"
   >
     <div
-      class="w-full sm:max-w-md md:max-w-3xl lg:max-w-5xl bg-white sm:p-6 md:p-8 rounded-lg shadow-[0px_0px_100px_1px_rgba(0,0,0,0.1)] mt-24 md:mt-16"
+      class="w-full sm:max-w-md md:max-w-3xl lg:max-w-5xl bg-white p-2 sm:p-6 md:p-8 rounded-lg shadow-[0px_0px_100px_1px_rgba(0,0,0,0.1)]"
     >
       <!-- Header -->
       <div class="absolute top-6 left-8 flex items-center gap-4">
@@ -33,8 +33,8 @@
       </div>
       <div>
         <!-- main -->
-        <div class="flex justify-between">
-          <div class="flex items-center gap-4 flex-wrap">
+        <div class="flex flex-col sm:flex-row justify-between relative">
+          <div class="flex items-center gap-4 flex-wrap mb-4 sm:mb-0">
             <!-- profile section -->
             <div class="relative">
               <!-- Profile Picture -->
@@ -68,33 +68,37 @@
 
             <div class="md:mt-0 lg:mt-4">
               <!-- details -->
-              <h3 class="font-semibold text-[#232c37] text-[1.3rem]">
+              <h3
+                class="font-semibold text-[#232c37] text-[1.2rem] sm:text-[1.3rem]"
+              >
                 David Warner
               </h3>
               <p
-                class="text-[#808182] text-[1rem] leading-[19.36px] font-medium my-1"
+                class="text-[#808182] text-[0.9rem] sm:text-[1rem] leading-[19.36px] font-medium sm:my-1"
               >
                 +00 1234567890
               </p>
               <p
-                class="text-[#808182] text-[0.9rem] leading-[19.36px] font-[400] my-1"
+                class="text-[#808182] text-[0.9rem] leading-[19.36px] font-[400] sm:my-1"
               >
                 davidwarner22@gmail.com
               </p>
 
-              <div class="flex items-center mt-2">
+              <div class="flex items-center mt-1 sm:mt-2">
                 <!-- Stars Container -->
 
                 <div id="stars" class="flex space-x-1">
                   <!-- Stars will be dynamically generated here -->
                 </div>
-                <p id="rating" class="text-[#BAB6AE] font-medium">(0)</p>
+                <p id="rating" class="text-[#BAB6AE] font-medium ml-2">(0)</p>
               </div>
             </div>
           </div>
-          <div class="flex flex-col gap-3 lg:mt-6">
+          <div class="flex flex-col gap-3">
             <!-- logout section -->
-            <div class="flex justify-end">
+            <div
+              class="flex justify-end absolute top-2 right-4 sm:relative mb-1"
+            >
               <button class="flex">
                 <img src="images/myProfile/Logout.svg" alt="" />
                 <p>Logout</p>
@@ -135,57 +139,57 @@
           </div>
         </div>
         <div class="mt-10">
-          <form id="profileForm" class="space-y-4">
-            <div class="grid grid-cols-2 gap-4">
+          <form id="profileForm" class="space-y-3 md:space-y-6">
+            <div class="grid grid-cols-2 gap-3 md:gap-8">
               <div>
-                <label class="block text-sm font-medium text-gray-700"
+                <label class="block text-sm font-medium text-gray-700 mb-1"
                   >Your Name</label
                 >
                 <input
                   type="text"
-                  class="w-full border-[1.5px] border-[#555B60] py-2 px-4 rounded-xl focus:ring-blue-500 focus:border-blue-500"
+                  class="w-full border-[1.5px] border-[#555B60] py-1 md:py-2 px-4 rounded-xl focus:ring-blue-500 focus:border-blue-500"
                   placeholder="Saimon Jhonson"
                 />
               </div>
               <div>
-                <label class="block text-sm font-medium text-gray-700"
+                <label class="block text-sm font-medium text-gray-700 mb-1"
                   >Your Date of Birth</label
                 >
                 <input
                   type="date"
-                  class="w-full border-[1.5px] border-[#555B60] py-2 px-4 rounded-xl focus:ring-blue-500 focus:border-blue-500"
+                  class="w-full border-[1.5px] border-[#555B60] py-1 md:py-2 px-4 rounded-xl focus:ring-blue-500 focus:border-blue-500"
                 />
               </div>
             </div>
-            <div class="grid grid-cols-2 gap-4">
+            <div class="grid grid-cols-2 gap-3 md:gap-8">
               <div>
-                <label class="block text-sm font-medium text-gray-700"
+                <label class="block text-sm font-medium text-gray-700 mb-1"
                   >Phone Number</label
                 >
                 <div class="relative">
                   <input
                     type="text"
-                    class="w-full border-[1.5px] border-[#555B60] py-2 px-4 rounded-xl focus:ring-blue-500 focus:border-blue-500 pr-10"
+                    class="w-full border-[1.5px] border-[#555B60] py-1 md:py-2 px-4 rounded-xl focus:ring-blue-500 focus:border-blue-500 pr-10 bg-amber-100"
                     placeholder="+00 1234567890"
                   />
                   <span
-                    class="absolute right-2 top-2 text-green-600 text-sm font-medium"
+                    class="absolute right-2 top-2 text-[#42e069cc] text-sm font-semibold"
                     >Verified</span
                   >
                 </div>
               </div>
               <div>
-                <label class="block text-sm font-medium text-gray-700"
+                <label class="block text-sm font-medium text-gray-700 mb-1"
                   >Email Address</label
                 >
                 <div class="relative">
                   <input
                     type="email"
-                    class="w-full border-[1.5px] border-[#555B60] py-2 px-4 rounded-xl focus:ring-blue-500 focus:border-blue-500 pr-10"
+                    class="w-full border-[1.5px] border-[#555B60] py-1 md:py-2 px-4 rounded-xl focus:ring-blue-500 focus:border-blue-500 pr-10 bg-amber-100"
                     placeholder="saimonjhonson55@gmail.com"
                   />
                   <span
-                    class="absolute right-2 top-2 text-green-600 text-sm font-medium"
+                    class="absolute right-2 top-2 text-[#42e069cc] text-sm font-semibold"
                     >Verified</span
                   >
                 </div>
@@ -194,7 +198,7 @@
             <div class="flex items-center space-x-2">
               <label
                 for="togglePassword"
-                class="block text-sm font-medium text-gray-700"
+                class="block text-sm font-medium text-gray-700 mb-1"
               >
                 Change Password
               </label>
@@ -211,29 +215,29 @@
               </button>
             </div>
 
-            <div id="passwordFields">
-              <div class="grid grid-cols-2 gap-4">
+            <div id="passwordFields" class="space-y-4">
+              <div class="grid grid-cols-2 gap-3 md:gap-8">
                 <div>
-                  <label class="block text-sm font-medium text-gray-700"
+                  <label class="block text-sm font-medium text-gray-700 mb-1"
                     >Current Password</label
                   >
                   <input
                     type="password"
                     id="currentPassword"
-                    class="w-full border-[1.5px] border-[#555B60] py-2 px-4 rounded-xl focus:ring-blue-500 focus:border-blue-500"
+                    class="w-full border-[1.5px] border-[#555B60] py-1 md:py-2 px-4 rounded-xl focus:ring-blue-500 focus:border-blue-500"
                     placeholder="Enter current Password"
                     readonly
                   />
                 </div>
                 <div>
-                  <label class="block text-sm font-medium text-gray-700"
+                  <label class="block text-sm font-medium text-gray-700 mb-1"
                     >Enter New Password</label
                   >
                   <div class="relative">
                     <input
                       type="password"
                       id="newPassword"
-                      class="w-full border-[1.5px] border-[#555B60] py-2 px-4 rounded-xl focus:ring-blue-500 focus:border-blue-500"
+                      class="w-full border-[1.5px] border-[#555B60] py-1 md:py-2 px-4 rounded-xl focus:ring-blue-500 focus:border-blue-500"
                       placeholder="Enter New Password"
                       readonly
                     />
@@ -242,28 +246,31 @@
                       class="absolute right-2 top-2 text-gray-500"
                       onclick="toggleVisibility(this, 'newPassword')"
                     >
-                      👁️
+                      <img
+                        src="images/myProfile/eyeOpen.svg"
+                        alt="Toggle visibility"
+                      />
                     </button>
                   </div>
                 </div>
               </div>
-              <div class="grid grid-cols-2 gap-4">
+              <div class="grid grid-cols-2 gap-3 md:gap-8">
                 <div>
-                  <label class="block text-sm font-medium text-gray-700"
+                  <label class="block text-sm font-medium text-gray-700 mb-1"
                     >Confirm New Password</label
                   >
                   <input
                     type="password"
                     id="confirmPassword"
-                    class="w-full border-[1.5px] border-[#555B60] py-2 px-4 rounded-xl focus:ring-blue-500 focus:border-blue-500"
+                    class="w-full border-[1.5px] border-[#555B60] py-1 md:py-2 px-4 rounded-xl focus:ring-blue-500 focus:border-blue-500"
                     placeholder="Retype New Password"
                     readonly
                   />
                 </div>
-                <div class="mt-4">
+                <div class="mt-[20px] md:mt-3.5">
                   <button
                     type="submit"
-                    class="w-full bg-blue-600 text-white rounded-md py-2 hover:bg-blue-700"
+                    class="w-full bg-[#1D2630] text-white rounded-xl py-2 md:py-3 hover:bg-[#2b3847] transition-all duration-150"
                   >
                     Save & Update
                   </button>
@@ -345,28 +352,69 @@
 
       function toggleVisibility(button, fieldId) {
         const input = document.getElementById(fieldId);
+        const img = button.querySelector("img");
+
         if (input.type === "password") {
           input.type = "text";
-          button.textContent = "🙈"; // Icon changes to "hide"
+          img.src = "images/myProfile/eyeClose.svg"; // Change to the "close eye" icon
         } else {
           input.type = "password";
-          button.textContent = "👁️"; // Icon changes to "show"
+          img.src = "images/myProfile/eyeOpen.svg"; // Change to the "open eye" icon
         }
       }
-      // toggle button
-      function toggleState(button) {
-        const isPressed = button.getAttribute("aria-pressed") === "true";
-        button.setAttribute("aria-pressed", !isPressed);
 
-        // Toggle Tailwind classes
-        if (!isPressed) {
-          button.classList.add("bg-blue-500");
-          button.classList.remove("bg-gray-300");
-          button.querySelector("span").classList.add("translate-x-6");
+      // toggle button
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggleButton = document.getElementById("togglePassword");
+        const currentPassword = document.getElementById("currentPassword");
+        const newPassword = document.getElementById("newPassword");
+        const confirmPassword = document.getElementById("confirmPassword");
+
+        // Initialize password fields as read-only
+        currentPassword.readOnly = true;
+        newPassword.readOnly = true;
+        confirmPassword.readOnly = true;
+
+        // Toggle button click event
+        toggleButton.addEventListener("click", () => {
+          const isPressed =
+            toggleButton.getAttribute("aria-pressed") === "true";
+
+          // Toggle "aria-pressed" attribute
+          toggleButton.setAttribute("aria-pressed", !isPressed);
+
+          // Toggle readonly attributes for password fields
+          const readOnlyState = isPressed; // Flip the current state
+          currentPassword.readOnly = readOnlyState;
+          newPassword.readOnly = readOnlyState;
+          confirmPassword.readOnly = readOnlyState;
+
+          // Update toggle button appearance
+          if (!isPressed) {
+            toggleButton.classList.add("bg-[#E8C300]");
+            toggleButton.classList.remove("bg-gray-300");
+            toggleButton.querySelector("span").classList.add("translate-x-6");
+          } else {
+            toggleButton.classList.add("bg-gray-300");
+            toggleButton.classList.remove("bg-[#E8C300]");
+            toggleButton
+              .querySelector("span")
+              .classList.remove("translate-x-6");
+          }
+        });
+      });
+
+      // Function to toggle password visibility
+      function toggleVisibility(button, fieldId) {
+        const input = document.getElementById(fieldId);
+        const img = button.querySelector("img");
+
+        if (input.type === "password") {
+          input.type = "text";
+          img.src = "images/myProfile/eyeClose.svg"; // Change to the "close eye" icon
         } else {
-          button.classList.add("bg-gray-300");
-          button.classList.remove("bg-blue-500");
-          button.querySelector("span").classList.remove("translate-x-6");
+          input.type = "password";
+          img.src = "images/myProfile/eyeOpen.svg"; // Change to the "open eye" icon
         }
       }
     </script>
