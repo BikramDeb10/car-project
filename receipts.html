@@ -34,13 +34,13 @@
     </div>
 
     <div
-      class="flex flex-col items-center shadow-[0px_0px_100px_1px_rgba(0,0,0,0.1)] rounded-md justify-center lg:flex-row gap-8"
+      class="flex flex-col w-full lg:w-auto items-center mt-14 shadow-[0px_0px_100px_1px_rgba(0,0,0,0.1)] rounded-md justify-center lg:flex-row gap-8"
     >
       <!-- Receipts Section -->
       <div class="flex flex-col gap-4">
         <!-- Card Component -->
         <div
-          class="bg-white shadow-md rounded-lg p-4 w-full max-w-sm cursor-pointer receipt-card"
+          class="bg-white shadow-md rounded-lg p-4 w-full lg:max-w-sm cursor-pointer receipt-card"
           data-details='{
             "bookingId": "#03215487",
             "time": "16:35 - 18:52",
@@ -77,7 +77,7 @@
         </div>
         <!-- Repeat Card Component for other receipts -->
         <div
-          class="bg-white shadow-md rounded-lg p-4 w-full max-w-sm cursor-pointer receipt-card"
+          class="bg-white shadow-md rounded-lg p-4 w-full lg:max-w-sm cursor-pointer receipt-card"
           data-details='{
             "bookingId": "#04567812",
             "time": "14:20 - 15:50",
@@ -113,7 +113,7 @@
           </div>
         </div>
         <div
-          class="bg-white shadow-md rounded-lg p-4 w-full max-w-sm cursor-pointer receipt-card"
+          class="bg-white shadow-md rounded-lg p-4 w-full lg:max-w-sm cursor-pointer receipt-card"
           data-details='{
             "bookingId": "#04567812",
             "time": "14:20 - 15:50",
@@ -173,7 +173,7 @@
             class="h-[0.5px] sm:w-[360px] flex flex-row mb-1 bg-gray-600"
           ></div>
         </div>
-        <div class="flex justify-between">
+        <div class="flex gap-[40px] sm:gap-[80px]">
           <div class="flex flex-col gap-2">
             <p>Booking ID: <strong>#03215487</strong></p>
             <p>Time: <strong>16:35 - 18:52</strong></p>
@@ -184,12 +184,12 @@
           </div>
         </div>
         <div class="flex items-center gap-4">
-          <h2 class="text-[#555B60] text-lg font-semibold">Trip Details</h2>
+          <h2 class="text-[#555B60] text-lg font-semibold">Taxi Details</h2>
           <div
             class="h-[0.6px] sm:w-[360px] flex flex-row mb-1 bg-gray-500"
           ></div>
         </div>
-        <div class="flex justify-between">
+        <div class="flex gap-[35px] sm:gap-[61px]">
           <p>Plate No.: <strong>WB 16 AZ 9382</strong></p>
           <p>Driver ID: <strong>#124578902</strong></p>
         </div>
@@ -199,7 +199,7 @@
             class="h-[0.6px] sm:w-[375px] flex flex-row mb-1 bg-gray-500"
           ></div>
         </div>
-        <div class="flex justify-between">
+        <div class="flex gap-[80px] sm:gap-[102px]">
           <p>Total Price: <strong>125 NOK</strong></p>
           <p>Promo Discount: <strong>20 NOK</strong></p>
         </div>
@@ -209,12 +209,14 @@
             class="h-[0.6px] sm:w-[355px] flex flex-row mb-1 bg-gray-500"
           ></div>
         </div>
-        <div class="flex justify-between">
+        <div class="flex gap-[70px] sm:gap-[90px]">
           <p>Payment Method:<strong>Cash</strong></p>
           <p>Payment Status:<strong>Completed</strong></p>
         </div>
         <div class="flex justify-center gap-6 items-center">
-          <button class="bg-blue-500 flex gap-1 text-white px-12 py-2 rounded">
+          <button
+            class="bg-blue-500 flex gap-1 justify-center w-40 sm:w-auto text-white px-auto sm:px-12 py-2 rounded"
+          >
             <img
               class="text-[#ffffff]"
               src="./images/Recipt/Email.svg"
@@ -222,7 +224,9 @@
             />
             <p>Email Receipt</p>
           </button>
-          <button class="bg-red-500 flex gap-1 text-white px-12 py-2 rounded">
+          <button
+            class="bg-red-500 flex gap-1 justify-center sm:w-auto text-white px-auto w-40 sm:px-12 py-2 rounded"
+          >
             <img src="./images/Recipt/Delete.svg" alt="Delete" />
             <p>Delete Receipt</p>
           </button>
