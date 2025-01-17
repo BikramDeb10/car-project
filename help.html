@@ -124,9 +124,9 @@
                   onclick="toggleFaq(6)"
                 >
                   <span>Frequently question number 1 will be here...</span>
-                  <span id="faq-icon-5" class="text-xl">+</span>
+                  <span id="faq-icon-6" class="text-xl">+</span>
                 </button>
-                <div id="faq-content-5" class="p-4 text-gray-700 hidden">
+                <div id="faq-content-6" class="p-4 text-gray-700 hidden">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
                   pulvinar elementum tellus pretium mauris eleifend integer
                   aliquam.
@@ -138,9 +138,9 @@
                   onclick="toggleFaq(7)"
                 >
                   <span>Frequently question number 1 will be here...</span>
-                  <span id="faq-icon-5" class="text-xl">+</span>
+                  <span id="faq-icon-7" class="text-xl">+</span>
                 </button>
-                <div id="faq-content-5" class="p-4 text-gray-700 hidden">
+                <div id="faq-content-7" class="p-4 text-gray-700 hidden">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
                   pulvinar elementum tellus pretium mauris eleifend integer
                   aliquam.
@@ -231,12 +231,12 @@
           const faqContent = document.getElementById(`faq-content-${index}`);
           const icon = document.getElementById(`faq-icon-${index}`);
 
-          if (faqContent.classList.contains('hidden')) {
-            faqContent.classList.remove('hidden');
-            icon.textContent = '-';
+          if (faqContent.classList.contains("hidden")) {
+            faqContent.classList.remove("hidden");
+            icon.textContent = "-";
           } else {
-            faqContent.classList.add('hidden');
-            icon.textContent = '+';
+            faqContent.classList.add("hidden");
+            icon.textContent = "+";
           }
         }
       </script>
