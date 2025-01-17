@@ -353,3 +353,15 @@ body {
     transform: rotate(360deg);
   }
 }
+
+.toggle-button[aria-pressed="true"] {
+  background-color: #3b82f6; /* Tailwind blue-500 */
+}
+
+.toggle-button[aria-pressed="true"] .toggle-circle {
+  transform: translateX(1.25rem); /* Moves the toggle circle to the right */
+}
+
+.toggle-circle {
+  transition: transform 0.2s ease-in-out;
+}

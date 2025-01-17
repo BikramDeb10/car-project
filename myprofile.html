@@ -22,7 +22,7 @@
     class="bg-gray-100 min-h-screen flex items-center justify-center relative"
   >
     <div
-      class="w-full sm:max-w-md md:max-w-2xl lg:max-w-5xl bg-white sm:p-6 md:p-8 rounded-lg shadow-[0px_0px_100px_1px_rgba(0,0,0,0.1)] mt-24 md:mt-16"
+      class="w-full sm:max-w-md md:max-w-3xl lg:max-w-5xl bg-white sm:p-6 md:p-8 rounded-lg shadow-[0px_0px_100px_1px_rgba(0,0,0,0.1)] mt-24 md:mt-16"
     >
       <!-- Header -->
       <div class="absolute top-6 left-8 flex items-center gap-4">
@@ -134,7 +134,7 @@
             </div>
           </div>
         </div>
-        <div>
+        <div class="mt-10">
           <form id="profileForm" class="space-y-4">
             <div class="grid grid-cols-2 gap-4">
               <div>
@@ -192,15 +192,25 @@
               </div>
             </div>
             <div class="flex items-center space-x-2">
-              <label class="block text-sm font-medium text-gray-700"
-                >Change Password</label
+              <label
+                for="togglePassword"
+                class="block text-sm font-medium text-gray-700"
               >
-              <input
+                Change Password
+              </label>
+              <button
                 id="togglePassword"
-                type="checkbox"
-                class="h-5 w-5 text-blue-600 focus:ring-blue-500"
-              />
+                type="button"
+                aria-pressed="false"
+                class="h-6 w-12 rounded-full bg-gray-300 flex items-center transition-colors focus:outline-none"
+                onclick="toggleState(this)"
+              >
+                <span
+                  class="h-5 w-5 bg-white rounded-full shadow transform transition-transform"
+                ></span>
+              </button>
             </div>
+
             <div id="passwordFields">
               <div class="grid grid-cols-2 gap-4">
                 <div>
@@ -341,6 +351,22 @@
         } else {
           input.type = "password";
           button.textContent = "👁️"; // Icon changes to "show"
+        }
+      }
+      // toggle button
+      function toggleState(button) {
+        const isPressed = button.getAttribute("aria-pressed") === "true";
+        button.setAttribute("aria-pressed", !isPressed);
+
+        // Toggle Tailwind classes
+        if (!isPressed) {
+          button.classList.add("bg-blue-500");
+          button.classList.remove("bg-gray-300");
+          button.querySelector("span").classList.add("translate-x-6");
+        } else {
+          button.classList.add("bg-gray-300");
+          button.classList.remove("bg-blue-500");
+          button.querySelector("span").classList.remove("translate-x-6");
         }
       }
     </script>
