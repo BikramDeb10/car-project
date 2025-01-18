@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="images/about-image/about svg/logo.svg"
+      type="image/x-icon"
+    />
+    <title>3t car</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="">
+    <!-- Main Container -->
+    <div class="flex bg-gray-100 h-screen">
+      <!-- Sidebar -->
+      <div class="w-1/4 p-6">
+        <div
+          class="flex mb-6 justify-between items-center border-b-[1px] border-[#9592A333] pb-6"
+        >
+          <div
+            class="bg-white px-2 py-4 rounded-lg shadow-[0px_0px_20px_1px_rgba(203,196,135,0.5)]"
+          >
+            <a href="">
+              <img src="images/homeMap/hamburgarmenu.svg" alt="" />
+            </a>
+          </div>
+          <img
+            src="images/about-image/about svg/logo.svg"
+            alt=""
+            class="h-[55px]"
+          />
+
+          <img
+            src="images/homeMap/man.svg"
+            alt=""
+            class="h-[50px] rounded-full"
+          />
+        </div>
+        <div class="mt-16">
+          <div>
+            <p class="text-[#373F46] text-[1.5rem]">Welcome to 3T</p>
+            <h2 class="text-[#1D2630] text-[2.1rem] font-bold">
+              Book Your Ride
+            </h2>
+          </div>
+          <div class="flex mt-6 sm:flex-wrap sm:mt-4 sm:gap-4">
+            <div class="flex space-x-4 sm:space-x-0 sm:flex-wrap sm:gap-4">
+              <!-- Pickup Now -->
+              <div
+                class="flex items-center bg-[#9592A333] px-4 py-2 gap-1 rounded-full shadow cursor-pointer hover:scale-105 transition-transform duration-300 border-[1.5px] border-[#2f2f2fcc]"
+              >
+                <img
+                  src="images/svg/Vector.svg"
+                  alt="Pickup Icon"
+                  class="h-[16px] w-[18px] animate-fade-in-delay"
+                />
+                <select
+                  class="bg-transparent outline-none text-[16px] text-gray-500 font-[400] cursor-pointer"
+                >
+                  <option value="" disabled selected>Pickup now</option>
+                  <option value="option1">Option 1</option>
+                  <option value="option2">Option 2</option>
+                  <option value="option3">Option 3</option>
+                </select>
+              </div>
+              <!-- For Me -->
+              <div
+                class="flex items-center bg-[#9592A333] px-4 py-2 gap-1 rounded-full shadow cursor-pointer hover:scale-105 transition-transform duration-300 border-[1.5px] border-[#2f2f2fcc]"
+              >
+                <img
+                  src="images/svg/Group.svg"
+                  alt="For Me Icon"
+                  class="h-[16px] w-[18px] animate-fade-in-delay"
+                />
+                <select
+                  class="bg-transparent outline-none text-[16px] text-gray-500 font-[400] cursor-pointer"
+                >
+                  <option value="" disabled selected>For me</option>
+                  <option value="option1">Option 1</option>
+                  <option value="option2">Option 2</option>
+                  <option value="option3">Option 3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div
+            class="mt-6 bg-white p-4 flex gap-2 items-center rounded-[12px] sm:flex-wrap w-[90%] sm:gap-2 animate-slide-up shadow-[0px_0px_20px_1px_rgba(0,0,0,0.1)]"
+          >
+            <div class="flex flex-col items-center gap-4">
+              <div class="h-[7px] w-[7px] bg-[#F7D506] rounded-full"></div>
+              <div>
+                <img src="images/droplogo/Vector 65.png" alt="" />
+              </div>
+              <div>
+                <img src="images/droplogo/Group 20004.png" alt="" />
+              </div>
+            </div>
+            <div class="flex flex-col items-center gap-1 sm:gap-5">
+              <div class="bg-white flex justify-between items-center gap-28">
+                <div class="flex items-center gap-4">
+                  <input
+                    type="text"
+                    placeholder="Pickup Location"
+                    class="text-[1rem] border-none focus:outline-none font-[400] text-[#1D2630]"
+                  />
+                </div>
+                <div>
+                  <button>
+                    <img src="images/svg/GPS.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="bg-[#EBE4A6] h-[1px] w-full"></div>
+              <div class="bg-white flex justify-between items-center gap-28">
+                <div class="flex items-center gap-4">
+                  <input
+                    type="text"
+                    placeholder="Drop Location"
+                    class="text-[1rem] border-none focus:outline-none font-[400] text-[#1D2630]"
+                  />
+                </div>
+                <div>
+                  <button>
+                    <img src="images/droplogo/Add.png" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="">
+            <button
+              class="bg-[#1D2630] py-2 px-6 rounded-[8px] hover:bg-[#c5a242] mt-7 text-[#fff] transition-all duration-300"
+            >
+              See Price
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Map Section -->
+      <div class="flex-1 relative p-4 rounded-3xl">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29211.504143037115!2d88.3477895153644!3d22.572646231420713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02774b5d44f8d3%3A0x9b8ef29fcd445978!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1672216591678!5m2!1sen!2sin"
+          width="100%"
+          height="100%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="rounded-3xl"
+        ></iframe>
+      </div>
+    </div>
+  </body>
+</html>

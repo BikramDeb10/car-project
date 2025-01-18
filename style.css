@@ -336,7 +336,7 @@ body {
 }
 
 .box-shadow3 {
-  box-shadow: 0 0 20px 1px #cbc48773;
+  box-shadow: 0 0 20px 1px rgba(203, 196, 135, 0.451);
 }
 
 .loader {
