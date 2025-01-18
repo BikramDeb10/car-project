@@ -336,3 +336,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // FAQs ------------------
+
+// document.querySelectorAll(".nav-link").forEach((link) => {
+//   link.addEventListener("click", (event) => {
+//     event.preventDefault(); // This would block navigation
+//   });
+// });
