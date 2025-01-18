@@ -14,9 +14,9 @@
       href="images/about-image/about svg/logo.svg"
       type="image/x-icon"
     />
-    <title>My Profile</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
+    <title>My Profile</title>
   </head>
   <body
     class="bg-gray-100 min-h-screen flex items-center justify-center relative"
@@ -269,13 +269,26 @@
                   <label class="block text-sm font-medium text-gray-700 mb-1"
                     >Confirm New Password</label
                   >
-                  <input
-                    type="password"
-                    id="confirmPassword"
-                    class="w-full border-[1.5px] border-[#555B60] py-2 px-4 rounded-xl focus:ring-blue-500 focus:border-blue-500"
-                    placeholder="Retype New Password"
-                    readonly
-                  />
+                  <div class="relative">
+                    <input
+                      type="password"
+                      id="newPassword"
+                      class="w-full border-[1.5px] border-[#555B60] py-2 px-4 rounded-xl focus:ring-blue-500 focus:border-blue-500"
+                      placeholder="Retype New Password"
+                      readonly
+                    />
+                    <button
+                      type="button"
+                      class="absolute right-2 top-2 text-gray-500"
+                      onclick="toggleVisibility(this, 'newPassword')"
+                    >
+                      <img
+                        src="images/myProfile/eyeOpen.svg"
+                        alt="Toggle visibility"
+                        class="h-3 mt-[7px] md:h-4 md:mt-1.5"
+                      />
+                    </button>
+                  </div>
                 </div>
                 <div class="my-[20px] md:mt-5">
                   <button

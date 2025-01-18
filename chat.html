@@ -30,7 +30,7 @@
         <a href="index.html" class="bg-white p-3 rounded-lg box-shadow3">
           <img src="svgimage/arrow/arrow.svg" alt="arrow" class="h-[16px]" />
         </a>
-        <p class="text-[1.5rem] font-bold">Wallet</p>
+        <p class="text-[1.5rem] font-bold">Chat</p>
       </div>
       <!-- Header -->
       <div class="p-6 flex items-center justify-between">
@@ -61,51 +61,65 @@
       <div id="chat-window" class="p-6 space-y-4 max-h-[530px] overflow-y-auto">
         <!-- Recipient message -->
         <div class="flex">
-          <div
-            class="max-w-xs bg-yellow-200 text-gray-800 px-4 py-2 rounded-lg shadow"
-          >
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
+          <div class="flex flex-col">
+            <div
+              class="max-w-xs bg-yellow-200 text-gray-800 px-4 py-2 rounded-lg shadow"
+            >
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </div>
+            <span class="ml-2 text-xs text-gray-500 mt-1">12:05pm</span>
           </div>
-          <span class="ml-2 text-xs text-gray-500 self-end">12:05pm</span>
         </div>
 
         <!-- User message -->
         <div class="flex justify-end">
-          <div
-            class="max-w-xs bg-[#09BBC7] text-white px-4 py-2 rounded-lg shadow"
-          >
-            Lorem Ipsum is simply dummy text of the printing and typesetting.
+          <div class="flex-col">
+            <div
+              class="max-w-xs bg-[#09BBC7] text-white px-4 py-2 rounded-lg shadow"
+            >
+              Lorem Ipsum is simply dummy text of the printing and typesetting.
+            </div>
+            <span class="ml-2 text-xs text-gray-500 flex justify-end mt-1"
+              >12:07pm</span
+            >
           </div>
-          <span class="ml-2 text-xs text-gray-500 self-end">12:07pm</span>
         </div>
         <div class="flex">
-          <div
-            class="max-w-xs bg-yellow-200 text-gray-800 px-4 py-2 rounded-lg shadow"
-          >
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
+          <div class="flex flex-col">
+            <div
+              class="max-w-xs bg-yellow-200 text-gray-800 px-4 py-2 rounded-lg shadow"
+            >
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </div>
+            <span class="ml-2 text-xs text-gray-500 mt-1">12:05pm</span>
           </div>
-          <span class="ml-2 text-xs text-gray-500 self-end">12:05pm</span>
         </div>
 
         <!-- User message -->
         <div class="flex justify-end">
-          <div
-            class="max-w-xs bg-[#09BBC7] text-white px-4 py-2 rounded-lg shadow"
-          >
-            Lorem Ipsum is simply dummy text of the printing and typesetting.
+          <div class="flex-col">
+            <div
+              class="max-w-xs bg-[#09BBC7] text-white px-4 py-2 rounded-lg shadow"
+            >
+              Lorem Ipsum is simply dummy text of the printing and typesetting.
+            </div>
+            <span class="ml-2 text-xs text-gray-500 flex justify-end mt-1"
+              >12:07pm</span
+            >
           </div>
-          <span class="ml-2 text-xs text-gray-500 self-end">12:07pm</span>
         </div>
         <div class="flex">
-          <div
-            class="max-w-xs bg-yellow-200 text-gray-800 px-4 py-2 rounded-lg shadow"
-          >
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
+          <div class="flex flex-col">
+            <div
+              class="max-w-xs bg-yellow-200 text-gray-800 px-4 py-2 rounded-lg shadow"
+            >
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </div>
+            <span class="ml-2 text-xs text-gray-500 mt-1">12:05pm</span>
           </div>
-          <span class="ml-2 text-xs text-gray-500 self-end">12:05pm</span>
         </div>
         <!-- Typing indicator -->
         <div id="typing-indicator" class="flex items-center">
@@ -149,13 +163,15 @@
           if (messageText) {
             const userMessage = `
               <div class="flex justify-end">
-                <div class="max-w-xs bg-[#09BBC7] text-white px-4 py-2 rounded-lg shadow">
-                  ${messageText}
+                <div class="flex-col">
+                  <div class="max-w-xs bg-[#09BBC7] text-white px-4 py-2 rounded-lg shadow">
+                    ${messageText}
+                    </div>
+                    <span class="ml-2 text-xs text-gray-500 flex justify-end">${new Date().toLocaleTimeString(
+                      [],
+                      { hour: "2-digit", minute: "2-digit" }
+                    )}</span>
                 </div>
-                <span class="ml-2 text-xs text-gray-500 self-end">${new Date().toLocaleTimeString(
-                  [],
-                  { hour: "2-digit", minute: "2-digit" }
-                )}</span>
               </div>
             `;
             chatWindow.innerHTML += userMessage;
@@ -166,13 +182,15 @@
             setTimeout(() => {
               const recipientMessage = `
                 <div class="flex">
-                  <div class="max-w-xs bg-yellow-200 text-gray-800 px-4 py-2 rounded-lg shadow">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                  </div>
-                  <span class="ml-2 text-xs text-gray-500 self-end">${new Date().toLocaleTimeString(
-                    [],
-                    { hour: "2-digit", minute: "2-digit" }
-                  )}</span>
+                  <div class="flex-col">
+                    <div class="max-w-xs bg-yellow-200 text-gray-800 px-4 py-2 rounded-lg shadow">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      </div>
+                      <span class="ml-2 text-xs text-gray-500 self-end">${new Date().toLocaleTimeString(
+                        [],
+                        { hour: "2-digit", minute: "2-digit" }
+                      )}</span>
+                </div>
                 </div>
               `;
               chatWindow.innerHTML += recipientMessage;
