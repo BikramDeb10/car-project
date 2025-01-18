@@ -27,7 +27,7 @@
         <div class="flex justify-between items-center">
           <!-- Logo -->
           <div class="block md:hidden">
-            <a href="index.html">
+            <a href="/">
               <img
                 src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
                 alt="Company Logo"
@@ -36,7 +36,7 @@
             </a>
           </div>
           <div class="hidden xl:block">
-            <a href="index.html">
+            <a href="/">
               <img
                 src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
                 alt="Company Logo"
@@ -58,36 +58,34 @@
           <!-- Navigation -->
           <div class="hidden md:flex items-center gap-6">
             <nav class="hidden xl:block">
-              <ul
-                class="flex gap-[20px] text-[16px] tracking-[0.5px]"
-                id="navMenu"
-              >
+              <ul class="flex gap-5 text-[1rem]">
                 <li>
                   <a
-                    href="#"
-                    class="nav-link text-gray-900 transition-all duration-300 active"
+                    href="/index.html"
+                    class="text-gray-900 transition-colors duration-300 hover:text-yellow-600 active:text-yellow-700"
                   >
                     Home
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#"
-                    class="nav-link text-gray-900 transition-all duration-300"
+                    href="/driver.html"
+                    class="text-gray-900 transition-colors duration-300 hover:text-yellow-600 active:text-yellow-700"
                   >
                     Become a Driver
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#"
-                    class="nav-link text-gray-900 transition-all duration-300"
+                    href="/help.html"
+                    class="text-gray-900 transition-colors duration-300 hover:text-yellow-600 active:text-yellow-700"
                   >
                     Support
                   </a>
                 </li>
               </ul>
             </nav>
+
             <div class="flex items-center gap-4">
               <div class="flex gap-2 items-center">
                 <div class="h-[24px] w-[24px] rounded-full overflow-hidden">
@@ -112,7 +110,9 @@
                 </div>
               </div>
               <div class="bg-gray-700 text-white px-6 py-2.5 rounded-xl">
-                <button>Login / Register</button>
+                <a href="/loginpage.html">
+                  <button>Login / Register</button>
+                </a>
               </div>
             </div>
           </div>
@@ -121,37 +121,35 @@
         <!-- Mobile Menu -->
         <div id="mobileMenu" class="hidden xl:hidden bg-gray-100 p-4 rounded">
           <div class="hidden md:block mb-2">
-            <a href="index.html">
-              <img
-                src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
-                alt="Company Logo"
-                class="h-[50px] w-[50px] rounded-full"
-              />
-            </a>
+            <img
+              src="./navlogo/f325c70135c915c11129c42ec119f33c.png"
+              alt="Company Logo"
+              class="h-[50px] w-[50px] rounded-full"
+            />
           </div>
           <ul
-            class="flex flex-col gap-2 text-gray-700 text-[18px] mb-2 xl:mb-0"
+            class="text-[1rem] tracking-wide flex flex-col gap-2 text-gray-700 mb-2 xl:mb-0"
           >
             <li>
               <a
-                href="#"
-                class="nav-link text-gray-500 transition-all duration-300 active"
+                href="/index.html"
+                class="text-gray-900 transition-colors duration-300 hover:text-yellow-600 active:text-yellow-700"
               >
                 Home
               </a>
             </li>
             <li>
               <a
-                href="#"
-                class="nav-link text-gray-500 transition-all duration-300"
+                href="/driver.html"
+                class="text-gray-900 transition-colors duration-300 hover:text-yellow-600 active:text-yellow-700"
               >
                 Become a Driver
               </a>
             </li>
             <li>
               <a
-                href="#"
-                class="nav-link text-gray-500] transition-all duration-300"
+                href="/help.html"
+                class="text-gray-900 transition-colors duration-300 hover:text-yellow-600 active:text-yellow-700"
               >
                 Support
               </a>
@@ -180,15 +178,18 @@
               </div>
             </div>
             <div>
-              <button
-                class="bg-gray-700 text-white px-6 py-2.5 rounded-xl text-center w-full"
-              >
-                Login / Register
-              </button>
+              <a href="/loginpage.html">
+                <button
+                  class="bg-gray-700 text-white px-6 py-2.5 rounded-xl text-center w-full"
+                >
+                  Login / Register
+                </button>
+              </a>
             </div>
           </div>
         </div>
       </header>
+
           
     </div>
     <div class="w-[97%] lg:w-[85%] xl:w-[80%] mx-auto">
