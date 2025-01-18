@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -12,9 +14,10 @@
       href="images/about-image/about svg/logo.svg"
       type="image/x-icon"
     />
-    <title>Help & Support Faqs</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
+    <title>Help & Support Faqs</title>
   </head>
   <body
     class="bg-gray-100 min-h-screen flex items-center justify-center relative"
@@ -231,12 +234,12 @@
           const faqContent = document.getElementById(`faq-content-${index}`);
           const icon = document.getElementById(`faq-icon-${index}`);
 
-          if (faqContent.classList.contains("hidden")) {
-            faqContent.classList.remove("hidden");
-            icon.textContent = "-";
+          if (faqContent.classList.contains('hidden')) {
+            faqContent.classList.remove('hidden');
+            icon.textContent = '-';
           } else {
-            faqContent.classList.add("hidden");
-            icon.textContent = "+";
+            faqContent.classList.add('hidden');
+            icon.textContent = '+';
           }
         }
       </script>

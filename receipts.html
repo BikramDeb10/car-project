@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Receipts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -156,10 +158,10 @@
         class="flex flex-col gap-4 bg-white shadow-md rounded-lg p-4 w-full max-w-lg"
       >
         <script>
-          const receiptCards = document.querySelectorAll(".receipt-card");
+          const receiptCards = document.querySelectorAll('.receipt-card');
 
           receiptCards.forEach((card) => {
-            card.addEventListener("click", () => {
+            card.addEventListener('click', () => {
               const details = JSON.parse(card.dataset.details);
 
               detailsSection.innerHTML = ``;
