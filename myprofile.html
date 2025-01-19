@@ -216,7 +216,6 @@
                 type="button"
                 aria-pressed="false"
                 class="h-6 w-12 rounded-full bg-gray-300 flex items-center transition-colors focus:outline-none"
-                onclick="toggleState(this)"
               >
                 <span
                   class="h-5 w-5 bg-white rounded-full shadow transform transition-transform"
@@ -389,33 +388,26 @@
       // toggle button
       document.addEventListener("DOMContentLoaded", () => {
         const toggleButton = document.getElementById("togglePassword");
-        const currentPassword = document.getElementById("currentPassword");
-        const newPassword = document.getElementById("newPassword");
-        const confirmPassword = document.getElementById("confirmPassword");
+        const passwordFields = document.querySelectorAll(
+          "#currentPassword, #newPassword, #confirmPassword"
+        );
 
-        // Initialize password fields as read-only
-        currentPassword.readOnly = true;
-        newPassword.readOnly = true;
-        confirmPassword.readOnly = true;
-
-        // Toggle button click event
         toggleButton.addEventListener("click", () => {
           const isPressed =
             toggleButton.getAttribute("aria-pressed") === "true";
 
-          // Toggle "aria-pressed" attribute
+          // Toggle aria-pressed state
           toggleButton.setAttribute("aria-pressed", !isPressed);
 
-          // Toggle readonly attributes for password fields
-          const readOnlyState = isPressed; // Flip the current state
-          currentPassword.readOnly = readOnlyState;
-          newPassword.readOnly = readOnlyState;
-          confirmPassword.readOnly = readOnlyState;
+          // Toggle readonly attribute for all password fields
+          passwordFields.forEach((field) => {
+            field.readOnly = isPressed; // Flip the readonly state
+          });
 
-          // Update toggle button appearance
+          // Update button appearance
           if (!isPressed) {
-            toggleButton.classList.add("bg-[#E8C300]");
             toggleButton.classList.remove("bg-gray-300");
+            toggleButton.classList.add("bg-[#E8C300]");
             toggleButton.querySelector("span").classList.add("translate-x-6");
           } else {
             toggleButton.classList.add("bg-gray-300");
