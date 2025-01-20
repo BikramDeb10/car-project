@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="images/about-image/about svg/logo.svg"
+      type="image/x-icon"
+    />
+    <title>3t car</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="">
+    <!-- Main Container -->
+    <div class="flex bg-gray-100 h-screen">
+      <div
+        id="overlay"
+        class="fixed inset-0 bg-[#ccc] bg-opacity-50 hidden z-40 cursor-pointer"
+      ></div>
+      <!-- Sidebar -->
+      <div
+        id="sidebar"
+        class="fixed top-0 left-[-5px] h-full z-50 transform -translate-x-full transition-transform duration-300 w-full sm:w-2/5 lg:w-1/4 p-2 m-2"
+      >
+        <div class="bg-white shadow-lg h-full rounded-3xl relative">
+          <div class="flex items-center justify-between p-4">
+            <button
+              id="closeSidebar"
+              class="bg-white p-3 rounded-lg shadow-[0px_0px_20px_1px_rgba(203,196,135,0.5)]"
+            >
+              <img src="images/homeMap/close.svg" alt="" class="h-[16px]" />
+            </button>
+          </div>
+          <div class="p-4 flex flex-col justify-between">
+            <div class="flex items-center gap-4 flex-wrap mb-4 sm:mb-0">
+              <!-- profile section -->
+              <div
+                class="h-[70px] w-[70px] rounded-full border-[1.5px] border-[#E0B827] p-1 flex justify-center items-center bg-[#fff9e2]"
+              >
+                <!-- Profile Picture -->
+                <img
+                  src="images/homeMap/Vectorr.svg"
+                  alt="Profile Picture"
+                  class="h-[43px] w-[43px] rounded-full"
+                />
+                <!-- File Input for Picture -->
+              </div>
+
+              <div class="">
+                <!-- details -->
+                <h3
+                  class="font-semibold text-[#232c37] text-[1rem] sm:text-[1.2rem]"
+                >
+                  Saimon Jhsonson
+                </h3>
+
+                <p
+                  class="text-[#808182] text-[0.9rem] leading-[19.36px] font-[400]"
+                >
+                  davidwarner22@gmail.com
+                </p>
+
+                <div class="flex items-center">
+                  <!-- Stars Container -->
+
+                  <div id="stars" class="flex space-x-1">
+                    <!-- Stars will be dynamically generated here -->
+                  </div>
+                  <p id="rating" class="text-[#BAB6AE] font-medium ml-2">(0)</p>
+                </div>
+              </div>
+            </div>
+            <a href="/Wallet.html">
+              <div
+                class="flex items-center justify-between flex-row shadow-[0px_0px_16px_0.1px_rgba(203,196,110,0.5)] p-3 rounded-xl mt-10 hover:bg-yellow-300"
+              >
+                <div class="flex gap-3">
+                  <img
+                    src="images/homeMap/walet.svg"
+                    alt="Wallet Icon"
+                    class=""
+                  />
+                  <div>
+                    <h3 class="text-[0.8rem] text-[#373F46] font-medium">
+                      Wallet Balance
+                    </h3>
+                    <h3 class="text-xl text-[#1D2630] font-bold">NOK 375</h3>
+                  </div>
+                </div>
+                <button class="mr-2">
+                  <img src="images/homeMap/plus.svg" alt="" />
+                </button>
+              </div>
+            </a>
+
+            <div class="mt-4">
+              <a href="/Booking.html">
+                <div
+                  class="border-b-[1.8px] border-[#F7EA9C] py-4 hover:bg-yellow-300 pl-3 hover:scale-105 transition-all duration-300"
+                >
+                  <div
+                    href="#"
+                    class="flex items-center justify-between text-gray-700 rounded-md"
+                  >
+                    <div class="flex items-center gap-4">
+                      <img
+                        src="images/homeMap/sectionSvg/DateBooking.svg"
+                        alt=""
+                      />
+                      <span class="font-[600]">Bookings</span>
+                    </div>
+                    <div class="mr-4">
+                      <img src="images/homeMap/next.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="/receipts.html">
+                <div
+                  class="border-b-[1.8px] border-[#F7EA9C] py-4 hover:bg-yellow-300 pl-3 hover:scale-105 transition-all duration-300"
+                >
+                  <div
+                    href="#"
+                    class="flex items-center justify-between text-gray-700 rounded-md"
+                  >
+                    <div class="flex items-center gap-4">
+                      <img
+                        src="images/homeMap/sectionSvg/Receipts.svg"
+                        alt=""
+                      />
+                      <span class="font-[600]">Receipts</span>
+                    </div>
+                    <div class="mr-4">
+                      <img src="images/homeMap/next.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="/paymentoption.html">
+                <div
+                  class="border-b-[1.8px] border-[#F7EA9C] py-4 hover:bg-yellow-300 pl-3 hover:scale-105 transition-all duration-300"
+                >
+                  <div
+                    href="#"
+                    class="flex items-center justify-between text-gray-700 rounded-md"
+                  >
+                    <div class="flex items-center gap-4">
+                      <img
+                        src="images/homeMap/sectionSvg/PaymentOptions.svg"
+                        alt=""
+                      />
+                      <span class="font-[600]">Payment Options</span>
+                    </div>
+                    <div class="mr-4">
+                      <img src="images/homeMap/next.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="/myprofile.html">
+                <div
+                  class="border-b-[1.8px] border-[#F7EA9C] py-4 hover:bg-yellow-300 pl-3 hover:scale-105 transition-all duration-300"
+                >
+                  <div
+                    href="#"
+                    class="flex items-center justify-between text-gray-700 rounded-md"
+                  >
+                    <div class="flex items-center gap-4">
+                      <img src="images/homeMap/sectionSvg/Profile.svg" alt="" />
+                      <span class="font-[600]">Profile</span>
+                    </div>
+                    <div class="mr-4">
+                      <img src="images/homeMap/next.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="/Promo.html">
+                <div
+                  class="border-b-[1.8px] border-[#F7EA9C] py-4 hover:bg-yellow-300 pl-3 hover:scale-105 transition-all duration-300"
+                >
+                  <div
+                    href="#"
+                    class="flex items-center justify-between text-gray-700 rounded-md"
+                  >
+                    <div class="flex items-center gap-4">
+                      <img
+                        src="images/homeMap/sectionSvg/PromoCode.svg"
+                        alt=""
+                      />
+                      <span class="font-[600]">Promo Code</span>
+                    </div>
+                    <div class="mr-4">
+                      <img src="images/homeMap/next.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="/help.html">
+                <div
+                  class="border-b-[1.8px] border-[#F7EA9C] py-4 hover:bg-yellow-300 pl-3 hover:scale-105 transition-all duration-300"
+                >
+                  <div
+                    href="#"
+                    class="flex items-center justify-between text-gray-700 rounded-md"
+                  >
+                    <div class="flex items-center gap-4">
+                      <img
+                        src="images/homeMap/sectionSvg/Help&Support.svg"
+                        alt=""
+                      />
+                      <span class="font-[600]">Help & Support</span>
+                    </div>
+                    <div class="mr-4">
+                      <img src="images/homeMap/next.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <div
+                class="border-b-[1.8px] border-[#F7EA9C] py-4 pl-3 hover:bg-yellow-300 hover:scale-105 transition-all duration-300"
+              >
+                <div
+                  href="#"
+                  class="flex items-center justify-between text-gray-700 rounded-md"
+                >
+                  <div class="flex items-center gap-4">
+                    <img src="images/homeMap/sectionSvg/Logout.svg" alt="" />
+                    <span class="font-[600]">Logout</span>
+                  </div>
+                  <div class="mr-4">
+                    <img src="images/homeMap/next.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- footer -->
+            <div
+              class="flex justify-between border-t-[1.8px] border-[#F7EA9C] pt-6 absolute bottom-0"
+            >
+              <h3 class="font-semibold text-[#1D2630] hover:text-[#2d3a49]">
+                Terms & Conditions
+              </h3>
+              <h3 class="font-[500] text-[#1D2630]">App version 6.7.8.2415</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="tabSidebarOpen"
+        class="w-full sm:w-2/5 lg:w-1/4 p-6 relative hidden lg:block"
+      >
+        <button
+          id="closeSidebarBtn"
+          class="absolute top-28 right-4 text-[1.5rem] rounded-full transition-all duration-300 lg:hidden"
+        >
+          &rarr;
+        </button>
+        <div
+          class="flex mb-6 justify-between items-center border-b-[1px] border-[#9592A333] pb-6"
+        >
+          <div>
+            <button
+              class="bg-white px-2 py-4 rounded-lg shadow-[0px_0px_20px_1px_rgba(203,196,135,0.5)]"
+              id="openSidebar"
+            >
+              <img src="images/homeMap/hamburgarmenu.svg" alt="" />
+            </button>
+          </div>
+          <img
+            src="images/about-image/about svg/logo.svg"
+            alt=""
+            class="h-[55px]"
+          />
+
+          <img
+            src="images/homeMap/man.svg"
+            alt=""
+            class="h-[50px] rounded-full"
+          />
+        </div>
+
+        <div class="">
+          <div class="p-6 rounded-lg w-full max-w-md">
+            <h2 class="text-lg font-semibold mb-2">
+              Driver is less than 25 min away
+            </h2>
+            <p class="text-sm text-gray-600 mb-4">
+              Are you sure you want to cancel?
+            </p>
+
+            <form>
+              <div class="space-y-3">
+                <!-- Radio Options -->
+                <label class="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="reason"
+                    value="book-another"
+                    class="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500"
+                  />
+                  <span class="text-gray-800">Book another ride</span>
+                </label>
+                <label class="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="reason"
+                    value="unable-connect"
+                    class="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500"
+                  />
+                  <span class="text-gray-800">Unable to connect driver</span>
+                </label>
+                <label class="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="reason"
+                    value="not-going"
+                    class="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500"
+                  />
+                  <span class="text-gray-800">I'm not going</span>
+                </label>
+                <label class="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="reason"
+                    value="other"
+                    class="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500"
+                  />
+                  <span class="text-gray-800"
+                    >My reason is not listed here</span
+                  >
+                </label>
+              </div>
+
+              <!-- Textarea -->
+              <div class="mt-4">
+                <label
+                  for="otherReason"
+                  class="block text-sm text-gray-600 mb-1"
+                  >Enter your reason below</label
+                >
+                <textarea
+                  id="otherReason"
+                  name="otherReason"
+                  rows="3"
+                  placeholder="Type your reason..."
+                  class="w-full border border-gray-300 rounded-lg p-2 text-sm focus:ring-indigo-500 focus:border-indigo-500"
+                ></textarea>
+              </div>
+
+              <!-- Buttons -->
+              <div class="mt-6 flex justify-center gap-6">
+                <button
+                  type="button"
+                  class="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg shadow hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+                >
+                  Keep Booking
+                </button>
+                <button
+                  type="button"
+                  class="px-8 py-2 bg-gray-800 text-white rounded-lg shadow hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+                >
+                  Cancel
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map Section -->
+      <div class="flex-1 sm:p-4 md:rounded-3xl">
+        <button
+          id="tabSidebarOpenButton"
+          class="absolute left-6 top-32 py-3 px-6 rounded-lg bg-white block lg:hidden"
+        >
+          Menu
+        </button>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29211.504143037115!2d88.3477895153644!3d22.572646231420713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02774b5d44f8d3%3A0x9b8ef29fcd445978!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1672216591678!5m2!1sen!2sin"
+          width="100%"
+          height="100%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="sm:rounded-3xl"
+        ></iframe>
+      </div>
+    </div>
+    <script>
+      const openSidebar = document.getElementById('openSidebar');
+      const closeSidebar = document.getElementById('closeSidebar');
+      const sidebar = document.getElementById('sidebar');
+      const overlay = document.getElementById('overlay');
+
+      // Function to open sidebar
+      openSidebar.addEventListener('click', () => {
+        sidebar.classList.remove('-translate-x-full');
+        overlay.classList.remove('hidden');
+      });
+
+      // Function to close sidebar
+      function closeSidebarFunction() {
+        sidebar.classList.add('-translate-x-full');
+        overlay.classList.add('hidden');
+      }
+
+      closeSidebar.addEventListener('click', closeSidebarFunction);
+      overlay.addEventListener('click', closeSidebarFunction);
+
+      // star--
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const starsContainer = document.getElementById('stars');
+        const ratingDisplay = document.getElementById('rating');
+        const totalStars = 5;
+        let selectedRating = 0;
+
+        // Create stars dynamically
+        for (let i = 1; i <= totalStars; i++) {
+          const star = document.createElement('img');
+          star.src = 'images/myProfile/Star.svg';
+          star.alt = `Star ${i}`;
+          star.className =
+            'cursor-pointer transition-colors duration-200 h-[16px]';
+          star.dataset.value = i;
+          star.style.filter = 'grayscale(1)'; // Light color (unselected state)
+
+          // Add event listeners
+          star.addEventListener('click', () => {
+            selectedRating = i;
+            updateStars();
+            ratingDisplay.textContent = `(${selectedRating})`;
+          });
+
+          star.addEventListener('mouseover', () => {
+            highlightStars(i);
+          });
+
+          star.addEventListener('mouseout', () => {
+            updateStars();
+          });
+
+          starsContainer.appendChild(star);
+        }
+
+        // Update stars based on the selected rating
+        function updateStars() {
+          Array.from(starsContainer.children).forEach((star) => {
+            const starValue = parseInt(star.dataset.value, 10);
+            if (starValue <= selectedRating) {
+              star.style.filter = 'none'; // Full color (selected state)
+            } else {
+              star.style.filter = 'grayscale(1)'; // Light color (unselected state)
+            }
+          });
+        }
+
+        // Highlight stars on hover
+        function highlightStars(rating) {
+          Array.from(starsContainer.children).forEach((star) => {
+            const starValue = parseInt(star.dataset.value, 10);
+            if (starValue <= rating) {
+              star.style.filter = 'none';
+            } else {
+              star.style.filter = 'grayscale(1)';
+            }
+          });
+        }
+      });
+
+      // --------
+      document.addEventListener('DOMContentLoaded', () => {
+        const tabOpenBtn = document.getElementById('tabSidebarOpenButton');
+        const tabSidebarOpen = document.getElementById('tabSidebarOpen');
+        const closeSidebarBtn = document.getElementById('closeSidebarBtn');
+
+        // Open sidebar
+        tabOpenBtn.addEventListener('click', () => {
+          tabSidebarOpen.classList.remove('hidden');
+          tabOpenBtn.classList.add('hidden');
+        });
+
+        // Close sidebar
+        closeSidebarBtn.addEventListener('click', () => {
+          tabSidebarOpen.classList.add('hidden');
+          tabOpenBtn.classList.remove('hidden');
+        });
+      });
+    </script>
+  </body>
+</html>
