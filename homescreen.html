@@ -29,7 +29,7 @@
       <!-- Sidebar -->
       <div
         id="sidebar"
-        class="fixed top-0 left-[-5px] h-full z-50 transform -translate-x-full transition-transform duration-300 w-2/5 lg:w-1/4 p-2 m-2"
+        class="fixed top-0 left-[-5px] h-full z-50 transform -translate-x-full transition-transform duration-300 w-full sm:w-2/5 lg:w-1/4 p-2 m-2"
       >
         <div class="bg-white shadow-lg h-full rounded-3xl relative">
           <div class="flex items-center justify-between p-4">
@@ -258,8 +258,14 @@
       </div>
       <div
         id="tabSidebarOpen"
-        class="w-2/5 lg:w-1/4 p-6 relative hidden lg:block"
+        class="w-full sm:w-2/5 lg:w-1/4 p-6 relative hidden lg:block"
       >
+        <button
+          id="closeSidebarBtn"
+          class="absolute top-28 right-4 text-[1.5rem] rounded-full transition-all duration-300 lg:hidden"
+        >
+          &rarr;
+        </button>
         <div
           class="flex mb-6 justify-between items-center border-b-[1px] border-[#9592A333] pb-6"
         >
@@ -404,12 +410,12 @@
       </div>
 
       <!-- Map Section -->
-      <div class="flex-1 relative p-4 rounded-3xl">
+      <div class="flex-1 sm:p-4 md:rounded-3xl">
         <button
           id="tabSidebarOpenButton"
-          class="absolute right-6 p-4 bg-white z-50"
+          class="absolute left-6 top-32 py-3 px-6 rounded-lg bg-white block lg:hidden"
         >
-          open
+          Menu
         </button>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29211.504143037115!2d88.3477895153644!3d22.572646231420713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02774b5d44f8d3%3A0x9b8ef29fcd445978!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1672216591678!5m2!1sen!2sin"
@@ -419,7 +425,7 @@
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-          class="rounded-3xl"
+          class="sm:rounded-3xl"
         ></iframe>
       </div>
     </div>
@@ -506,12 +512,22 @@
       });
 
       // --------
-      const tabOpenBtn = document.getElementById("tabSidebarOpenButton");
-      const tabOpen = document.getElementById("tabSidebarOpen");
+      document.addEventListener("DOMContentLoaded", () => {
+        const tabOpenBtn = document.getElementById("tabSidebarOpenButton");
+        const tabSidebarOpen = document.getElementById("tabSidebarOpen");
+        const closeSidebarBtn = document.getElementById("closeSidebarBtn");
 
-      tabOpenBtn.addEventListener("click", () => {
-        tabOpen.classList.remove("hidden");
-        overlay.classList.remove("hidden");
+        // Open sidebar
+        tabOpenBtn.addEventListener("click", () => {
+          tabSidebarOpen.classList.remove("hidden");
+          tabOpenBtn.classList.add("hidden");
+        });
+
+        // Close sidebar
+        closeSidebarBtn.addEventListener("click", () => {
+          tabSidebarOpen.classList.add("hidden");
+          tabOpenBtn.classList.remove("hidden");
+        });
       });
     </script>
   </body>
