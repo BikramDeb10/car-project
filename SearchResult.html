@@ -14,7 +14,7 @@
       href="images/about-image/about svg/logo.svg"
       type="image/x-icon"
     />
-    <title>Search Result</title>
+    <title>3t car</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
@@ -29,9 +29,9 @@
       <!-- Sidebar -->
       <div
         id="sidebar"
-        class="fixed top-0 left-[-5px] h-[920px] z-50 transform -translate-x-full transition-transform duration-300 w-1/4 p-2 m-2"
+        class="fixed top-0 left-[-5px] h-full z-50 transform -translate-x-full transition-transform duration-300 w-full sm:w-2/5 lg:w-1/4 sm:p-2 sm:m-2"
       >
-        <div class="bg-white shadow-lg h-[920px] rounded-3xl">
+        <div class="bg-white sm:shadow-lg h-full sm:rounded-3xl relative">
           <div class="flex items-center justify-between p-4">
             <button
               id="closeSidebar"
@@ -40,7 +40,7 @@
               <img src="images/homeMap/close.svg" alt="" class="h-[16px]" />
             </button>
           </div>
-          <div class="p-4">
+          <div class="p-4 flex flex-col justify-between">
             <div class="flex items-center gap-4 flex-wrap mb-4 sm:mb-0">
               <!-- profile section -->
               <div
@@ -246,7 +246,7 @@
             </div>
             <!-- footer -->
             <div
-              class="flex justify-between mt-36 border-t-[1.8px] border-[#F7EA9C] pt-6"
+              class="flex justify-between border-t-[1.8px] border-[#F7EA9C] pt-6 absolute bottom-0"
             >
               <h3 class="font-semibold text-[#1D2630] hover:text-[#2d3a49]">
                 Terms & Conditions
@@ -256,7 +256,16 @@
           </div>
         </div>
       </div>
-      <div class="w-1/4 relative p-6">
+      <div
+        id="tabSidebarOpen"
+        class="w-full sm:w-2/4 lg:w-2/4 xl:w-1/4 p-6 relative hidden lg:block overflow-hidden"
+      >
+        <button
+          id="closeSidebarBtn"
+          class="absolute top-28 right-4 text-[1.5rem] rounded-full transition-all duration-300 lg:hidden"
+        >
+          &rarr;
+        </button>
         <div
           class="flex mb-6 justify-between items-center border-b-[1px] border-[#9592A333] pb-6"
         >
@@ -280,196 +289,98 @@
             class="h-[50px] rounded-full"
           />
         </div>
-        <div>
-          <!-- Repeated Cards -->
-          <div class="space-y-4">
-            <!-- Card -->
-            <div
-              class="flex items-center justify-between bg-white p-2 shadow-md rounded-lg"
-            >
-              <!-- Left Section -->
-              <div class="flex flex-col items-center">
-                <img
-                  src="images/SearchResult/car.svg"
-                  alt="Car"
-                  class="w-14 h-14"
-                />
-                <p class="text-[12px] text-gray-600 mt-2">12 min Away</p>
+        <!-- Main Container -->
+        <div class="">
+          <!-- Header -->
+          <div class="mb-6">
+            <h2 class="text-lg font-bold mb-4">Choose a ride</h2>
+            <div class="flex justify-between items-center p-4">
+              <div>
+                <p class="text-sm">
+                  <span class="text-yellow-500 font-semibold">●</span> Your
+                  current location, Dhaka Bangladesh
+                </p>
+                <p class="text-sm">
+                  <span class="text-pink-500 font-semibold">●</span> Destination
+                  location, Dhaka Bangladesh
+                </p>
               </div>
-
-              <!-- Middle Section -->
-              <div class="flex flex-col ml-6 gap-2 flex-grow">
-                <!-- Top Row -->
-                <div class="flex items-center space-x-2">
-                  <h1 class="text-[14px] font-bold text-gray-800">3T SUV</h1>
-                  <img
-                    src="images/SearchResult/Profile.svg"
-                    alt="Person Icon"
-                    class="w-4 h-4"
-                  />
-                  <h3 class="text-sm text-gray-600">6</h3>
-                </div>
-
-                <!-- Middle Row -->
-                <div class="text-[10px] text-gray-600">
-                  <p>12:45am • 12 min Away</p>
-                </div>
-
-                <!-- Bottom Row -->
-                <div>
-                  <p class="text-[12px] text-gray-500">Prime SUV Very Faster</p>
-                </div>
-              </div>
-
-              <!-- Right Section -->
-              <div class="flex flex-col mb-auto items-end">
-                <h1 class="text-[14px] font-bold text-gray-800">EGP 192.63</h1>
-                <h2 class="text-[12px] text-gray-400 line-through mt-1">
-                  EGP 210.32
-                </h2>
-              </div>
+              <button
+                class="bg-yellow-500 text-white px-4 py-2 rounded-lg text-sm font-semibold"
+              >
+                Pick-up Now
+              </button>
             </div>
-            <!-- End of Card -->
-            <div
-              class="flex items-center justify-between bg-white p-2 shadow-md rounded-lg"
-            >
-              <!-- Left Section -->
-              <div class="flex flex-col items-center">
-                <img
-                  src="images/SearchResult/car.svg"
-                  alt="Car"
-                  class="w-14 h-14"
-                />
-                <p class="text-[12px] text-gray-600 mt-2">12 min Away</p>
-              </div>
+          </div>
 
-              <!-- Middle Section -->
-              <div class="flex flex-col ml-6 gap-2 flex-grow">
-                <!-- Top Row -->
-                <div class="flex items-center space-x-2">
-                  <h1 class="text-[14px] font-bold text-gray-800">3T SUV</h1>
-                  <img
-                    src="images/SearchResult/Profile.svg"
-                    alt="Person Icon"
-                    class="w-4 h-4"
-                  />
-                  <h3 class="text-sm text-gray-600">6</h3>
-                </div>
+          <!-- Ride Options -->
+          <div class="h-[50vh] overflow-hidden">
+            <div class="h-full overflow-y-auto bg-gray-50">
+              <h3 class="text-lg font-semibold mb-4 text-gray-800">
+                Recommended for you
+              </h3>
 
-                <!-- Middle Row -->
-                <div class="text-[10px] text-gray-600">
-                  <p>12:45am • 12 min Away</p>
-                </div>
-
-                <!-- Bottom Row -->
-                <div>
-                  <p class="text-[12px] text-gray-500">Prime SUV Very Faster</p>
-                </div>
-              </div>
-
-              <!-- Right Section -->
-              <div class="flex flex-col mb-auto items-end">
-                <h1 class="text-[14px] font-bold text-gray-800">EGP 192.63</h1>
-                <h2 class="text-[12px] text-gray-400 line-through mt-1">
-                  EGP 210.32
-                </h2>
-              </div>
-            </div>
-
-            <!-- Repeat the card as needed -->
-            <div
-              class="flex items-center justify-between bg-white p-2 shadow-md rounded-lg"
-            >
-              <!-- Left Section -->
-              <div class="flex flex-col items-center">
-                <img
-                  src="images/SearchResult/car.svg"
-                  alt="Car"
-                  class="w-14 h-14"
-                />
-                <p class="text-[12px] text-gray-600 mt-2">12 min Away</p>
-              </div>
-
-              <!-- Middle Section -->
-              <div class="flex flex-col ml-6 gap-2 flex-grow">
-                <!-- Top Row -->
-                <div class="flex items-center space-x-2">
-                  <h1 class="text-[14px] font-bold text-gray-800">3T SUV</h1>
-                  <img
-                    src="images/SearchResult/Profile.svg"
-                    alt="Person Icon"
-                    class="w-4 h-4"
-                  />
-                  <h3 class="text-sm text-gray-600">6</h3>
-                </div>
-
-                <!-- Middle Row -->
-                <div class="text-[10px] text-gray-600">
-                  <p>12:45am • 12 min Away</p>
-                </div>
-
-                <!-- Bottom Row -->
-                <div>
-                  <p class="text-[12px] text-gray-500">Prime SUV Very Faster</p>
-                </div>
-              </div>
-
-              <!-- Right Section -->
-              <div class="flex flex-col mb-auto items-end">
-                <h1 class="text-[14px] font-bold text-gray-800">EGP 192.63</h1>
-                <h2 class="text-[12px] text-gray-400 line-through mt-1">
-                  EGP 210.32
-                </h2>
+              <!-- Ride Card Container -->
+              <div
+                id="rides-container"
+                class="space-y-4"
+                aria-label="Recommended Rides"
+              >
+                <!-- Ride cards will be dynamically injected here -->
               </div>
             </div>
           </div>
-          <!-- End of Repeated Cards -->
 
-          <!-- Footer Section -->
-        </div>
-        <div
-          class="flex items-center absolute bottom-0 flex-col justify-between bg-white p-4 shadow-md rounded-lg"
-        >
-          <!-- Left Section: Payment Method -->
-          <div class="flex items-center justify-center gap-36">
-            <div class="flex items-center gap-1">
-              <img
-                src="images/SearchResult/money.svg"
-                alt="Cash Icon"
-                class="w-6 h-6"
-              />
-              <p class="text-sm text-gray-800 font-medium">Pay with Cash</p>
-            </div>
-            <div><img src="images/SearchResult/Arrow.svg" alt="" /></div>
-          </div>
-
-          <!-- Right Section: My Self -->
+          <!-- Payment and Booking Section -->
           <div
-            class="flex items-center justify-center gap-6 text-yellow-800 text-sm font-medium px-3 py-2 rounded-lg"
+            class="absolute bottom-6 w-[90%] border-t-[1.8px] border-[#F7EA9C] bg-white px-4 py-3"
           >
-            <!-- Middle Section: Booking Button -->
-            <button
-              class="bg-gray-900 text-white text-sm font-medium py-2 px-4 w-[200px] rounded-lg"
-            >
-              Book 3T Priority
-            </button>
-
-            <button
-              class="bg-[#FFF9D9] flex flex-col justify-center items-center p-1 w-[60px]"
-            >
-              <img
-                src="images/SearchResult/Profile.svg"
-                alt="Profile Icon"
-                class="w-4 h-4 mr-2"
-              />
-              <p>My Self</p>
-            </button>
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-3 py-3">
+                <img src="images/homeMap/SearchResult/money.svg" alt="" />
+                <h4>Pay with Cash</h4>
+              </div>
+              <div>
+                <img src="images//homeMap/SearchResult/Arrow.svg" alt="" />
+              </div>
+            </div>
+            <div class="flex items-center flex-row gap-4">
+              <div class="w-3/4">
+                <button
+                  id="book-button"
+                  disabled
+                  class="w-full bg-[#1D2630] text-white py-3 rounded-lg text-lg font-bold cursor-not-allowed"
+                >
+                  Book a Ride
+                </button>
+              </div>
+              <div
+                class="flex flex-col items-center bg-[#ffe96c4d] rounded-2xl p-3"
+              >
+                <div>
+                  <img
+                    src="images/homeMap/SearchResult/Profile.svg"
+                    alt=""
+                    class="h-[18px]"
+                  />
+                </div>
+                <div>
+                  <h3>My Self</h3>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Map Section -->
-      <div class="flex-1 relative p-4 rounded-3xl">
+      <div class="flex-1 lg:p-4 md:rounded-3xl">
+        <button
+          id="tabSidebarOpenButton"
+          class="absolute left-6 top-32 py-3 px-6 rounded-lg bg-white block lg:hidden"
+        >
+          Menu
+        </button>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29211.504143037115!2d88.3477895153644!3d22.572646231420713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02774b5d44f8d3%3A0x9b8ef29fcd445978!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1672216591678!5m2!1sen!2sin"
           width="100%"
@@ -478,61 +389,61 @@
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-          class="rounded-3xl"
+          class="lg:rounded-3xl"
         ></iframe>
       </div>
     </div>
     <script>
-      const openSidebar = document.getElementById('openSidebar');
-      const closeSidebar = document.getElementById('closeSidebar');
-      const sidebar = document.getElementById('sidebar');
-      const overlay = document.getElementById('overlay');
+      const openSidebar = document.getElementById("openSidebar");
+      const closeSidebar = document.getElementById("closeSidebar");
+      const sidebar = document.getElementById("sidebar");
+      const overlay = document.getElementById("overlay");
 
       // Function to open sidebar
-      openSidebar.addEventListener('click', () => {
-        sidebar.classList.remove('-translate-x-full');
-        overlay.classList.remove('hidden');
+      openSidebar.addEventListener("click", () => {
+        sidebar.classList.remove("-translate-x-full");
+        overlay.classList.remove("hidden");
       });
 
       // Function to close sidebar
       function closeSidebarFunction() {
-        sidebar.classList.add('-translate-x-full');
-        overlay.classList.add('hidden');
+        sidebar.classList.add("-translate-x-full");
+        overlay.classList.add("hidden");
       }
 
-      closeSidebar.addEventListener('click', closeSidebarFunction);
-      overlay.addEventListener('click', closeSidebarFunction);
+      closeSidebar.addEventListener("click", closeSidebarFunction);
+      overlay.addEventListener("click", closeSidebarFunction);
 
       // star--
 
-      document.addEventListener('DOMContentLoaded', () => {
-        const starsContainer = document.getElementById('stars');
-        const ratingDisplay = document.getElementById('rating');
+      document.addEventListener("DOMContentLoaded", () => {
+        const starsContainer = document.getElementById("stars");
+        const ratingDisplay = document.getElementById("rating");
         const totalStars = 5;
         let selectedRating = 0;
 
         // Create stars dynamically
         for (let i = 1; i <= totalStars; i++) {
-          const star = document.createElement('img');
-          star.src = 'images/myProfile/Star.svg';
+          const star = document.createElement("img");
+          star.src = "images/myProfile/Star.svg";
           star.alt = `Star ${i}`;
           star.className =
-            'cursor-pointer transition-colors duration-200 h-[16px]';
+            "cursor-pointer transition-colors duration-200 h-[16px]";
           star.dataset.value = i;
-          star.style.filter = 'grayscale(1)'; // Light color (unselected state)
+          star.style.filter = "grayscale(1)"; // Light color (unselected state)
 
           // Add event listeners
-          star.addEventListener('click', () => {
+          star.addEventListener("click", () => {
             selectedRating = i;
             updateStars();
             ratingDisplay.textContent = `(${selectedRating})`;
           });
 
-          star.addEventListener('mouseover', () => {
+          star.addEventListener("mouseover", () => {
             highlightStars(i);
           });
 
-          star.addEventListener('mouseout', () => {
+          star.addEventListener("mouseout", () => {
             updateStars();
           });
 
@@ -544,9 +455,9 @@
           Array.from(starsContainer.children).forEach((star) => {
             const starValue = parseInt(star.dataset.value, 10);
             if (starValue <= selectedRating) {
-              star.style.filter = 'none'; // Full color (selected state)
+              star.style.filter = "none"; // Full color (selected state)
             } else {
-              star.style.filter = 'grayscale(1)'; // Light color (unselected state)
+              star.style.filter = "grayscale(1)"; // Light color (unselected state)
             }
           });
         }
@@ -556,13 +467,169 @@
           Array.from(starsContainer.children).forEach((star) => {
             const starValue = parseInt(star.dataset.value, 10);
             if (starValue <= rating) {
-              star.style.filter = 'none';
+              star.style.filter = "none";
             } else {
-              star.style.filter = 'grayscale(1)';
+              star.style.filter = "grayscale(1)";
             }
           });
         }
       });
+
+      // --------
+      document.addEventListener("DOMContentLoaded", () => {
+        const tabOpenBtn = document.getElementById("tabSidebarOpenButton");
+        const tabSidebarOpen = document.getElementById("tabSidebarOpen");
+        const closeSidebarBtn = document.getElementById("closeSidebarBtn");
+
+        // Open sidebar
+        tabOpenBtn.addEventListener("click", () => {
+          tabSidebarOpen.classList.remove("hidden");
+          tabOpenBtn.classList.add("hidden");
+        });
+
+        // Close sidebar
+        closeSidebarBtn.addEventListener("click", () => {
+          tabSidebarOpen.classList.add("hidden");
+          tabOpenBtn.classList.remove("hidden");
+        });
+      });
+
+      // Sample Ride Data
+      const rides = [
+        {
+          type: "3T SUV",
+          capacity: 6,
+          price: "EGP 192.63",
+          originalPrice: "EGP 210.32",
+          timeAway: "12 min Away",
+          description: "Prime SUV Very Faster",
+          image: "images/homeMap/SearchResult/car.svg",
+        },
+        {
+          type: "3T Bike",
+          capacity: 1,
+          price: "EGP 192.63",
+          originalPrice: "EGP 210.32",
+          timeAway: "12 min Away",
+          description: "Affordable, Faster Bike ride",
+          image: "images/homeMap/SearchResult/Scuquty.svg",
+        },
+        {
+          type: "3T Priority",
+          capacity: 4,
+          price: "EGP 192.63",
+          originalPrice: "EGP 210.32",
+          timeAway: "12 min Away",
+          description: "Prime SUV Very Faster",
+          image: "images/homeMap/SearchResult/carY.svg",
+        },
+        {
+          type: "3T Priority",
+          capacity: 4,
+          price: "EGP 192.63",
+          originalPrice: "EGP 210.32",
+          timeAway: "12 min Away",
+          description: "Prime SUV Very Faster",
+          image: "images/homeMap/SearchResult/carY.svg",
+        },
+        {
+          type: "3T Priority",
+          capacity: 4,
+          price: "EGP 192.63",
+          originalPrice: "EGP 210.32",
+          timeAway: "12 min Away",
+          description: "Prime SUV Very Faster",
+          image: "images/homeMap/SearchResult/carY.svg",
+        },
+        {
+          type: "3T Priority",
+          capacity: 4,
+          price: "EGP 192.63",
+          originalPrice: "EGP 210.32",
+          timeAway: "12 min Away",
+          description: "Prime SUV Very Faster",
+          image: "images/homeMap/SearchResult/carY.svg",
+        },
+        {
+          type: "3T Priority",
+          capacity: 4,
+          price: "EGP 192.63",
+          originalPrice: "EGP 210.32",
+          timeAway: "12 min Away",
+          description: "Prime SUV Very Faster",
+          image: "images/homeMap/SearchResult/carY.svg",
+        },
+        {
+          type: "3T Priority",
+          capacity: 4,
+          price: "EGP 192.63",
+          originalPrice: "EGP 210.32",
+          timeAway: "12 min Away",
+          description: "Prime SUV Very Faster",
+          image: "images/homeMap/SearchResult/carY.svg",
+        },
+        {
+          type: "3T Priority",
+          capacity: 4,
+          price: "EGP 192.63",
+          originalPrice: "EGP 210.32",
+          timeAway: "12 min Away",
+          description: "Prime SUV Very Faster",
+          image: "images/homeMap/SearchResult/carY.svg",
+        },
+      ];
+
+      // Inject Rides into UI
+      const ridesContainer = document.getElementById("rides-container");
+      const bookButton = document.getElementById("book-button");
+
+      rides.forEach((ride, index) => {
+        const rideCard = document.createElement("div");
+        rideCard.className =
+          "flex items-center justify-between p-4 bg-gray-50 border border-gray-200 rounded-lg mb-3 cursor-pointer hover:shadow-md";
+        rideCard.innerHTML = `
+        <div class="flex items-center">
+          <img src="${ride.image}" alt="${ride.type}" class="w-12 h-12 mr-4">
+          <div>
+            <h4 class="font-bold text-sm">${ride.type}</h4>
+            <p class="text-xs text-gray-500">${ride.description}</p>
+            <p class="text-xs text-gray-500">${ride.timeAway}</p>
+          </div>
+        </div>
+        <div class="text-right">
+          <p class="text-green-500 font-bold text-lg">${ride.price}</p>
+          <p class="line-through text-gray-400 text-xs">${ride.originalPrice}</p>
+        </div>
+      `;
+        rideCard.addEventListener("click", () =>
+          handleSelection(index, rideCard)
+        );
+        ridesContainer.appendChild(rideCard);
+      });
+
+      // Handle Ride Selection
+      let selectedRide = null;
+
+      function handleSelection(index, cardElement) {
+        // Remove active class from all cards
+        document
+          .querySelectorAll("#rides-container > div")
+          .forEach((card) => card.classList.remove("active-card"));
+
+        // Add active class to the selected card
+        cardElement.classList.add("active-card");
+
+        // Update selected ride
+        selectedRide = rides[index];
+
+        // Enable booking button
+        bookButton.disabled = false;
+        bookButton.classList.remove("bg-gray-400", "cursor-not-allowed");
+        bookButton.classList.add("bg-yellow-500", "cursor-pointer");
+
+        // Update button text
+        bookButton.textContent = `Book ${selectedRide.type}`;
+      }
     </script>
   </body>
 </html>
