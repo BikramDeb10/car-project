@@ -246,19 +246,23 @@
             </div>
             <!-- footer -->
             <div
-              class="flex justify-between border-t-[1.8px] border-[#F7EA9C] pt-6 absolute bottom-0"
+              class="flex justify-between border-t-[1.8px] border-[#F7EA9C] pt-6 absolute bottom-0 bg-white py-4 px-2 w-[88%]"
             >
-              <h3 class="font-semibold text-[#1D2630] hover:text-[#2d3a49]">
+              <h3
+                class="font-semibold text-[#1D2630] hover:text-[#2d3a49] text-[0.8rem]"
+              >
                 Terms & Conditions
               </h3>
-              <h3 class="font-[500] text-[#1D2630]">App version 6.7.8.2415</h3>
+              <h3 class="font-[500] text-[#1D2630] text-[0.8rem]">
+                App version 6.7.8.2415
+              </h3>
             </div>
           </div>
         </div>
       </div>
       <div
         id="tabSidebarOpen"
-        class="w-full sm:w-2/4 lg:w-1/4 p-6 relative hidden lg:block overflow-hidden"
+        class="p-6 relative hidden lg:block overflow-hidden"
       >
         <button
           id="closeSidebarBtn"
@@ -398,14 +402,14 @@
           </a>
         </div>
         <div
-          class="flex justify-between mt-[22rem] w-[90%] border-t-[1.8px] border-[#F7EA9C] pt-6 absolute bottom-4 gap-2 flex-wrap"
+          class="flex justify-between mt-[22rem] w-[100%] border-t-[1.8px] border-[#F7EA9C] absolute bottom-4 gap-2 bg-white py-4 px-2"
         >
           <h3
-            class="font-semibold text-[#1D2630] hover:text-[#2d3a49] min-w-[160px]"
+            class="font-semibold text-[0.8rem] text-[#1D2630] hover:text-[#2d3a49] min-w-[160px]"
           >
             <a href="/termsofService.html"> Terms & Conditions </a>
           </h3>
-          <h3 class="font-[500] text-[#1D2630] min-w-[165px]">
+          <h3 class="font-[500] text-[0.8rem] text-[#1D2630] min-w-[165px]">
             App version 6.7.8.2415
           </h3>
         </div>
@@ -460,7 +464,6 @@
         const totalStars = 5;
         let selectedRating = 0;
 
-        // Create stars dynamically
         for (let i = 1; i <= totalStars; i++) {
           const star = document.createElement("img");
           star.src = "images/myProfile/Star.svg";
@@ -468,9 +471,8 @@
           star.className =
             "cursor-pointer transition-colors duration-200 h-[16px]";
           star.dataset.value = i;
-          star.style.filter = "grayscale(1)"; // Light color (unselected state)
+          star.style.filter = "grayscale(1)";
 
-          // Add event listeners
           star.addEventListener("click", () => {
             selectedRating = i;
             updateStars();
@@ -488,19 +490,17 @@
           starsContainer.appendChild(star);
         }
 
-        // Update stars based on the selected rating
         function updateStars() {
           Array.from(starsContainer.children).forEach((star) => {
             const starValue = parseInt(star.dataset.value, 10);
             if (starValue <= selectedRating) {
-              star.style.filter = "none"; // Full color (selected state)
+              star.style.filter = "none";
             } else {
-              star.style.filter = "grayscale(1)"; // Light color (unselected state)
+              star.style.filter = "grayscale(1)";
             }
           });
         }
 
-        // Highlight stars on hover
         function highlightStars(rating) {
           Array.from(starsContainer.children).forEach((star) => {
             const starValue = parseInt(star.dataset.value, 10);
