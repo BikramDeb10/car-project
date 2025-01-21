@@ -14,7 +14,12 @@
       href="images/about-image/about svg/logo.svg"
       type="image/x-icon"
     />
-    <title>Cancel Ride</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Start Trip</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
@@ -29,9 +34,9 @@
       <!-- Sidebar -->
       <div
         id="sidebar"
-        class="fixed top-0 left-[-5px] h-full z-50 transform -translate-x-full transition-transform duration-300 w-full sm:w-2/5 lg:w-1/4 p-2 m-2"
+        class="fixed top-0 left-[-5px] h-full z-50 transform -translate-x-full transition-transform duration-300 w-full sm:w-2/5 lg:w-1/4 sm:p-2 sm:m-2"
       >
-        <div class="bg-white shadow-lg h-full rounded-3xl relative">
+        <div class="bg-white sm:shadow-lg h-full sm:rounded-3xl relative">
           <div class="flex items-center justify-between p-4">
             <button
               id="closeSidebar"
@@ -258,7 +263,7 @@
       </div>
       <div
         id="tabSidebarOpen"
-        class="w-full sm:w-2/5 lg:w-1/4 p-6 relative hidden lg:block"
+        class="w-full sm:w-2/5 lg:w-1/4 p-6 relative hidden lg:block overflow-hidden"
       >
         <button
           id="closeSidebarBtn"
@@ -290,96 +295,115 @@
           />
         </div>
 
-        <div class="">
-          <div class="p-6 rounded-lg w-full max-w-md">
-            <h2 class="text-lg font-semibold mb-2">
-              Driver is less than 25 min away
-            </h2>
-            <p class="text-sm text-gray-600 mb-4">
-              Are you sure you want to cancel?
-            </p>
-
-            <form>
-              <div class="space-y-3">
-                <!-- Radio Options -->
-                <label class="flex items-center space-x-2">
-                  <input
-                    type="radio"
-                    name="reason"
-                    value="book-another"
-                    class="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500"
-                  />
-                  <span class="text-gray-800">Book another ride</span>
-                </label>
-                <label class="flex items-center space-x-2">
-                  <input
-                    type="radio"
-                    name="reason"
-                    value="unable-connect"
-                    class="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500"
-                  />
-                  <span class="text-gray-800">Unable to connect driver</span>
-                </label>
-                <label class="flex items-center space-x-2">
-                  <input
-                    type="radio"
-                    name="reason"
-                    value="not-going"
-                    class="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500"
-                  />
-                  <span class="text-gray-800">I'm not going</span>
-                </label>
-                <label class="flex items-center space-x-2">
-                  <input
-                    type="radio"
-                    name="reason"
-                    value="other"
-                    class="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500"
-                  />
-                  <span class="text-gray-800"
-                    >My reason is not listed here</span
-                  >
-                </label>
-              </div>
-
-              <!-- Textarea -->
-              <div class="mt-4">
-                <label
-                  for="otherReason"
-                  class="block text-sm text-gray-600 mb-1"
-                  >Enter your reason below</label
+        <div class="mt-16 lg:mt-6">
+          <!-- notification -->
+          <div class="flex mb-8 bg-slate-50 p-1 justify-between gap-4">
+            <div class="">
+              <h2 class="text-[16px]">
+                Your driver Saimon J. Arriving at pickup point in
+              </h2>
+            </div>
+            <div class="p-2 bg-[#FFF5BF]">
+              <img src="images/Start-trip/Clock.svg" alt="clock" />
+              <p class="text-[14px]">25min</p>
+            </div>
+          </div>
+          <!-- car profile -->
+          <!-- car -->
+          <div class="pb-4">
+            <div
+              class="flex justify-center items-center pb-12 border-b-[1px] border-[#8e8787]"
+            >
+              <img src="images/Start-trip/car.svg" alt="" />
+            </div>
+            <!-- profile -->
+            <div
+              class="flex mt-6 pb-4 gap-4 border-b border-[#8e8787] items-center"
+            >
+              <!-- Profile Image Section -->
+              <div class="relative overflow-hidden rounded-full">
+                <img
+                  class="rounded-full w-16 h-16 object-cover"
+                  src="images/Start-trip/profile.svg"
+                  alt="Profile Image"
+                />
+                <!-- Rating Badge -->
+                <div
+                  class="absolute w-full bg-black bg-opacity-60 text-white text-xs font-medium px-2 py-1 transform bottom-[-4px] shadow-md flex items-center gap-1"
                 >
-                <textarea
-                  id="otherReason"
-                  name="otherReason"
-                  rows="3"
-                  placeholder="Type your reason..."
-                  class="w-full border border-gray-300 rounded-lg p-2 text-sm focus:ring-indigo-500 focus:border-indigo-500"
-                ></textarea>
+                  <i class="fas fa-star text-yellow-400 ml-1 mb-1"></i>
+                  <span class="mb-1">4.1</span>
+                </div>
               </div>
 
-              <!-- Buttons -->
-              <div class="mt-6 flex justify-center gap-6">
+              <!-- Profile Info Section -->
+              <div>
+                <h2 class="text-[#1D2630] text-sm font-extrabold">
+                  PLA 02 TE 1235
+                </h2>
+                <p class="text-[#373F46] text-xs font-medium">
+                  White Honda Amaze
+                </p>
+                <p class="text-[#373F46] text-xs font-medium">Saimon Johnson</p>
+              </div>
+            </div>
+
+            <!-- otp -->
+            <div
+              class="flex mt-4 pb-4 border-b-[1px] justify-between border-[#8e8787]"
+            >
+              <div>
+                <h3 class="text-[#1D2630] text-[16px] font-[500]">Start OTP</h3>
+              </div>
+              <div class="text-[#1D2630] text-[22px] font-[700]">8451</div>
+            </div>
+            <!--  -->
+            <div
+              class="flex justify-between mt-4 pb-4 border-b-[1px] border-[#8e8787]"
+            >
+              <div class="flex gap-2">
+                <img src="images/Start-trip/money.svg" alt="" />
+                <p class="text-[16px] text-[#1D2630] font-[500]">
+                  Pay with cash
+                </p>
+              </div>
+              <div class="flex gap-2">
+                <h3 class="text-[16px] text-[#1D2630] font-[700]">
+                  EGP 192.63
+                </h3>
+                <img src="images/Start-trip/arrow.svg" alt="Arrow" />
+              </div>
+            </div>
+            <!-- Buttons -->
+            <div class="flex flex-col mt-6 px-4 gap-4">
+              <div class="flex gap-6 justify-center items-center">
                 <button
-                  type="button"
-                  class="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg shadow hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+                  class="bg-gray-300 gap-2 rounded-lg flex p-3 justify-center items-center w-[160px]"
                 >
-                  Keep Booking
+                  <img src="images/Start-trip/call.svg" alt="" />
+                  Call
                 </button>
                 <button
-                  type="button"
-                  class="px-8 py-2 bg-gray-800 text-white rounded-lg shadow hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+                  class="flex gap-2 bg-gray-300 rounded-lg justify-center p-3 items-center w-[160px]"
                 >
-                  Cancel
+                  <img src="images/Start-trip/Message.svg" alt="" />
+                  Massage
                 </button>
               </div>
-            </form>
+              <div class="flex mt-4 justify-center">
+                <button
+                  class="bg-white text-[#1D2630] border-[2px] border-[grey] rounded-lg p-3 w-[360px]"
+                >
+                  Cancel Ride
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Map Section -->
-      <div class="flex-1 sm:p-4 md:rounded-3xl">
+      <div class="flex-1 lg:p-4 md:rounded-3xl">
         <button
           id="tabSidebarOpenButton"
           class="absolute left-6 top-32 py-3 px-6 rounded-lg bg-white block lg:hidden"
@@ -394,7 +418,7 @@
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-          class="sm:rounded-3xl"
+          class="lg:rounded-3xl"
         ></iframe>
       </div>
     </div>
