@@ -14,7 +14,7 @@
       href="images/about-image/about svg/logo.svg"
       type="image/x-icon"
     />
-    <title>Cancel Ride</title>
+    <title>Search Driver</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
@@ -258,7 +258,7 @@
       </div>
       <div
         id="tabSidebarOpen"
-        class="w-full sm:w-2/5 lg:w-1/4 p-6 relative hidden lg:block"
+        class="w-full sm:w-2/5 lg:w-1/4 relative hidden lg:block"
       >
         <button
           id="closeSidebarBtn"
@@ -290,92 +290,77 @@
           />
         </div>
 
-        <div class="">
-          <div class="p-6 rounded-lg w-full max-w-md">
-            <h2 class="text-lg font-semibold mb-2">
-              Driver is less than 25 min away
+        <div class="text-center p-2 rounded-lg">
+          <div class="mb-6">
+            <!-- Circular animation with image -->
+            <div class="relative w-24 h-24 mx-auto mt-4 mb-4">
+              <img
+                src="images/SearchDriver/yellow cercle.svg"
+                alt="Yellow Circle"
+                class="absolute inset-0 w-full h-full animate-ping"
+              />
+              <img
+                src="images/SearchDriver/yellow cercle.svg"
+                alt="Yellow Circle Static"
+                class="absolute inset-0 w-full h-full"
+              />
+            </div>
+            <h2 class="text-[#1D2630] font-[700] text-[22px] mt-4">
+              Looking for a safe and hygienic ride nearby
             </h2>
-            <p class="text-sm text-gray-600 mb-4">
-              Are you sure you want to cancel?
-            </p>
+          </div>
 
-            <form>
-              <div class="space-y-3">
-                <!-- Radio Options -->
-                <label class="flex items-center space-x-2">
-                  <input
-                    type="radio"
-                    name="reason"
-                    value="book-another"
-                    class="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500"
-                  />
-                  <span class="text-gray-800">Book another ride</span>
-                </label>
-                <label class="flex items-center space-x-2">
-                  <input
-                    type="radio"
-                    name="reason"
-                    value="unable-connect"
-                    class="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500"
-                  />
-                  <span class="text-gray-800">Unable to connect driver</span>
-                </label>
-                <label class="flex items-center space-x-2">
-                  <input
-                    type="radio"
-                    name="reason"
-                    value="not-going"
-                    class="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500"
-                  />
-                  <span class="text-gray-800">I'm not going</span>
-                </label>
-                <label class="flex items-center space-x-2">
-                  <input
-                    type="radio"
-                    name="reason"
-                    value="other"
-                    class="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500"
-                  />
-                  <span class="text-gray-800"
-                    >My reason is not listed here</span
-                  >
-                </label>
-              </div>
+          <!-- Car image above progress bar -->
+          <div class="relative w-3/4 mx-auto mb-4">
+            <img
+              id="car-icon"
+              src="images/SearchDriver/car.svg"
+              alt="Car Icon"
+              class="absolute h-3 w-auto top-[-4px] left-0 z-10"
+            />
+            <div class="relative h-1 bg-gray-300 rounded-full overflow-hidden">
+              <div
+                id="progress-bar"
+                class="absolute top-0 left-0 h-full bg-yellow-500 rounded-full w-0 z-0"
+              ></div>
+            </div>
+          </div>
 
-              <!-- Textarea -->
-              <div class="mt-4">
-                <label
-                  for="otherReason"
-                  class="block text-sm text-gray-600 mb-1"
-                  >Enter your reason below</label
-                >
-                <textarea
-                  id="otherReason"
-                  name="otherReason"
-                  rows="3"
-                  placeholder="Type your reason..."
-                  class="w-full border border-gray-300 rounded-lg p-2 text-sm focus:ring-indigo-500 focus:border-indigo-500"
-                ></textarea>
-              </div>
-
-              <!-- Buttons -->
-              <div class="mt-6 flex justify-center gap-6">
-                <button
-                  type="button"
-                  class="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg shadow hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
-                >
-                  Keep Booking
-                </button>
-                <button
-                  type="button"
-                  class="px-8 py-2 bg-gray-800 text-white rounded-lg shadow hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
-                >
-                  Cancel
-                </button>
-              </div>
-            </form>
+          <!-- Cancel button -->
+          <div class="mt-8 w-full">
+            <button
+              id="cancel-button"
+              class="py-3 w-[300px] bg-gray-200 text-gray-700 rounded-md shadow hover:bg-gray-300 focus:outline-none text-[18px] font-[500]"
+            >
+              Cancel Ride
+            </button>
           </div>
         </div>
+
+        <script>
+          // Simulate progress bar
+          let progress = 0;
+          const progressBar = document.getElementById('progress-bar');
+          const carIcon = document.getElementById('car-icon');
+
+          function updateProgressBar() {
+            if (progress < 100) {
+              progress += 1;
+              progressBar.style.width = `${progress}%`;
+              carIcon.style.left = `calc(${progress}% - 1.4rem)`;
+            }
+          }
+
+          const progressInterval = setInterval(updateProgressBar, 100);
+
+          // Cancel ride button functionality
+          const cancelButton = document.getElementById('cancel-button');
+          cancelButton.addEventListener('click', () => {
+            clearInterval(progressInterval);
+            progressBar.style.backgroundColor = 'red';
+            progressBar.style.width = '100%';
+          });
+        </script>
       </div>
 
       <!-- Map Section -->
